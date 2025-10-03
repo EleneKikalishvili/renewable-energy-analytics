@@ -1,0 +1,2305 @@
+source,region,country,year,metric_type,value
+Energy Institute,European Union #,,2000,Primary energy consumption (EJ),64.88814617
+Energy Institute,European Union #,,2001,Primary energy consumption (EJ),66.08613021
+Energy Institute,European Union #,,2002,Primary energy consumption (EJ),65.70016753
+Energy Institute,European Union #,,2003,Primary energy consumption (EJ),66.89395369
+Energy Institute,European Union #,,2004,Primary energy consumption (EJ),67.85203509
+Energy Institute,European Union #,,2005,Primary energy consumption (EJ),67.88506761
+Energy Institute,European Union #,,2006,Primary energy consumption (EJ),68.31641848
+Energy Institute,European Union #,,2007,Primary energy consumption (EJ),67.5136971
+Energy Institute,European Union #,,2008,Primary energy consumption (EJ),67.25390472
+Energy Institute,European Union #,,2009,Primary energy consumption (EJ),63.22339129
+Energy Institute,European Union #,,2010,Primary energy consumption (EJ),65.81702952
+Energy Institute,European Union #,,2011,Primary energy consumption (EJ),63.88086367
+Energy Institute,European Union #,,2012,Primary energy consumption (EJ),63.18902237
+Energy Institute,European Union #,,2013,Primary energy consumption (EJ),62.74041486
+Energy Institute,European Union #,,2014,Primary energy consumption (EJ),60.53917308
+Energy Institute,European Union #,,2015,Primary energy consumption (EJ),61.37502513
+Energy Institute,European Union #,,2016,Primary energy consumption (EJ),62.01229054
+Energy Institute,European Union #,,2017,Primary energy consumption (EJ),62.98269657
+Energy Institute,European Union #,,2018,Primary energy consumption (EJ),62.79346826
+Energy Institute,European Union #,,2019,Primary energy consumption (EJ),61.75766922
+Energy Institute,European Union #,,2020,Primary energy consumption (EJ),57.11265635
+Energy Institute,European Union #,,2021,Primary energy consumption (EJ),60.21390179
+Energy Institute,European Union #,,2022,Primary energy consumption (EJ),57.85391028
+Energy Institute,European Union #,,2023,Primary energy consumption (EJ),56.3833558
+Energy Institute,Non-OECD,,2000,Primary energy consumption (EJ),164.9102302
+Energy Institute,Non-OECD,,2001,Primary energy consumption (EJ),170.5533274
+Energy Institute,Non-OECD,,2002,Primary energy consumption (EJ),177.0068704
+Energy Institute,Non-OECD,,2003,Primary energy consumption (EJ),189.3872007
+Energy Institute,Non-OECD,,2004,Primary energy consumption (EJ),206.1659323
+Energy Institute,Non-OECD,,2005,Primary energy consumption (EJ),219.2758144
+Energy Institute,Non-OECD,,2006,Primary energy consumption (EJ),231.9194663
+Energy Institute,Non-OECD,,2007,Primary energy consumption (EJ),244.8310589
+Energy Institute,Non-OECD,,2008,Primary energy consumption (EJ),253.2388888
+Energy Institute,Non-OECD,,2009,Primary energy consumption (EJ),257.1145763
+Energy Institute,Non-OECD,,2010,Primary energy consumption (EJ),272.183851
+Energy Institute,Non-OECD,,2011,Primary energy consumption (EJ),286.3533189
+Energy Institute,Non-OECD,,2012,Primary energy consumption (EJ),295.7791889
+Energy Institute,Non-OECD,,2013,Primary energy consumption (EJ),302.6644786
+Energy Institute,Non-OECD,,2014,Primary energy consumption (EJ),310.3237983
+Energy Institute,Non-OECD,,2015,Primary energy consumption (EJ),313.8931159
+Energy Institute,Non-OECD,,2016,Primary energy consumption (EJ),318.3640202
+Energy Institute,Non-OECD,,2017,Primary energy consumption (EJ),328.977265
+Energy Institute,Non-OECD,,2018,Primary energy consumption (EJ),340.8142387
+Energy Institute,Non-OECD,,2019,Primary energy consumption (EJ),349.5199429
+Energy Institute,Non-OECD,,2020,Primary energy consumption (EJ),345.6942444
+Energy Institute,Non-OECD,,2021,Primary energy consumption (EJ),364.068363
+Energy Institute,Non-OECD,,2022,Primary energy consumption (EJ),373.8000625
+Energy Institute,Non-OECD,,2023,Primary energy consumption (EJ),389.7319869
+Energy Institute,Africa,Other Northern Africa,2000,Primary energy consumption (EJ),0.962115332
+Energy Institute,Africa,Other Southern Africa,2000,Primary energy consumption (EJ),0.133768577
+Energy Institute,Africa,Algeria,2000,Primary energy consumption (EJ),1.079804302
+Energy Institute,Africa,Eastern Africa,2000,Primary energy consumption (EJ),1.023053643
+Energy Institute,Africa,Egypt,2000,Primary energy consumption (EJ),2.04672042
+Energy Institute,Africa,Morocco,2000,Primary energy consumption (EJ),0.422868149
+Energy Institute,Africa,Middle Africa,2000,Primary energy consumption (EJ),0.338718698
+Energy Institute,Africa,Western Africa,2000,Primary energy consumption (EJ),1.231376307
+Energy Institute,Africa,South Africa,2000,Primary energy consumption (EJ),4.267379438
+Energy Institute,Africa,Algeria,2001,Primary energy consumption (EJ),1.118926647
+Energy Institute,Africa,Western Africa,2001,Primary energy consumption (EJ),1.337125739
+Energy Institute,Africa,Middle Africa,2001,Primary energy consumption (EJ),0.346117832
+Energy Institute,Africa,Morocco,2001,Primary energy consumption (EJ),0.45685961
+Energy Institute,Africa,Other Northern Africa,2001,Primary energy consumption (EJ),0.98369604
+Energy Institute,Africa,Egypt,2001,Primary energy consumption (EJ),2.135929775
+Energy Institute,Africa,Other Southern Africa,2001,Primary energy consumption (EJ),0.135768364
+Energy Institute,Africa,Eastern Africa,2001,Primary energy consumption (EJ),1.113682124
+Energy Institute,Africa,South Africa,2001,Primary energy consumption (EJ),4.289530978
+Energy Institute,Africa,Egypt,2002,Primary energy consumption (EJ),2.196877749
+Energy Institute,Africa,Eastern Africa,2002,Primary energy consumption (EJ),1.128403504
+Energy Institute,Africa,Algeria,2002,Primary energy consumption (EJ),1.159021888
+Energy Institute,Africa,Other Northern Africa,2002,Primary energy consumption (EJ),0.974023247
+Energy Institute,Africa,South Africa,2002,Primary energy consumption (EJ),4.180049199
+Energy Institute,Africa,Other Southern Africa,2002,Primary energy consumption (EJ),0.135577937
+Energy Institute,Africa,Western Africa,2002,Primary energy consumption (EJ),1.46428344
+Energy Institute,Africa,Middle Africa,2002,Primary energy consumption (EJ),0.365150427
+Energy Institute,Africa,Morocco,2002,Primary energy consumption (EJ),0.468331139
+Energy Institute,Africa,Other Southern Africa,2003,Primary energy consumption (EJ),0.135753303
+Energy Institute,Africa,Morocco,2003,Primary energy consumption (EJ),0.469620598
+Energy Institute,Africa,Algeria,2003,Primary energy consumption (EJ),1.212919592
+Energy Institute,Africa,South Africa,2003,Primary energy consumption (EJ),4.528646675
+Energy Institute,Africa,Western Africa,2003,Primary energy consumption (EJ),1.443895325
+Energy Institute,Africa,Middle Africa,2003,Primary energy consumption (EJ),0.3915944
+Energy Institute,Africa,Egypt,2003,Primary energy consumption (EJ),2.325569876
+Energy Institute,Africa,Other Northern Africa,2003,Primary energy consumption (EJ),1.010121426
+Energy Institute,Africa,Eastern Africa,2003,Primary energy consumption (EJ),1.137003745
+Energy Institute,Africa,Western Africa,2004,Primary energy consumption (EJ),1.485147074
+Energy Institute,Africa,Middle Africa,2004,Primary energy consumption (EJ),0.472489104
+Energy Institute,Africa,Other Northern Africa,2004,Primary energy consumption (EJ),1.091900118
+Energy Institute,Africa,Eastern Africa,2004,Primary energy consumption (EJ),1.211103868
+Energy Institute,Africa,South Africa,2004,Primary energy consumption (EJ),4.941985737
+Energy Institute,Africa,Other Southern Africa,2004,Primary energy consumption (EJ),0.136590509
+Energy Institute,Africa,Egypt,2004,Primary energy consumption (EJ),2.455393798
+Energy Institute,Africa,Algeria,2004,Primary energy consumption (EJ),1.259200055
+Energy Institute,Africa,Morocco,2004,Primary energy consumption (EJ),0.534826875
+Energy Institute,Africa,Western Africa,2005,Primary energy consumption (EJ),1.544711144
+Energy Institute,Africa,Algeria,2005,Primary energy consumption (EJ),1.318577501
+Energy Institute,Africa,Other Northern Africa,2005,Primary energy consumption (EJ),1.114660351
+Energy Institute,Africa,Other Southern Africa,2005,Primary energy consumption (EJ),0.147089529
+Energy Institute,Africa,Middle Africa,2005,Primary energy consumption (EJ),0.458780911
+Energy Institute,Africa,Eastern Africa,2005,Primary energy consumption (EJ),1.267638464
+Energy Institute,Africa,Egypt,2005,Primary energy consumption (EJ),2.517899829
+Energy Institute,Africa,South Africa,2005,Primary energy consumption (EJ),4.677557302
+Energy Institute,Africa,Morocco,2005,Primary energy consumption (EJ),0.580802057
+Energy Institute,Africa,Middle Africa,2006,Primary energy consumption (EJ),0.513840762
+Energy Institute,Africa,Egypt,2006,Primary energy consumption (EJ),2.651919585
+Energy Institute,Africa,Morocco,2006,Primary energy consumption (EJ),0.59279309
+Energy Institute,Africa,Other Northern Africa,2006,Primary energy consumption (EJ),1.127882742
+Energy Institute,Africa,Other Southern Africa,2006,Primary energy consumption (EJ),0.143534959
+Energy Institute,Africa,Eastern Africa,2006,Primary energy consumption (EJ),1.316263179
+Energy Institute,Africa,Algeria,2006,Primary energy consumption (EJ),1.365192172
+Energy Institute,Africa,Western Africa,2006,Primary energy consumption (EJ),1.404904608
+Energy Institute,Africa,South Africa,2006,Primary energy consumption (EJ),4.773818212
+Energy Institute,Africa,Middle Africa,2007,Primary energy consumption (EJ),0.533264065
+Energy Institute,Africa,Morocco,2007,Primary energy consumption (EJ),0.587622076
+Energy Institute,Africa,Other Southern Africa,2007,Primary energy consumption (EJ),0.149181591
+Energy Institute,Africa,Western Africa,2007,Primary energy consumption (EJ),1.500231982
+Energy Institute,Africa,Algeria,2007,Primary energy consumption (EJ),1.438703194
+Energy Institute,Africa,Eastern Africa,2007,Primary energy consumption (EJ),1.386224001
+Energy Institute,Africa,Other Northern Africa,2007,Primary energy consumption (EJ),1.099390247
+Energy Institute,Africa,Egypt,2007,Primary energy consumption (EJ),2.824485837
+Energy Institute,Africa,South Africa,2007,Primary energy consumption (EJ),4.903902662
+Energy Institute,Africa,Other Northern Africa,2008,Primary energy consumption (EJ),1.140891258
+Energy Institute,Africa,Other Southern Africa,2008,Primary energy consumption (EJ),0.155099639
+Energy Institute,Africa,Egypt,2008,Primary energy consumption (EJ),2.994617344
+Energy Institute,Africa,Middle Africa,2008,Primary energy consumption (EJ),0.583541255
+Energy Institute,Africa,Western Africa,2008,Primary energy consumption (EJ),1.606648577
+Energy Institute,Africa,Eastern Africa,2008,Primary energy consumption (EJ),1.374768881
+Energy Institute,Africa,Algeria,2008,Primary energy consumption (EJ),1.524804989
+Energy Institute,Africa,Morocco,2008,Primary energy consumption (EJ),0.648470892
+Energy Institute,Africa,South Africa,2008,Primary energy consumption (EJ),5.25490627
+Energy Institute,Africa,Algeria,2009,Primary energy consumption (EJ),1.615893591
+Energy Institute,Africa,Other Southern Africa,2009,Primary energy consumption (EJ),0.16006234
+Energy Institute,Africa,South Africa,2009,Primary energy consumption (EJ),5.231569882
+Energy Institute,Africa,Morocco,2009,Primary energy consumption (EJ),0.632842882
+Energy Institute,Africa,Middle Africa,2009,Primary energy consumption (EJ),0.618911148
+Energy Institute,Africa,Western Africa,2009,Primary energy consumption (EJ),1.503554402
+Energy Institute,Africa,Egypt,2009,Primary energy consumption (EJ),3.102016777
+Energy Institute,Africa,Eastern Africa,2009,Primary energy consumption (EJ),1.461233609
+Energy Institute,Africa,Other Northern Africa,2009,Primary energy consumption (EJ),1.21743703
+Energy Institute,Africa,Eastern Africa,2010,Primary energy consumption (EJ),1.588521326
+Energy Institute,Africa,Egypt,2010,Primary energy consumption (EJ),3.222402349
+Energy Institute,Africa,Algeria,2010,Primary energy consumption (EJ),1.580381629
+Energy Institute,Africa,Morocco,2010,Primary energy consumption (EJ),0.701843019
+Energy Institute,Africa,South Africa,2010,Primary energy consumption (EJ),5.270358476
+Energy Institute,Africa,Other Northern Africa,2010,Primary energy consumption (EJ),1.256016933
+Energy Institute,Africa,Western Africa,2010,Primary energy consumption (EJ),1.585049801
+Energy Institute,Africa,Middle Africa,2010,Primary energy consumption (EJ),0.684360105
+Energy Institute,Africa,Other Southern Africa,2010,Primary energy consumption (EJ),0.146192907
+Energy Institute,Africa,Other Northern Africa,2011,Primary energy consumption (EJ),0.905862323
+Energy Institute,Africa,Other Southern Africa,2011,Primary energy consumption (EJ),0.16472661
+Energy Institute,Africa,Egypt,2011,Primary energy consumption (EJ),3.389665479
+Energy Institute,Africa,Middle Africa,2011,Primary energy consumption (EJ),0.716035688
+Energy Institute,Africa,South Africa,2011,Primary energy consumption (EJ),5.206368847
+Energy Institute,Africa,Algeria,2011,Primary energy consumption (EJ),1.672157765
+Energy Institute,Africa,Western Africa,2011,Primary energy consumption (EJ),1.728611725
+Energy Institute,Africa,Morocco,2011,Primary energy consumption (EJ),0.737090884
+Energy Institute,Africa,Eastern Africa,2011,Primary energy consumption (EJ),1.652827895
+Energy Institute,Africa,Other Northern Africa,2012,Primary energy consumption (EJ),1.083022069
+Energy Institute,Africa,Western Africa,2012,Primary energy consumption (EJ),1.815474296
+Energy Institute,Africa,Other Southern Africa,2012,Primary energy consumption (EJ),0.183162623
+Energy Institute,Africa,South Africa,2012,Primary energy consumption (EJ),5.125791806
+Energy Institute,Africa,Eastern Africa,2012,Primary energy consumption (EJ),1.722388072
+Energy Institute,Africa,Middle Africa,2012,Primary energy consumption (EJ),0.791480885
+Energy Institute,Africa,Egypt,2012,Primary energy consumption (EJ),3.527656959
+Energy Institute,Africa,Algeria,2012,Primary energy consumption (EJ),1.827618772
+Energy Institute,Africa,Morocco,2012,Primary energy consumption (EJ),0.750318517
+Energy Institute,Africa,Algeria,2013,Primary energy consumption (EJ),1.933116549
+Energy Institute,Africa,Eastern Africa,2013,Primary energy consumption (EJ),1.872798934
+Energy Institute,Africa,Middle Africa,2013,Primary energy consumption (EJ),0.894172816
+Energy Institute,Africa,Morocco,2013,Primary energy consumption (EJ),0.770325006
+Energy Institute,Africa,South Africa,2013,Primary energy consumption (EJ),5.148439471
+Energy Institute,Africa,Other Southern Africa,2013,Primary energy consumption (EJ),0.183037783
+Energy Institute,Africa,Other Northern Africa,2013,Primary energy consumption (EJ),1.165010516
+Energy Institute,Africa,Western Africa,2013,Primary energy consumption (EJ),1.835436025
+Energy Institute,Africa,Egypt,2013,Primary energy consumption (EJ),3.503767435
+Energy Institute,Africa,Other Southern Africa,2014,Primary energy consumption (EJ),0.198701717
+Energy Institute,Africa,Middle Africa,2014,Primary energy consumption (EJ),0.933878669
+Energy Institute,Africa,Morocco,2014,Primary energy consumption (EJ),0.781290267
+Energy Institute,Africa,Eastern Africa,2014,Primary energy consumption (EJ),2.053942706
+Energy Institute,Africa,Algeria,2014,Primary energy consumption (EJ),2.108207774
+Energy Institute,Africa,Other Northern Africa,2014,Primary energy consumption (EJ),1.146852654
+Energy Institute,Africa,Egypt,2014,Primary energy consumption (EJ),3.463097478
+Energy Institute,Africa,Western Africa,2014,Primary energy consumption (EJ),1.887989032
+Energy Institute,Africa,South Africa,2014,Primary energy consumption (EJ),5.208124003
+Energy Institute,Africa,Algeria,2015,Primary energy consumption (EJ),2.223065275
+Energy Institute,Africa,Other Southern Africa,2015,Primary energy consumption (EJ),0.199352743
+Energy Institute,Africa,Western Africa,2015,Primary energy consumption (EJ),2.181970599
+Energy Institute,Africa,Morocco,2015,Primary energy consumption (EJ),0.795091704
+Energy Institute,Africa,Middle Africa,2015,Primary energy consumption (EJ),0.937212918
+Energy Institute,Africa,Other Northern Africa,2015,Primary energy consumption (EJ),1.073290641
+Energy Institute,Africa,South Africa,2015,Primary energy consumption (EJ),5.103727684
+Energy Institute,Africa,Egypt,2015,Primary energy consumption (EJ),3.513989216
+Energy Institute,Africa,Eastern Africa,2015,Primary energy consumption (EJ),2.134487226
+Energy Institute,Africa,South Africa,2016,Primary energy consumption (EJ),5.336780541
+Energy Institute,Africa,Algeria,2016,Primary energy consumption (EJ),2.221184997
+Energy Institute,Africa,Other Southern Africa,2016,Primary energy consumption (EJ),0.195434179
+Energy Institute,Africa,Other Northern Africa,2016,Primary energy consumption (EJ),1.101623624
+Energy Institute,Africa,Morocco,2016,Primary energy consumption (EJ),0.803967226
+Energy Institute,Africa,Eastern Africa,2016,Primary energy consumption (EJ),2.104665389
+Energy Institute,Africa,Middle Africa,2016,Primary energy consumption (EJ),0.944436679
+Energy Institute,Africa,Egypt,2016,Primary energy consumption (EJ),3.708938716
+Energy Institute,Africa,Western Africa,2016,Primary energy consumption (EJ),2.25357513
+Energy Institute,Africa,Egypt,2017,Primary energy consumption (EJ),3.854683107
+Energy Institute,Africa,Eastern Africa,2017,Primary energy consumption (EJ),2.245541176
+Energy Institute,Africa,Other Southern Africa,2017,Primary energy consumption (EJ),0.207517961
+Energy Institute,Africa,South Africa,2017,Primary energy consumption (EJ),5.316974027
+Energy Institute,Africa,Algeria,2017,Primary energy consumption (EJ),2.245660809
+Energy Institute,Africa,Western Africa,2017,Primary energy consumption (EJ),2.407582052
+Energy Institute,Africa,Middle Africa,2017,Primary energy consumption (EJ),0.944830997
+Energy Institute,Africa,Morocco,2017,Primary energy consumption (EJ),0.841682618
+Energy Institute,Africa,Other Northern Africa,2017,Primary energy consumption (EJ),1.229951933
+Energy Institute,Africa,Egypt,2018,Primary energy consumption (EJ),3.856844228
+Energy Institute,Africa,Other Northern Africa,2018,Primary energy consumption (EJ),1.246914923
+Energy Institute,Africa,Other Southern Africa,2018,Primary energy consumption (EJ),0.212706688
+Energy Institute,Africa,Middle Africa,2018,Primary energy consumption (EJ),0.985815457
+Energy Institute,Africa,Eastern Africa,2018,Primary energy consumption (EJ),2.374896452
+Energy Institute,Africa,South Africa,2018,Primary energy consumption (EJ),5.116226562
+Energy Institute,Africa,Western Africa,2018,Primary energy consumption (EJ),2.695213016
+Energy Institute,Africa,Morocco,2018,Primary energy consumption (EJ),0.870530393
+Energy Institute,Africa,Algeria,2018,Primary energy consumption (EJ),2.410631284
+Energy Institute,Africa,Other Northern Africa,2019,Primary energy consumption (EJ),1.264532537
+Energy Institute,Africa,Egypt,2019,Primary energy consumption (EJ),3.783981714
+Energy Institute,Africa,South Africa,2019,Primary energy consumption (EJ),5.348519831
+Energy Institute,Africa,Other Southern Africa,2019,Primary energy consumption (EJ),0.203544943
+Energy Institute,Africa,Morocco,2019,Primary energy consumption (EJ),0.949827568
+Energy Institute,Africa,Middle Africa,2019,Primary energy consumption (EJ),1.012403182
+Energy Institute,Africa,Eastern Africa,2019,Primary energy consumption (EJ),2.359461488
+Energy Institute,Africa,Algeria,2019,Primary energy consumption (EJ),2.499655969
+Energy Institute,Africa,Western Africa,2019,Primary energy consumption (EJ),2.774923011
+Energy Institute,Africa,Western Africa,2020,Primary energy consumption (EJ),2.810516038
+Energy Institute,Africa,South Africa,2020,Primary energy consumption (EJ),5.014426216
+Energy Institute,Africa,Algeria,2020,Primary energy consumption (EJ),2.336035827
+Energy Institute,Africa,Eastern Africa,2020,Primary energy consumption (EJ),2.28864909
+Energy Institute,Africa,Egypt,2020,Primary energy consumption (EJ),3.560647778
+Energy Institute,Africa,Middle Africa,2020,Primary energy consumption (EJ),0.945237507
+Energy Institute,Africa,Other Northern Africa,2020,Primary energy consumption (EJ),1.131059242
+Energy Institute,Africa,Morocco,2020,Primary energy consumption (EJ),0.873122289
+Energy Institute,Africa,Other Southern Africa,2020,Primary energy consumption (EJ),0.185046624
+Energy Institute,Africa,Algeria,2021,Primary energy consumption (EJ),2.547458382
+Energy Institute,Africa,Western Africa,2021,Primary energy consumption (EJ),3.311809545
+Energy Institute,Africa,Other Northern Africa,2021,Primary energy consumption (EJ),1.358095001
+Energy Institute,Africa,Egypt,2021,Primary energy consumption (EJ),3.811475676
+Energy Institute,Africa,Middle Africa,2021,Primary energy consumption (EJ),1.049071744
+Energy Institute,Africa,Other Southern Africa,2021,Primary energy consumption (EJ),0.199139392
+Energy Institute,Africa,Morocco,2021,Primary energy consumption (EJ),0.968596186
+Energy Institute,Africa,South Africa,2021,Primary energy consumption (EJ),5.061932831
+Energy Institute,Africa,Eastern Africa,2021,Primary energy consumption (EJ),2.446805525
+Energy Institute,Africa,Morocco,2022,Primary energy consumption (EJ),0.961404685
+Energy Institute,Africa,Other Northern Africa,2022,Primary energy consumption (EJ),1.41623995
+Energy Institute,Africa,Algeria,2022,Primary energy consumption (EJ),2.643088117
+Energy Institute,Africa,South Africa,2022,Primary energy consumption (EJ),4.871754973
+Energy Institute,Africa,Eastern Africa,2022,Primary energy consumption (EJ),2.405108636
+Energy Institute,Africa,Other Southern Africa,2022,Primary energy consumption (EJ),0.214334491
+Energy Institute,Africa,Middle Africa,2022,Primary energy consumption (EJ),1.115078282
+Energy Institute,Africa,Egypt,2022,Primary energy consumption (EJ),3.983185135
+Energy Institute,Africa,Western Africa,2022,Primary energy consumption (EJ),3.340782228
+Energy Institute,Africa,Middle Africa,2023,Primary energy consumption (EJ),1.128839707
+Energy Institute,Africa,Other Northern Africa,2023,Primary energy consumption (EJ),1.472065654
+Energy Institute,Africa,Algeria,2023,Primary energy consumption (EJ),2.53800992
+Energy Institute,Africa,Western Africa,2023,Primary energy consumption (EJ),3.270162313
+Energy Institute,Africa,Eastern Africa,2023,Primary energy consumption (EJ),2.468343381
+Energy Institute,Africa,Morocco,2023,Primary energy consumption (EJ),0.976611736
+Energy Institute,Africa,Other Southern Africa,2023,Primary energy consumption (EJ),0.224766856
+Energy Institute,Africa,South Africa,2023,Primary energy consumption (EJ),4.853098626
+Energy Institute,Africa,Egypt,2023,Primary energy consumption (EJ),3.93754939
+Energy Institute,Asia Pacific,Malaysia,2000,Primary energy consumption (EJ),2.200526096
+Energy Institute,Asia Pacific,Thailand,2000,Primary energy consumption (EJ),2.670088195
+Energy Institute,Asia Pacific,Sri Lanka,2000,Primary energy consumption (EJ),0.192767831
+Energy Institute,Asia Pacific,Indonesia,2000,Primary energy consumption (EJ),4.188663438
+Energy Institute,Asia Pacific,Japan,2000,Primary energy consumption (EJ),22.51196517
+Energy Institute,Asia Pacific,South Korea,2000,Primary energy consumption (EJ),8.080173302
+Energy Institute,Asia Pacific,China Hong Kong SAR,2000,Primary energy consumption (EJ),0.71091114
+Energy Institute,Asia Pacific,China,2000,Primary energy consumption (EJ),42.48102343
+Energy Institute,Asia Pacific,Pakistan,2000,Primary energy consumption (EJ),1.741515536
+Energy Institute,Asia Pacific,Vietnam,2000,Primary energy consumption (EJ),0.770936236
+Energy Institute,Asia Pacific,Singapore,2000,Primary energy consumption (EJ),1.594851958
+Energy Institute,Asia Pacific,Bangladesh,2000,Primary energy consumption (EJ),0.490035114
+Energy Institute,Asia Pacific,Other Asia Pacific,2000,Primary energy consumption (EJ),1.601085861
+Energy Institute,Asia Pacific,India,2000,Primary energy consumption (EJ),13.41144407
+Energy Institute,Asia Pacific,Philippines,2000,Primary energy consumption (EJ),1.107768706
+Energy Institute,Asia Pacific,New Zealand,2000,Primary energy consumption (EJ),0.826406013
+Energy Institute,Asia Pacific,Australia,2000,Primary energy consumption (EJ),4.698934257
+Energy Institute,Asia Pacific,Taiwan,2000,Primary energy consumption (EJ),3.675982925
+Energy Institute,Asia Pacific,Indonesia,2001,Primary energy consumption (EJ),4.486528702
+Energy Institute,Asia Pacific,Thailand,2001,Primary energy consumption (EJ),2.815950567
+Energy Institute,Asia Pacific,India,2001,Primary energy consumption (EJ),13.46714457
+Energy Institute,Asia Pacific,Vietnam,2001,Primary energy consumption (EJ),0.871361569
+Energy Institute,Asia Pacific,South Korea,2001,Primary energy consumption (EJ),8.275168355
+Energy Institute,Asia Pacific,Singapore,2001,Primary energy consumption (EJ),1.802593823
+Energy Institute,Asia Pacific,China Hong Kong SAR,2001,Primary energy consumption (EJ),0.897912815
+Energy Institute,Asia Pacific,Philippines,2001,Primary energy consumption (EJ),1.083067574
+Energy Institute,Asia Pacific,Japan,2001,Primary energy consumption (EJ),22.26853384
+Energy Institute,Asia Pacific,Bangladesh,2001,Primary energy consumption (EJ),0.560106113
+Energy Institute,Asia Pacific,Australia,2001,Primary energy consumption (EJ),4.735387048
+Energy Institute,Asia Pacific,Other Asia Pacific,2001,Primary energy consumption (EJ),1.661189172
+Energy Institute,Asia Pacific,Malaysia,2001,Primary energy consumption (EJ),2.252933904
+Energy Institute,Asia Pacific,New Zealand,2001,Primary energy consumption (EJ),0.818938717
+Energy Institute,Asia Pacific,Pakistan,2001,Primary energy consumption (EJ),1.782540603
+Energy Institute,Asia Pacific,Taiwan,2001,Primary energy consumption (EJ),3.793485218
+Energy Institute,Asia Pacific,China,2001,Primary energy consumption (EJ),44.89222731
+Energy Institute,Asia Pacific,Sri Lanka,2001,Primary energy consumption (EJ),0.187318659
+Energy Institute,Asia Pacific,Australia,2002,Primary energy consumption (EJ),4.830282431
+Energy Institute,Asia Pacific,China,2002,Primary energy consumption (EJ),48.88976633
+Energy Institute,Asia Pacific,Taiwan,2002,Primary energy consumption (EJ),3.945328273
+Energy Institute,Asia Pacific,Vietnam,2002,Primary energy consumption (EJ),0.953118987
+Energy Institute,Asia Pacific,South Korea,2002,Primary energy consumption (EJ),8.656830117
+Energy Institute,Asia Pacific,India,2002,Primary energy consumption (EJ),13.93491084
+Energy Institute,Asia Pacific,Bangladesh,2002,Primary energy consumption (EJ),0.561683201
+Energy Institute,Asia Pacific,Thailand,2002,Primary energy consumption (EJ),3.052587217
+Energy Institute,Asia Pacific,New Zealand,2002,Primary energy consumption (EJ),0.847052537
+Energy Institute,Asia Pacific,Philippines,2002,Primary energy consumption (EJ),1.088227894
+Energy Institute,Asia Pacific,Singapore,2002,Primary energy consumption (EJ),1.73606454
+Energy Institute,Asia Pacific,China Hong Kong SAR,2002,Primary energy consumption (EJ),0.876357093
+Energy Institute,Asia Pacific,Japan,2002,Primary energy consumption (EJ),22.19722663
+Energy Institute,Asia Pacific,Pakistan,2002,Primary energy consumption (EJ),1.850793632
+Energy Institute,Asia Pacific,Indonesia,2002,Primary energy consumption (EJ),4.609382875
+Energy Institute,Asia Pacific,Other Asia Pacific,2002,Primary energy consumption (EJ),1.616462964
+Energy Institute,Asia Pacific,Malaysia,2002,Primary energy consumption (EJ),2.373029632
+Energy Institute,Asia Pacific,Sri Lanka,2002,Primary energy consumption (EJ),0.192632897
+Energy Institute,Asia Pacific,Japan,2003,Primary energy consumption (EJ),22.18648504
+Energy Institute,Asia Pacific,Thailand,2003,Primary energy consumption (EJ),3.282085186
+Energy Institute,Asia Pacific,Singapore,2003,Primary energy consumption (EJ),1.635385754
+Energy Institute,Asia Pacific,Bangladesh,2003,Primary energy consumption (EJ),0.593696688
+Energy Institute,Asia Pacific,Indonesia,2003,Primary energy consumption (EJ),5.000644743
+Energy Institute,Asia Pacific,India,2003,Primary energy consumption (EJ),14.43135562
+Energy Institute,Asia Pacific,Sri Lanka,2003,Primary energy consumption (EJ),0.198222048
+Energy Institute,Asia Pacific,South Korea,2003,Primary energy consumption (EJ),8.936143679
+Energy Institute,Asia Pacific,Vietnam,2003,Primary energy consumption (EJ),1.027183309
+Energy Institute,Asia Pacific,Other Asia Pacific,2003,Primary energy consumption (EJ),1.704464098
+Energy Institute,Asia Pacific,Philippines,2003,Primary energy consumption (EJ),1.122781165
+Energy Institute,Asia Pacific,Malaysia,2003,Primary energy consumption (EJ),2.570963353
+Energy Institute,Asia Pacific,China Hong Kong SAR,2003,Primary energy consumption (EJ),0.90505958
+Energy Institute,Asia Pacific,Taiwan,2003,Primary energy consumption (EJ),4.123560777
+Energy Institute,Asia Pacific,China,2003,Primary energy consumption (EJ),56.94752261
+Energy Institute,Asia Pacific,New Zealand,2003,Primary energy consumption (EJ),0.821055356
+Energy Institute,Asia Pacific,Australia,2003,Primary energy consumption (EJ),4.899104262
+Energy Institute,Asia Pacific,Pakistan,2003,Primary energy consumption (EJ),2.015736269
+Energy Institute,Asia Pacific,India,2004,Primary energy consumption (EJ),15.66954537
+Energy Institute,Asia Pacific,China Hong Kong SAR,2004,Primary energy consumption (EJ),1.013496995
+Energy Institute,Asia Pacific,Sri Lanka,2004,Primary energy consumption (EJ),0.192624782
+Energy Institute,Asia Pacific,New Zealand,2004,Primary energy consumption (EJ),0.844848428
+Energy Institute,Asia Pacific,Bangladesh,2004,Primary energy consumption (EJ),0.6313226
+Energy Institute,Asia Pacific,Malaysia,2004,Primary energy consumption (EJ),2.777904142
+Energy Institute,Asia Pacific,Taiwan,2004,Primary energy consumption (EJ),4.295837162
+Energy Institute,Asia Pacific,China,2004,Primary energy consumption (EJ),66.63288805
+Energy Institute,Asia Pacific,South Korea,2004,Primary energy consumption (EJ),9.144480495
+Energy Institute,Asia Pacific,Australia,2004,Primary energy consumption (EJ),5.055998866
+Energy Institute,Asia Pacific,Pakistan,2004,Primary energy consumption (EJ),2.24302303
+Energy Institute,Asia Pacific,Other Asia Pacific,2004,Primary energy consumption (EJ),1.748816685
+Energy Institute,Asia Pacific,Japan,2004,Primary energy consumption (EJ),22.48958427
+Energy Institute,Asia Pacific,Singapore,2004,Primary energy consumption (EJ),1.833478005
+Energy Institute,Asia Pacific,Thailand,2004,Primary energy consumption (EJ),3.563032271
+Energy Institute,Asia Pacific,Vietnam,2004,Primary energy consumption (EJ),1.251988456
+Energy Institute,Asia Pacific,Philippines,2004,Primary energy consumption (EJ),1.149341303
+Energy Institute,Asia Pacific,Indonesia,2004,Primary energy consumption (EJ),4.95304808
+Energy Institute,Asia Pacific,India,2005,Primary energy consumption (EJ),16.59030118
+Energy Institute,Asia Pacific,Vietnam,2005,Primary energy consumption (EJ),1.331248604
+Energy Institute,Asia Pacific,Other Asia Pacific,2005,Primary energy consumption (EJ),1.836931528
+Energy Institute,Asia Pacific,China,2005,Primary energy consumption (EJ),75.69779453
+Energy Institute,Asia Pacific,Singapore,2005,Primary energy consumption (EJ),1.93243699
+Energy Institute,Asia Pacific,Thailand,2005,Primary energy consumption (EJ),3.676022145
+Energy Institute,Asia Pacific,Pakistan,2005,Primary energy consumption (EJ),2.327343157
+Energy Institute,Asia Pacific,Indonesia,2005,Primary energy consumption (EJ),5.097651781
+Energy Institute,Asia Pacific,Japan,2005,Primary energy consumption (EJ),22.86870494
+Energy Institute,Asia Pacific,Australia,2005,Primary energy consumption (EJ),5.077260756
+Energy Institute,Asia Pacific,Malaysia,2005,Primary energy consumption (EJ),3.006283047
+Energy Institute,Asia Pacific,Philippines,2005,Primary energy consumption (EJ),1.149628767
+Energy Institute,Asia Pacific,New Zealand,2005,Primary energy consumption (EJ),0.823531568
+Energy Institute,Asia Pacific,Taiwan,2005,Primary energy consumption (EJ),4.351506184
+Energy Institute,Asia Pacific,Bangladesh,2005,Primary energy consumption (EJ),0.684476477
+Energy Institute,Asia Pacific,South Korea,2005,Primary energy consumption (EJ),9.451685042
+Energy Institute,Asia Pacific,Sri Lanka,2005,Primary energy consumption (EJ),0.222431031
+Energy Institute,Asia Pacific,China Hong Kong SAR,2005,Primary energy consumption (EJ),0.972325675
+Energy Institute,Asia Pacific,Other Asia Pacific,2006,Primary energy consumption (EJ),1.914797319
+Energy Institute,Asia Pacific,Pakistan,2006,Primary energy consumption (EJ),2.452794578
+Energy Institute,Asia Pacific,China,2006,Primary energy consumption (EJ),82.9739989
+Energy Institute,Asia Pacific,Sri Lanka,2006,Primary energy consumption (EJ),0.238802565
+Energy Institute,Asia Pacific,India,2006,Primary energy consumption (EJ),17.47751927
+Energy Institute,Asia Pacific,Malaysia,2006,Primary energy consumption (EJ),3.037798501
+Energy Institute,Asia Pacific,Taiwan,2006,Primary energy consumption (EJ),4.467950886
+Energy Institute,Asia Pacific,New Zealand,2006,Primary energy consumption (EJ),0.828951996
+Energy Institute,Asia Pacific,Indonesia,2006,Primary energy consumption (EJ),5.184733726
+Energy Institute,Asia Pacific,Thailand,2006,Primary energy consumption (EJ),3.754794382
+Energy Institute,Asia Pacific,Philippines,2006,Primary energy consumption (EJ),1.0991153
+Energy Institute,Asia Pacific,Bangladesh,2006,Primary energy consumption (EJ),0.740665836
+Energy Institute,Asia Pacific,South Korea,2006,Primary energy consumption (EJ),9.608683001
+Energy Institute,Asia Pacific,Vietnam,2006,Primary energy consumption (EJ),1.22028559
+Energy Institute,Asia Pacific,Singapore,2006,Primary energy consumption (EJ),2.127527909
+Energy Institute,Asia Pacific,Japan,2006,Primary energy consumption (EJ),22.8089581
+Energy Institute,Asia Pacific,China Hong Kong SAR,2006,Primary energy consumption (EJ),1.028708899
+Energy Institute,Asia Pacific,Australia,2006,Primary energy consumption (EJ),5.295016448
+Energy Institute,Asia Pacific,Taiwan,2007,Primary energy consumption (EJ),4.654203544
+Energy Institute,Asia Pacific,South Korea,2007,Primary energy consumption (EJ),9.896906541
+Energy Institute,Asia Pacific,Other Asia Pacific,2007,Primary energy consumption (EJ),1.865819794
+Energy Institute,Asia Pacific,Sri Lanka,2007,Primary energy consumption (EJ),0.242784597
+Energy Institute,Asia Pacific,Thailand,2007,Primary energy consumption (EJ),3.883149919
+Energy Institute,Asia Pacific,India,2007,Primary energy consumption (EJ),18.96825601
+Energy Institute,Asia Pacific,Vietnam,2007,Primary energy consumption (EJ),1.332985917
+Energy Institute,Asia Pacific,China Hong Kong SAR,2007,Primary energy consumption (EJ),1.094452044
+Energy Institute,Asia Pacific,China,2007,Primary energy consumption (EJ),90.17847081
+Energy Institute,Asia Pacific,Indonesia,2007,Primary energy consumption (EJ),5.564516479
+Energy Institute,Asia Pacific,Singapore,2007,Primary energy consumption (EJ),2.287462762
+Energy Institute,Asia Pacific,Philippines,2007,Primary energy consumption (EJ),1.140477098
+Energy Institute,Asia Pacific,New Zealand,2007,Primary energy consumption (EJ),0.826055332
+Energy Institute,Asia Pacific,Malaysia,2007,Primary energy consumption (EJ),3.240203717
+Energy Institute,Asia Pacific,Australia,2007,Primary energy consumption (EJ),5.422201321
+Energy Institute,Asia Pacific,Bangladesh,2007,Primary energy consumption (EJ),0.761674667
+Energy Institute,Asia Pacific,Pakistan,2007,Primary energy consumption (EJ),2.607878014
+Energy Institute,Asia Pacific,Japan,2007,Primary energy consumption (EJ),22.58816913
+Energy Institute,Asia Pacific,Australia,2008,Primary energy consumption (EJ),5.514283673
+Energy Institute,Asia Pacific,Taiwan,2008,Primary energy consumption (EJ),4.481820224
+Energy Institute,Asia Pacific,Vietnam,2008,Primary energy consumption (EJ),1.645950924
+Energy Institute,Asia Pacific,Bangladesh,2008,Primary energy consumption (EJ),0.801988133
+Energy Institute,Asia Pacific,Indonesia,2008,Primary energy consumption (EJ),5.628762852
+Energy Institute,Asia Pacific,Philippines,2008,Primary energy consumption (EJ),1.179174533
+Energy Institute,Asia Pacific,Thailand,2008,Primary energy consumption (EJ),3.882760897
+Energy Institute,Asia Pacific,South Korea,2008,Primary energy consumption (EJ),10.06167424
+Energy Institute,Asia Pacific,Malaysia,2008,Primary energy consumption (EJ),3.357441559
+Energy Institute,Asia Pacific,Sri Lanka,2008,Primary energy consumption (EJ),0.228872893
+Energy Institute,Asia Pacific,Other Asia Pacific,2008,Primary energy consumption (EJ),1.935812838
+Energy Institute,Asia Pacific,China Hong Kong SAR,2008,Primary energy consumption (EJ),1.018271824
+Energy Institute,Asia Pacific,Japan,2008,Primary energy consumption (EJ),22.17071468
+Energy Institute,Asia Pacific,India,2008,Primary energy consumption (EJ),20.07550441
+Energy Institute,Asia Pacific,Pakistan,2008,Primary energy consumption (EJ),2.62079403
+Energy Institute,Asia Pacific,China,2008,Primary energy consumption (EJ),93.67366702
+Energy Institute,Asia Pacific,Singapore,2008,Primary energy consumption (EJ),2.439516058
+Energy Institute,Asia Pacific,New Zealand,2008,Primary energy consumption (EJ),0.828321372
+Energy Institute,Asia Pacific,Pakistan,2009,Primary energy consumption (EJ),2.655382947
+Energy Institute,Asia Pacific,Malaysia,2009,Primary energy consumption (EJ),3.250975214
+Energy Institute,Asia Pacific,New Zealand,2009,Primary energy consumption (EJ),0.826285
+Energy Institute,Asia Pacific,Taiwan,2009,Primary energy consumption (EJ),4.349864148
+Energy Institute,Asia Pacific,Sri Lanka,2009,Primary energy consumption (EJ),0.232055422
+Energy Institute,Asia Pacific,Japan,2009,Primary energy consumption (EJ),20.23916793
+Energy Institute,Asia Pacific,Philippines,2009,Primary energy consumption (EJ),1.193047842
+Energy Institute,Asia Pacific,Vietnam,2009,Primary energy consumption (EJ),1.68381139
+Energy Institute,Asia Pacific,China,2009,Primary energy consumption (EJ),97.77203649
+Energy Institute,Asia Pacific,Bangladesh,2009,Primary energy consumption (EJ),0.882928633
+Energy Institute,Asia Pacific,South Korea,2009,Primary energy consumption (EJ),10.11801426
+Energy Institute,Asia Pacific,China Hong Kong SAR,2009,Primary energy consumption (EJ),1.11189001
+Energy Institute,Asia Pacific,India,2009,Primary energy consumption (EJ),21.57066935
+Energy Institute,Asia Pacific,Singapore,2009,Primary energy consumption (EJ),2.621975616
+Energy Institute,Asia Pacific,Other Asia Pacific,2009,Primary energy consumption (EJ),1.946832944
+Energy Institute,Asia Pacific,Indonesia,2009,Primary energy consumption (EJ),5.782267781
+Energy Institute,Asia Pacific,Thailand,2009,Primary energy consumption (EJ),3.992088107
+Energy Institute,Asia Pacific,Australia,2009,Primary energy consumption (EJ),5.43436046
+Energy Institute,Asia Pacific,Sri Lanka,2010,Primary energy consumption (EJ),0.250617226
+Energy Institute,Asia Pacific,New Zealand,2010,Primary energy consumption (EJ),0.846468283
+Energy Institute,Asia Pacific,Other Asia Pacific,2010,Primary energy consumption (EJ),2.131654384
+Energy Institute,Asia Pacific,Australia,2010,Primary energy consumption (EJ),5.431819051
+Energy Institute,Asia Pacific,China Hong Kong SAR,2010,Primary energy consumption (EJ),1.156232517
+Energy Institute,Asia Pacific,Taiwan,2010,Primary energy consumption (EJ),4.660329607
+Energy Institute,Asia Pacific,Japan,2010,Primary energy consumption (EJ),21.54167814
+Energy Institute,Asia Pacific,Vietnam,2010,Primary energy consumption (EJ),1.944810836
+Energy Institute,Asia Pacific,Indonesia,2010,Primary energy consumption (EJ),6.258005695
+Energy Institute,Asia Pacific,Bangladesh,2010,Primary energy consumption (EJ),0.903630843
+Energy Institute,Asia Pacific,India,2010,Primary energy consumption (EJ),22.50477488
+Energy Institute,Asia Pacific,China,2010,Primary energy consumption (EJ),104.6001941
+Energy Institute,Asia Pacific,Thailand,2010,Primary energy consumption (EJ),4.24600157
+Energy Institute,Asia Pacific,Malaysia,2010,Primary energy consumption (EJ),3.358707349
+Energy Institute,Asia Pacific,Philippines,2010,Primary energy consumption (EJ),1.227711585
+Energy Institute,Asia Pacific,South Korea,2010,Primary energy consumption (EJ),10.92690463
+Energy Institute,Asia Pacific,Pakistan,2010,Primary energy consumption (EJ),2.666736818
+Energy Institute,Asia Pacific,Singapore,2010,Primary energy consumption (EJ),2.783934591
+Energy Institute,Asia Pacific,Other Asia Pacific,2011,Primary energy consumption (EJ),2.092051548
+Energy Institute,Asia Pacific,Singapore,2011,Primary energy consumption (EJ),2.889193051
+Energy Institute,Asia Pacific,China,2011,Primary energy consumption (EJ),112.8115282
+Energy Institute,Asia Pacific,Thailand,2011,Primary energy consumption (EJ),4.364935469
+Energy Institute,Asia Pacific,Malaysia,2011,Primary energy consumption (EJ),3.417128428
+Energy Institute,Asia Pacific,Bangladesh,2011,Primary energy consumption (EJ),0.977473068
+Energy Institute,Asia Pacific,South Korea,2011,Primary energy consumption (EJ),11.43449354
+Energy Institute,Asia Pacific,Indonesia,2011,Primary energy consumption (EJ),6.610932036
+Energy Institute,Asia Pacific,Philippines,2011,Primary energy consumption (EJ),1.252212963
+Energy Institute,Asia Pacific,New Zealand,2011,Primary energy consumption (EJ),0.849949855
+Energy Institute,Asia Pacific,Taiwan,2011,Primary energy consumption (EJ),4.644559616
+Energy Institute,Asia Pacific,Vietnam,2011,Primary energy consumption (EJ),2.149711051
+Energy Institute,Asia Pacific,Australia,2011,Primary energy consumption (EJ),5.61096849
+Energy Institute,Asia Pacific,Japan,2011,Primary energy consumption (EJ),20.40914887
+Energy Institute,Asia Pacific,India,2011,Primary energy consumption (EJ),23.73253515
+Energy Institute,Asia Pacific,Pakistan,2011,Primary energy consumption (EJ),2.664946006
+Energy Institute,Asia Pacific,China Hong Kong SAR,2011,Primary energy consumption (EJ),1.185591807
+Energy Institute,Asia Pacific,Sri Lanka,2011,Primary energy consumption (EJ),0.272084304
+Energy Institute,Asia Pacific,Bangladesh,2012,Primary energy consumption (EJ),1.061829639
+Energy Institute,Asia Pacific,Vietnam,2012,Primary energy consumption (EJ),2.247235053
+Energy Institute,Asia Pacific,Japan,2012,Primary energy consumption (EJ),20.21718203
+Energy Institute,Asia Pacific,South Korea,2012,Primary energy consumption (EJ),11.57865606
+Energy Institute,Asia Pacific,Indonesia,2012,Primary energy consumption (EJ),6.824838726
+Energy Institute,Asia Pacific,Malaysia,2012,Primary energy consumption (EJ),3.738267818
+Energy Institute,Asia Pacific,India,2012,Primary energy consumption (EJ),25.01526723
+Energy Institute,Asia Pacific,China,2012,Primary energy consumption (EJ),117.4470456
+Energy Institute,Asia Pacific,Pakistan,2012,Primary energy consumption (EJ),2.476209408
+Energy Institute,Asia Pacific,Other Asia Pacific,2012,Primary energy consumption (EJ),2.161481808
+Energy Institute,Asia Pacific,Philippines,2012,Primary energy consumption (EJ),1.295591348
+Energy Institute,Asia Pacific,Singapore,2012,Primary energy consumption (EJ),2.895602349
+Energy Institute,Asia Pacific,Australia,2012,Primary energy consumption (EJ),5.53000668
+Energy Institute,Asia Pacific,Thailand,2012,Primary energy consumption (EJ),4.654334468
+Energy Institute,Asia Pacific,Sri Lanka,2012,Primary energy consumption (EJ),0.28062884
+Energy Institute,Asia Pacific,New Zealand,2012,Primary energy consumption (EJ),0.856251533
+Energy Institute,Asia Pacific,Taiwan,2012,Primary energy consumption (EJ),4.60578045
+Energy Institute,Asia Pacific,China Hong Kong SAR,2012,Primary energy consumption (EJ),1.13936205
+Energy Institute,Asia Pacific,Philippines,2013,Primary energy consumption (EJ),1.385784106
+Energy Institute,Asia Pacific,Indonesia,2013,Primary energy consumption (EJ),6.515374836
+Energy Institute,Asia Pacific,Australia,2013,Primary energy consumption (EJ),5.600110208
+Energy Institute,Asia Pacific,Taiwan,2013,Primary energy consumption (EJ),4.696917193
+Energy Institute,Asia Pacific,Japan,2013,Primary energy consumption (EJ),20.07222164
+Energy Institute,Asia Pacific,Thailand,2013,Primary energy consumption (EJ),4.726308862
+Energy Institute,Asia Pacific,New Zealand,2013,Primary energy consumption (EJ),0.862444497
+Energy Institute,Asia Pacific,Sri Lanka,2013,Primary energy consumption (EJ),0.285170887
+Energy Institute,Asia Pacific,Vietnam,2013,Primary energy consumption (EJ),2.373852682
+Energy Institute,Asia Pacific,China,2013,Primary energy consumption (EJ),121.8692339
+Energy Institute,Asia Pacific,Singapore,2013,Primary energy consumption (EJ),2.924967386
+Energy Institute,Asia Pacific,Other Asia Pacific,2013,Primary energy consumption (EJ),2.14371005
+Energy Institute,Asia Pacific,Pakistan,2013,Primary energy consumption (EJ),2.706272924
+Energy Institute,Asia Pacific,India,2013,Primary energy consumption (EJ),25.84339072
+Energy Institute,Asia Pacific,Malaysia,2013,Primary energy consumption (EJ),3.912256364
+Energy Institute,Asia Pacific,China Hong Kong SAR,2013,Primary energy consumption (EJ),1.170099547
+Energy Institute,Asia Pacific,Bangladesh,2013,Primary energy consumption (EJ),1.103259434
+Energy Institute,Asia Pacific,South Korea,2013,Primary energy consumption (EJ),11.61311859
+Energy Institute,Asia Pacific,China Hong Kong SAR,2014,Primary energy consumption (EJ),1.141947974
+Energy Institute,Asia Pacific,Bangladesh,2014,Primary energy consumption (EJ),1.146310874
+Energy Institute,Asia Pacific,Philippines,2014,Primary energy consumption (EJ),1.456768474
+Energy Institute,Asia Pacific,Japan,2014,Primary energy consumption (EJ),19.55238294
+Energy Institute,Asia Pacific,South Korea,2014,Primary energy consumption (EJ),11.70962336
+Energy Institute,Asia Pacific,Indonesia,2014,Primary energy consumption (EJ),6.622562863
+Energy Institute,Asia Pacific,Vietnam,2014,Primary energy consumption (EJ),2.621079252
+Energy Institute,Asia Pacific,Australia,2014,Primary energy consumption (EJ),5.639249218
+Energy Institute,Asia Pacific,China,2014,Primary energy consumption (EJ),125.0246347
+Energy Institute,Asia Pacific,Thailand,2014,Primary energy consumption (EJ),4.885810386
+Energy Institute,Asia Pacific,Other Asia Pacific,2014,Primary energy consumption (EJ),2.285065334
+Energy Institute,Asia Pacific,India,2014,Primary energy consumption (EJ),27.59041251
+Energy Institute,Asia Pacific,Singapore,2014,Primary energy consumption (EJ),2.981852872
+Energy Institute,Asia Pacific,Pakistan,2014,Primary energy consumption (EJ),2.7933673
+Energy Institute,Asia Pacific,Taiwan,2014,Primary energy consumption (EJ),4.801964023
+Energy Institute,Asia Pacific,New Zealand,2014,Primary energy consumption (EJ),0.902435986
+Energy Institute,Asia Pacific,Sri Lanka,2014,Primary energy consumption (EJ),0.30920785
+Energy Institute,Asia Pacific,Malaysia,2014,Primary energy consumption (EJ),3.951416077
+Energy Institute,Asia Pacific,Singapore,2015,Primary energy consumption (EJ),3.162250477
+Energy Institute,Asia Pacific,China,2015,Primary energy consumption (EJ),126.4895534
+Energy Institute,Asia Pacific,Other Asia Pacific,2015,Primary energy consumption (EJ),2.372630801
+Energy Institute,Asia Pacific,Australia,2015,Primary energy consumption (EJ),5.764573873
+Energy Institute,Asia Pacific,Thailand,2015,Primary energy consumption (EJ),4.958805948
+Energy Institute,Asia Pacific,Indonesia,2015,Primary energy consumption (EJ),6.71796274
+Energy Institute,Asia Pacific,Malaysia,2015,Primary energy consumption (EJ),4.012468634
+Energy Institute,Asia Pacific,South Korea,2015,Primary energy consumption (EJ),11.91426346
+Energy Institute,Asia Pacific,Vietnam,2015,Primary energy consumption (EJ),2.975301865
+Energy Institute,Asia Pacific,New Zealand,2015,Primary energy consumption (EJ),0.907896414
+Energy Institute,Asia Pacific,Bangladesh,2015,Primary energy consumption (EJ),1.386064584
+Energy Institute,Asia Pacific,Taiwan,2015,Primary energy consumption (EJ),4.798590047
+Energy Institute,Asia Pacific,China Hong Kong SAR,2015,Primary energy consumption (EJ),1.175224197
+Energy Institute,Asia Pacific,Japan,2015,Primary energy consumption (EJ),19.31014791
+Energy Institute,Asia Pacific,India,2015,Primary energy consumption (EJ),28.54684619
+Energy Institute,Asia Pacific,Pakistan,2015,Primary energy consumption (EJ),2.937092274
+Energy Institute,Asia Pacific,Philippines,2015,Primary energy consumption (EJ),1.597759179
+Energy Institute,Asia Pacific,Sri Lanka,2015,Primary energy consumption (EJ),0.328680737
+Energy Institute,Asia Pacific,Taiwan,2016,Primary energy consumption (EJ),4.823099731
+Energy Institute,Asia Pacific,India,2016,Primary energy consumption (EJ),29.82589754
+Energy Institute,Asia Pacific,China,2016,Primary energy consumption (EJ),126.9997664
+Energy Institute,Asia Pacific,Bangladesh,2016,Primary energy consumption (EJ),1.391897676
+Energy Institute,Asia Pacific,South Korea,2016,Primary energy consumption (EJ),12.26675137
+Energy Institute,Asia Pacific,Australia,2016,Primary energy consumption (EJ),5.783409646
+Energy Institute,Asia Pacific,Malaysia,2016,Primary energy consumption (EJ),4.220291788
+Energy Institute,Asia Pacific,Pakistan,2016,Primary energy consumption (EJ),1.951922609
+Energy Institute,Asia Pacific,Indonesia,2016,Primary energy consumption (EJ),6.828520559
+Energy Institute,Asia Pacific,Vietnam,2016,Primary energy consumption (EJ),3.235602258
+Energy Institute,Asia Pacific,Japan,2016,Primary energy consumption (EJ),19.06417884
+Energy Institute,Asia Pacific,Philippines,2016,Primary energy consumption (EJ),1.744612988
+Energy Institute,Asia Pacific,Thailand,2016,Primary energy consumption (EJ),5.060058106
+Energy Institute,Asia Pacific,China Hong Kong SAR,2016,Primary energy consumption (EJ),1.206190546
+Energy Institute,Asia Pacific,Sri Lanka,2016,Primary energy consumption (EJ),0.36313829
+Energy Institute,Asia Pacific,New Zealand,2016,Primary energy consumption (EJ),0.920467186
+Energy Institute,Asia Pacific,Other Asia Pacific,2016,Primary energy consumption (EJ),2.516847178
+Energy Institute,Asia Pacific,Singapore,2016,Primary energy consumption (EJ),3.336305113
+Energy Institute,Asia Pacific,Singapore,2017,Primary energy consumption (EJ),3.420008933
+Energy Institute,Asia Pacific,Malaysia,2017,Primary energy consumption (EJ),4.278518555
+Energy Institute,Asia Pacific,Sri Lanka,2017,Primary energy consumption (EJ),0.384233331
+Energy Institute,Asia Pacific,Other Asia Pacific,2017,Primary energy consumption (EJ),3.152431461
+Energy Institute,Asia Pacific,Japan,2017,Primary energy consumption (EJ),19.27683865
+Energy Institute,Asia Pacific,India,2017,Primary energy consumption (EJ),30.9626712
+Energy Institute,Asia Pacific,Vietnam,2017,Primary energy consumption (EJ),3.469074151
+Energy Institute,Asia Pacific,China Hong Kong SAR,2017,Primary energy consumption (EJ),1.293626715
+Energy Institute,Asia Pacific,New Zealand,2017,Primary energy consumption (EJ),0.93544847
+Energy Institute,Asia Pacific,Pakistan,2017,Primary energy consumption (EJ),3.387593523
+Energy Institute,Asia Pacific,Philippines,2017,Primary energy consumption (EJ),1.914709209
+Energy Institute,Asia Pacific,China,2017,Primary energy consumption (EJ),131.9377817
+Energy Institute,Asia Pacific,Bangladesh,2017,Primary energy consumption (EJ),1.450218713
+Energy Institute,Asia Pacific,Indonesia,2017,Primary energy consumption (EJ),7.083749585
+Energy Institute,Asia Pacific,Thailand,2017,Primary energy consumption (EJ),5.157657815
+Energy Institute,Asia Pacific,Australia,2017,Primary energy consumption (EJ),5.765925205
+Energy Institute,Asia Pacific,South Korea,2017,Primary energy consumption (EJ),12.40490635
+Energy Institute,Asia Pacific,Taiwan,2017,Primary energy consumption (EJ),4.826719624
+Energy Institute,Asia Pacific,Singapore,2018,Primary energy consumption (EJ),3.422141235
+Energy Institute,Asia Pacific,Vietnam,2018,Primary energy consumption (EJ),3.899785052
+Energy Institute,Asia Pacific,Indonesia,2018,Primary energy consumption (EJ),7.745856993
+Energy Institute,Asia Pacific,Australia,2018,Primary energy consumption (EJ),5.849953982
+Energy Institute,Asia Pacific,Bangladesh,2018,Primary energy consumption (EJ),1.548724168
+Energy Institute,Asia Pacific,Taiwan,2018,Primary energy consumption (EJ),4.884404181
+Energy Institute,Asia Pacific,South Korea,2018,Primary energy consumption (EJ),12.61098162
+Energy Institute,Asia Pacific,China,2018,Primary energy consumption (EJ),138.2747188
+Energy Institute,Asia Pacific,New Zealand,2018,Primary energy consumption (EJ),0.930491966
+Energy Institute,Asia Pacific,Other Asia Pacific,2018,Primary energy consumption (EJ),3.275469102
+Energy Institute,Asia Pacific,Sri Lanka,2018,Primary energy consumption (EJ),0.404529006
+Energy Institute,Asia Pacific,Thailand,2018,Primary energy consumption (EJ),5.322154477
+Energy Institute,Asia Pacific,China Hong Kong SAR,2018,Primary energy consumption (EJ),1.308863982
+Energy Institute,Asia Pacific,Japan,2018,Primary energy consumption (EJ),19.13960279
+Energy Institute,Asia Pacific,India,2018,Primary energy consumption (EJ),32.71718532
+Energy Institute,Asia Pacific,Pakistan,2018,Primary energy consumption (EJ),3.495709732
+Energy Institute,Asia Pacific,Malaysia,2018,Primary energy consumption (EJ),4.354472093
+Energy Institute,Asia Pacific,Philippines,2018,Primary energy consumption (EJ),1.9789147
+Energy Institute,Asia Pacific,Malaysia,2019,Primary energy consumption (EJ),4.466813248
+Energy Institute,Asia Pacific,Thailand,2019,Primary energy consumption (EJ),5.327082463
+Energy Institute,Asia Pacific,South Korea,2019,Primary energy consumption (EJ),12.46563351
+Energy Institute,Asia Pacific,India,2019,Primary energy consumption (EJ),33.54246003
+Energy Institute,Asia Pacific,Taiwan,2019,Primary energy consumption (EJ),4.790488357
+Energy Institute,Asia Pacific,China,2019,Primary energy consumption (EJ),144.6787611
+Energy Institute,Asia Pacific,Australia,2019,Primary energy consumption (EJ),6.047437835
+Energy Institute,Asia Pacific,New Zealand,2019,Primary energy consumption (EJ),0.949265102
+Energy Institute,Asia Pacific,Sri Lanka,2019,Primary energy consumption (EJ),0.406927364
+Energy Institute,Asia Pacific,Japan,2019,Primary energy consumption (EJ),18.73993335
+Energy Institute,Asia Pacific,Indonesia,2019,Primary energy consumption (EJ),8.27866669
+Energy Institute,Asia Pacific,Philippines,2019,Primary energy consumption (EJ),2.038037362
+Energy Institute,Asia Pacific,Singapore,2019,Primary energy consumption (EJ),3.346845755
+Energy Institute,Asia Pacific,China Hong Kong SAR,2019,Primary energy consumption (EJ),1.240360574
+Energy Institute,Asia Pacific,Pakistan,2019,Primary energy consumption (EJ),3.537058726
+Energy Institute,Asia Pacific,Vietnam,2019,Primary energy consumption (EJ),4.329488479
+Energy Institute,Asia Pacific,Bangladesh,2019,Primary energy consumption (EJ),1.736864165
+Energy Institute,Asia Pacific,Other Asia Pacific,2019,Primary energy consumption (EJ),3.453018054
+Energy Institute,Asia Pacific,South Korea,2020,Primary energy consumption (EJ),12.0490738
+Energy Institute,Asia Pacific,Other Asia Pacific,2020,Primary energy consumption (EJ),3.551570503
+Energy Institute,Asia Pacific,Sri Lanka,2020,Primary energy consumption (EJ),0.381601579
+Energy Institute,Asia Pacific,Japan,2020,Primary energy consumption (EJ),17.37089633
+Energy Institute,Asia Pacific,Pakistan,2020,Primary energy consumption (EJ),3.517980654
+Energy Institute,Asia Pacific,India,2020,Primary energy consumption (EJ),31.78214923
+Energy Institute,Asia Pacific,Singapore,2020,Primary energy consumption (EJ),3.277865199
+Energy Institute,Asia Pacific,Indonesia,2020,Primary energy consumption (EJ),7.78951107
+Energy Institute,Asia Pacific,China Hong Kong SAR,2020,Primary energy consumption (EJ),0.928332809
+Energy Institute,Asia Pacific,New Zealand,2020,Primary energy consumption (EJ),0.861325329
+Energy Institute,Asia Pacific,Bangladesh,2020,Primary energy consumption (EJ),1.64624977
+Energy Institute,Asia Pacific,China,2020,Primary energy consumption (EJ),149.3773659
+Energy Institute,Asia Pacific,Thailand,2020,Primary energy consumption (EJ),4.952730652
+Energy Institute,Asia Pacific,Malaysia,2020,Primary energy consumption (EJ),4.307144925
+Energy Institute,Asia Pacific,Philippines,2020,Primary energy consumption (EJ),1.849510677
+Energy Institute,Asia Pacific,Taiwan,2020,Primary energy consumption (EJ),4.650168496
+Energy Institute,Asia Pacific,Australia,2020,Primary energy consumption (EJ),5.706454901
+Energy Institute,Asia Pacific,Vietnam,2020,Primary energy consumption (EJ),4.33581654
+Energy Institute,Asia Pacific,Indonesia,2021,Primary energy consumption (EJ),7.970592007
+Energy Institute,Asia Pacific,China Hong Kong SAR,2021,Primary energy consumption (EJ),0.876974775
+Energy Institute,Asia Pacific,Other Asia Pacific,2021,Primary energy consumption (EJ),3.539151067
+Energy Institute,Asia Pacific,Vietnam,2021,Primary energy consumption (EJ),4.350793928
+Energy Institute,Asia Pacific,Australia,2021,Primary energy consumption (EJ),5.720670194
+Energy Institute,Asia Pacific,Thailand,2021,Primary energy consumption (EJ),4.992516307
+Energy Institute,Asia Pacific,Bangladesh,2021,Primary energy consumption (EJ),1.772570034
+Energy Institute,Asia Pacific,China,2021,Primary energy consumption (EJ),157.8492196
+Energy Institute,Asia Pacific,Taiwan,2021,Primary energy consumption (EJ),4.942589087
+Energy Institute,Asia Pacific,Sri Lanka,2021,Primary energy consumption (EJ),0.39469509
+Energy Institute,Asia Pacific,Pakistan,2021,Primary energy consumption (EJ),3.901648674
+Energy Institute,Asia Pacific,New Zealand,2021,Primary energy consumption (EJ),0.847977799
+Energy Institute,Asia Pacific,Japan,2021,Primary energy consumption (EJ),18.13493368
+Energy Institute,Asia Pacific,India,2021,Primary energy consumption (EJ),34.50628304
+Energy Institute,Asia Pacific,Singapore,2021,Primary energy consumption (EJ),3.278570157
+Energy Institute,Asia Pacific,South Korea,2021,Primary energy consumption (EJ),12.62342957
+Energy Institute,Asia Pacific,Malaysia,2021,Primary energy consumption (EJ),4.487938263
+Energy Institute,Asia Pacific,Philippines,2021,Primary energy consumption (EJ),1.963836937
+Energy Institute,Asia Pacific,India,2022,Primary energy consumption (EJ),36.3714589
+Energy Institute,Asia Pacific,Australia,2022,Primary energy consumption (EJ),5.979657817
+Energy Institute,Asia Pacific,Taiwan,2022,Primary energy consumption (EJ),4.747891211
+Energy Institute,Asia Pacific,Philippines,2022,Primary energy consumption (EJ),2.055580101
+Energy Institute,Asia Pacific,Singapore,2022,Primary energy consumption (EJ),3.174647108
+Energy Institute,Asia Pacific,Pakistan,2022,Primary energy consumption (EJ),3.59533985
+Energy Institute,Asia Pacific,China,2022,Primary energy consumption (EJ),160.2587355
+Energy Institute,Asia Pacific,Sri Lanka,2022,Primary energy consumption (EJ),0.351275662
+Energy Institute,Asia Pacific,New Zealand,2022,Primary energy consumption (EJ),0.835960135
+Energy Institute,Asia Pacific,Thailand,2022,Primary energy consumption (EJ),4.996416193
+Energy Institute,Asia Pacific,Other Asia Pacific,2022,Primary energy consumption (EJ),3.700945613
+Energy Institute,Asia Pacific,Vietnam,2022,Primary energy consumption (EJ),4.478642911
+Energy Institute,Asia Pacific,Indonesia,2022,Primary energy consumption (EJ),10.0491192
+Energy Institute,Asia Pacific,Japan,2022,Primary energy consumption (EJ),18.01757157
+Energy Institute,Asia Pacific,Malaysia,2022,Primary energy consumption (EJ),4.792605445
+Energy Institute,Asia Pacific,South Korea,2022,Primary energy consumption (EJ),12.75243847
+Energy Institute,Asia Pacific,China Hong Kong SAR,2022,Primary energy consumption (EJ),0.782867314
+Energy Institute,Asia Pacific,Bangladesh,2022,Primary energy consumption (EJ),1.864708938
+Energy Institute,Asia Pacific,Taiwan,2023,Primary energy consumption (EJ),4.528818217
+Energy Institute,Asia Pacific,Malaysia,2023,Primary energy consumption (EJ),4.807117283
+Energy Institute,Asia Pacific,Indonesia,2023,Primary energy consumption (EJ),10.10783995
+Energy Institute,Asia Pacific,Japan,2023,Primary energy consumption (EJ),17.4037453
+Energy Institute,Asia Pacific,Sri Lanka,2023,Primary energy consumption (EJ),0.357512079
+Energy Institute,Asia Pacific,South Korea,2023,Primary energy consumption (EJ),12.4340213
+Energy Institute,Asia Pacific,Philippines,2023,Primary energy consumption (EJ),2.193168772
+Energy Institute,Asia Pacific,New Zealand,2023,Primary energy consumption (EJ),0.860885071
+Energy Institute,Asia Pacific,Pakistan,2023,Primary energy consumption (EJ),3.372125473
+Energy Institute,Asia Pacific,Other Asia Pacific,2023,Primary energy consumption (EJ),3.829196305
+Energy Institute,Asia Pacific,India,2023,Primary energy consumption (EJ),39.01628171
+Energy Institute,Asia Pacific,Singapore,2023,Primary energy consumption (EJ),3.470479365
+Energy Institute,Asia Pacific,China Hong Kong SAR,2023,Primary energy consumption (EJ),0.903409071
+Energy Institute,Asia Pacific,China,2023,Primary energy consumption (EJ),170.7392316
+Energy Institute,Asia Pacific,Australia,2023,Primary energy consumption (EJ),6.020841075
+Energy Institute,Asia Pacific,Thailand,2023,Primary energy consumption (EJ),5.006924322
+Energy Institute,Asia Pacific,Bangladesh,2023,Primary energy consumption (EJ),1.830561384
+Energy Institute,Asia Pacific,Vietnam,2023,Primary energy consumption (EJ),4.891435385
+Energy Institute,CIS,Belarus,2000,Primary energy consumption (EJ),0.91799661
+Energy Institute,CIS,USSR,2000,Primary energy consumption (EJ),
+Energy Institute,CIS,Russian Federation,2000,Primary energy consumption (EJ),25.97072607
+Energy Institute,CIS,Kazakhstan,2000,Primary energy consumption (EJ),1.331090599
+Energy Institute,CIS,Azerbaijan,2000,Primary energy consumption (EJ),0.47539884
+Energy Institute,CIS,Uzbekistan,2000,Primary energy consumption (EJ),2.141331304
+Energy Institute,CIS,Turkmenistan,2000,Primary energy consumption (EJ),0.467774468
+Energy Institute,CIS,Other CIS,2000,Primary energy consumption (EJ),0.583346414
+Energy Institute,CIS,USSR,2001,Primary energy consumption (EJ),
+Energy Institute,CIS,Turkmenistan,2001,Primary energy consumption (EJ),0.547776051
+Energy Institute,CIS,Kazakhstan,2001,Primary energy consumption (EJ),1.498290025
+Energy Institute,CIS,Russian Federation,2001,Primary energy consumption (EJ),26.38176358
+Energy Institute,CIS,Uzbekistan,2001,Primary energy consumption (EJ),2.146154065
+Energy Institute,CIS,Other CIS,2001,Primary energy consumption (EJ),0.570683842
+Energy Institute,CIS,Azerbaijan,2001,Primary energy consumption (EJ),0.458018906
+Energy Institute,CIS,Belarus,2001,Primary energy consumption (EJ),0.892481335
+Energy Institute,CIS,Other CIS,2002,Primary energy consumption (EJ),0.569195572
+Energy Institute,CIS,Uzbekistan,2002,Primary energy consumption (EJ),2.200153697
+Energy Institute,CIS,Belarus,2002,Primary energy consumption (EJ),0.923314064
+Energy Institute,CIS,USSR,2002,Primary energy consumption (EJ),
+Energy Institute,CIS,Azerbaijan,2002,Primary energy consumption (EJ),0.452191091
+Energy Institute,CIS,Kazakhstan,2002,Primary energy consumption (EJ),1.526197053
+Energy Institute,CIS,Russian Federation,2002,Primary energy consumption (EJ),26.27445841
+Energy Institute,CIS,Turkmenistan,2002,Primary energy consumption (EJ),0.469242351
+Energy Institute,CIS,Other CIS,2003,Primary energy consumption (EJ),0.600760862
+Energy Institute,CIS,Turkmenistan,2003,Primary energy consumption (EJ),0.604670627
+Energy Institute,CIS,Uzbekistan,2003,Primary energy consumption (EJ),1.991360702
+Energy Institute,CIS,Russian Federation,2003,Primary energy consumption (EJ),26.81448235
+Energy Institute,CIS,Azerbaijan,2003,Primary energy consumption (EJ),0.489726737
+Energy Institute,CIS,Kazakhstan,2003,Primary energy consumption (EJ),1.67288667
+Energy Institute,CIS,USSR,2003,Primary energy consumption (EJ),
+Energy Institute,CIS,Belarus,2003,Primary energy consumption (EJ),0.916386582
+Energy Institute,CIS,Other CIS,2004,Primary energy consumption (EJ),0.646625846
+Energy Institute,CIS,Uzbekistan,2004,Primary energy consumption (EJ),2.001048692
+Energy Institute,CIS,Kazakhstan,2004,Primary energy consumption (EJ),1.766241752
+Energy Institute,CIS,USSR,2004,Primary energy consumption (EJ),
+Energy Institute,CIS,Belarus,2004,Primary energy consumption (EJ),1.026120475
+Energy Institute,CIS,Russian Federation,2004,Primary energy consumption (EJ),27.05071693
+Energy Institute,CIS,Azerbaijan,2004,Primary energy consumption (EJ),0.554032554
+Energy Institute,CIS,Turkmenistan,2004,Primary energy consumption (EJ),0.672274914
+Energy Institute,CIS,USSR,2005,Primary energy consumption (EJ),
+Energy Institute,CIS,Other CIS,2005,Primary energy consumption (EJ),0.672193726
+Energy Institute,CIS,Azerbaijan,2005,Primary energy consumption (EJ),0.600614587
+Energy Institute,CIS,Belarus,2005,Primary energy consumption (EJ),1.022781549
+Energy Institute,CIS,Kazakhstan,2005,Primary energy consumption (EJ),1.816651218
+Energy Institute,CIS,Uzbekistan,2005,Primary energy consumption (EJ),2.022023346
+Energy Institute,CIS,Turkmenistan,2005,Primary energy consumption (EJ),0.631925477
+Energy Institute,CIS,Russian Federation,2005,Primary energy consumption (EJ),27.01404879
+Energy Institute,CIS,Turkmenistan,2006,Primary energy consumption (EJ),0.648149969
+Energy Institute,CIS,Other CIS,2006,Primary energy consumption (EJ),0.676486477
+Energy Institute,CIS,Uzbekistan,2006,Primary energy consumption (EJ),1.889201999
+Energy Institute,CIS,USSR,2006,Primary energy consumption (EJ),
+Energy Institute,CIS,Azerbaijan,2006,Primary energy consumption (EJ),0.590729638
+Energy Institute,CIS,Belarus,2006,Primary energy consumption (EJ),1.087602869
+Energy Institute,CIS,Kazakhstan,2006,Primary energy consumption (EJ),1.95620586
+Energy Institute,CIS,Russian Federation,2006,Primary energy consumption (EJ),28.21297086
+Energy Institute,CIS,Belarus,2007,Primary energy consumption (EJ),1.061016148
+Energy Institute,CIS,Uzbekistan,2007,Primary energy consumption (EJ),2.005849171
+Energy Institute,CIS,Turkmenistan,2007,Primary energy consumption (EJ),0.597460294
+Energy Institute,CIS,Other CIS,2007,Primary energy consumption (EJ),0.726011508
+Energy Institute,CIS,Russian Federation,2007,Primary energy consumption (EJ),28.36200438
+Energy Institute,CIS,Azerbaijan,2007,Primary energy consumption (EJ),0.543856046
+Energy Institute,CIS,USSR,2007,Primary energy consumption (EJ),
+Energy Institute,CIS,Kazakhstan,2007,Primary energy consumption (EJ),2.170396201
+Energy Institute,CIS,Turkmenistan,2008,Primary energy consumption (EJ),0.556144524
+Energy Institute,CIS,Kazakhstan,2008,Primary energy consumption (EJ),2.287556931
+Energy Institute,CIS,USSR,2008,Primary energy consumption (EJ),
+Energy Institute,CIS,Azerbaijan,2008,Primary energy consumption (EJ),0.544188614
+Energy Institute,CIS,Belarus,2008,Primary energy consumption (EJ),1.075011103
+Energy Institute,CIS,Russian Federation,2008,Primary energy consumption (EJ),28.49265352
+Energy Institute,CIS,Other CIS,2008,Primary energy consumption (EJ),0.694486148
+Energy Institute,CIS,Uzbekistan,2008,Primary energy consumption (EJ),1.885649577
+Energy Institute,CIS,Kazakhstan,2009,Primary energy consumption (EJ),2.048421569
+Energy Institute,CIS,Azerbaijan,2009,Primary energy consumption (EJ),0.46860584
+Energy Institute,CIS,Uzbekistan,2009,Primary energy consumption (EJ),1.887845226
+Energy Institute,CIS,Belarus,2009,Primary energy consumption (EJ),1.017055299
+Energy Institute,CIS,USSR,2009,Primary energy consumption (EJ),
+Energy Institute,CIS,Other CIS,2009,Primary energy consumption (EJ),0.673468529
+Energy Institute,CIS,Russian Federation,2009,Primary energy consumption (EJ),27.07988334
+Energy Institute,CIS,Turkmenistan,2009,Primary energy consumption (EJ),0.816995338
+Energy Institute,CIS,Other CIS,2010,Primary energy consumption (EJ),0.685240438
+Energy Institute,CIS,Kazakhstan,2010,Primary energy consumption (EJ),2.200302914
+Energy Institute,CIS,Belarus,2010,Primary energy consumption (EJ),1.102324265
+Energy Institute,CIS,USSR,2010,Primary energy consumption (EJ),
+Energy Institute,CIS,Russian Federation,2010,Primary energy consumption (EJ),28.13124837
+Energy Institute,CIS,Turkmenistan,2010,Primary energy consumption (EJ),0.888355552
+Energy Institute,CIS,Azerbaijan,2010,Primary energy consumption (EJ),0.462381696
+Energy Institute,CIS,Uzbekistan,2010,Primary energy consumption (EJ),1.894346897
+Energy Institute,CIS,Turkmenistan,2011,Primary energy consumption (EJ),0.961117841
+Energy Institute,CIS,Azerbaijan,2011,Primary energy consumption (EJ),0.524661258
+Energy Institute,CIS,USSR,2011,Primary energy consumption (EJ),
+Energy Institute,CIS,Uzbekistan,2011,Primary energy consumption (EJ),1.98019626
+Energy Institute,CIS,Kazakhstan,2011,Primary energy consumption (EJ),2.498456142
+Energy Institute,CIS,Russian Federation,2011,Primary energy consumption (EJ),29.08997474
+Energy Institute,CIS,Belarus,2011,Primary energy consumption (EJ),1.082463398
+Energy Institute,CIS,Other CIS,2011,Primary energy consumption (EJ),0.731038942
+Energy Institute,CIS,Azerbaijan,2012,Primary energy consumption (EJ),0.54032703
+Energy Institute,CIS,USSR,2012,Primary energy consumption (EJ),
+Energy Institute,CIS,Other CIS,2012,Primary energy consumption (EJ),0.758095635
+Energy Institute,CIS,Turkmenistan,2012,Primary energy consumption (EJ),1.134195737
+Energy Institute,CIS,Belarus,2012,Primary energy consumption (EJ),1.170850719
+Energy Institute,CIS,Kazakhstan,2012,Primary energy consumption (EJ),2.627472144
+Energy Institute,CIS,Uzbekistan,2012,Primary energy consumption (EJ),1.952651635
+Energy Institute,CIS,Russian Federation,2012,Primary energy consumption (EJ),29.26210878
+Energy Institute,CIS,Other CIS,2013,Primary energy consumption (EJ),0.72238315
+Energy Institute,CIS,Russian Federation,2013,Primary energy consumption (EJ),28.91709135
+Energy Institute,CIS,Uzbekistan,2013,Primary energy consumption (EJ),1.959131863
+Energy Institute,CIS,Belarus,2013,Primary energy consumption (EJ),1.059139508
+Energy Institute,CIS,Turkmenistan,2013,Primary energy consumption (EJ),0.964920849
+Energy Institute,CIS,Kazakhstan,2013,Primary energy consumption (EJ),2.633779742
+Energy Institute,CIS,Azerbaijan,2013,Primary energy consumption (EJ),0.555162328
+Energy Institute,CIS,USSR,2013,Primary energy consumption (EJ),
+Energy Institute,CIS,Other CIS,2014,Primary energy consumption (EJ),0.746109137
+Energy Institute,CIS,Belarus,2014,Primary energy consumption (EJ),1.061505901
+Energy Institute,CIS,Uzbekistan,2014,Primary energy consumption (EJ),2.042762145
+Energy Institute,CIS,USSR,2014,Primary energy consumption (EJ),
+Energy Institute,CIS,Russian Federation,2014,Primary energy consumption (EJ),29.00794267
+Energy Institute,CIS,Kazakhstan,2014,Primary energy consumption (EJ),2.768799245
+Energy Institute,CIS,Turkmenistan,2014,Primary energy consumption (EJ),1.021329592
+Energy Institute,CIS,Azerbaijan,2014,Primary energy consumption (EJ),0.566068653
+Energy Institute,CIS,Uzbekistan,2015,Primary energy consumption (EJ),1.939358432
+Energy Institute,CIS,Russian Federation,2015,Primary energy consumption (EJ),28.54999901
+Energy Institute,CIS,Other CIS,2015,Primary energy consumption (EJ),0.745154459
+Energy Institute,CIS,Azerbaijan,2015,Primary energy consumption (EJ),0.618574152
+Energy Institute,CIS,Turkmenistan,2015,Primary energy consumption (EJ),1.162069278
+Energy Institute,CIS,USSR,2015,Primary energy consumption (EJ),
+Energy Institute,CIS,Kazakhstan,2015,Primary energy consumption (EJ),2.289275513
+Energy Institute,CIS,Belarus,2015,Primary energy consumption (EJ),0.961061796
+Energy Institute,CIS,Russian Federation,2016,Primary energy consumption (EJ),29.109828
+Energy Institute,CIS,Other CIS,2016,Primary energy consumption (EJ),0.749850073
+Energy Institute,CIS,USSR,2016,Primary energy consumption (EJ),
+Energy Institute,CIS,Azerbaijan,2016,Primary energy consumption (EJ),0.612692399
+Energy Institute,CIS,Belarus,2016,Primary energy consumption (EJ),0.982071359
+Energy Institute,CIS,Turkmenistan,2016,Primary energy consumption (EJ),1.256761962
+Energy Institute,CIS,Uzbekistan,2016,Primary energy consumption (EJ),1.880630059
+Energy Institute,CIS,Kazakhstan,2016,Primary energy consumption (EJ),2.560775683
+Energy Institute,CIS,Other CIS,2017,Primary energy consumption (EJ),0.781808309
+Energy Institute,CIS,Azerbaijan,2017,Primary energy consumption (EJ),0.601034307
+Energy Institute,CIS,Kazakhstan,2017,Primary energy consumption (EJ),2.753733091
+Energy Institute,CIS,Uzbekistan,2017,Primary energy consumption (EJ),1.926113376
+Energy Institute,CIS,Turkmenistan,2017,Primary energy consumption (EJ),1.169570815
+Energy Institute,CIS,Russian Federation,2017,Primary energy consumption (EJ),29.28867426
+Energy Institute,CIS,Belarus,2017,Primary energy consumption (EJ),1.000223697
+Energy Institute,CIS,USSR,2017,Primary energy consumption (EJ),
+Energy Institute,CIS,Uzbekistan,2018,Primary energy consumption (EJ),1.944317385
+Energy Institute,CIS,Turkmenistan,2018,Primary energy consumption (EJ),1.319420319
+Energy Institute,CIS,Russian Federation,2018,Primary energy consumption (EJ),30.35595061
+Energy Institute,CIS,Kazakhstan,2018,Primary energy consumption (EJ),2.841111044
+Energy Institute,CIS,USSR,2018,Primary energy consumption (EJ),
+Energy Institute,CIS,Azerbaijan,2018,Primary energy consumption (EJ),0.634200108
+Energy Institute,CIS,Other CIS,2018,Primary energy consumption (EJ),0.851644051
+Energy Institute,CIS,Belarus,2018,Primary energy consumption (EJ),1.105974866
+Energy Institute,CIS,Azerbaijan,2019,Primary energy consumption (EJ),0.669206137
+Energy Institute,CIS,Russian Federation,2019,Primary energy consumption (EJ),30.13210847
+Energy Institute,CIS,Turkmenistan,2019,Primary energy consumption (EJ),1.259672536
+Energy Institute,CIS,USSR,2019,Primary energy consumption (EJ),
+Energy Institute,CIS,Belarus,2019,Primary energy consumption (EJ),1.111645409
+Energy Institute,CIS,Uzbekistan,2019,Primary energy consumption (EJ),1.951580923
+Energy Institute,CIS,Kazakhstan,2019,Primary energy consumption (EJ),2.875363308
+Energy Institute,CIS,Other CIS,2019,Primary energy consumption (EJ),0.821777424
+Energy Institute,CIS,Russian Federation,2020,Primary energy consumption (EJ),29.08429284
+Energy Institute,CIS,Belarus,2020,Primary energy consumption (EJ),1.031559882
+Energy Institute,CIS,Uzbekistan,2020,Primary energy consumption (EJ),1.943913065
+Energy Institute,CIS,USSR,2020,Primary energy consumption (EJ),
+Energy Institute,CIS,Azerbaijan,2020,Primary energy consumption (EJ),0.66574261
+Energy Institute,CIS,Other CIS,2020,Primary energy consumption (EJ),0.819819565
+Energy Institute,CIS,Kazakhstan,2020,Primary energy consumption (EJ),2.649372855
+Energy Institute,CIS,Turkmenistan,2020,Primary energy consumption (EJ),1.583270204
+Energy Institute,CIS,Azerbaijan,2021,Primary energy consumption (EJ),0.711178031
+Energy Institute,CIS,Kazakhstan,2021,Primary energy consumption (EJ),2.959939178
+Energy Institute,CIS,Turkmenistan,2021,Primary energy consumption (EJ),1.595152277
+Energy Institute,CIS,USSR,2021,Primary energy consumption (EJ),
+Energy Institute,CIS,Russian Federation,2021,Primary energy consumption (EJ),30.00728468
+Energy Institute,CIS,Other CIS,2021,Primary energy consumption (EJ),0.837445475
+Energy Institute,CIS,Belarus,2021,Primary energy consumption (EJ),1.101799498
+Energy Institute,CIS,Uzbekistan,2021,Primary energy consumption (EJ),2.036787597
+Energy Institute,CIS,Turkmenistan,2022,Primary energy consumption (EJ),1.6301122
+Energy Institute,CIS,Azerbaijan,2022,Primary energy consumption (EJ),0.757030618
+Energy Institute,CIS,Belarus,2022,Primary energy consumption (EJ),1.059597133
+Energy Institute,CIS,USSR,2022,Primary energy consumption (EJ),
+Energy Institute,CIS,Kazakhstan,2022,Primary energy consumption (EJ),2.94941809
+Energy Institute,CIS,Russian Federation,2022,Primary energy consumption (EJ),31.07586381
+Energy Institute,CIS,Other CIS,2022,Primary energy consumption (EJ),0.835119155
+Energy Institute,CIS,Uzbekistan,2022,Primary energy consumption (EJ),2.119722429
+Energy Institute,CIS,Belarus,2023,Primary energy consumption (EJ),1.065837965
+Energy Institute,CIS,Azerbaijan,2023,Primary energy consumption (EJ),0.820255251
+Energy Institute,CIS,Other CIS,2023,Primary energy consumption (EJ),0.857085199
+Energy Institute,CIS,Kazakhstan,2023,Primary energy consumption (EJ),2.981108639
+Energy Institute,CIS,Uzbekistan,2023,Primary energy consumption (EJ),2.104275358
+Energy Institute,CIS,Turkmenistan,2023,Primary energy consumption (EJ),1.60182513
+Energy Institute,CIS,USSR,2023,Primary energy consumption (EJ),
+Energy Institute,CIS,Russian Federation,2023,Primary energy consumption (EJ),31.29117757
+Energy Institute,Europe,Portugal,2000,Primary energy consumption (EJ),1.058502696
+Energy Institute,Europe,Belgium,2000,Primary energy consumption (EJ),2.67605443
+Energy Institute,Europe,Netherlands,2000,Primary energy consumption (EJ),3.624550031
+Energy Institute,Europe,Norway,2000,Primary energy consumption (EJ),2.099438736
+Energy Institute,Europe,Latvia,2000,Primary energy consumption (EJ),0.135915051
+Energy Institute,Europe,Finland,2000,Primary energy consumption (EJ),1.292795248
+Energy Institute,Europe,Poland,2000,Primary energy consumption (EJ),3.663088316
+Energy Institute,Europe,France,2000,Primary energy consumption (EJ),11.22447266
+Energy Institute,Europe,Germany,2000,Primary energy consumption (EJ),14.35744521
+Energy Institute,Europe,Bulgaria,2000,Primary energy consumption (EJ),0.782557944
+Energy Institute,Europe,Sweden,2000,Primary energy consumption (EJ),2.346418481
+Energy Institute,Europe,Romania,2000,Primary energy consumption (EJ),1.513194915
+Energy Institute,Europe,United Kingdom,2000,Primary energy consumption (EJ),9.590818744
+Energy Institute,Europe,Ukraine,2000,Primary energy consumption (EJ),5.707643618
+Energy Institute,Europe,Turkey,2000,Primary energy consumption (EJ),3.108743582
+Energy Institute,Europe,Luxembourg,2000,Primary energy consumption (EJ),0.133935121
+Energy Institute,Europe,Italy,2000,Primary energy consumption (EJ),7.557426661
+Energy Institute,Europe,Switzerland,2000,Primary energy consumption (EJ),1.311610566
+Energy Institute,Europe,Lithuania,2000,Primary energy consumption (EJ),0.282595021
+Energy Institute,Europe,Denmark,2000,Primary energy consumption (EJ),0.85146984
+Energy Institute,Europe,Slovakia,2000,Primary energy consumption (EJ),0.785689969
+Energy Institute,Europe,Cyprus,2000,Primary energy consumption (EJ),0.108939979
+Energy Institute,Europe,Slovenia,2000,Primary energy consumption (EJ),0.282472603
+Energy Institute,Europe,North Macedonia,2000,Primary energy consumption (EJ),0.111051777
+Energy Institute,Europe,Hungary,2000,Primary energy consumption (EJ),1.010888281
+Energy Institute,Europe,Czech Republic,2000,Primary energy consumption (EJ),1.708213511
+Energy Institute,Europe,Ireland,2000,Primary energy consumption (EJ),0.624055883
+Energy Institute,Europe,Other Europe,2000,Primary energy consumption (EJ),1.323776369
+Energy Institute,Europe,Croatia,2000,Primary energy consumption (EJ),0.347579345
+Energy Institute,Europe,Greece,2000,Primary energy consumption (EJ),1.342987549
+Energy Institute,Europe,Spain,2000,Primary energy consumption (EJ),5.491253272
+Energy Institute,Europe,Iceland,2000,Primary energy consumption (EJ),0.119626621
+Energy Institute,Europe,Austria,2000,Primary energy consumption (EJ),1.422614625
+Energy Institute,Europe,Estonia,2000,Primary energy consumption (EJ),0.199786548
+Energy Institute,Europe,Ireland,2001,Primary energy consumption (EJ),0.659403081
+Energy Institute,Europe,France,2001,Primary energy consumption (EJ),11.31496716
+Energy Institute,Europe,Lithuania,2001,Primary energy consumption (EJ),0.325253699
+Energy Institute,Europe,Ukraine,2001,Primary energy consumption (EJ),5.62644115
+Energy Institute,Europe,Spain,2001,Primary energy consumption (EJ),5.713481255
+Energy Institute,Europe,Portugal,2001,Primary energy consumption (EJ),1.075598817
+Energy Institute,Europe,Denmark,2001,Primary energy consumption (EJ),0.853979386
+Energy Institute,Europe,Slovenia,2001,Primary energy consumption (EJ),0.296028069
+Energy Institute,Europe,Czech Republic,2001,Primary energy consumption (EJ),1.746979098
+Energy Institute,Europe,Belgium,2001,Primary energy consumption (EJ),2.652691503
+Energy Institute,Europe,Croatia,2001,Primary energy consumption (EJ),0.365457417
+Energy Institute,Europe,United Kingdom,2001,Primary energy consumption (EJ),9.690502428
+Energy Institute,Europe,Luxembourg,2001,Primary energy consumption (EJ),0.143520093
+Energy Institute,Europe,Slovakia,2001,Primary energy consumption (EJ),0.808409409
+Energy Institute,Europe,Other Europe,2001,Primary energy consumption (EJ),1.38125161
+Energy Institute,Europe,Latvia,2001,Primary energy consumption (EJ),0.146391997
+Energy Institute,Europe,Norway,2001,Primary energy consumption (EJ),1.868974794
+Energy Institute,Europe,Greece,2001,Primary energy consumption (EJ),1.353690803
+Energy Institute,Europe,North Macedonia,2001,Primary energy consumption (EJ),0.10448844
+Energy Institute,Europe,Bulgaria,2001,Primary energy consumption (EJ),0.80844236
+Energy Institute,Europe,Iceland,2001,Primary energy consumption (EJ),0.120959394
+Energy Institute,Europe,Romania,2001,Primary energy consumption (EJ),1.530378222
+Energy Institute,Europe,Hungary,2001,Primary energy consumption (EJ),1.035519514
+Energy Institute,Europe,Germany,2001,Primary energy consumption (EJ),14.62607696
+Energy Institute,Europe,Sweden,2001,Primary energy consumption (EJ),2.504722754
+Energy Institute,Europe,Cyprus,2001,Primary energy consumption (EJ),0.110194748
+Energy Institute,Europe,Austria,2001,Primary energy consumption (EJ),1.463736497
+Energy Institute,Europe,Estonia,2001,Primary energy consumption (EJ),0.20824487
+Energy Institute,Europe,Netherlands,2001,Primary energy consumption (EJ),3.764006059
+Energy Institute,Europe,Italy,2001,Primary energy consumption (EJ),7.551132612
+Energy Institute,Europe,Switzerland,2001,Primary energy consumption (EJ),1.400855582
+Energy Institute,Europe,Finland,2001,Primary energy consumption (EJ),1.320817135
+Energy Institute,Europe,Turkey,2001,Primary energy consumption (EJ),2.824089836
+Energy Institute,Europe,Poland,2001,Primary energy consumption (EJ),3.637643114
+Energy Institute,Europe,Spain,2002,Primary energy consumption (EJ),5.812652841
+Energy Institute,Europe,Greece,2002,Primary energy consumption (EJ),1.354934048
+Energy Institute,Europe,Bulgaria,2002,Primary energy consumption (EJ),0.784218155
+Energy Institute,Europe,Turkey,2002,Primary energy consumption (EJ),3.093070978
+Energy Institute,Europe,Austria,2002,Primary energy consumption (EJ),1.464581348
+Energy Institute,Europe,Portugal,2002,Primary energy consumption (EJ),1.068809329
+Energy Institute,Europe,Iceland,2002,Primary energy consumption (EJ),0.125680902
+Energy Institute,Europe,Ukraine,2002,Primary energy consumption (EJ),5.59165595
+Energy Institute,Europe,Slovenia,2002,Primary energy consumption (EJ),0.294479716
+Energy Institute,Europe,Czech Republic,2002,Primary energy consumption (EJ),1.752323581
+Energy Institute,Europe,Germany,2002,Primary energy consumption (EJ),14.4422026
+Energy Institute,Europe,Sweden,2002,Primary energy consumption (EJ),2.338100614
+Energy Institute,Europe,North Macedonia,2002,Primary energy consumption (EJ),0.10210138
+Energy Institute,Europe,Italy,2002,Primary energy consumption (EJ),7.500067525
+Energy Institute,Europe,Belgium,2002,Primary energy consumption (EJ),2.640508108
+Energy Institute,Europe,Finland,2002,Primary energy consumption (EJ),1.327565141
+Energy Institute,Europe,Lithuania,2002,Primary energy consumption (EJ),0.352715188
+Energy Institute,Europe,France,2002,Primary energy consumption (EJ),11.22811047
+Energy Institute,Europe,Croatia,2002,Primary energy consumption (EJ),0.365839604
+Energy Institute,Europe,Denmark,2002,Primary energy consumption (EJ),0.852319633
+Energy Institute,Europe,Hungary,2002,Primary energy consumption (EJ),1.011283806
+Energy Institute,Europe,Netherlands,2002,Primary energy consumption (EJ),3.765819988
+Energy Institute,Europe,Romania,2002,Primary energy consumption (EJ),1.588704513
+Energy Institute,Europe,Switzerland,2002,Primary energy consumption (EJ),1.304079766
+Energy Institute,Europe,Poland,2002,Primary energy consumption (EJ),3.59848528
+Energy Institute,Europe,Luxembourg,2002,Primary energy consumption (EJ),0.156895739
+Energy Institute,Europe,Latvia,2002,Primary energy consumption (EJ),0.14768078
+Energy Institute,Europe,Cyprus,2002,Primary energy consumption (EJ),0.108669369
+Energy Institute,Europe,United Kingdom,2002,Primary energy consumption (EJ),9.471024532
+Energy Institute,Europe,Estonia,2002,Primary energy consumption (EJ),0.207385434
+Energy Institute,Europe,Other Europe,2002,Primary energy consumption (EJ),1.446580858
+Energy Institute,Europe,Ireland,2002,Primary energy consumption (EJ),0.652874312
+Energy Institute,Europe,Norway,2002,Primary energy consumption (EJ),1.956374844
+Energy Institute,Europe,Slovakia,2002,Primary energy consumption (EJ),0.815136518
+Energy Institute,Europe,Sweden,2003,Primary energy consumption (EJ),2.19325433
+Energy Institute,Europe,Hungary,2003,Primary energy consumption (EJ),1.023793616
+Energy Institute,Europe,Italy,2003,Primary energy consumption (EJ),7.739224359
+Energy Institute,Europe,Iceland,2003,Primary energy consumption (EJ),0.126311007
+Energy Institute,Europe,Ukraine,2003,Primary energy consumption (EJ),5.730939992
+Energy Institute,Europe,Slovakia,2003,Primary energy consumption (EJ),0.791578728
+Energy Institute,Europe,Lithuania,2003,Primary energy consumption (EJ),0.368029337
+Energy Institute,Europe,Romania,2003,Primary energy consumption (EJ),1.588480169
+Energy Institute,Europe,Estonia,2003,Primary energy consumption (EJ),0.226136211
+Energy Institute,Europe,Bulgaria,2003,Primary energy consumption (EJ),0.811269235
+Energy Institute,Europe,Turkey,2003,Primary energy consumption (EJ),3.273903526
+Energy Institute,Europe,France,2003,Primary energy consumption (EJ),11.35095051
+Energy Institute,Europe,Cyprus,2003,Primary energy consumption (EJ),0.115517883
+Energy Institute,Europe,Ireland,2003,Primary energy consumption (EJ),0.636676847
+Energy Institute,Europe,Slovenia,2003,Primary energy consumption (EJ),0.288854438
+Energy Institute,Europe,United Kingdom,2003,Primary energy consumption (EJ),9.607443398
+Energy Institute,Europe,Austria,2003,Primary energy consumption (EJ),1.467732929
+Energy Institute,Europe,Portugal,2003,Primary energy consumption (EJ),1.098636247
+Energy Institute,Europe,Other Europe,2003,Primary energy consumption (EJ),1.526628377
+Energy Institute,Europe,Norway,2003,Primary energy consumption (EJ),1.72774937
+Energy Institute,Europe,Latvia,2003,Primary energy consumption (EJ),0.145867742
+Energy Institute,Europe,Luxembourg,2003,Primary energy consumption (EJ),0.16453404
+Energy Institute,Europe,Poland,2003,Primary energy consumption (EJ),3.723144122
+Energy Institute,Europe,Netherlands,2003,Primary energy consumption (EJ),3.791074383
+Energy Institute,Europe,Denmark,2003,Primary energy consumption (EJ),0.918837208
+Energy Institute,Europe,Switzerland,2003,Primary energy consumption (EJ),1.29009331
+Energy Institute,Europe,Greece,2003,Primary energy consumption (EJ),1.433937772
+Energy Institute,Europe,Croatia,2003,Primary energy consumption (EJ),0.382750567
+Energy Institute,Europe,Belgium,2003,Primary energy consumption (EJ),2.742087665
+Energy Institute,Europe,Czech Republic,2003,Primary energy consumption (EJ),1.852380555
+Energy Institute,Europe,Germany,2003,Primary energy consumption (EJ),14.43769551
+Energy Institute,Europe,Finland,2003,Primary energy consumption (EJ),1.421739729
+Energy Institute,Europe,Spain,2003,Primary energy consumption (EJ),6.101211697
+Energy Institute,Europe,North Macedonia,2003,Primary energy consumption (EJ),0.115112182
+Energy Institute,Europe,United Kingdom,2004,Primary energy consumption (EJ),9.686346675
+Energy Institute,Europe,Other Europe,2004,Primary energy consumption (EJ),1.658013764
+Energy Institute,Europe,Slovakia,2004,Primary energy consumption (EJ),0.774154849
+Energy Institute,Europe,Latvia,2004,Primary energy consumption (EJ),0.164000296
+Energy Institute,Europe,Hungary,2004,Primary energy consumption (EJ),1.040136345
+Energy Institute,Europe,Italy,2004,Primary energy consumption (EJ),7.911071455
+Energy Institute,Europe,Sweden,2004,Primary energy consumption (EJ),2.392548333
+Energy Institute,Europe,Bulgaria,2004,Primary energy consumption (EJ),0.784494138
+Energy Institute,Europe,Austria,2004,Primary energy consumption (EJ),1.52084681
+Energy Institute,Europe,Greece,2004,Primary energy consumption (EJ),1.433636581
+Energy Institute,Europe,Turkey,2004,Primary energy consumption (EJ),3.505829074
+Energy Institute,Europe,Romania,2004,Primary energy consumption (EJ),1.647447375
+Energy Institute,Europe,Croatia,2004,Primary energy consumption (EJ),0.397947851
+Energy Institute,Europe,Germany,2004,Primary energy consumption (EJ),14.43561564
+Energy Institute,Europe,Netherlands,2004,Primary energy consumption (EJ),3.919479338
+Energy Institute,Europe,Ireland,2004,Primary energy consumption (EJ),0.649302793
+Energy Institute,Europe,Switzerland,2004,Primary energy consumption (EJ),1.285770386
+Energy Institute,Europe,France,2004,Primary energy consumption (EJ),11.44846764
+Energy Institute,Europe,Ukraine,2004,Primary energy consumption (EJ),5.709138663
+Energy Institute,Europe,Slovenia,2004,Primary energy consumption (EJ),0.306515411
+Energy Institute,Europe,Estonia,2004,Primary energy consumption (EJ),0.230783396
+Energy Institute,Europe,Portugal,2004,Primary energy consumption (EJ),1.075505115
+Energy Institute,Europe,Belgium,2004,Primary energy consumption (EJ),2.752631844
+Energy Institute,Europe,North Macedonia,2004,Primary energy consumption (EJ),0.11367747
+Energy Institute,Europe,Czech Republic,2004,Primary energy consumption (EJ),1.900168294
+Energy Institute,Europe,Iceland,2004,Primary energy consumption (EJ),0.128810883
+Energy Institute,Europe,Spain,2004,Primary energy consumption (EJ),6.280053526
+Energy Institute,Europe,Lithuania,2004,Primary energy consumption (EJ),0.372119833
+Energy Institute,Europe,Denmark,2004,Primary energy consumption (EJ),0.869946329
+Energy Institute,Europe,Norway,2004,Primary energy consumption (EJ),1.751396776
+Energy Institute,Europe,Finland,2004,Primary energy consumption (EJ),1.415714236
+Energy Institute,Europe,Luxembourg,2004,Primary energy consumption (EJ),0.1864072
+Energy Institute,Europe,Cyprus,2004,Primary energy consumption (EJ),0.112422109
+Energy Institute,Europe,Poland,2004,Primary energy consumption (EJ),3.748386985
+Energy Institute,Europe,Luxembourg,2005,Primary energy consumption (EJ),0.189190685
+Energy Institute,Europe,Belgium,2005,Primary energy consumption (EJ),2.722024192
+Energy Institute,Europe,Germany,2005,Primary energy consumption (EJ),14.26548671
+Energy Institute,Europe,Poland,2005,Primary energy consumption (EJ),3.822971766
+Energy Institute,Europe,Croatia,2005,Primary energy consumption (EJ),0.393425671
+Energy Institute,Europe,Czech Republic,2005,Primary energy consumption (EJ),1.870675118
+Energy Institute,Europe,Latvia,2005,Primary energy consumption (EJ),0.169047771
+Energy Institute,Europe,Finland,2005,Primary energy consumption (EJ),1.287171543
+Energy Institute,Europe,Netherlands,2005,Primary energy consumption (EJ),4.004071115
+Energy Institute,Europe,Ireland,2005,Primary energy consumption (EJ),0.677426397
+Energy Institute,Europe,Slovenia,2005,Primary energy consumption (EJ),0.307111109
+Energy Institute,Europe,Denmark,2005,Primary energy consumption (EJ),0.841020644
+Energy Institute,Europe,Switzerland,2005,Primary energy consumption (EJ),1.22681474
+Energy Institute,Europe,United Kingdom,2005,Primary energy consumption (EJ),9.765657144
+Energy Institute,Europe,Greece,2005,Primary energy consumption (EJ),1.438582173
+Energy Institute,Europe,Austria,2005,Primary energy consumption (EJ),1.552860528
+Energy Institute,Europe,Portugal,2005,Primary energy consumption (EJ),1.073747229
+Energy Institute,Europe,Iceland,2005,Primary energy consumption (EJ),0.129255093
+Energy Institute,Europe,Norway,2005,Primary energy consumption (EJ),2.0094997
+Energy Institute,Europe,Estonia,2005,Primary energy consumption (EJ),0.232069945
+Energy Institute,Europe,Bulgaria,2005,Primary energy consumption (EJ),0.849908001
+Energy Institute,Europe,Ukraine,2005,Primary energy consumption (EJ),5.779773437
+Energy Institute,Europe,Romania,2005,Primary energy consumption (EJ),1.657616839
+Energy Institute,Europe,Cyprus,2005,Primary energy consumption (EJ),0.12597403
+Energy Institute,Europe,Turkey,2005,Primary energy consumption (EJ),3.586015035
+Energy Institute,Europe,France,2005,Primary energy consumption (EJ),11.35468441
+Energy Institute,Europe,Spain,2005,Primary energy consumption (EJ),6.373187602
+Energy Institute,Europe,North Macedonia,2005,Primary energy consumption (EJ),0.117302633
+Energy Institute,Europe,Italy,2005,Primary energy consumption (EJ),7.920898853
+Energy Institute,Europe,Slovakia,2005,Primary energy consumption (EJ),0.81456281
+Energy Institute,Europe,Sweden,2005,Primary energy consumption (EJ),2.422836079
+Energy Institute,Europe,Hungary,2005,Primary energy consumption (EJ),1.10907811
+Energy Institute,Europe,Lithuania,2005,Primary energy consumption (EJ),0.339617529
+Energy Institute,Europe,Other Europe,2005,Primary energy consumption (EJ),1.636468604
+Energy Institute,Europe,Denmark,2006,Primary energy consumption (EJ),0.919732911
+Energy Institute,Europe,Croatia,2006,Primary energy consumption (EJ),0.38861929
+Energy Institute,Europe,Austria,2006,Primary energy consumption (EJ),1.533113042
+Energy Institute,Europe,United Kingdom,2006,Primary energy consumption (EJ),9.642013955
+Energy Institute,Europe,Hungary,2006,Primary energy consumption (EJ),1.087417997
+Energy Institute,Europe,Slovakia,2006,Primary energy consumption (EJ),0.792642563
+Energy Institute,Europe,Estonia,2006,Primary energy consumption (EJ),0.229249114
+Energy Institute,Europe,Latvia,2006,Primary energy consumption (EJ),0.160356272
+Energy Institute,Europe,Slovenia,2006,Primary energy consumption (EJ),0.308989905
+Energy Institute,Europe,Italy,2006,Primary energy consumption (EJ),7.884243123
+Energy Institute,Europe,Lithuania,2006,Primary energy consumption (EJ),0.322937495
+Energy Institute,Europe,Greece,2006,Primary energy consumption (EJ),1.480701251
+Energy Institute,Europe,Other Europe,2006,Primary energy consumption (EJ),1.675286988
+Energy Institute,Europe,Finland,2006,Primary energy consumption (EJ),1.380644031
+Energy Institute,Europe,North Macedonia,2006,Primary energy consumption (EJ),0.119462814
+Energy Institute,Europe,Poland,2006,Primary energy consumption (EJ),3.997292279
+Energy Institute,Europe,Spain,2006,Primary energy consumption (EJ),6.419039965
+Energy Institute,Europe,Cyprus,2006,Primary energy consumption (EJ),0.123882958
+Energy Institute,Europe,Ireland,2006,Primary energy consumption (EJ),0.699459889
+Energy Institute,Europe,Switzerland,2006,Primary energy consumption (EJ),1.260336288
+Energy Institute,Europe,Iceland,2006,Primary energy consumption (EJ),0.141776113
+Energy Institute,Europe,Czech Republic,2006,Primary energy consumption (EJ),1.906039349
+Energy Institute,Europe,Luxembourg,2006,Primary energy consumption (EJ),0.185855903
+Energy Institute,Europe,Germany,2006,Primary energy consumption (EJ),14.62459356
+Energy Institute,Europe,Turkey,2006,Primary energy consumption (EJ),3.978185162
+Energy Institute,Europe,Portugal,2006,Primary energy consumption (EJ),1.065147744
+Energy Institute,Europe,Romania,2006,Primary energy consumption (EJ),1.683395416
+Energy Institute,Europe,Ukraine,2006,Primary energy consumption (EJ),5.847952141
+Energy Institute,Europe,Bulgaria,2006,Primary energy consumption (EJ),0.866523457
+Energy Institute,Europe,Belgium,2006,Primary energy consumption (EJ),2.729668037
+Energy Institute,Europe,Netherlands,2006,Primary energy consumption (EJ),3.922472897
+Energy Institute,Europe,Sweden,2006,Primary energy consumption (EJ),2.268515334
+Energy Institute,Europe,Norway,2006,Primary energy consumption (EJ),1.8399151
+Energy Institute,Europe,France,2006,Primary energy consumption (EJ),11.26415102
+Energy Institute,Europe,Slovenia,2007,Primary energy consumption (EJ),0.307364994
+Energy Institute,Europe,Romania,2007,Primary energy consumption (EJ),1.623614312
+Energy Institute,Europe,Greece,2007,Primary energy consumption (EJ),1.509661466
+Energy Institute,Europe,Turkey,2007,Primary energy consumption (EJ),4.225390858
+Energy Institute,Europe,Croatia,2007,Primary energy consumption (EJ),0.390437465
+Energy Institute,Europe,Sweden,2007,Primary energy consumption (EJ),2.307985848
+Energy Institute,Europe,Ireland,2007,Primary energy consumption (EJ),0.710367725
+Energy Institute,Europe,Other Europe,2007,Primary energy consumption (EJ),1.618666599
+Energy Institute,Europe,Portugal,2007,Primary energy consumption (EJ),1.070967837
+Energy Institute,Europe,Italy,2007,Primary energy consumption (EJ),7.733878254
+Energy Institute,Europe,Bulgaria,2007,Primary energy consumption (EJ),0.837502781
+Energy Institute,Europe,Germany,2007,Primary energy consumption (EJ),14.01632414
+Energy Institute,Europe,Luxembourg,2007,Primary energy consumption (EJ),0.180452343
+Energy Institute,Europe,Czech Republic,2007,Primary energy consumption (EJ),1.885339012
+Energy Institute,Europe,Spain,2007,Primary energy consumption (EJ),6.582269391
+Energy Institute,Europe,France,2007,Primary energy consumption (EJ),11.07284299
+Energy Institute,Europe,North Macedonia,2007,Primary energy consumption (EJ),0.118361017
+Energy Institute,Europe,United Kingdom,2007,Primary energy consumption (EJ),9.375091009
+Energy Institute,Europe,Poland,2007,Primary energy consumption (EJ),3.976718773
+Energy Institute,Europe,Latvia,2007,Primary energy consumption (EJ),0.165334175
+Energy Institute,Europe,Lithuania,2007,Primary energy consumption (EJ),0.356729737
+Energy Institute,Europe,Iceland,2007,Primary energy consumption (EJ),0.162073646
+Energy Institute,Europe,Finland,2007,Primary energy consumption (EJ),1.375892722
+Energy Institute,Europe,Norway,2007,Primary energy consumption (EJ),1.993399423
+Energy Institute,Europe,Belgium,2007,Primary energy consumption (EJ),2.748488523
+Energy Institute,Europe,Slovakia,2007,Primary energy consumption (EJ),0.743863836
+Energy Institute,Europe,Switzerland,2007,Primary energy consumption (EJ),1.277614677
+Energy Institute,Europe,Austria,2007,Primary energy consumption (EJ),1.512236207
+Energy Institute,Europe,Netherlands,2007,Primary energy consumption (EJ),3.98708651
+Energy Institute,Europe,Hungary,2007,Primary energy consumption (EJ),1.073107785
+Energy Institute,Europe,Cyprus,2007,Primary energy consumption (EJ),0.125951768
+Energy Institute,Europe,Ukraine,2007,Primary energy consumption (EJ),5.824373991
+Energy Institute,Europe,Denmark,2007,Primary energy consumption (EJ),0.87624377
+Energy Institute,Europe,Estonia,2007,Primary energy consumption (EJ),0.26548393
+Energy Institute,Europe,Germany,2008,Primary energy consumption (EJ),14.16479913
+Energy Institute,Europe,Romania,2008,Primary energy consumption (EJ),1.619270415
+Energy Institute,Europe,Belgium,2008,Primary energy consumption (EJ),2.792642441
+Energy Institute,Europe,North Macedonia,2008,Primary energy consumption (EJ),0.114466473
+Energy Institute,Europe,United Kingdom,2008,Primary energy consumption (EJ),9.211737443
+Energy Institute,Europe,Spain,2008,Primary energy consumption (EJ),6.388539023
+Energy Institute,Europe,France,2008,Primary energy consumption (EJ),11.1054411
+Energy Institute,Europe,Bulgaria,2008,Primary energy consumption (EJ),0.828805304
+Energy Institute,Europe,Greece,2008,Primary energy consumption (EJ),1.481706298
+Energy Institute,Europe,Netherlands,2008,Primary energy consumption (EJ),3.939799629
+Energy Institute,Europe,Portugal,2008,Primary energy consumption (EJ),1.027817427
+Energy Institute,Europe,Austria,2008,Primary energy consumption (EJ),1.52841675
+Energy Institute,Europe,Luxembourg,2008,Primary energy consumption (EJ),0.179138709
+Energy Institute,Europe,Slovakia,2008,Primary energy consumption (EJ),0.763950964
+Energy Institute,Europe,Hungary,2008,Primary energy consumption (EJ),1.058027405
+Energy Institute,Europe,Ukraine,2008,Primary energy consumption (EJ),5.623389603
+Energy Institute,Europe,Cyprus,2008,Primary energy consumption (EJ),0.129079045
+Energy Institute,Europe,Estonia,2008,Primary energy consumption (EJ),0.244281649
+Energy Institute,Europe,Czech Republic,2008,Primary energy consumption (EJ),1.849027555
+Energy Institute,Europe,Switzerland,2008,Primary energy consumption (EJ),1.30514954
+Energy Institute,Europe,Italy,2008,Primary energy consumption (EJ),7.602858231
+Energy Institute,Europe,Ireland,2008,Primary energy consumption (EJ),0.706964505
+Energy Institute,Europe,Latvia,2008,Primary energy consumption (EJ),0.166474282
+Energy Institute,Europe,Other Europe,2008,Primary energy consumption (EJ),1.663345864
+Energy Institute,Europe,Sweden,2008,Primary energy consumption (EJ),2.298834881
+Energy Institute,Europe,Lithuania,2008,Primary energy consumption (EJ),0.352174868
+Energy Institute,Europe,Poland,2008,Primary energy consumption (EJ),4.04794041
+Energy Institute,Europe,Iceland,2008,Primary energy consumption (EJ),0.20322277
+Energy Institute,Europe,Turkey,2008,Primary energy consumption (EJ),4.236051466
+Energy Institute,Europe,Denmark,2008,Primary energy consumption (EJ),0.845539554
+Energy Institute,Europe,Croatia,2008,Primary energy consumption (EJ),0.388312121
+Energy Institute,Europe,Norway,2008,Primary energy consumption (EJ),2.0222549
+Energy Institute,Europe,Finland,2008,Primary energy consumption (EJ),1.326583923
+Energy Institute,Europe,Slovenia,2008,Primary energy consumption (EJ),0.337161496
+Energy Institute,Europe,Lithuania,2009,Primary energy consumption (EJ),0.324097788
+Energy Institute,Europe,Ukraine,2009,Primary energy consumption (EJ),4.790007431
+Energy Institute,Europe,Switzerland,2009,Primary energy consumption (EJ),1.278021851
+Energy Institute,Europe,Slovenia,2009,Primary energy consumption (EJ),0.311081248
+Energy Institute,Europe,Turkey,2009,Primary energy consumption (EJ),4.293858637
+Energy Institute,Europe,Denmark,2009,Primary energy consumption (EJ),0.794904975
+Energy Institute,Europe,Hungary,2009,Primary energy consumption (EJ),0.98167817
+Energy Institute,Europe,Latvia,2009,Primary energy consumption (EJ),0.157754777
+Energy Institute,Europe,Norway,2009,Primary energy consumption (EJ),1.858369655
+Energy Institute,Europe,Belgium,2009,Primary energy consumption (EJ),2.577056968
+Energy Institute,Europe,Finland,2009,Primary energy consumption (EJ),1.228635737
+Energy Institute,Europe,France,2009,Primary energy consumption (EJ),10.47207754
+Energy Institute,Europe,Spain,2009,Primary energy consumption (EJ),5.947556405
+Energy Institute,Europe,United Kingdom,2009,Primary energy consumption (EJ),8.746693906
+Energy Institute,Europe,Portugal,2009,Primary energy consumption (EJ),1.037641499
+Energy Institute,Europe,Netherlands,2009,Primary energy consumption (EJ),3.885447745
+Energy Institute,Europe,Poland,2009,Primary energy consumption (EJ),3.906687646
+Energy Institute,Europe,North Macedonia,2009,Primary energy consumption (EJ),0.112101542
+Energy Institute,Europe,Cyprus,2009,Primary energy consumption (EJ),0.126012829
+Energy Institute,Europe,Iceland,2009,Primary energy consumption (EJ),0.202878129
+Energy Institute,Europe,Germany,2009,Primary energy consumption (EJ),13.29184172
+Energy Institute,Europe,Estonia,2009,Primary energy consumption (EJ),0.211417944
+Energy Institute,Europe,Bulgaria,2009,Primary energy consumption (EJ),0.727583386
+Energy Institute,Europe,Romania,2009,Primary energy consumption (EJ),1.411640885
+Energy Institute,Europe,Italy,2009,Primary energy consumption (EJ),7.098139931
+Energy Institute,Europe,Austria,2009,Primary energy consumption (EJ),1.475180687
+Energy Institute,Europe,Sweden,2009,Primary energy consumption (EJ),2.087326847
+Energy Institute,Europe,Other Europe,2009,Primary energy consumption (EJ),1.688572186
+Energy Institute,Europe,Croatia,2009,Primary energy consumption (EJ),0.383359633
+Energy Institute,Europe,Greece,2009,Primary energy consumption (EJ),1.427032196
+Energy Institute,Europe,Luxembourg,2009,Primary energy consumption (EJ),0.17133464
+Energy Institute,Europe,Czech Republic,2009,Primary energy consumption (EJ),1.774119524
+Energy Institute,Europe,Slovakia,2009,Primary energy consumption (EJ),0.692344101
+Energy Institute,Europe,Ireland,2009,Primary energy consumption (EJ),0.635801586
+Energy Institute,Europe,Italy,2010,Primary energy consumption (EJ),7.332237998
+Energy Institute,Europe,Austria,2010,Primary energy consumption (EJ),1.517609976
+Energy Institute,Europe,Turkey,2010,Primary energy consumption (EJ),4.511399686
+Energy Institute,Europe,Bulgaria,2010,Primary energy consumption (EJ),0.761296019
+Energy Institute,Europe,Spain,2010,Primary energy consumption (EJ),6.092450866
+Energy Institute,Europe,Finland,2010,Primary energy consumption (EJ),1.336646246
+Energy Institute,Europe,Poland,2010,Primary energy consumption (EJ),4.166101689
+Energy Institute,Europe,Lithuania,2010,Primary energy consumption (EJ),0.238313213
+Energy Institute,Europe,Norway,2010,Primary energy consumption (EJ),1.796894636
+Energy Institute,Europe,Croatia,2010,Primary energy consumption (EJ),0.389751226
+Energy Institute,Europe,Ireland,2010,Primary energy consumption (EJ),0.641881575
+Energy Institute,Europe,Iceland,2010,Primary energy consumption (EJ),0.202989693
+Energy Institute,Europe,Slovenia,2010,Primary energy consumption (EJ),0.311640001
+Energy Institute,Europe,Latvia,2010,Primary energy consumption (EJ),0.1788118
+Energy Institute,Europe,Other Europe,2010,Primary energy consumption (EJ),1.783816796
+Energy Institute,Europe,Sweden,2010,Primary energy consumption (EJ),2.238247329
+Energy Institute,Europe,Greece,2010,Primary energy consumption (EJ),1.362374469
+Energy Institute,Europe,United Kingdom,2010,Primary energy consumption (EJ),8.932031636
+Energy Institute,Europe,Portugal,2010,Primary energy consumption (EJ),1.094776611
+Energy Institute,Europe,Estonia,2010,Primary energy consumption (EJ),0.263327788
+Energy Institute,Europe,North Macedonia,2010,Primary energy consumption (EJ),0.122035005
+Energy Institute,Europe,Cyprus,2010,Primary energy consumption (EJ),0.122601727
+Energy Institute,Europe,Luxembourg,2010,Primary energy consumption (EJ),0.180416655
+Energy Institute,Europe,Netherlands,2010,Primary energy consumption (EJ),4.214342696
+Energy Institute,Europe,Ukraine,2010,Primary energy consumption (EJ),5.136892833
+Energy Institute,Europe,Romania,2010,Primary energy consumption (EJ),1.427125819
+Energy Institute,Europe,Slovakia,2010,Primary energy consumption (EJ),0.739799618
+Energy Institute,Europe,Switzerland,2010,Primary energy consumption (EJ),1.294118345
+Energy Institute,Europe,Denmark,2010,Primary energy consumption (EJ),0.849515952
+Energy Institute,Europe,Hungary,2010,Primary energy consumption (EJ),1.000177384
+Energy Institute,Europe,France,2010,Primary energy consumption (EJ),10.80443086
+Energy Institute,Europe,Belgium,2010,Primary energy consumption (EJ),2.75299669
+Energy Institute,Europe,Germany,2010,Primary energy consumption (EJ),13.84974478
+Energy Institute,Europe,Czech Republic,2010,Primary energy consumption (EJ),1.849136334
+Energy Institute,Europe,Turkey,2011,Primary energy consumption (EJ),4.813295401
+Energy Institute,Europe,Belgium,2011,Primary energy consumption (EJ),2.56893171
+Energy Institute,Europe,Luxembourg,2011,Primary energy consumption (EJ),0.175756015
+Energy Institute,Europe,Lithuania,2011,Primary energy consumption (EJ),0.247308842
+Energy Institute,Europe,Ireland,2011,Primary energy consumption (EJ),0.612941989
+Energy Institute,Europe,Finland,2011,Primary energy consumption (EJ),1.259722463
+Energy Institute,Europe,Slovenia,2011,Primary energy consumption (EJ),0.302540323
+Energy Institute,Europe,Czech Republic,2011,Primary energy consumption (EJ),1.807112719
+Energy Institute,Europe,Iceland,2011,Primary energy consumption (EJ),0.202958842
+Energy Institute,Europe,North Macedonia,2011,Primary energy consumption (EJ),0.1216467
+Energy Institute,Europe,Denmark,2011,Primary energy consumption (EJ),0.795508698
+Energy Institute,Europe,Netherlands,2011,Primary energy consumption (EJ),4.014330737
+Energy Institute,Europe,Sweden,2011,Primary energy consumption (EJ),2.203256704
+Energy Institute,Europe,Switzerland,2011,Primary energy consumption (EJ),1.205724221
+Energy Institute,Europe,Croatia,2011,Primary energy consumption (EJ),0.340013795
+Energy Institute,Europe,Greece,2011,Primary energy consumption (EJ),1.336624435
+Energy Institute,Europe,Other Europe,2011,Primary energy consumption (EJ),1.744921182
+Energy Institute,Europe,France,2011,Primary energy consumption (EJ),10.42929783
+Energy Institute,Europe,Germany,2011,Primary energy consumption (EJ),13.35810499
+Energy Institute,Europe,Austria,2011,Primary energy consumption (EJ),1.425127833
+Energy Institute,Europe,Cyprus,2011,Primary energy consumption (EJ),0.121410509
+Energy Institute,Europe,Hungary,2011,Primary energy consumption (EJ),0.970070308
+Energy Institute,Europe,Ukraine,2011,Primary energy consumption (EJ),5.309079698
+Energy Institute,Europe,Slovakia,2011,Primary energy consumption (EJ),0.711688902
+Energy Institute,Europe,Bulgaria,2011,Primary energy consumption (EJ),0.808584074
+Energy Institute,Europe,Portugal,2011,Primary energy consumption (EJ),1.043390522
+Energy Institute,Europe,Italy,2011,Primary energy consumption (EJ),7.192484974
+Energy Institute,Europe,Estonia,2011,Primary energy consumption (EJ),0.262665795
+Energy Institute,Europe,Romania,2011,Primary energy consumption (EJ),1.470027528
+Energy Institute,Europe,Poland,2011,Primary energy consumption (EJ),4.185595865
+Energy Institute,Europe,United Kingdom,2011,Primary energy consumption (EJ),8.430229018
+Energy Institute,Europe,Norway,2011,Primary energy consumption (EJ),1.815900439
+Energy Institute,Europe,Spain,2011,Primary energy consumption (EJ),5.980880648
+Energy Institute,Europe,Latvia,2011,Primary energy consumption (EJ),0.159609777
+Energy Institute,Europe,Estonia,2012,Primary energy consumption (EJ),0.264556306
+Energy Institute,Europe,Czech Republic,2012,Primary energy consumption (EJ),1.797977958
+Energy Institute,Europe,Slovakia,2012,Primary energy consumption (EJ),0.683616017
+Energy Institute,Europe,Romania,2012,Primary energy consumption (EJ),1.415996015
+Energy Institute,Europe,Latvia,2012,Primary energy consumption (EJ),0.165465866
+Energy Institute,Europe,Ukraine,2012,Primary energy consumption (EJ),5.194761561
+Energy Institute,Europe,Italy,2012,Primary energy consumption (EJ),6.997958496
+Energy Institute,Europe,Finland,2012,Primary energy consumption (EJ),1.225651553
+Energy Institute,Europe,Other Europe,2012,Primary energy consumption (EJ),1.636866617
+Energy Institute,Europe,Ireland,2012,Primary energy consumption (EJ),0.602886914
+Energy Institute,Europe,Slovenia,2012,Primary energy consumption (EJ),0.293972475
+Energy Institute,Europe,Netherlands,2012,Primary energy consumption (EJ),3.944517877
+Energy Institute,Europe,Denmark,2012,Primary energy consumption (EJ),0.738876527
+Energy Institute,Europe,North Macedonia,2012,Primary energy consumption (EJ),0.112876111
+Energy Institute,Europe,Germany,2012,Primary energy consumption (EJ),13.54289839
+Energy Institute,Europe,Greece,2012,Primary energy consumption (EJ),1.257487198
+Energy Institute,Europe,Sweden,2012,Primary energy consumption (EJ),2.322880303
+Energy Institute,Europe,Bulgaria,2012,Primary energy consumption (EJ),0.768341503
+Energy Institute,Europe,Croatia,2012,Primary energy consumption (EJ),0.31534095
+Energy Institute,Europe,Austria,2012,Primary energy consumption (EJ),1.4918483
+Energy Institute,Europe,United Kingdom,2012,Primary energy consumption (EJ),8.565336525
+Energy Institute,Europe,Iceland,2012,Primary energy consumption (EJ),0.204833245
+Energy Institute,Europe,Switzerland,2012,Primary energy consumption (EJ),1.274632162
+Energy Institute,Europe,Lithuania,2012,Primary energy consumption (EJ),0.24707363
+Energy Institute,Europe,Cyprus,2012,Primary energy consumption (EJ),0.11377788
+Energy Institute,Europe,Turkey,2012,Primary energy consumption (EJ),5.11574791
+Energy Institute,Europe,Belgium,2012,Primary energy consumption (EJ),2.465725177
+Energy Institute,Europe,Hungary,2012,Primary energy consumption (EJ),0.904017498
+Energy Institute,Europe,Spain,2012,Primary energy consumption (EJ),5.931039925
+Energy Institute,Europe,Norway,2012,Primary energy consumption (EJ),2.02275006
+Energy Institute,Europe,Poland,2012,Primary energy consumption (EJ),4.060537032
+Energy Institute,Europe,France,2012,Primary energy consumption (EJ),10.41850017
+Energy Institute,Europe,Luxembourg,2012,Primary energy consumption (EJ),0.172630592
+Energy Institute,Europe,Portugal,2012,Primary energy consumption (EJ),0.952080296
+Energy Institute,Europe,Spain,2013,Primary energy consumption (EJ),5.682710348
+Energy Institute,Europe,Belgium,2013,Primary energy consumption (EJ),2.526948441
+Energy Institute,Europe,North Macedonia,2013,Primary energy consumption (EJ),0.10843283
+Energy Institute,Europe,Denmark,2013,Primary energy consumption (EJ),0.76212845
+Energy Institute,Europe,Slovakia,2013,Primary energy consumption (EJ),0.700513318
+Energy Institute,Europe,Iceland,2013,Primary energy consumption (EJ),0.21138009
+Energy Institute,Europe,Ireland,2013,Primary energy consumption (EJ),0.593990444
+Energy Institute,Europe,Slovenia,2013,Primary energy consumption (EJ),0.290802966
+Energy Institute,Europe,Lithuania,2013,Primary energy consumption (EJ),0.228295842
+Energy Institute,Europe,Italy,2013,Primary energy consumption (EJ),6.690960747
+Energy Institute,Europe,Latvia,2013,Primary energy consumption (EJ),0.159252012
+Energy Institute,Europe,Poland,2013,Primary energy consumption (EJ),4.07274519
+Energy Institute,Europe,Estonia,2013,Primary energy consumption (EJ),0.27886817
+Energy Institute,Europe,Germany,2013,Primary energy consumption (EJ),13.92666165
+Energy Institute,Europe,Turkey,2013,Primary energy consumption (EJ),5.083875466
+Energy Institute,Europe,Finland,2013,Primary energy consumption (EJ),1.230481842
+Energy Institute,Europe,United Kingdom,2013,Primary energy consumption (EJ),8.556181189
+Energy Institute,Europe,Other Europe,2013,Primary energy consumption (EJ),1.751940931
+Energy Institute,Europe,Switzerland,2013,Primary energy consumption (EJ),1.292925511
+Energy Institute,Europe,Bulgaria,2013,Primary energy consumption (EJ),0.713189862
+Energy Institute,Europe,Romania,2013,Primary energy consumption (EJ),1.330475477
+Energy Institute,Europe,Cyprus,2013,Primary energy consumption (EJ),0.101802433
+Energy Institute,Europe,Sweden,2013,Primary energy consumption (EJ),2.172756092
+Energy Institute,Europe,Hungary,2013,Primary energy consumption (EJ),0.856949075
+Energy Institute,Europe,Austria,2013,Primary energy consumption (EJ),1.479068435
+Energy Institute,Europe,Portugal,2013,Primary energy consumption (EJ),1.0427811
+Energy Institute,Europe,Ukraine,2013,Primary energy consumption (EJ),4.9304465
+Energy Institute,Europe,Luxembourg,2013,Primary energy consumption (EJ),0.164492512
+Energy Institute,Europe,Norway,2013,Primary energy consumption (EJ),1.88666691
+Energy Institute,Europe,Czech Republic,2013,Primary energy consumption (EJ),1.764795806
+Energy Institute,Europe,France,2013,Primary energy consumption (EJ),10.52692467
+Energy Institute,Europe,Netherlands,2013,Primary energy consumption (EJ),3.826386135
+Energy Institute,Europe,Croatia,2013,Primary energy consumption (EJ),0.34586279
+Energy Institute,Europe,Greece,2013,Primary energy consumption (EJ),1.181891977
+Energy Institute,Europe,France,2014,Primary energy consumption (EJ),10.06863694
+Energy Institute,Europe,Hungary,2014,Primary energy consumption (EJ),0.857767596
+Energy Institute,Europe,Other Europe,2014,Primary energy consumption (EJ),1.599220367
+Energy Institute,Europe,Spain,2014,Primary energy consumption (EJ),5.595188123
+Energy Institute,Europe,Luxembourg,2014,Primary energy consumption (EJ),0.159387167
+Energy Institute,Europe,Turkey,2014,Primary energy consumption (EJ),5.235678333
+Energy Institute,Europe,Switzerland,2014,Primary energy consumption (EJ),1.23998232
+Energy Institute,Europe,Estonia,2014,Primary energy consumption (EJ),0.266981315
+Energy Institute,Europe,Ukraine,2014,Primary energy consumption (EJ),4.350134818
+Energy Institute,Europe,Netherlands,2014,Primary energy consumption (EJ),3.658790686
+Energy Institute,Europe,United Kingdom,2014,Primary energy consumption (EJ),8.085765515
+Energy Institute,Europe,North Macedonia,2014,Primary energy consumption (EJ),0.100665905
+Energy Institute,Europe,Denmark,2014,Primary energy consumption (EJ),0.73282862
+Energy Institute,Europe,Germany,2014,Primary energy consumption (EJ),13.35767306
+Energy Institute,Europe,Ireland,2014,Primary energy consumption (EJ),0.592390902
+Energy Institute,Europe,Finland,2014,Primary energy consumption (EJ),1.187362476
+Energy Institute,Europe,Greece,2014,Primary energy consumption (EJ),1.108476787
+Energy Institute,Europe,Iceland,2014,Primary energy consumption (EJ),0.211067036
+Energy Institute,Europe,Sweden,2014,Primary energy consumption (EJ),2.162795678
+Energy Institute,Europe,Austria,2014,Primary energy consumption (EJ),1.421601261
+Energy Institute,Europe,Slovakia,2014,Primary energy consumption (EJ),0.652031678
+Energy Institute,Europe,Lithuania,2014,Primary energy consumption (EJ),0.220336475
+Energy Institute,Europe,Cyprus,2014,Primary energy consumption (EJ),0.101859828
+Energy Institute,Europe,Belgium,2014,Primary energy consumption (EJ),2.343138416
+Energy Institute,Europe,Romania,2014,Primary energy consumption (EJ),1.364819102
+Energy Institute,Europe,Portugal,2014,Primary energy consumption (EJ),1.050384941
+Energy Institute,Europe,Czech Republic,2014,Primary energy consumption (EJ),1.727772827
+Energy Institute,Europe,Norway,2014,Primary energy consumption (EJ),1.954387841
+Energy Institute,Europe,Italy,2014,Primary energy consumption (EJ),6.344352441
+Energy Institute,Europe,Slovenia,2014,Primary energy consumption (EJ),0.298299711
+Energy Institute,Europe,Latvia,2014,Primary energy consumption (EJ),0.146690956
+Energy Institute,Europe,Croatia,2014,Primary energy consumption (EJ),0.345631497
+Energy Institute,Europe,Bulgaria,2014,Primary energy consumption (EJ),0.761581245
+Energy Institute,Europe,Poland,2014,Primary energy consumption (EJ),3.921676094
+Energy Institute,Europe,Norway,2015,Primary energy consumption (EJ),1.980712127
+Energy Institute,Europe,Netherlands,2015,Primary energy consumption (EJ),3.69371582
+Energy Institute,Europe,Ireland,2015,Primary energy consumption (EJ),0.626086746
+Energy Institute,Europe,United Kingdom,2015,Primary energy consumption (EJ),8.212892277
+Energy Institute,Europe,Finland,2015,Primary energy consumption (EJ),1.184016011
+Energy Institute,Europe,Italy,2015,Primary energy consumption (EJ),6.533157067
+Energy Institute,Europe,Slovenia,2015,Primary energy consumption (EJ),0.268975815
+Energy Institute,Europe,Czech Republic,2015,Primary energy consumption (EJ),1.69457811
+Energy Institute,Europe,Turkey,2015,Primary energy consumption (EJ),5.720476525
+Energy Institute,Europe,Croatia,2015,Primary energy consumption (EJ),0.327671582
+Energy Institute,Europe,Lithuania,2015,Primary energy consumption (EJ),0.230804233
+Energy Institute,Europe,Iceland,2015,Primary energy consumption (EJ),0.22034635
+Energy Institute,Europe,Bulgaria,2015,Primary energy consumption (EJ),0.808849523
+Energy Institute,Europe,Spain,2015,Primary energy consumption (EJ),5.663320049
+Energy Institute,Europe,Latvia,2015,Primary energy consumption (EJ),0.150284301
+Energy Institute,Europe,Germany,2015,Primary energy consumption (EJ),13.61109523
+Energy Institute,Europe,Belgium,2015,Primary energy consumption (EJ),2.366816265
+Energy Institute,Europe,Sweden,2015,Primary energy consumption (EJ),2.23942261
+Energy Institute,Europe,Luxembourg,2015,Primary energy consumption (EJ),0.154924076
+Energy Institute,Europe,France,2015,Primary energy consumption (EJ),10.16018262
+Energy Institute,Europe,Ukraine,2015,Primary energy consumption (EJ),3.612268546
+Energy Institute,Europe,Greece,2015,Primary energy consumption (EJ),1.122203155
+Energy Institute,Europe,Portugal,2015,Primary energy consumption (EJ),1.042280076
+Energy Institute,Europe,North Macedonia,2015,Primary energy consumption (EJ),0.10611546
+Energy Institute,Europe,Poland,2015,Primary energy consumption (EJ),3.970847231
+Energy Institute,Europe,Cyprus,2015,Primary energy consumption (EJ),0.105064111
+Energy Institute,Europe,Estonia,2015,Primary energy consumption (EJ),0.247055047
+Energy Institute,Europe,Slovakia,2015,Primary energy consumption (EJ),0.658763784
+Energy Institute,Europe,Austria,2015,Primary energy consumption (EJ),1.426979616
+Energy Institute,Europe,Denmark,2015,Primary energy consumption (EJ),0.716308527
+Energy Institute,Europe,Romania,2015,Primary energy consumption (EJ),1.372088399
+Energy Institute,Europe,Switzerland,2015,Primary energy consumption (EJ),1.210757747
+Energy Institute,Europe,Hungary,2015,Primary energy consumption (EJ),0.9037428
+Energy Institute,Europe,Other Europe,2015,Primary energy consumption (EJ),1.704834382
+Energy Institute,Europe,Belgium,2016,Primary energy consumption (EJ),2.554217108
+Energy Institute,Europe,Portugal,2016,Primary energy consumption (EJ),1.115520173
+Energy Institute,Europe,Estonia,2016,Primary energy consumption (EJ),0.254746898
+Energy Institute,Europe,Greece,2016,Primary energy consumption (EJ),1.105173429
+Energy Institute,Europe,Luxembourg,2016,Primary energy consumption (EJ),0.15285324
+Energy Institute,Europe,Denmark,2016,Primary energy consumption (EJ),0.725765298
+Energy Institute,Europe,France,2016,Primary energy consumption (EJ),9.955628933
+Energy Institute,Europe,Slovakia,2016,Primary energy consumption (EJ),0.665077392
+Energy Institute,Europe,Bulgaria,2016,Primary energy consumption (EJ),0.767222598
+Energy Institute,Europe,Germany,2016,Primary energy consumption (EJ),13.8292249
+Energy Institute,Europe,Poland,2016,Primary energy consumption (EJ),4.140882406
+Energy Institute,Europe,Latvia,2016,Primary energy consumption (EJ),0.160196952
+Energy Institute,Europe,Switzerland,2016,Primary energy consumption (EJ),1.138482716
+Energy Institute,Europe,Spain,2016,Primary energy consumption (EJ),5.698488287
+Energy Institute,Europe,Iceland,2016,Primary energy consumption (EJ),0.221190029
+Energy Institute,Europe,Croatia,2016,Primary energy consumption (EJ),0.341030028
+Energy Institute,Europe,Ukraine,2016,Primary energy consumption (EJ),3.779983567
+Energy Institute,Europe,Other Europe,2016,Primary energy consumption (EJ),1.806459531
+Energy Institute,Europe,Lithuania,2016,Primary energy consumption (EJ),0.236615038
+Energy Institute,Europe,United Kingdom,2016,Primary energy consumption (EJ),8.076761086
+Energy Institute,Europe,Slovenia,2016,Primary energy consumption (EJ),0.287489295
+Energy Institute,Europe,Sweden,2016,Primary energy consumption (EJ),2.193842196
+Energy Institute,Europe,Turkey,2016,Primary energy consumption (EJ),6.009260328
+Energy Institute,Europe,Cyprus,2016,Primary energy consumption (EJ),0.114252977
+Energy Institute,Europe,Romania,2016,Primary energy consumption (EJ),1.371906399
+Energy Institute,Europe,Austria,2016,Primary energy consumption (EJ),1.47474396
+Energy Institute,Europe,Netherlands,2016,Primary energy consumption (EJ),3.758450536
+Energy Institute,Europe,Finland,2016,Primary energy consumption (EJ),1.202700044
+Energy Institute,Europe,Norway,2016,Primary energy consumption (EJ),2.010687227
+Energy Institute,Europe,North Macedonia,2016,Primary energy consumption (EJ),0.110131677
+Energy Institute,Europe,Italy,2016,Primary energy consumption (EJ),6.558953628
+Energy Institute,Europe,Ireland,2016,Primary energy consumption (EJ),0.653895523
+Energy Institute,Europe,Czech Republic,2016,Primary energy consumption (EJ),1.671747387
+Energy Institute,Europe,Hungary,2016,Primary energy consumption (EJ),0.91978126
+Energy Institute,Europe,Poland,2017,Primary energy consumption (EJ),4.34984029
+Energy Institute,Europe,Italy,2017,Primary energy consumption (EJ),6.635234196
+Energy Institute,Europe,Latvia,2017,Primary energy consumption (EJ),0.176321357
+Energy Institute,Europe,Ukraine,2017,Primary energy consumption (EJ),3.511191025
+Energy Institute,Europe,Lithuania,2017,Primary energy consumption (EJ),0.248940858
+Energy Institute,Europe,Netherlands,2017,Primary energy consumption (EJ),3.787942092
+Energy Institute,Europe,Hungary,2017,Primary energy consumption (EJ),0.969456436
+Energy Institute,Europe,Norway,2017,Primary energy consumption (EJ),2.019894621
+Energy Institute,Europe,Austria,2017,Primary energy consumption (EJ),1.503247108
+Energy Institute,Europe,United Kingdom,2017,Primary energy consumption (EJ),8.096674701
+Energy Institute,Europe,Germany,2017,Primary energy consumption (EJ),13.99728044
+Energy Institute,Europe,Bulgaria,2017,Primary energy consumption (EJ),0.785428147
+Energy Institute,Europe,Spain,2017,Primary energy consumption (EJ),5.767353305
+Energy Institute,Europe,Other Europe,2017,Primary energy consumption (EJ),1.796787317
+Energy Institute,Europe,Ireland,2017,Primary energy consumption (EJ),0.656649173
+Energy Institute,Europe,Slovenia,2017,Primary energy consumption (EJ),0.290595324
+Energy Institute,Europe,Switzerland,2017,Primary energy consumption (EJ),1.141181763
+Energy Institute,Europe,France,2017,Primary energy consumption (EJ),9.917708943
+Energy Institute,Europe,Slovakia,2017,Primary energy consumption (EJ),0.700540876
+Energy Institute,Europe,North Macedonia,2017,Primary energy consumption (EJ),0.105959223
+Energy Institute,Europe,Sweden,2017,Primary energy consumption (EJ),2.272834355
+Energy Institute,Europe,Belgium,2017,Primary energy consumption (EJ),2.5778093
+Energy Institute,Europe,Cyprus,2017,Primary energy consumption (EJ),0.117344472
+Energy Institute,Europe,Luxembourg,2017,Primary energy consumption (EJ),0.15967763
+Energy Institute,Europe,Turkey,2017,Primary energy consumption (EJ),6.434429634
+Energy Institute,Europe,Denmark,2017,Primary energy consumption (EJ),0.730747502
+Energy Institute,Europe,Portugal,2017,Primary energy consumption (EJ),1.086760422
+Energy Institute,Europe,Finland,2017,Primary energy consumption (EJ),1.17797731
+Energy Institute,Europe,Romania,2017,Primary energy consumption (EJ),1.396569098
+Energy Institute,Europe,Croatia,2017,Primary energy consumption (EJ),0.341220249
+Energy Institute,Europe,Estonia,2017,Primary energy consumption (EJ),0.282544136
+Energy Institute,Europe,Iceland,2017,Primary energy consumption (EJ),0.231284147
+Energy Institute,Europe,Greece,2017,Primary energy consumption (EJ),1.159910363
+Energy Institute,Europe,Czech Republic,2017,Primary energy consumption (EJ),1.766094976
+Energy Institute,Europe,Hungary,2018,Primary energy consumption (EJ),0.976329278
+Energy Institute,Europe,Slovakia,2018,Primary energy consumption (EJ),0.68866435
+Energy Institute,Europe,Cyprus,2018,Primary energy consumption (EJ),0.116863711
+Energy Institute,Europe,Romania,2018,Primary energy consumption (EJ),1.411383821
+Energy Institute,Europe,Other Europe,2018,Primary energy consumption (EJ),1.883983463
+Energy Institute,Europe,Greece,2018,Primary energy consumption (EJ),1.166636964
+Energy Institute,Europe,Croatia,2018,Primary energy consumption (EJ),0.353377568
+Energy Institute,Europe,Spain,2018,Primary energy consumption (EJ),5.863217389
+Energy Institute,Europe,France,2018,Primary energy consumption (EJ),10.04024206
+Energy Institute,Europe,Denmark,2018,Primary energy consumption (EJ),0.720425816
+Energy Institute,Europe,Belgium,2018,Primary energy consumption (EJ),2.571211514
+Energy Institute,Europe,Sweden,2018,Primary energy consumption (EJ),2.193101726
+Energy Institute,Europe,Norway,2018,Primary energy consumption (EJ),1.989140963
+Energy Institute,Europe,Netherlands,2018,Primary energy consumption (EJ),3.696371112
+Energy Institute,Europe,United Kingdom,2018,Primary energy consumption (EJ),8.088485707
+Energy Institute,Europe,North Macedonia,2018,Primary energy consumption (EJ),0.109534896
+Energy Institute,Europe,Czech Republic,2018,Primary energy consumption (EJ),1.760487369
+Energy Institute,Europe,Italy,2018,Primary energy consumption (EJ),6.673104809
+Energy Institute,Europe,Ireland,2018,Primary energy consumption (EJ),0.671307629
+Energy Institute,Europe,Finland,2018,Primary energy consumption (EJ),1.201827565
+Energy Institute,Europe,Austria,2018,Primary energy consumption (EJ),1.470247618
+Energy Institute,Europe,Luxembourg,2018,Primary energy consumption (EJ),0.16715142
+Energy Institute,Europe,Slovenia,2018,Primary energy consumption (EJ),0.296607434
+Energy Institute,Europe,Latvia,2018,Primary energy consumption (EJ),0.156832148
+Energy Institute,Europe,Ukraine,2018,Primary energy consumption (EJ),3.643158981
+Energy Institute,Europe,Bulgaria,2018,Primary energy consumption (EJ),0.787731046
+Energy Institute,Europe,Germany,2018,Primary energy consumption (EJ),13.63565748
+Energy Institute,Europe,Switzerland,2018,Primary energy consumption (EJ),1.157248484
+Energy Institute,Europe,Iceland,2018,Primary energy consumption (EJ),0.23925082
+Energy Institute,Europe,Lithuania,2018,Primary energy consumption (EJ),0.255489995
+Energy Institute,Europe,Poland,2018,Primary energy consumption (EJ),4.399496909
+Energy Institute,Europe,Turkey,2018,Primary energy consumption (EJ),6.436342734
+Energy Institute,Europe,Estonia,2018,Primary energy consumption (EJ),0.280364394
+Energy Institute,Europe,Portugal,2018,Primary energy consumption (EJ),1.107744141
+Energy Institute,Europe,Poland,2019,Primary energy consumption (EJ),4.274163862
+Energy Institute,Europe,Estonia,2019,Primary energy consumption (EJ),0.225938364
+Energy Institute,Europe,Sweden,2019,Primary energy consumption (EJ),2.252948499
+Energy Institute,Europe,Norway,2019,Primary energy consumption (EJ),1.86037152
+Energy Institute,Europe,Switzerland,2019,Primary energy consumption (EJ),1.209409294
+Energy Institute,Europe,Romania,2019,Primary energy consumption (EJ),1.38174315
+Energy Institute,Europe,Other Europe,2019,Primary energy consumption (EJ),1.846324164
+Energy Institute,Europe,Ukraine,2019,Primary energy consumption (EJ),3.447587394
+Energy Institute,Europe,Portugal,2019,Primary energy consumption (EJ),1.055003903
+Energy Institute,Europe,Croatia,2019,Primary energy consumption (EJ),0.344927495
+Energy Institute,Europe,United Kingdom,2019,Primary energy consumption (EJ),7.91664697
+Energy Institute,Europe,Bulgaria,2019,Primary energy consumption (EJ),0.761585051
+Energy Institute,Europe,Germany,2019,Primary energy consumption (EJ),13.30142329
+Energy Institute,Europe,Austria,2019,Primary energy consumption (EJ),1.540657416
+Energy Institute,Europe,Netherlands,2019,Primary energy consumption (EJ),3.680386128
+Energy Institute,Europe,Greece,2019,Primary energy consumption (EJ),1.140794239
+Energy Institute,Europe,Finland,2019,Primary energy consumption (EJ),1.177134458
+Energy Institute,Europe,Italy,2019,Primary energy consumption (EJ),6.550400511
+Energy Institute,Europe,Latvia,2019,Primary energy consumption (EJ),0.161413769
+Energy Institute,Europe,France,2019,Primary energy consumption (EJ),9.826425513
+Energy Institute,Europe,Belgium,2019,Primary energy consumption (EJ),2.658362596
+Energy Institute,Europe,Turkey,2019,Primary energy consumption (EJ),6.657000239
+Energy Institute,Europe,North Macedonia,2019,Primary energy consumption (EJ),0.111807011
+Energy Institute,Europe,Slovakia,2019,Primary energy consumption (EJ),0.665456129
+Energy Institute,Europe,Cyprus,2019,Primary energy consumption (EJ),0.116976604
+Energy Institute,Europe,Iceland,2019,Primary energy consumption (EJ),0.227981257
+Energy Institute,Europe,Slovenia,2019,Primary energy consumption (EJ),0.288008252
+Energy Institute,Europe,Denmark,2019,Primary energy consumption (EJ),0.705765181
+Energy Institute,Europe,Spain,2019,Primary energy consumption (EJ),5.701935869
+Energy Institute,Europe,Ireland,2019,Primary energy consumption (EJ),0.674490717
+Energy Institute,Europe,Czech Republic,2019,Primary energy consumption (EJ),1.720457812
+Energy Institute,Europe,Hungary,2019,Primary energy consumption (EJ),0.989612983
+Energy Institute,Europe,Luxembourg,2019,Primary energy consumption (EJ),0.170237696
+Energy Institute,Europe,Lithuania,2019,Primary energy consumption (EJ),0.25414965
+Energy Institute,Europe,Croatia,2020,Primary energy consumption (EJ),0.328962489
+Energy Institute,Europe,Lithuania,2020,Primary energy consumption (EJ),0.253060147
+Energy Institute,Europe,Ukraine,2020,Primary energy consumption (EJ),3.306425788
+Energy Institute,Europe,Iceland,2020,Primary energy consumption (EJ),0.209093431
+Energy Institute,Europe,Greece,2020,Primary energy consumption (EJ),0.997042002
+Energy Institute,Europe,Cyprus,2020,Primary energy consumption (EJ),0.101812739
+Energy Institute,Europe,Bulgaria,2020,Primary energy consumption (EJ),0.703346032
+Energy Institute,Europe,Sweden,2020,Primary energy consumption (EJ),2.161005643
+Energy Institute,Europe,Estonia,2020,Primary energy consumption (EJ),0.211439916
+Energy Institute,Europe,Spain,2020,Primary energy consumption (EJ),5.122655971
+Energy Institute,Europe,United Kingdom,2020,Primary energy consumption (EJ),7.09627637
+Energy Institute,Europe,Latvia,2020,Primary energy consumption (EJ),0.147089258
+Energy Institute,Europe,Norway,2020,Primary energy consumption (EJ),2.006448276
+Energy Institute,Europe,Ireland,2020,Primary energy consumption (EJ),0.633876234
+Energy Institute,Europe,Portugal,2020,Primary energy consumption (EJ),0.954891619
+Energy Institute,Europe,Denmark,2020,Primary energy consumption (EJ),0.635347026
+Energy Institute,Europe,Slovenia,2020,Primary energy consumption (EJ),0.278263308
+Energy Institute,Europe,Austria,2020,Primary energy consumption (EJ),1.440518679
+Energy Institute,Europe,Netherlands,2020,Primary energy consumption (EJ),3.564524792
+Energy Institute,Europe,France,2020,Primary energy consumption (EJ),8.788198391
+Energy Institute,Europe,Other Europe,2020,Primary energy consumption (EJ),1.789051216
+Energy Institute,Europe,Luxembourg,2020,Primary energy consumption (EJ),0.145946864
+Energy Institute,Europe,Italy,2020,Primary energy consumption (EJ),5.94706419
+Energy Institute,Europe,Czech Republic,2020,Primary energy consumption (EJ),1.59324342
+Energy Institute,Europe,Belgium,2020,Primary energy consumption (EJ),2.390442549
+Energy Institute,Europe,Finland,2020,Primary energy consumption (EJ),1.130219666
+Energy Institute,Europe,Switzerland,2020,Primary energy consumption (EJ),1.110927863
+Energy Institute,Europe,Slovakia,2020,Primary energy consumption (EJ),0.652051448
+Energy Institute,Europe,Romania,2020,Primary energy consumption (EJ),1.330158651
+Energy Institute,Europe,Poland,2020,Primary energy consumption (EJ),4.101243407
+Energy Institute,Europe,Hungary,2020,Primary energy consumption (EJ),0.973178268
+Energy Institute,Europe,Germany,2020,Primary energy consumption (EJ),12.39797579
+Energy Institute,Europe,North Macedonia,2020,Primary energy consumption (EJ),0.099748781
+Energy Institute,Europe,Turkey,2020,Primary energy consumption (EJ),6.558394888
+Energy Institute,Europe,Germany,2021,Primary energy consumption (EJ),12.760492
+Energy Institute,Europe,Latvia,2021,Primary energy consumption (EJ),0.153450709
+Energy Institute,Europe,Slovenia,2021,Primary energy consumption (EJ),0.275694912
+Energy Institute,Europe,Turkey,2021,Primary energy consumption (EJ),7.024144003
+Energy Institute,Europe,Bulgaria,2021,Primary energy consumption (EJ),0.79882408
+Energy Institute,Europe,Luxembourg,2021,Primary energy consumption (EJ),0.155574859
+Energy Institute,Europe,Finland,2021,Primary energy consumption (EJ),1.154303192
+Energy Institute,Europe,Lithuania,2021,Primary energy consumption (EJ),0.252538174
+Energy Institute,Europe,Sweden,2021,Primary energy consumption (EJ),2.281246322
+Energy Institute,Europe,Ukraine,2021,Primary energy consumption (EJ),3.364980849
+Energy Institute,Europe,France,2021,Primary energy consumption (EJ),9.337049734
+Energy Institute,Europe,Portugal,2021,Primary energy consumption (EJ),0.959363888
+Energy Institute,Europe,Netherlands,2021,Primary energy consumption (EJ),3.652613962
+Energy Institute,Europe,Iceland,2021,Primary energy consumption (EJ),0.218320483
+Energy Institute,Europe,Slovakia,2021,Primary energy consumption (EJ),0.702803393
+Energy Institute,Europe,North Macedonia,2021,Primary energy consumption (EJ),0.10439227
+Energy Institute,Europe,Czech Republic,2021,Primary energy consumption (EJ),1.679061559
+Energy Institute,Europe,Denmark,2021,Primary energy consumption (EJ),0.681966336
+Energy Institute,Europe,Belgium,2021,Primary energy consumption (EJ),2.658043251
+Energy Institute,Europe,Italy,2021,Primary energy consumption (EJ),6.36702181
+Energy Institute,Europe,Ireland,2021,Primary energy consumption (EJ),0.646005612
+Energy Institute,Europe,Norway,2021,Primary energy consumption (EJ),2.046524105
+Energy Institute,Europe,Austria,2021,Primary energy consumption (EJ),1.46171945
+Energy Institute,Europe,Switzerland,2021,Primary energy consumption (EJ),1.073096638
+Energy Institute,Europe,Poland,2021,Primary energy consumption (EJ),4.409130016
+Energy Institute,Europe,Romania,2021,Primary energy consumption (EJ),1.404010807
+Energy Institute,Europe,Other Europe,2021,Primary energy consumption (EJ),1.917378902
+Energy Institute,Europe,Hungary,2021,Primary energy consumption (EJ),1.022250011
+Energy Institute,Europe,Greece,2021,Primary energy consumption (EJ),1.089130339
+Energy Institute,Europe,Cyprus,2021,Primary energy consumption (EJ),0.10743114
+Energy Institute,Europe,Estonia,2021,Primary energy consumption (EJ),0.221044334
+Energy Institute,Europe,Croatia,2021,Primary energy consumption (EJ),0.353923494
+Energy Institute,Europe,United Kingdom,2021,Primary energy consumption (EJ),7.167449242
+Energy Institute,Europe,Spain,2021,Primary energy consumption (EJ),5.508970424
+Energy Institute,Europe,Croatia,2022,Primary energy consumption (EJ),0.335402346
+Energy Institute,Europe,Slovakia,2022,Primary energy consumption (EJ),0.647614327
+Energy Institute,Europe,Iceland,2022,Primary energy consumption (EJ),0.229444379
+Energy Institute,Europe,Turkey,2022,Primary energy consumption (EJ),7.099625349
+Energy Institute,Europe,Greece,2022,Primary energy consumption (EJ),1.131614851
+Energy Institute,Europe,Spain,2022,Primary energy consumption (EJ),5.727710723
+Energy Institute,Europe,Austria,2022,Primary energy consumption (EJ),1.367168594
+Energy Institute,Europe,Switzerland,2022,Primary energy consumption (EJ),1.044394698
+Energy Institute,Europe,Ukraine,2022,Primary energy consumption (EJ),2.325832273
+Energy Institute,Europe,Portugal,2022,Primary energy consumption (EJ),0.945630248
+Energy Institute,Europe,Ireland,2022,Primary energy consumption (EJ),0.669481285
+Energy Institute,Europe,Lithuania,2022,Primary energy consumption (EJ),0.234238504
+Energy Institute,Europe,Italy,2022,Primary energy consumption (EJ),6.185704757
+Energy Institute,Europe,Belgium,2022,Primary energy consumption (EJ),2.500150843
+Energy Institute,Europe,France,2022,Primary energy consumption (EJ),8.274814785
+Energy Institute,Europe,Romania,2022,Primary energy consumption (EJ),1.2964651
+Energy Institute,Europe,Czech Republic,2022,Primary energy consumption (EJ),1.640632105
+Energy Institute,Europe,Other Europe,2022,Primary energy consumption (EJ),1.886223865
+Energy Institute,Europe,Finland,2022,Primary energy consumption (EJ),1.154626819
+Energy Institute,Europe,Hungary,2022,Primary energy consumption (EJ),0.961260971
+Energy Institute,Europe,Luxembourg,2022,Primary energy consumption (EJ),0.139549061
+Energy Institute,Europe,Norway,2022,Primary energy consumption (EJ),1.917768081
+Energy Institute,Europe,Netherlands,2022,Primary energy consumption (EJ),3.438688738
+Energy Institute,Europe,North Macedonia,2022,Primary energy consumption (EJ),0.110274411
+Energy Institute,Europe,Slovenia,2022,Primary energy consumption (EJ),0.254166316
+Energy Institute,Europe,Latvia,2022,Primary energy consumption (EJ),0.138509761
+Energy Institute,Europe,Sweden,2022,Primary energy consumption (EJ),2.238097382
+Energy Institute,Europe,Denmark,2022,Primary energy consumption (EJ),0.710200862
+Energy Institute,Europe,Bulgaria,2022,Primary energy consumption (EJ),0.826111319
+Energy Institute,Europe,United Kingdom,2022,Primary energy consumption (EJ),7.267842619
+Energy Institute,Europe,Cyprus,2022,Primary energy consumption (EJ),0.114027936
+Energy Institute,Europe,Poland,2022,Primary energy consumption (EJ),4.272725776
+Energy Institute,Europe,Estonia,2022,Primary energy consumption (EJ),0.228211272
+Energy Institute,Europe,Germany,2022,Primary energy consumption (EJ),12.28680094
+Energy Institute,Europe,Switzerland,2023,Primary energy consumption (EJ),1.132719741
+Energy Institute,Europe,Lithuania,2023,Primary energy consumption (EJ),0.238759161
+Energy Institute,Europe,France,2023,Primary energy consumption (EJ),8.663878627
+Energy Institute,Europe,Sweden,2023,Primary energy consumption (EJ),2.151008382
+Energy Institute,Europe,Croatia,2023,Primary energy consumption (EJ),0.364183976
+Energy Institute,Europe,Norway,2023,Primary energy consumption (EJ),1.991102592
+Energy Institute,Europe,Bulgaria,2023,Primary energy consumption (EJ),0.717362568
+Energy Institute,Europe,Netherlands,2023,Primary energy consumption (EJ),3.436284954
+Energy Institute,Europe,Luxembourg,2023,Primary energy consumption (EJ),0.135164962
+Energy Institute,Europe,Belgium,2023,Primary energy consumption (EJ),2.311427403
+Energy Institute,Europe,Romania,2023,Primary energy consumption (EJ),1.276063796
+Energy Institute,Europe,Slovenia,2023,Primary energy consumption (EJ),0.260745982
+Energy Institute,Europe,Turkey,2023,Primary energy consumption (EJ),7.003076595
+Energy Institute,Europe,Finland,2023,Primary energy consumption (EJ),1.195760616
+Energy Institute,Europe,North Macedonia,2023,Primary energy consumption (EJ),0.120707089
+Energy Institute,Europe,Other Europe,2023,Primary energy consumption (EJ),1.963272594
+Energy Institute,Europe,Estonia,2023,Primary energy consumption (EJ),0.199844995
+Energy Institute,Europe,Italy,2023,Primary energy consumption (EJ),5.945164294
+Energy Institute,Europe,United Kingdom,2023,Primary energy consumption (EJ),6.950134171
+Energy Institute,Europe,Czech Republic,2023,Primary energy consumption (EJ),1.524141708
+Energy Institute,Europe,Germany,2023,Primary energy consumption (EJ),11.41037916
+Energy Institute,Europe,Cyprus,2023,Primary energy consumption (EJ),0.115544875
+Energy Institute,Europe,Poland,2023,Primary energy consumption (EJ),4.116415408
+Energy Institute,Europe,Ukraine,2023,Primary energy consumption (EJ),2.219901369
+Energy Institute,Europe,Portugal,2023,Primary energy consumption (EJ),0.948449156
+Energy Institute,Europe,Spain,2023,Primary energy consumption (EJ),5.662307478
+Energy Institute,Europe,Latvia,2023,Primary energy consumption (EJ),0.144837351
+Energy Institute,Europe,Austria,2023,Primary energy consumption (EJ),1.385318874
+Energy Institute,Europe,Denmark,2023,Primary energy consumption (EJ),0.703883054
+Energy Institute,Europe,Ireland,2023,Primary energy consumption (EJ),0.650760259
+Energy Institute,Europe,Hungary,2023,Primary energy consumption (EJ),0.91055862
+Energy Institute,Europe,Slovakia,2023,Primary energy consumption (EJ),0.671878973
+Energy Institute,Europe,Iceland,2023,Primary energy consumption (EJ),0.226213172
+Energy Institute,Europe,Greece,2023,Primary energy consumption (EJ),1.098651599
+Energy Institute,Middle East,Iraq,2000,Primary energy consumption (EJ),1.161584493
+Energy Institute,Middle East,United Arab Emirates,2000,Primary energy consumption (EJ),1.928814888
+Energy Institute,Middle East,Other Middle East,2000,Primary energy consumption (EJ),1.777367995
+Energy Institute,Middle East,Saudi Arabia,2000,Primary energy consumption (EJ),4.805566669
+Energy Institute,Middle East,Kuwait,2000,Primary energy consumption (EJ),0.762995303
+Energy Institute,Middle East,Iran,2000,Primary energy consumption (EJ),5.027644609
+Energy Institute,Middle East,Qatar,2000,Primary energy consumption (EJ),0.485440128
+Energy Institute,Middle East,Israel,2000,Primary energy consumption (EJ),0.818536094
+Energy Institute,Middle East,Oman,2000,Primary energy consumption (EJ),0.399325212
+Energy Institute,Middle East,Saudi Arabia,2001,Primary energy consumption (EJ),5.12039664
+Energy Institute,Middle East,Iran,2001,Primary energy consumption (EJ),5.371709789
+Energy Institute,Middle East,Other Middle East,2001,Primary energy consumption (EJ),1.827297315
+Energy Institute,Middle East,Oman,2001,Primary energy consumption (EJ),0.443373667
+Energy Institute,Middle East,Kuwait,2001,Primary energy consumption (EJ),0.771499227
+Energy Institute,Middle East,Iraq,2001,Primary energy consumption (EJ),1.297602557
+Energy Institute,Middle East,Israel,2001,Primary energy consumption (EJ),0.817964841
+Energy Institute,Middle East,Qatar,2001,Primary energy consumption (EJ),0.466660686
+Energy Institute,Middle East,United Arab Emirates,2001,Primary energy consumption (EJ),1.949637699
+Energy Institute,Middle East,Iraq,2002,Primary energy consumption (EJ),1.233344547
+Energy Institute,Middle East,Kuwait,2002,Primary energy consumption (EJ),0.816587124
+Energy Institute,Middle East,Israel,2002,Primary energy consumption (EJ),0.834417073
+Energy Institute,Middle East,Oman,2002,Primary energy consumption (EJ),0.472009799
+Energy Institute,Middle East,United Arab Emirates,2002,Primary energy consumption (EJ),2.130095324
+Energy Institute,Middle East,Other Middle East,2002,Primary energy consumption (EJ),1.89413095
+Energy Institute,Middle East,Saudi Arabia,2002,Primary energy consumption (EJ),5.332977745
+Energy Institute,Middle East,Iran,2002,Primary energy consumption (EJ),5.854923745
+Energy Institute,Middle East,Qatar,2002,Primary energy consumption (EJ),0.513715044
+Energy Institute,Middle East,Qatar,2003,Primary energy consumption (EJ),0.589031398
+Energy Institute,Middle East,Iran,2003,Primary energy consumption (EJ),5.962300187
+Energy Institute,Middle East,Kuwait,2003,Primary energy consumption (EJ),0.975926329
+Energy Institute,Middle East,Oman,2003,Primary energy consumption (EJ),0.489873439
+Energy Institute,Middle East,Saudi Arabia,2003,Primary energy consumption (EJ),5.64908772
+Energy Institute,Middle East,Iraq,2003,Primary energy consumption (EJ),1.094662916
+Energy Institute,Middle East,Israel,2003,Primary energy consumption (EJ),0.85980958
+Energy Institute,Middle East,United Arab Emirates,2003,Primary energy consumption (EJ),2.272159121
+Energy Institute,Middle East,Other Middle East,2003,Primary energy consumption (EJ),1.972589962
+Energy Institute,Middle East,Israel,2004,Primary energy consumption (EJ),0.876560504
+Energy Institute,Middle East,Saudi Arabia,2004,Primary energy consumption (EJ),6.12881167
+Energy Institute,Middle East,Other Middle East,2004,Primary energy consumption (EJ),2.03799798
+Energy Institute,Middle East,Iraq,2004,Primary energy consumption (EJ),1.173758008
+Energy Institute,Middle East,United Arab Emirates,2004,Primary energy consumption (EJ),2.430235361
+Energy Institute,Middle East,Qatar,2004,Primary energy consumption (EJ),0.71125184
+Energy Institute,Middle East,Iran,2004,Primary energy consumption (EJ),6.595048563
+Energy Institute,Middle East,Oman,2004,Primary energy consumption (EJ),0.509079711
+Energy Institute,Middle East,Kuwait,2004,Primary energy consumption (EJ),1.090314925
+Energy Institute,Middle East,Iran,2005,Primary energy consumption (EJ),6.98507958
+Energy Institute,Middle East,Iraq,2005,Primary energy consumption (EJ),1.109961074
+Energy Institute,Middle East,United Arab Emirates,2005,Primary energy consumption (EJ),2.536553071
+Energy Institute,Middle East,Saudi Arabia,2005,Primary energy consumption (EJ),6.519981429
+Energy Institute,Middle East,Israel,2005,Primary energy consumption (EJ),0.880738149
+Energy Institute,Middle East,Qatar,2005,Primary energy consumption (EJ),0.80522114
+Energy Institute,Middle East,Kuwait,2005,Primary energy consumption (EJ),1.202735156
+Energy Institute,Middle East,Oman,2005,Primary energy consumption (EJ),0.56177874
+Energy Institute,Middle East,Other Middle East,2005,Primary energy consumption (EJ),2.243486164
+Energy Institute,Middle East,Israel,2006,Primary energy consumption (EJ),0.885454965
+Energy Institute,Middle East,Iran,2006,Primary energy consumption (EJ),7.632974078
+Energy Institute,Middle East,United Arab Emirates,2006,Primary energy consumption (EJ),2.668654662
+Energy Institute,Middle East,Qatar,2006,Primary energy consumption (EJ),0.846556604
+Energy Institute,Middle East,Other Middle East,2006,Primary energy consumption (EJ),2.307840227
+Energy Institute,Middle East,Kuwait,2006,Primary energy consumption (EJ),1.156070003
+Energy Institute,Middle East,Oman,2006,Primary energy consumption (EJ),0.613596797
+Energy Institute,Middle East,Saudi Arabia,2006,Primary energy consumption (EJ),6.840612161
+Energy Institute,Middle East,Iraq,2006,Primary energy consumption (EJ),1.078855313
+Energy Institute,Middle East,United Arab Emirates,2007,Primary energy consumption (EJ),2.946099849
+Energy Institute,Middle East,Iran,2007,Primary energy consumption (EJ),8.114369026
+Energy Institute,Middle East,Israel,2007,Primary energy consumption (EJ),0.918304942
+Energy Institute,Middle East,Oman,2007,Primary energy consumption (EJ),0.618795192
+Energy Institute,Middle East,Qatar,2007,Primary energy consumption (EJ),0.922600791
+Energy Institute,Middle East,Saudi Arabia,2007,Primary energy consumption (EJ),6.998605688
+Energy Institute,Middle East,Iraq,2007,Primary energy consumption (EJ),1.087844878
+Energy Institute,Middle East,Kuwait,2007,Primary energy consumption (EJ),1.123058591
+Energy Institute,Middle East,Other Middle East,2007,Primary energy consumption (EJ),2.359081489
+Energy Institute,Middle East,Israel,2008,Primary energy consumption (EJ),0.944738739
+Energy Institute,Middle East,Other Middle East,2008,Primary energy consumption (EJ),2.476401316
+Energy Institute,Middle East,Iraq,2008,Primary energy consumption (EJ),1.245286614
+Energy Institute,Middle East,United Arab Emirates,2008,Primary energy consumption (EJ),3.378241821
+Energy Institute,Middle East,Kuwait,2008,Primary energy consumption (EJ),1.215930403
+Energy Institute,Middle East,Qatar,2008,Primary energy consumption (EJ),1.022902161
+Energy Institute,Middle East,Saudi Arabia,2008,Primary energy consumption (EJ),7.662469958
+Energy Institute,Middle East,Oman,2008,Primary energy consumption (EJ),0.722823981
+Energy Institute,Middle East,Iran,2008,Primary energy consumption (EJ),8.364122687
+Energy Institute,Middle East,Kuwait,2009,Primary energy consumption (EJ),1.234455138
+Energy Institute,Middle East,Iran,2009,Primary energy consumption (EJ),8.565443089
+Energy Institute,Middle East,Israel,2009,Primary energy consumption (EJ),0.917841548
+Energy Institute,Middle East,Oman,2009,Primary energy consumption (EJ),0.717111891
+Energy Institute,Middle East,Qatar,2009,Primary energy consumption (EJ),1.037465781
+Energy Institute,Middle East,Saudi Arabia,2009,Primary energy consumption (EJ),7.938497781
+Energy Institute,Middle East,United Arab Emirates,2009,Primary energy consumption (EJ),3.332070998
+Energy Institute,Middle East,Iraq,2009,Primary energy consumption (EJ),1.222248109
+Energy Institute,Middle East,Other Middle East,2009,Primary energy consumption (EJ),2.49162967
+Energy Institute,Middle East,Other Middle East,2010,Primary energy consumption (EJ),2.502353563
+Energy Institute,Middle East,United Arab Emirates,2010,Primary energy consumption (EJ),3.500970209
+Energy Institute,Middle East,Iraq,2010,Primary energy consumption (EJ),1.367688585
+Energy Institute,Middle East,Kuwait,2010,Primary energy consumption (EJ),1.414670845
+Energy Institute,Middle East,Israel,2010,Primary energy consumption (EJ),0.954211706
+Energy Institute,Middle East,Saudi Arabia,2010,Primary energy consumption (EJ),8.823984149
+Energy Institute,Middle East,Iran,2010,Primary energy consumption (EJ),8.750474769
+Energy Institute,Middle East,Oman,2010,Primary energy consumption (EJ),0.852951766
+Energy Institute,Middle East,Qatar,2010,Primary energy consumption (EJ),1.206506014
+Energy Institute,Middle East,Iraq,2011,Primary energy consumption (EJ),1.408710644
+Energy Institute,Middle East,Qatar,2011,Primary energy consumption (EJ),1.41123255
+Energy Institute,Middle East,Israel,2011,Primary energy consumption (EJ),0.972222685
+Energy Institute,Middle East,Saudi Arabia,2011,Primary energy consumption (EJ),9.206247744
+Energy Institute,Middle East,Oman,2011,Primary energy consumption (EJ),0.934860111
+Energy Institute,Middle East,United Arab Emirates,2011,Primary energy consumption (EJ),3.675352812
+Energy Institute,Middle East,Iran,2011,Primary energy consumption (EJ),9.099020254
+Energy Institute,Middle East,Other Middle East,2011,Primary energy consumption (EJ),2.387527951
+Energy Institute,Middle East,Kuwait,2011,Primary energy consumption (EJ),1.419013459
+Energy Institute,Middle East,Israel,2012,Primary energy consumption (EJ),1.017810584
+Energy Institute,Middle East,Other Middle East,2012,Primary energy consumption (EJ),2.214726883
+Energy Institute,Middle East,Iran,2012,Primary energy consumption (EJ),9.185745784
+Energy Institute,Middle East,Kuwait,2012,Primary energy consumption (EJ),1.432302653
+Energy Institute,Middle East,Oman,2012,Primary energy consumption (EJ),1.019890475
+Energy Institute,Middle East,Qatar,2012,Primary energy consumption (EJ),1.599398471
+Energy Institute,Middle East,Iraq,2012,Primary energy consumption (EJ),1.535673901
+Energy Institute,Middle East,United Arab Emirates,2012,Primary energy consumption (EJ),3.866759209
+Energy Institute,Middle East,Saudi Arabia,2012,Primary energy consumption (EJ),9.771157799
+Energy Institute,Middle East,Other Middle East,2013,Primary energy consumption (EJ),2.14695827
+Energy Institute,Middle East,Iraq,2013,Primary energy consumption (EJ),1.692452445
+Energy Institute,Middle East,Kuwait,2013,Primary energy consumption (EJ),1.527579409
+Energy Institute,Middle East,Oman,2013,Primary energy consumption (EJ),1.142945473
+Energy Institute,Middle East,Iran,2013,Primary energy consumption (EJ),9.547317235
+Energy Institute,Middle East,Qatar,2013,Primary energy consumption (EJ),1.736431174
+Energy Institute,Middle East,United Arab Emirates,2013,Primary energy consumption (EJ),4.079680774
+Energy Institute,Middle East,Saudi Arabia,2013,Primary energy consumption (EJ),9.832393235
+Energy Institute,Middle East,Israel,2013,Primary energy consumption (EJ),0.961849257
+Energy Institute,Middle East,Oman,2014,Primary energy consumption (EJ),1.136871387
+Energy Institute,Middle East,Iraq,2014,Primary energy consumption (EJ),1.63874056
+Energy Institute,Middle East,Other Middle East,2014,Primary energy consumption (EJ),2.141049231
+Energy Institute,Middle East,Israel,2014,Primary energy consumption (EJ),0.938330637
+Energy Institute,Middle East,United Arab Emirates,2014,Primary energy consumption (EJ),4.071157783
+Energy Institute,Middle East,Kuwait,2014,Primary energy consumption (EJ),1.489151791
+Energy Institute,Middle East,Saudi Arabia,2014,Primary energy consumption (EJ),10.55418189
+Energy Institute,Middle East,Qatar,2014,Primary energy consumption (EJ),1.877353597
+Energy Institute,Middle East,Iran,2014,Primary energy consumption (EJ),9.968119704
+Energy Institute,Middle East,Iran,2015,Primary energy consumption (EJ),9.849010569
+Energy Institute,Middle East,Iraq,2015,Primary energy consumption (EJ),1.609543506
+Energy Institute,Middle East,Saudi Arabia,2015,Primary energy consumption (EJ),11.00385192
+Energy Institute,Middle East,Other Middle East,2015,Primary energy consumption (EJ),1.998751033
+Energy Institute,Middle East,Qatar,2015,Primary energy consumption (EJ),2.135951133
+Energy Institute,Middle East,United Arab Emirates,2015,Primary energy consumption (EJ),4.420039561
+Energy Institute,Middle East,Israel,2015,Primary energy consumption (EJ),0.990205711
+Energy Institute,Middle East,Kuwait,2015,Primary energy consumption (EJ),1.600497148
+Energy Institute,Middle East,Oman,2015,Primary energy consumption (EJ),1.214096453
+Energy Institute,Middle East,Iran,2016,Primary energy consumption (EJ),10.38527037
+Energy Institute,Middle East,Qatar,2016,Primary energy consumption (EJ),2.097255074
+Energy Institute,Middle East,Kuwait,2016,Primary energy consumption (EJ),1.594686976
+Energy Institute,Middle East,Oman,2016,Primary energy consumption (EJ),1.218551259
+Energy Institute,Middle East,United Arab Emirates,2016,Primary energy consumption (EJ),4.594724911
+Energy Institute,Middle East,Other Middle East,2016,Primary energy consumption (EJ),1.958938499
+Energy Institute,Middle East,Israel,2016,Primary energy consumption (EJ),1.01005265
+Energy Institute,Middle East,Saudi Arabia,2016,Primary energy consumption (EJ),11.44743833
+Energy Institute,Middle East,Iraq,2016,Primary energy consumption (EJ),1.747265306
+Energy Institute,Middle East,Other Middle East,2017,Primary energy consumption (EJ),1.997210996
+Energy Institute,Middle East,Saudi Arabia,2017,Primary energy consumption (EJ),11.4545495
+Energy Institute,Middle East,Iran,2017,Primary energy consumption (EJ),10.78319129
+Energy Institute,Middle East,Qatar,2017,Primary energy consumption (EJ),2.03071233
+Energy Institute,Middle East,Oman,2017,Primary energy consumption (EJ),1.272159866
+Energy Institute,Middle East,United Arab Emirates,2017,Primary energy consumption (EJ),4.375600401
+Energy Institute,Middle East,Kuwait,2017,Primary energy consumption (EJ),1.603713056
+Energy Institute,Middle East,Israel,2017,Primary energy consumption (EJ),1.028466973
+Energy Institute,Middle East,Iraq,2017,Primary energy consumption (EJ),2.042658752
+Energy Institute,Middle East,Oman,2018,Primary energy consumption (EJ),1.352673304
+Energy Institute,Middle East,United Arab Emirates,2018,Primary energy consumption (EJ),4.141846785
+Energy Institute,Middle East,Israel,2018,Primary energy consumption (EJ),1.051962007
+Energy Institute,Middle East,Qatar,2018,Primary energy consumption (EJ),2.011955543
+Energy Institute,Middle East,Iran,2018,Primary energy consumption (EJ),11.14530789
+Energy Institute,Middle East,Saudi Arabia,2018,Primary energy consumption (EJ),11.16603947
+Energy Institute,Middle East,Iraq,2018,Primary energy consumption (EJ),2.1257704
+Energy Institute,Middle East,Other Middle East,2018,Primary energy consumption (EJ),2.000785627
+Energy Institute,Middle East,Kuwait,2018,Primary energy consumption (EJ),1.655803952
+Energy Institute,Middle East,Iran,2019,Primary energy consumption (EJ),11.75029657
+Energy Institute,Middle East,Israel,2019,Primary energy consumption (EJ),1.085421374
+Energy Institute,Middle East,Other Middle East,2019,Primary energy consumption (EJ),2.004395424
+Energy Institute,Middle East,Kuwait,2019,Primary energy consumption (EJ),1.512939814
+Energy Institute,Middle East,Qatar,2019,Primary energy consumption (EJ),2.100591966
+Energy Institute,Middle East,United Arab Emirates,2019,Primary energy consumption (EJ),4.388641622
+Energy Institute,Middle East,Oman,2019,Primary energy consumption (EJ),1.343341698
+Energy Institute,Middle East,Saudi Arabia,2019,Primary energy consumption (EJ),10.68256573
+Energy Institute,Middle East,Iraq,2019,Primary energy consumption (EJ),2.302857943
+Energy Institute,Middle East,Iraq,2020,Primary energy consumption (EJ),2.058704569
+Energy Institute,Middle East,Other Middle East,2020,Primary energy consumption (EJ),1.932523649
+Energy Institute,Middle East,United Arab Emirates,2020,Primary energy consumption (EJ),4.336832674
+Energy Institute,Middle East,Saudi Arabia,2020,Primary energy consumption (EJ),10.39108076
+Energy Institute,Middle East,Qatar,2020,Primary energy consumption (EJ),1.841532015
+Energy Institute,Middle East,Oman,2020,Primary energy consumption (EJ),1.297767949
+Energy Institute,Middle East,Israel,2020,Primary energy consumption (EJ),1.026487038
+Energy Institute,Middle East,Kuwait,2020,Primary energy consumption (EJ),1.43237215
+Energy Institute,Middle East,Iran,2020,Primary energy consumption (EJ),12.19663664
+Energy Institute,Middle East,Oman,2021,Primary energy consumption (EJ),1.416199449
+Energy Institute,Middle East,Saudi Arabia,2021,Primary energy consumption (EJ),10.73490025
+Energy Institute,Middle East,Iraq,2021,Primary energy consumption (EJ),2.133820164
+Energy Institute,Middle East,Other Middle East,2021,Primary energy consumption (EJ),2.011950009
+Energy Institute,Middle East,Kuwait,2021,Primary energy consumption (EJ),1.526940574
+Energy Institute,Middle East,United Arab Emirates,2021,Primary energy consumption (EJ),4.486733966
+Energy Institute,Middle East,Qatar,2021,Primary energy consumption (EJ),1.950656004
+Energy Institute,Middle East,Iran,2021,Primary energy consumption (EJ),11.95940917
+Energy Institute,Middle East,Israel,2021,Primary energy consumption (EJ),1.05135947
+Energy Institute,Middle East,Qatar,2022,Primary energy consumption (EJ),2.040005711
+Energy Institute,Middle East,United Arab Emirates,2022,Primary energy consumption (EJ),4.88049864
+Energy Institute,Middle East,Iran,2022,Primary energy consumption (EJ),12.48074332
+Energy Institute,Middle East,Other Middle East,2022,Primary energy consumption (EJ),1.992772863
+Energy Institute,Middle East,Kuwait,2022,Primary energy consumption (EJ),1.55664
+Energy Institute,Middle East,Oman,2022,Primary energy consumption (EJ),1.500859424
+Energy Institute,Middle East,Israel,2022,Primary energy consumption (EJ),1.111135879
+Energy Institute,Middle East,Saudi Arabia,2022,Primary energy consumption (EJ),11.34274056
+Energy Institute,Middle East,Iraq,2022,Primary energy consumption (EJ),2.389111503
+Energy Institute,Middle East,Other Middle East,2023,Primary energy consumption (EJ),2.045615405
+Energy Institute,Middle East,Saudi Arabia,2023,Primary energy consumption (EJ),11.59823139
+Energy Institute,Middle East,Oman,2023,Primary energy consumption (EJ),1.54834083
+Energy Institute,Middle East,United Arab Emirates,2023,Primary energy consumption (EJ),5.133297227
+Energy Institute,Middle East,Israel,2023,Primary energy consumption (EJ),1.114052337
+Energy Institute,Middle East,Qatar,2023,Primary energy consumption (EJ),2.218351612
+Energy Institute,Middle East,Kuwait,2023,Primary energy consumption (EJ),1.577205702
+Energy Institute,Middle East,Iran,2023,Primary energy consumption (EJ),12.71201829
+Energy Institute,Middle East,Iraq,2023,Primary energy consumption (EJ),2.511793597
+Energy Institute,North America,Canada,2000,Primary energy consumption (EJ),13.13096233
+Energy Institute,North America,Mexico,2000,Primary energy consumption (EJ),6.095792139
+Energy Institute,North America,US,2000,Primary energy consumption (EJ),95.56644835
+Energy Institute,North America,Canada,2001,Primary energy consumption (EJ),12.85955214
+Energy Institute,North America,US,2001,Primary energy consumption (EJ),93.30608206
+Energy Institute,North America,Mexico,2001,Primary energy consumption (EJ),6.0465367
+Energy Institute,North America,US,2002,Primary energy consumption (EJ),94.67017005
+Energy Institute,North America,Mexico,2002,Primary energy consumption (EJ),6.192211014
+Energy Institute,North America,Canada,2002,Primary energy consumption (EJ),13.29621406
+Energy Institute,North America,Canada,2003,Primary energy consumption (EJ),13.35967651
+Energy Institute,North America,US,2003,Primary energy consumption (EJ),94.97910366
+Energy Institute,North America,Mexico,2003,Primary energy consumption (EJ),6.267412874
+Energy Institute,North America,US,2004,Primary energy consumption (EJ),96.83682558
+Energy Institute,North America,Mexico,2004,Primary energy consumption (EJ),6.635126564
+Energy Institute,North America,Canada,2004,Primary energy consumption (EJ),13.56504337
+Energy Institute,North America,Canada,2005,Primary energy consumption (EJ),13.65572082
+Energy Institute,North America,US,2005,Primary energy consumption (EJ),96.88523181
+Energy Institute,North America,Mexico,2005,Primary energy consumption (EJ),7.27061083
+Energy Institute,North America,Canada,2006,Primary energy consumption (EJ),13.5790196
+Energy Institute,North America,US,2006,Primary energy consumption (EJ),96.11986674
+Energy Institute,North America,Mexico,2006,Primary energy consumption (EJ),7.377035961
+Energy Institute,North America,US,2007,Primary energy consumption (EJ),97.44015959
+Energy Institute,North America,Canada,2007,Primary energy consumption (EJ),14.09704011
+Energy Institute,North America,Mexico,2007,Primary energy consumption (EJ),7.446451285
+Energy Institute,North America,Mexico,2008,Primary energy consumption (EJ),7.752683598
+Energy Institute,North America,Canada,2008,Primary energy consumption (EJ),13.92936364
+Energy Institute,North America,US,2008,Primary energy consumption (EJ),95.06609958
+Energy Institute,North America,US,2009,Primary energy consumption (EJ),90.39789583
+Energy Institute,North America,Canada,2009,Primary energy consumption (EJ),13.38371349
+Energy Institute,North America,Mexico,2009,Primary energy consumption (EJ),7.622020667
+Energy Institute,North America,Mexico,2010,Primary energy consumption (EJ),7.651632934
+Energy Institute,North America,Canada,2010,Primary energy consumption (EJ),13.50892683
+Energy Institute,North America,US,2010,Primary energy consumption (EJ),93.43277011
+Energy Institute,North America,Mexico,2011,Primary energy consumption (EJ),7.998792455
+Energy Institute,North America,Canada,2011,Primary energy consumption (EJ),14.0183352
+Energy Institute,North America,US,2011,Primary energy consumption (EJ),92.62471885
+Energy Institute,North America,US,2012,Primary energy consumption (EJ),90.17052141
+Energy Institute,North America,Mexico,2012,Primary energy consumption (EJ),8.070807551
+Energy Institute,North America,Canada,2012,Primary energy consumption (EJ),14.0610389
+Energy Institute,North America,Canada,2013,Primary energy consumption (EJ),14.39658982
+Energy Institute,North America,Mexico,2013,Primary energy consumption (EJ),8.074287123
+Energy Institute,North America,US,2013,Primary energy consumption (EJ),92.62306236
+Energy Institute,North America,Canada,2014,Primary energy consumption (EJ),14.42788715
+Energy Institute,North America,US,2014,Primary energy consumption (EJ),93.58528648
+Energy Institute,North America,Mexico,2014,Primary energy consumption (EJ),8.030066598
+Energy Institute,North America,Canada,2015,Primary energy consumption (EJ),14.46952665
+Energy Institute,North America,Mexico,2015,Primary energy consumption (EJ),7.939515893
+Energy Institute,North America,US,2015,Primary energy consumption (EJ),92.69073534
+Energy Institute,North America,Mexico,2016,Primary energy consumption (EJ),8.112233637
+Energy Institute,North America,US,2016,Primary energy consumption (EJ),92.61738434
+Energy Institute,North America,Canada,2016,Primary energy consumption (EJ),14.34237848
+Energy Institute,North America,US,2017,Primary energy consumption (EJ),92.96584517
+Energy Institute,North America,Canada,2017,Primary energy consumption (EJ),14.53744231
+Energy Institute,North America,Mexico,2017,Primary energy consumption (EJ),8.255751646
+Energy Institute,North America,Mexico,2018,Primary energy consumption (EJ),8.154998919
+Energy Institute,North America,US,2018,Primary energy consumption (EJ),96.36835438
+Energy Institute,North America,Canada,2018,Primary energy consumption (EJ),14.72460513
+Energy Institute,North America,Canada,2019,Primary energy consumption (EJ),14.64426148
+Energy Institute,North America,US,2019,Primary energy consumption (EJ),95.68257901
+Energy Institute,North America,Mexico,2019,Primary energy consumption (EJ),8.069090445
+Energy Institute,North America,Mexico,2020,Primary energy consumption (EJ),7.350902631
+Energy Institute,North America,Canada,2020,Primary energy consumption (EJ),13.75805877
+Energy Institute,North America,US,2020,Primary energy consumption (EJ),88.64153272
+Energy Institute,North America,Canada,2021,Primary energy consumption (EJ),13.9211144
+Energy Institute,North America,US,2021,Primary energy consumption (EJ),93.44457862
+Energy Institute,North America,Mexico,2021,Primary energy consumption (EJ),7.833219729
+Energy Institute,North America,Canada,2022,Primary energy consumption (EJ),14.2991053
+Energy Institute,North America,US,2022,Primary energy consumption (EJ),95.415497
+Energy Institute,North America,Mexico,2022,Primary energy consumption (EJ),8.183101859
+Energy Institute,North America,US,2023,Primary energy consumption (EJ),94.28111935
+Energy Institute,North America,Mexico,2023,Primary energy consumption (EJ),8.452957041
+Energy Institute,North America,Canada,2023,Primary energy consumption (EJ),13.94959237
+Energy Institute,OECD,,2000,Primary energy consumption (EJ),232.4147777
+Energy Institute,OECD,,2001,Primary energy consumption (EJ),230.6507242
+Energy Institute,OECD,,2002,Primary energy consumption (EJ),232.7073017
+Energy Institute,OECD,,2003,Primary energy consumption (EJ),234.7295796
+Energy Institute,OECD,,2004,Primary energy consumption (EJ),239.2583559
+Energy Institute,OECD,,2005,Primary energy consumption (EJ),241.0737559
+Energy Institute,OECD,,2006,Primary energy consumption (EJ),241.4398503
+Energy Institute,OECD,,2007,Primary energy consumption (EJ),243.0502985
+Energy Institute,OECD,,2008,Primary energy consumption (EJ),240.4317148
+Energy Institute,OECD,,2009,Primary energy consumption (EJ),228.7143325
+Energy Institute,OECD,,2010,Primary energy consumption (EJ),237.0632934
+Energy Institute,OECD,,2011,Primary energy consumption (EJ),234.5952671
+Energy Institute,OECD,,2012,Primary energy consumption (EJ),232.5020668
+Energy Institute,OECD,,2013,Primary energy consumption (EJ),234.8126993
+Energy Institute,OECD,,2014,Primary energy consumption (EJ),232.8838388
+Energy Institute,OECD,,2015,Primary energy consumption (EJ),233.4346678
+Energy Institute,OECD,,2016,Primary energy consumption (EJ),234.6238207
+Energy Institute,OECD,,2017,Primary energy consumption (EJ),237.1301674
+Energy Institute,OECD,,2018,Primary energy consumption (EJ),240.6521561
+Energy Institute,OECD,,2019,Primary energy consumption (EJ),238.5277871
+Energy Institute,OECD,,2020,Primary energy consumption (EJ),221.9095851
+Energy Institute,OECD,,2021,Primary energy consumption (EJ),232.5561649
+Energy Institute,OECD,,2022,Primary energy consumption (EJ),233.5494662
+Energy Institute,OECD,,2023,Primary energy consumption (EJ),229.8966699
+Energy Institute,S. & Cent. America,Peru,2000,Primary energy consumption (EJ),0.530492959
+Energy Institute,S. & Cent. America,Central America,2000,Primary energy consumption (EJ),0.773959259
+Energy Institute,S. & Cent. America,Trinidad & Tobago,2000,Primary energy consumption (EJ),0.416202069
+Energy Institute,S. & Cent. America,Other South America,2000,Primary energy consumption (EJ),0.98855262
+Energy Institute,S. & Cent. America,Venezuela,2000,Primary energy consumption (EJ),2.779244022
+Energy Institute,S. & Cent. America,Ecuador,2000,Primary energy consumption (EJ),0.374863755
+Energy Institute,S. & Cent. America,Brazil,2000,Primary energy consumption (EJ),8.484351221
+Energy Institute,S. & Cent. America,Other Caribbean,2000,Primary energy consumption (EJ),1.717432713
+Energy Institute,S. & Cent. America,Argentina,2000,Primary energy consumption (EJ),2.515597274
+Energy Institute,S. & Cent. America,Chile,2000,Primary energy consumption (EJ),1.106608462
+Energy Institute,S. & Cent. America,Colombia,2000,Primary energy consumption (EJ),1.131063647
+Energy Institute,S. & Cent. America,Colombia,2001,Primary energy consumption (EJ),1.140712882
+Energy Institute,S. & Cent. America,Chile,2001,Primary energy consumption (EJ),1.128041683
+Energy Institute,S. & Cent. America,Trinidad & Tobago,2001,Primary energy consumption (EJ),0.45712714
+Energy Institute,S. & Cent. America,Central America,2001,Primary energy consumption (EJ),0.798717953
+Energy Institute,S. & Cent. America,Other Caribbean,2001,Primary energy consumption (EJ),1.815995034
+Energy Institute,S. & Cent. America,Brazil,2001,Primary energy consumption (EJ),8.272200562
+Energy Institute,S. & Cent. America,Argentina,2001,Primary energy consumption (EJ),2.457087393
+Energy Institute,S. & Cent. America,Ecuador,2001,Primary energy consumption (EJ),0.379738655
+Energy Institute,S. & Cent. America,Venezuela,2001,Primary energy consumption (EJ),2.941205947
+Energy Institute,S. & Cent. America,Peru,2001,Primary energy consumption (EJ),0.525873193
+Energy Institute,S. & Cent. America,Other South America,2001,Primary energy consumption (EJ),0.909514461
+Energy Institute,S. & Cent. America,Ecuador,2002,Primary energy consumption (EJ),0.374793739
+Energy Institute,S. & Cent. America,Other South America,2002,Primary energy consumption (EJ),0.941201258
+Energy Institute,S. & Cent. America,Argentina,2002,Primary energy consumption (EJ),2.356104508
+Energy Institute,S. & Cent. America,Venezuela,2002,Primary energy consumption (EJ),2.937029917
+Energy Institute,S. & Cent. America,Trinidad & Tobago,2002,Primary energy consumption (EJ),0.492647281
+Energy Institute,S. & Cent. America,Brazil,2002,Primary energy consumption (EJ),8.460467711
+Energy Institute,S. & Cent. America,Other Caribbean,2002,Primary energy consumption (EJ),1.837432452
+Energy Institute,S. & Cent. America,Central America,2002,Primary energy consumption (EJ),0.818225102
+Energy Institute,S. & Cent. America,Chile,2002,Primary energy consumption (EJ),1.154885091
+Energy Institute,S. & Cent. America,Peru,2002,Primary energy consumption (EJ),0.538476846
+Energy Institute,S. & Cent. America,Colombia,2002,Primary energy consumption (EJ),1.140970049
+Energy Institute,S. & Cent. America,Colombia,2003,Primary energy consumption (EJ),1.162308216
+Energy Institute,S. & Cent. America,Argentina,2003,Primary energy consumption (EJ),2.525420268
+Energy Institute,S. & Cent. America,Other Caribbean,2003,Primary energy consumption (EJ),1.872731155
+Energy Institute,S. & Cent. America,Chile,2003,Primary energy consumption (EJ),1.160963085
+Energy Institute,S. & Cent. America,Venezuela,2003,Primary energy consumption (EJ),2.64245345
+Energy Institute,S. & Cent. America,Brazil,2003,Primary energy consumption (EJ),8.620636135
+Energy Institute,S. & Cent. America,Peru,2003,Primary energy consumption (EJ),0.531617921
+Energy Institute,S. & Cent. America,Central America,2003,Primary energy consumption (EJ),0.852600651
+Energy Institute,S. & Cent. America,Ecuador,2003,Primary energy consumption (EJ),0.383786728
+Energy Institute,S. & Cent. America,Other South America,2003,Primary energy consumption (EJ),0.974979919
+Energy Institute,S. & Cent. America,Trinidad & Tobago,2003,Primary energy consumption (EJ),0.557223054
+Energy Institute,S. & Cent. America,Central America,2004,Primary energy consumption (EJ),0.882535487
+Energy Institute,S. & Cent. America,Other Caribbean,2004,Primary energy consumption (EJ),1.876747365
+Energy Institute,S. & Cent. America,Venezuela,2004,Primary energy consumption (EJ),2.941069484
+Energy Institute,S. & Cent. America,Brazil,2004,Primary energy consumption (EJ),9.039802901
+Energy Institute,S. & Cent. America,Ecuador,2004,Primary energy consumption (EJ),0.410601385
+Energy Institute,S. & Cent. America,Other South America,2004,Primary energy consumption (EJ),0.956768999
+Energy Institute,S. & Cent. America,Argentina,2004,Primary energy consumption (EJ),2.681342431
+Energy Institute,S. & Cent. America,Trinidad & Tobago,2004,Primary energy consumption (EJ),0.611208816
+Energy Institute,S. & Cent. America,Chile,2004,Primary energy consumption (EJ),1.239476388
+Energy Institute,S. & Cent. America,Peru,2004,Primary energy consumption (EJ),0.566625859
+Energy Institute,S. & Cent. America,Colombia,2004,Primary energy consumption (EJ),1.222310288
+Energy Institute,S. & Cent. America,Peru,2005,Primary energy consumption (EJ),0.589427486
+Energy Institute,S. & Cent. America,Chile,2005,Primary energy consumption (EJ),1.286376903
+Energy Institute,S. & Cent. America,Other Caribbean,2005,Primary energy consumption (EJ),1.89516579
+Energy Institute,S. & Cent. America,Colombia,2005,Primary energy consumption (EJ),1.203485528
+Energy Institute,S. & Cent. America,Argentina,2005,Primary energy consumption (EJ),2.845826742
+Energy Institute,S. & Cent. America,Trinidad & Tobago,2005,Primary energy consumption (EJ),0.674033116
+Energy Institute,S. & Cent. America,Other South America,2005,Primary energy consumption (EJ),0.97105444
+Energy Institute,S. & Cent. America,Central America,2005,Primary energy consumption (EJ),0.888845355
+Energy Institute,S. & Cent. America,Ecuador,2005,Primary energy consumption (EJ),0.434609271
+Energy Institute,S. & Cent. America,Venezuela,2005,Primary energy consumption (EJ),3.057070339
+Energy Institute,S. & Cent. America,Brazil,2005,Primary energy consumption (EJ),9.275024913
+Energy Institute,S. & Cent. America,Ecuador,2006,Primary energy consumption (EJ),0.459668431
+Energy Institute,S. & Cent. America,Central America,2006,Primary energy consumption (EJ),0.938740067
+Energy Institute,S. & Cent. America,Chile,2006,Primary energy consumption (EJ),1.330856346
+Energy Institute,S. & Cent. America,Brazil,2006,Primary energy consumption (EJ),9.530622342
+Energy Institute,S. & Cent. America,Trinidad & Tobago,2006,Primary energy consumption (EJ),0.781004252
+Energy Institute,S. & Cent. America,Venezuela,2006,Primary energy consumption (EJ),3.362282936
+Energy Institute,S. & Cent. America,Other South America,2006,Primary energy consumption (EJ),0.978990883
+Energy Institute,S. & Cent. America,Argentina,2006,Primary energy consumption (EJ),2.989953611
+Energy Institute,S. & Cent. America,Other Caribbean,2006,Primary energy consumption (EJ),1.932760096
+Energy Institute,S. & Cent. America,Colombia,2006,Primary energy consumption (EJ),1.389552255
+Energy Institute,S. & Cent. America,Peru,2006,Primary energy consumption (EJ),0.596134658
+Energy Institute,S. & Cent. America,Trinidad & Tobago,2007,Primary energy consumption (EJ),0.796954015
+Energy Institute,S. & Cent. America,Venezuela,2007,Primary energy consumption (EJ),3.512384685
+Energy Institute,S. & Cent. America,Argentina,2007,Primary energy consumption (EJ),3.116323681
+Energy Institute,S. & Cent. America,Other Caribbean,2007,Primary energy consumption (EJ),1.853925985
+Energy Institute,S. & Cent. America,Brazil,2007,Primary energy consumption (EJ),10.14436658
+Energy Institute,S. & Cent. America,Chile,2007,Primary energy consumption (EJ),1.32947496
+Energy Institute,S. & Cent. America,Ecuador,2007,Primary energy consumption (EJ),0.483309199
+Energy Institute,S. & Cent. America,Colombia,2007,Primary energy consumption (EJ),1.412176325
+Energy Institute,S. & Cent. America,Peru,2007,Primary energy consumption (EJ),0.649024281
+Energy Institute,S. & Cent. America,Central America,2007,Primary energy consumption (EJ),0.977172375
+Energy Institute,S. & Cent. America,Other South America,2007,Primary energy consumption (EJ),1.05744932
+Energy Institute,S. & Cent. America,Venezuela,2008,Primary energy consumption (EJ),3.601156268
+Energy Institute,S. & Cent. America,Colombia,2008,Primary energy consumption (EJ),1.470527909
+Energy Institute,S. & Cent. America,Trinidad & Tobago,2008,Primary energy consumption (EJ),0.785113661
+Energy Institute,S. & Cent. America,Peru,2008,Primary energy consumption (EJ),0.700718804
+Energy Institute,S. & Cent. America,Chile,2008,Primary energy consumption (EJ),1.329500392
+Energy Institute,S. & Cent. America,Other South America,2008,Primary energy consumption (EJ),1.094410837
+Energy Institute,S. & Cent. America,Ecuador,2008,Primary energy consumption (EJ),0.515826373
+Energy Institute,S. & Cent. America,Other Caribbean,2008,Primary energy consumption (EJ),1.726404229
+Energy Institute,S. & Cent. America,Argentina,2008,Primary energy consumption (EJ),3.157840995
+Energy Institute,S. & Cent. America,Brazil,2008,Primary energy consumption (EJ),10.58123919
+Energy Institute,S. & Cent. America,Central America,2008,Primary energy consumption (EJ),1.008823551
+Energy Institute,S. & Cent. America,Argentina,2009,Primary energy consumption (EJ),3.06903902
+Energy Institute,S. & Cent. America,Other Caribbean,2009,Primary energy consumption (EJ),1.625080363
+Energy Institute,S. & Cent. America,Colombia,2009,Primary energy consumption (EJ),1.453616132
+Energy Institute,S. & Cent. America,Brazil,2009,Primary energy consumption (EJ),10.50691822
+Energy Institute,S. & Cent. America,Trinidad & Tobago,2009,Primary energy consumption (EJ),0.779371524
+Energy Institute,S. & Cent. America,Chile,2009,Primary energy consumption (EJ),1.275740661
+Energy Institute,S. & Cent. America,Other South America,2009,Primary energy consumption (EJ),1.105503452
+Energy Institute,S. & Cent. America,Ecuador,2009,Primary energy consumption (EJ),0.503298435
+Energy Institute,S. & Cent. America,Peru,2009,Primary energy consumption (EJ),0.714384232
+Energy Institute,S. & Cent. America,Central America,2009,Primary energy consumption (EJ),0.989037094
+Energy Institute,S. & Cent. America,Venezuela,2009,Primary energy consumption (EJ),3.638815538
+Energy Institute,S. & Cent. America,Other South America,2010,Primary energy consumption (EJ),1.131780688
+Energy Institute,S. & Cent. America,Brazil,2010,Primary energy consumption (EJ),11.46613232
+Energy Institute,S. & Cent. America,Peru,2010,Primary energy consumption (EJ),0.811030996
+Energy Institute,S. & Cent. America,Argentina,2010,Primary energy consumption (EJ),3.182289353
+Energy Institute,S. & Cent. America,Other Caribbean,2010,Primary energy consumption (EJ),1.638150705
+Energy Institute,S. & Cent. America,Trinidad & Tobago,2010,Primary energy consumption (EJ),0.840676588
+Energy Institute,S. & Cent. America,Colombia,2010,Primary energy consumption (EJ),1.52856372
+Energy Institute,S. & Cent. America,Chile,2010,Primary energy consumption (EJ),1.310211565
+Energy Institute,S. & Cent. America,Venezuela,2010,Primary energy consumption (EJ),3.445232556
+Energy Institute,S. & Cent. America,Ecuador,2010,Primary energy consumption (EJ),0.558699206
+Energy Institute,S. & Cent. America,Central America,2010,Primary energy consumption (EJ),1.031762374
+Energy Institute,S. & Cent. America,Venezuela,2011,Primary energy consumption (EJ),3.635707085
+Energy Institute,S. & Cent. America,Central America,2011,Primary energy consumption (EJ),1.057609605
+Energy Institute,S. & Cent. America,Other South America,2011,Primary energy consumption (EJ),1.18705302
+Energy Institute,S. & Cent. America,Other Caribbean,2011,Primary energy consumption (EJ),1.633473671
+Energy Institute,S. & Cent. America,Peru,2011,Primary energy consumption (EJ),0.894801904
+Energy Institute,S. & Cent. America,Chile,2011,Primary energy consumption (EJ),1.388562482
+Energy Institute,S. & Cent. America,Trinidad & Tobago,2011,Primary energy consumption (EJ),0.829942648
+Energy Institute,S. & Cent. America,Colombia,2011,Primary energy consumption (EJ),1.597667778
+Energy Institute,S. & Cent. America,Brazil,2011,Primary energy consumption (EJ),11.86484311
+Energy Institute,S. & Cent. America,Ecuador,2011,Primary energy consumption (EJ),0.592719463
+Energy Institute,S. & Cent. America,Argentina,2011,Primary energy consumption (EJ),3.272727743
+Energy Institute,S. & Cent. America,Peru,2012,Primary energy consumption (EJ),0.924211415
+Energy Institute,S. & Cent. America,Brazil,2012,Primary energy consumption (EJ),12.21235443
+Energy Institute,S. & Cent. America,Ecuador,2012,Primary energy consumption (EJ),0.626160362
+Energy Institute,S. & Cent. America,Colombia,2012,Primary energy consumption (EJ),1.698959095
+Energy Institute,S. & Cent. America,Other Caribbean,2012,Primary energy consumption (EJ),1.583235536
+Energy Institute,S. & Cent. America,Other South America,2012,Primary energy consumption (EJ),1.20768106
+Energy Institute,S. & Cent. America,Central America,2012,Primary energy consumption (EJ),1.102887933
+Energy Institute,S. & Cent. America,Chile,2012,Primary energy consumption (EJ),1.449887663
+Energy Institute,S. & Cent. America,Venezuela,2012,Primary energy consumption (EJ),3.797742617
+Energy Institute,S. & Cent. America,Trinidad & Tobago,2012,Primary energy consumption (EJ),0.813312756
+Energy Institute,S. & Cent. America,Argentina,2012,Primary energy consumption (EJ),3.397343306
+Energy Institute,S. & Cent. America,Ecuador,2013,Primary energy consumption (EJ),0.64623296
+Energy Institute,S. & Cent. America,Other South America,2013,Primary energy consumption (EJ),1.253423207
+Energy Institute,S. & Cent. America,Chile,2013,Primary energy consumption (EJ),1.489533551
+Energy Institute,S. & Cent. America,Trinidad & Tobago,2013,Primary energy consumption (EJ),0.822884265
+Energy Institute,S. & Cent. America,Colombia,2013,Primary energy consumption (EJ),1.746142637
+Energy Institute,S. & Cent. America,Argentina,2013,Primary energy consumption (EJ),3.533033394
+Energy Institute,S. & Cent. America,Central America,2013,Primary energy consumption (EJ),1.120538148
+Energy Institute,S. & Cent. America,Other Caribbean,2013,Primary energy consumption (EJ),1.523340881
+Energy Institute,S. & Cent. America,Brazil,2013,Primary energy consumption (EJ),12.50618269
+Energy Institute,S. & Cent. America,Peru,2013,Primary energy consumption (EJ),0.945293296
+Energy Institute,S. & Cent. America,Venezuela,2013,Primary energy consumption (EJ),3.733234011
+Energy Institute,S. & Cent. America,Chile,2014,Primary energy consumption (EJ),1.47432217
+Energy Institute,S. & Cent. America,Trinidad & Tobago,2014,Primary energy consumption (EJ),0.823803815
+Energy Institute,S. & Cent. America,Central America,2014,Primary energy consumption (EJ),1.154455945
+Energy Institute,S. & Cent. America,Colombia,2014,Primary energy consumption (EJ),1.838109144
+Energy Institute,S. & Cent. America,Venezuela,2014,Primary energy consumption (EJ),3.647657389
+Energy Institute,S. & Cent. America,Argentina,2014,Primary energy consumption (EJ),3.527487753
+Energy Institute,S. & Cent. America,Other Caribbean,2014,Primary energy consumption (EJ),1.539497241
+Energy Institute,S. & Cent. America,Other South America,2014,Primary energy consumption (EJ),1.227536971
+Energy Institute,S. & Cent. America,Brazil,2014,Primary energy consumption (EJ),12.8319063
+Energy Institute,S. & Cent. America,Peru,2014,Primary energy consumption (EJ),0.967784605
+Energy Institute,S. & Cent. America,Ecuador,2014,Primary energy consumption (EJ),0.678827398
+Energy Institute,S. & Cent. America,Other Caribbean,2015,Primary energy consumption (EJ),1.599140534
+Energy Institute,S. & Cent. America,Brazil,2015,Primary energy consumption (EJ),12.66104507
+Energy Institute,S. & Cent. America,Colombia,2015,Primary energy consumption (EJ),1.740251452
+Energy Institute,S. & Cent. America,Other South America,2015,Primary energy consumption (EJ),1.243691278
+Energy Institute,S. & Cent. America,Chile,2015,Primary energy consumption (EJ),1.491227292
+Energy Institute,S. & Cent. America,Venezuela,2015,Primary energy consumption (EJ),3.489482351
+Energy Institute,S. & Cent. America,Trinidad & Tobago,2015,Primary energy consumption (EJ),0.797889821
+Energy Institute,S. & Cent. America,Peru,2015,Primary energy consumption (EJ),1.014010041
+Energy Institute,S. & Cent. America,Central America,2015,Primary energy consumption (EJ),1.271941024
+Energy Institute,S. & Cent. America,Argentina,2015,Primary energy consumption (EJ),3.588984208
+Energy Institute,S. & Cent. America,Ecuador,2015,Primary energy consumption (EJ),0.676966107
+Energy Institute,S. & Cent. America,Argentina,2016,Primary energy consumption (EJ),3.572727118
+Energy Institute,S. & Cent. America,Other South America,2016,Primary energy consumption (EJ),1.347425102
+Energy Institute,S. & Cent. America,Brazil,2016,Primary energy consumption (EJ),12.35579537
+Energy Institute,S. & Cent. America,Other Caribbean,2016,Primary energy consumption (EJ),1.650506675
+Energy Institute,S. & Cent. America,Chile,2016,Primary energy consumption (EJ),1.562052116
+Energy Institute,S. & Cent. America,Trinidad & Tobago,2016,Primary energy consumption (EJ),0.7047813
+Energy Institute,S. & Cent. America,Central America,2016,Primary energy consumption (EJ),1.327081212
+Energy Institute,S. & Cent. America,Ecuador,2016,Primary energy consumption (EJ),0.674653817
+Energy Institute,S. & Cent. America,Venezuela,2016,Primary energy consumption (EJ),3.204303914
+Energy Institute,S. & Cent. America,Peru,2016,Primary energy consumption (EJ),1.076176269
+Energy Institute,S. & Cent. America,Colombia,2016,Primary energy consumption (EJ),1.960622197
+Energy Institute,S. & Cent. America,Venezuela,2017,Primary energy consumption (EJ),3.142707765
+Energy Institute,S. & Cent. America,Peru,2017,Primary energy consumption (EJ),1.092925034
+Energy Institute,S. & Cent. America,Central America,2017,Primary energy consumption (EJ),1.378215467
+Energy Institute,S. & Cent. America,Brazil,2017,Primary energy consumption (EJ),12.46677573
+Energy Institute,S. & Cent. America,Other Caribbean,2017,Primary energy consumption (EJ),1.614991461
+Energy Institute,S. & Cent. America,Colombia,2017,Primary energy consumption (EJ),1.978927623
+Energy Institute,S. & Cent. America,Trinidad & Tobago,2017,Primary energy consumption (EJ),0.745441103
+Energy Institute,S. & Cent. America,Argentina,2017,Primary energy consumption (EJ),3.569029614
+Energy Institute,S. & Cent. America,Ecuador,2017,Primary energy consumption (EJ),0.702394957
+Energy Institute,S. & Cent. America,Chile,2017,Primary energy consumption (EJ),1.621248811
+Energy Institute,S. & Cent. America,Other South America,2017,Primary energy consumption (EJ),1.336346077
+Energy Institute,S. & Cent. America,Argentina,2018,Primary energy consumption (EJ),3.543644201
+Energy Institute,S. & Cent. America,Trinidad & Tobago,2018,Primary energy consumption (EJ),0.698538841
+Energy Institute,S. & Cent. America,Other South America,2018,Primary energy consumption (EJ),1.355264412
+Energy Institute,S. & Cent. America,Venezuela,2018,Primary energy consumption (EJ),2.620340554
+Energy Institute,S. & Cent. America,Peru,2018,Primary energy consumption (EJ),1.146328365
+Energy Institute,S. & Cent. America,Colombia,2018,Primary energy consumption (EJ),2.010307451
+Energy Institute,S. & Cent. America,Ecuador,2018,Primary energy consumption (EJ),0.742968836
+Energy Institute,S. & Cent. America,Central America,2018,Primary energy consumption (EJ),1.404604828
+Energy Institute,S. & Cent. America,Brazil,2018,Primary energy consumption (EJ),12.51348606
+Energy Institute,S. & Cent. America,Chile,2018,Primary energy consumption (EJ),1.685799628
+Energy Institute,S. & Cent. America,Other Caribbean,2018,Primary energy consumption (EJ),1.649630269
+Energy Institute,S. & Cent. America,Chile,2019,Primary energy consumption (EJ),1.706323415
+Energy Institute,S. & Cent. America,Other Caribbean,2019,Primary energy consumption (EJ),1.629306005
+Energy Institute,S. & Cent. America,Trinidad & Tobago,2019,Primary energy consumption (EJ),0.702731548
+Energy Institute,S. & Cent. America,Peru,2019,Primary energy consumption (EJ),1.175706527
+Energy Institute,S. & Cent. America,Argentina,2019,Primary energy consumption (EJ),3.33849008
+Energy Institute,S. & Cent. America,Other South America,2019,Primary energy consumption (EJ),1.28835193
+Energy Institute,S. & Cent. America,Ecuador,2019,Primary energy consumption (EJ),0.760799174
+Energy Institute,S. & Cent. America,Venezuela,2019,Primary energy consumption (EJ),2.365084972
+Energy Institute,S. & Cent. America,Colombia,2019,Primary energy consumption (EJ),2.027492515
+Energy Institute,S. & Cent. America,Central America,2019,Primary energy consumption (EJ),1.476964593
+Energy Institute,S. & Cent. America,Brazil,2019,Primary energy consumption (EJ),12.71862254
+Energy Institute,S. & Cent. America,Peru,2020,Primary energy consumption (EJ),1.036308362
+Energy Institute,S. & Cent. America,Central America,2020,Primary energy consumption (EJ),1.28483844
+Energy Institute,S. & Cent. America,Colombia,2020,Primary energy consumption (EJ),1.845309373
+Energy Institute,S. & Cent. America,Ecuador,2020,Primary energy consumption (EJ),0.658304656
+Energy Institute,S. & Cent. America,Trinidad & Tobago,2020,Primary energy consumption (EJ),0.609635871
+Energy Institute,S. & Cent. America,Venezuela,2020,Primary energy consumption (EJ),1.900296554
+Energy Institute,S. & Cent. America,Other South America,2020,Primary energy consumption (EJ),1.158615157
+Energy Institute,S. & Cent. America,Argentina,2020,Primary energy consumption (EJ),3.131383015
+Energy Institute,S. & Cent. America,Brazil,2020,Primary energy consumption (EJ),12.2197255
+Energy Institute,S. & Cent. America,Chile,2020,Primary energy consumption (EJ),1.592919543
+Energy Institute,S. & Cent. America,Other Caribbean,2020,Primary energy consumption (EJ),1.483676311
+Energy Institute,S. & Cent. America,Central America,2021,Primary energy consumption (EJ),1.443650126
+Energy Institute,S. & Cent. America,Colombia,2021,Primary energy consumption (EJ),2.069083041
+Energy Institute,S. & Cent. America,Trinidad & Tobago,2021,Primary energy consumption (EJ),0.623247533
+Energy Institute,S. & Cent. America,Peru,2021,Primary energy consumption (EJ),1.1786687
+Energy Institute,S. & Cent. America,Venezuela,2021,Primary energy consumption (EJ),2.174709514
+Energy Institute,S. & Cent. America,Ecuador,2021,Primary energy consumption (EJ),0.765348772
+Energy Institute,S. & Cent. America,Other South America,2021,Primary energy consumption (EJ),1.201432218
+Energy Institute,S. & Cent. America,Brazil,2021,Primary energy consumption (EJ),12.85441075
+Energy Institute,S. & Cent. America,Argentina,2021,Primary energy consumption (EJ),3.450465595
+Energy Institute,S. & Cent. America,Chile,2021,Primary energy consumption (EJ),1.716685221
+Energy Institute,S. & Cent. America,Other Caribbean,2021,Primary energy consumption (EJ),1.507633033
+Energy Institute,S. & Cent. America,Peru,2022,Primary energy consumption (EJ),1.216668397
+Energy Institute,S. & Cent. America,Argentina,2022,Primary energy consumption (EJ),3.705771569
+Energy Institute,S. & Cent. America,Colombia,2022,Primary energy consumption (EJ),2.196242645
+Energy Institute,S. & Cent. America,Brazil,2022,Primary energy consumption (EJ),13.43592232
+Energy Institute,S. & Cent. America,Ecuador,2022,Primary energy consumption (EJ),0.801823061
+Energy Institute,S. & Cent. America,Central America,2022,Primary energy consumption (EJ),1.491539496
+Energy Institute,S. & Cent. America,Venezuela,2022,Primary energy consumption (EJ),2.341002864
+Energy Institute,S. & Cent. America,Other South America,2022,Primary energy consumption (EJ),1.248544524
+Energy Institute,S. & Cent. America,Other Caribbean,2022,Primary energy consumption (EJ),1.499466007
+Energy Institute,S. & Cent. America,Trinidad & Tobago,2022,Primary energy consumption (EJ),0.62300336
+Energy Institute,S. & Cent. America,Chile,2022,Primary energy consumption (EJ),1.812619179
+Energy Institute,S. & Cent. America,Brazil,2023,Primary energy consumption (EJ),13.87337272
+Energy Institute,S. & Cent. America,Argentina,2023,Primary energy consumption (EJ),3.671068512
+Energy Institute,S. & Cent. America,Other South America,2023,Primary energy consumption (EJ),1.335688858
+Energy Institute,S. & Cent. America,Other Caribbean,2023,Primary energy consumption (EJ),1.595931104
+Energy Institute,S. & Cent. America,Trinidad & Tobago,2023,Primary energy consumption (EJ),0.589858889
+Energy Institute,S. & Cent. America,Ecuador,2023,Primary energy consumption (EJ),0.843515538
+Energy Institute,S. & Cent. America,Peru,2023,Primary energy consumption (EJ),1.237764682
+Energy Institute,S. & Cent. America,Colombia,2023,Primary energy consumption (EJ),2.255347224
+Energy Institute,S. & Cent. America,Central America,2023,Primary energy consumption (EJ),1.526959961
+Energy Institute,S. & Cent. America,Chile,2023,Primary energy consumption (EJ),1.814643189
+Energy Institute,S. & Cent. America,Venezuela,2023,Primary energy consumption (EJ),2.531421083
+Energy Institute,World,,2000,Primary energy consumption (EJ),397.3250079
+Energy Institute,World,,2001,Primary energy consumption (EJ),401.2040516
+Energy Institute,World,,2002,Primary energy consumption (EJ),409.7141721
+Energy Institute,World,,2003,Primary energy consumption (EJ),424.1167803
+Energy Institute,World,,2004,Primary energy consumption (EJ),445.4242882
+Energy Institute,World,,2005,Primary energy consumption (EJ),460.3495703
+Energy Institute,World,,2006,Primary energy consumption (EJ),473.3593165
+Energy Institute,World,,2007,Primary energy consumption (EJ),487.8813575
+Energy Institute,World,,2008,Primary energy consumption (EJ),493.6706035
+Energy Institute,World,,2009,Primary energy consumption (EJ),485.8289088
+Energy Institute,World,,2010,Primary energy consumption (EJ),509.2471443
+Energy Institute,World,,2011,Primary energy consumption (EJ),520.948586
+Energy Institute,World,,2012,Primary energy consumption (EJ),528.2812556
+Energy Institute,World,,2013,Primary energy consumption (EJ),537.4771779
+Energy Institute,World,,2014,Primary energy consumption (EJ),543.2076371
+Energy Institute,World,,2015,Primary energy consumption (EJ),547.3277837
+Energy Institute,World,,2016,Primary energy consumption (EJ),552.9878408
+Energy Institute,World,,2017,Primary energy consumption (EJ),566.1074325
+Energy Institute,World,,2018,Primary energy consumption (EJ),581.4663948
+Energy Institute,World,,2019,Primary energy consumption (EJ),588.04773
+Energy Institute,World,,2020,Primary energy consumption (EJ),567.6038294
+Energy Institute,World,,2021,Primary energy consumption (EJ),596.6245279
+Energy Institute,World,,2022,Primary energy consumption (EJ),607.3495286
+Energy Institute,World,,2023,Primary energy consumption (EJ),619.6286568
