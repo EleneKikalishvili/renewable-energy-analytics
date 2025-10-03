@@ -1,0 +1,250 @@
+iso3,iso2,m49_code,sub_region _code,region_code,country_name,region_name,sub_region_name,capital,continent_code,geoname_id
+AFG,AF,4,34,142,Afghanistan,Asia,Southern Asia,Kabul,AS,1149361
+ALA,AX,248,154,150,Åland Islands,Europe,Northern Europe,Mariehamn,EU,661882
+ALB,AL,8,39,150,Albania,Europe,Southern Europe,Tirana,EU,783754
+DZA,DZ,12,15,2,Algeria,Africa,Northern Africa,Algiers,AF,2589581
+ASM,AS,16,61,9,American Samoa,Oceania,Polynesia,Pago Pago,OC,5880801
+AND,AD,20,39,150,Andorra,Europe,Southern Europe,Andorra la Vella,EU,3041565
+AGO,AO,24,202,2,Angola,Africa,Sub-Saharan Africa,Luanda,AF,3351879
+AIA,AI,660,419,19,Anguilla,Americas,Latin America and the Caribbean,The Valley,NA,3573511
+ATA,AQ,10,,,Antarctica,,,,AN,6697173
+ATG,AG,28,419,19,Antigua and Barbuda,Americas,Latin America and the Caribbean,St. John's,NA,3576396
+ARG,AR,32,419,19,Argentina,Americas,Latin America and the Caribbean,Buenos Aires,SA,3865483
+ARM,AM,51,145,142,Armenia,Asia,Western Asia,Yerevan,AS,174982
+ABW,AW,533,419,19,Aruba,Americas,Latin America and the Caribbean,Oranjestad,NA,3577279
+AUS,AU,36,53,9,Australia,Oceania,Australia and New Zealand,Canberra,OC,2077456
+AUT,AT,40,155,150,Austria,Europe,Western Europe,Vienna,EU,2782113
+AZE,AZ,31,145,142,Azerbaijan,Asia,Western Asia,Baku,AS,587116
+BHS,BS,44,419,19,Bahamas,Americas,Latin America and the Caribbean,Nassau,NA,3572887
+BHR,BH,48,145,142,Bahrain,Asia,Western Asia,Manama,AS,290291
+BGD,BD,50,34,142,Bangladesh,Asia,Southern Asia,Dhaka,AS,1210997
+BRB,BB,52,419,19,Barbados,Americas,Latin America and the Caribbean,Bridgetown,NA,3374084
+BLR,BY,112,151,150,Belarus,Europe,Eastern Europe,Minsk,EU,630336
+BEL,BE,56,155,150,Belgium,Europe,Western Europe,Brussels,EU,2802361
+BLZ,BZ,84,419,19,Belize,Americas,Latin America and the Caribbean,Belmopan,NA,3582678
+BEN,BJ,204,202,2,Benin,Africa,Sub-Saharan Africa,Porto-Novo,AF,2395170
+BMU,BM,60,21,19,Bermuda,Americas,Northern America,Hamilton,NA,3573345
+BTN,BT,64,34,142,Bhutan,Asia,Southern Asia,Thimphu,AS,1252634
+BOL,BO,68,419,19,Bolivia (Plurinational State of),Americas,Latin America and the Caribbean,Sucre,SA,3923057
+BES,BQ,535,419,19,"Bonaire, Sint Eustatius and Saba",Americas,Latin America and the Caribbean,,NA,7626844
+BIH,BA,70,39,150,Bosnia and Herzegovina,Europe,Southern Europe,Sarajevo,EU,3277605
+BWA,BW,72,202,2,Botswana,Africa,Sub-Saharan Africa,Gaborone,AF,933860
+BVT,BV,74,419,19,Bouvet Island,Americas,Latin America and the Caribbean,,AN,3371123
+BRA,BR,76,419,19,Brazil,Americas,Latin America and the Caribbean,Brasilia,SA,3469034
+IOT,IO,86,202,2,British Indian Ocean Territory,Africa,Sub-Saharan Africa,Diego Garcia,AS,1282588
+VGB,VG,92,419,19,British Virgin Islands,Americas,Latin America and the Caribbean,Road Town,NA,3577718
+BRN,BN,96,35,142,Brunei Darussalam,Asia,South-eastern Asia,Bandar Seri Begawan,AS,1820814
+BGR,BG,100,151,150,Bulgaria,Europe,Eastern Europe,Sofia,EU,732800
+BFA,BF,854,202,2,Burkina Faso,Africa,Sub-Saharan Africa,Ouagadougou,AF,2361809
+BDI,BI,108,202,2,Burundi,Africa,Sub-Saharan Africa,Gitega,AF,433561
+CPV,CV,132,202,2,Cabo Verde,Africa,Sub-Saharan Africa,Praia,AF,3374766
+KHM,KH,116,35,142,Cambodia,Asia,South-eastern Asia,Phnom Penh,AS,1831722
+CMR,CM,120,202,2,Cameroon,Africa,Sub-Saharan Africa,Yaounde,AF,2233387
+CAN,CA,124,21,19,Canada,Americas,Northern America,Ottawa,NA,6251999
+CYM,KY,136,419,19,Cayman Islands,Americas,Latin America and the Caribbean,George Town,NA,3580718
+CAF,CF,140,202,2,Central African Republic,Africa,Sub-Saharan Africa,Bangui,AF,239880
+TCD,TD,148,202,2,Chad,Africa,Sub-Saharan Africa,N'Djamena,AF,2434508
+CHL,CL,152,419,19,Chile,Americas,Latin America and the Caribbean,Santiago,SA,3895114
+CHN,CN,156,30,142,China,Asia,Eastern Asia,Beijing,AS,1814991
+HKG,HK,344,30,142,"China, Hong Kong Special Administrative Region",Asia,Eastern Asia,Hong Kong,AS,1819730
+MAC,MO,446,30,142,"China, Macao Special Administrative Region",Asia,Eastern Asia,Macao,AS,1821275
+CXR,CX,162,53,9,Christmas Island,Oceania,Australia and New Zealand,Flying Fish Cove,OC,2078138
+CCK,CC,166,53,9,Cocos (Keeling) Islands,Oceania,Australia and New Zealand,West Island,AS,1547376
+COL,CO,170,419,19,Colombia,Americas,Latin America and the Caribbean,Bogota,SA,3686110
+COM,KM,174,202,2,Comoros,Africa,Sub-Saharan Africa,Moroni,AF,921929
+COG,CG,178,202,2,Congo,Africa,Sub-Saharan Africa,Brazzaville,AF,2260494
+COK,CK,184,61,9,Cook Islands,Oceania,Polynesia,Avarua,OC,1899402
+CRI,CR,188,419,19,Costa Rica,Americas,Latin America and the Caribbean,San Jose,NA,3624060
+HRV,HR,191,39,150,Croatia,Europe,Southern Europe,Zagreb,EU,3202326
+CUB,CU,192,419,19,Cuba,Americas,Latin America and the Caribbean,Havana,NA,3562981
+CUW,CW,531,419,19,Curaçao,Americas,Latin America and the Caribbean,Willemstad,NA,7626836
+CYP,CY,196,145,142,Cyprus,Asia,Western Asia,Nicosia,EU,146669
+CZE,CZ,203,151,150,Czechia,Europe,Eastern Europe,Prague,EU,3077311
+PRK,KP,408,30,142,Democratic People's Republic of Korea,Asia,Eastern Asia,Pyongyang,AS,1873107
+COD,CD,180,202,2,Democratic Republic of the Congo,Africa,Sub-Saharan Africa,Kinshasa,AF,203312
+DNK,DK,208,154,150,Denmark,Europe,Northern Europe,Copenhagen,EU,2623032
+DJI,DJ,262,202,2,Djibouti,Africa,Sub-Saharan Africa,Djibouti,AF,223816
+DMA,DM,212,419,19,Dominica,Americas,Latin America and the Caribbean,Roseau,NA,3575830
+DOM,DO,214,419,19,Dominican Republic,Americas,Latin America and the Caribbean,Santo Domingo,NA,3508796
+ECU,EC,218,419,19,Ecuador,Americas,Latin America and the Caribbean,Quito,SA,3658394
+EGY,EG,818,15,2,Egypt,Africa,Northern Africa,Cairo,AF,357994
+SLV,SV,222,419,19,El Salvador,Americas,Latin America and the Caribbean,San Salvador,NA,3585968
+GNQ,GQ,226,202,2,Equatorial Guinea,Africa,Sub-Saharan Africa,Malabo,AF,2309096
+ERI,ER,232,202,2,Eritrea,Africa,Sub-Saharan Africa,Asmara,AF,338010
+EST,EE,233,154,150,Estonia,Europe,Northern Europe,Tallinn,EU,453733
+SWZ,SZ,748,202,2,Eswatini,Africa,Sub-Saharan Africa,Mbabane,AF,934841
+ETH,ET,231,202,2,Ethiopia,Africa,Sub-Saharan Africa,Addis Ababa,AF,337996
+FLK,FK,238,419,19,Falkland Islands,Americas,Latin America and the Caribbean,Stanley,SA,3474414
+FRO,FO,234,154,150,Faroe Islands,Europe,Northern Europe,Torshavn,EU,2622320
+FJI,FJ,242,54,9,Fiji,Oceania,Melanesia,Suva,OC,2205218
+FIN,FI,246,154,150,Finland,Europe,Northern Europe,Helsinki,EU,660013
+FRA,FR,250,155,150,France,Europe,Western Europe,Paris,EU,3017382
+GUF,GF,254,419,19,French Guiana,Americas,Latin America and the Caribbean,Cayenne,SA,3381670
+PYF,PF,258,61,9,French Polynesia,Oceania,Polynesia,Papeete,OC,4030656
+ATF,TF,260,202,2,French Southern Territories,Africa,Sub-Saharan Africa,Port-aux-Francais,AN,1546748
+GAB,GA,266,202,2,Gabon,Africa,Sub-Saharan Africa,Libreville,AF,2400553
+GMB,GM,270,202,2,Gambia,Africa,Sub-Saharan Africa,Banjul,AF,2413451
+GEO,GE,268,145,142,Georgia,Asia,Western Asia,Tbilisi,AS,614540
+DEU,DE,276,155,150,Germany,Europe,Western Europe,Berlin,EU,2921044
+GHA,GH,288,202,2,Ghana,Africa,Sub-Saharan Africa,Accra,AF,2300660
+GIB,GI,292,39,150,Gibraltar,Europe,Southern Europe,Gibraltar,EU,2411586
+GRC,GR,300,39,150,Greece,Europe,Southern Europe,Athens,EU,390903
+GRL,GL,304,21,19,Greenland,Americas,Northern America,Nuuk,NA,3425505
+GRD,GD,308,419,19,Grenada,Americas,Latin America and the Caribbean,St. George's,NA,3580239
+GLP,GP,312,419,19,Guadeloupe,Americas,Latin America and the Caribbean,Basse-Terre,NA,3579143
+GUM,GU,316,57,9,Guam,Oceania,Micronesia,Hagatna,OC,4043988
+GTM,GT,320,419,19,Guatemala,Americas,Latin America and the Caribbean,Guatemala City,NA,3595528
+GGY,GG,831,154,150,Guernsey,Europe,Northern Europe,St Peter Port,EU,3042362
+GIN,GN,324,202,2,Guinea,Africa,Sub-Saharan Africa,Conakry,AF,2420477
+GNB,GW,624,202,2,Guinea-Bissau,Africa,Sub-Saharan Africa,Bissau,AF,2372248
+GUY,GY,328,419,19,Guyana,Americas,Latin America and the Caribbean,Georgetown,SA,3378535
+HTI,HT,332,419,19,Haiti,Americas,Latin America and the Caribbean,Port-au-Prince,NA,3723988
+HMD,HM,334,53,9,Heard Island and McDonald Islands,Oceania,Australia and New Zealand,,AN,1547314
+VAT,VA,336,39,150,Holy See,Europe,Southern Europe,Vatican City,EU,3164670
+HND,HN,340,419,19,Honduras,Americas,Latin America and the Caribbean,Tegucigalpa,NA,3608932
+HUN,HU,348,151,150,Hungary,Europe,Eastern Europe,Budapest,EU,719819
+ISL,IS,352,154,150,Iceland,Europe,Northern Europe,Reykjavik,EU,2629691
+IND,IN,356,34,142,India,Asia,Southern Asia,New Delhi,AS,1269750
+IDN,ID,360,35,142,Indonesia,Asia,South-eastern Asia,Jakarta,AS,1643084
+IRN,IR,364,34,142,Iran (Islamic Republic of),Asia,Southern Asia,Tehran,AS,130758
+IRQ,IQ,368,145,142,Iraq,Asia,Western Asia,Baghdad,AS,99237
+IRL,IE,372,154,150,Ireland,Europe,Northern Europe,Dublin,EU,2963597
+IMN,IM,833,154,150,Isle of Man,Europe,Northern Europe,Douglas,EU,3042225
+ISR,IL,376,145,142,Israel,Asia,Western Asia,Jerusalem,AS,294640
+ITA,IT,380,39,150,Italy,Europe,Southern Europe,Rome,EU,3175395
+CIV,CI,384,202,2,Ivory Coast,Africa,Sub-Saharan Africa,Yamoussoukro,AF,2287781
+JAM,JM,388,419,19,Jamaica,Americas,Latin America and the Caribbean,Kingston,NA,3489940
+JPN,JP,392,30,142,Japan,Asia,Eastern Asia,Tokyo,AS,1861060
+JEY,JE,832,154,150,Jersey,Europe,Northern Europe,Saint Helier,EU,3042142
+JOR,JO,400,145,142,Jordan,Asia,Western Asia,Amman,AS,248816
+KAZ,KZ,398,143,142,Kazakhstan,Asia,Central Asia,Nur-Sultan,AS,1522867
+KEN,KE,404,202,2,Kenya,Africa,Sub-Saharan Africa,Nairobi,AF,192950
+KIR,KI,296,57,9,Kiribati,Oceania,Micronesia,Tarawa,OC,4030945
+KWT,KW,414,145,142,Kuwait,Asia,Western Asia,Kuwait City,AS,285570
+KGZ,KG,417,143,142,Kyrgyzstan,Asia,Central Asia,Bishkek,AS,1527747
+LAO,LA,418,35,142,Lao People's Democratic Republic,Asia,South-eastern Asia,Vientiane,AS,1655842
+LVA,LV,428,154,150,Latvia,Europe,Northern Europe,Riga,EU,458258
+LBN,LB,422,145,142,Lebanon,Asia,Western Asia,Beirut,AS,272103
+LSO,LS,426,202,2,Lesotho,Africa,Sub-Saharan Africa,Maseru,AF,932692
+LBR,LR,430,202,2,Liberia,Africa,Sub-Saharan Africa,Monrovia,AF,2275384
+LBY,LY,434,15,2,Libya,Africa,Northern Africa,Tripoli,AF,2215636
+LIE,LI,438,155,150,Liechtenstein,Europe,Western Europe,Vaduz,EU,3042058
+LTU,LT,440,154,150,Lithuania,Europe,Northern Europe,Vilnius,EU,597427
+LUX,LU,442,155,150,Luxembourg,Europe,Western Europe,Luxembourg,EU,2960313
+MDG,MG,450,202,2,Madagascar,Africa,Sub-Saharan Africa,Antananarivo,AF,1062947
+MWI,MW,454,202,2,Malawi,Africa,Sub-Saharan Africa,Lilongwe,AF,927384
+MYS,MY,458,35,142,Malaysia,Asia,South-eastern Asia,Kuala Lumpur,AS,1733045
+MDV,MV,462,34,142,Maldives,Asia,Southern Asia,Male,AS,1282028
+MLI,ML,466,202,2,Mali,Africa,Sub-Saharan Africa,Bamako,AF,2453866
+MLT,MT,470,39,150,Malta,Europe,Southern Europe,Valletta,EU,2562770
+MHL,MH,584,57,9,Marshall Islands,Oceania,Micronesia,Majuro,OC,2080185
+MTQ,MQ,474,419,19,Martinique,Americas,Latin America and the Caribbean,Fort-de-France,NA,3570311
+MRT,MR,478,202,2,Mauritania,Africa,Sub-Saharan Africa,Nouakchott,AF,2378080
+MUS,MU,480,202,2,Mauritius,Africa,Sub-Saharan Africa,Port Louis,AF,934292
+MYT,YT,175,202,2,Mayotte,Africa,Sub-Saharan Africa,Mamoudzou,AF,1024031
+MEX,MX,484,419,19,Mexico,Americas,Latin America and the Caribbean,Mexico City,NA,3996063
+FSM,FM,583,57,9,Micronesia (Federated States of),Oceania,Micronesia,Palikir,OC,2081918
+MCO,MC,492,155,150,Monaco,Europe,Western Europe,Monaco,EU,2993457
+MNG,MN,496,30,142,Mongolia,Asia,Eastern Asia,Ulaanbaatar,AS,2029969
+MNE,ME,499,39,150,Montenegro,Europe,Southern Europe,Podgorica,EU,3194884
+MSR,MS,500,419,19,Montserrat,Americas,Latin America and the Caribbean,Plymouth,NA,3578097
+MAR,MA,504,15,2,Morocco,Africa,Northern Africa,Rabat,AF,2542007
+MOZ,MZ,508,202,2,Mozambique,Africa,Sub-Saharan Africa,Maputo,AF,1036973
+MMR,MM,104,35,142,Myanmar,Asia,South-eastern Asia,Nay Pyi Taw,AS,1327865
+NAM,NA,516,202,2,Namibia,Africa,Sub-Saharan Africa,Windhoek,AF,3355338
+NRU,NR,520,57,9,Nauru,Oceania,Micronesia,Yaren,OC,2110425
+NPL,NP,524,34,142,Nepal,Asia,Southern Asia,Kathmandu,AS,1282988
+NLD,NL,528,155,150,Netherlands,Europe,Western Europe,Amsterdam,EU,2750405
+NCL,NC,540,54,9,New Caledonia,Oceania,Melanesia,Noumea,OC,2139685
+NZL,NZ,554,53,9,New Zealand,Oceania,Australia and New Zealand,Wellington,OC,2186224
+NIC,NI,558,419,19,Nicaragua,Americas,Latin America and the Caribbean,Managua,NA,3617476
+NER,NE,562,202,2,Niger,Africa,Sub-Saharan Africa,Niamey,AF,2440476
+NGA,NG,566,202,2,Nigeria,Africa,Sub-Saharan Africa,Abuja,AF,2328926
+NIU,NU,570,61,9,Niue,Oceania,Polynesia,Alofi,OC,4036232
+NFK,NF,574,53,9,Norfolk Island,Oceania,Australia and New Zealand,Kingston,OC,2155115
+MNP,MP,580,57,9,Northern Mariana Islands,Oceania,Micronesia,Saipan,OC,4041468
+MKD,MK,807,39,150,North Macedonia,Europe,Southern Europe,Skopje,EU,718075
+NOR,NO,578,154,150,Norway,Europe,Northern Europe,Oslo,EU,3144096
+OMN,OM,512,145,142,Oman,Asia,Western Asia,Muscat,AS,286963
+PAK,PK,586,34,142,Pakistan,Asia,Southern Asia,Islamabad,AS,1168579
+PLW,PW,585,57,9,Palau,Oceania,Micronesia,Melekeok,OC,1559582
+PAN,PA,591,419,19,Panama,Americas,Latin America and the Caribbean,Panama City,NA,3703430
+PNG,PG,598,54,9,Papua New Guinea,Oceania,Melanesia,Port Moresby,OC,2088628
+PRY,PY,600,419,19,Paraguay,Americas,Latin America and the Caribbean,Asuncion,SA,3437598
+PER,PE,604,419,19,Peru,Americas,Latin America and the Caribbean,Lima,SA,3932488
+PHL,PH,608,35,142,Philippines,Asia,South-eastern Asia,Manila,AS,1694008
+PCN,PN,612,61,9,Pitcairn,Oceania,Polynesia,Adamstown,OC,4030699
+POL,PL,616,151,150,Poland,Europe,Eastern Europe,Warsaw,EU,798544
+PRT,PT,620,39,150,Portugal,Europe,Southern Europe,Lisbon,EU,2264397
+PRI,PR,630,419,19,Puerto Rico,Americas,Latin America and the Caribbean,San Juan,NA,4566966
+QAT,QA,634,145,142,Qatar,Asia,Western Asia,Doha,AS,289688
+KOR,KR,410,30,142,Republic of Korea,Asia,Eastern Asia,Seoul,AS,1835841
+MDA,MD,498,151,150,Republic of Moldova,Europe,Eastern Europe,Chisinau,EU,617790
+REU,RE,638,202,2,Réunion,Africa,Sub-Saharan Africa,Saint-Denis,AF,935317
+ROU,RO,642,151,150,Romania,Europe,Eastern Europe,Bucharest,EU,798549
+RUS,RU,643,151,150,Russian Federation,Europe,Eastern Europe,Moscow,EU,2017370
+RWA,RW,646,202,2,Rwanda,Africa,Sub-Saharan Africa,Kigali,AF,49518
+BLM,BL,652,419,19,Saint Barthélemy,Americas,Latin America and the Caribbean,Gustavia,NA,3578476
+SHN,SH,654,202,2,Saint Helena,Africa,Sub-Saharan Africa,Jamestown,AF,3370751
+KNA,KN,659,419,19,Saint Kitts and Nevis,Americas,Latin America and the Caribbean,Basseterre,NA,3575174
+LCA,LC,662,419,19,Saint Lucia,Americas,Latin America and the Caribbean,Castries,NA,3576468
+MAF,MF,663,419,19,Saint Martin (French Part),Americas,Latin America and the Caribbean,Marigot,NA,3578421
+SPM,PM,666,21,19,Saint Pierre and Miquelon,Americas,Northern America,Saint-Pierre,NA,3424932
+VCT,VC,670,419,19,Saint Vincent and the Grenadines,Americas,Latin America and the Caribbean,Kingstown,NA,3577815
+WSM,WS,882,61,9,Samoa,Oceania,Polynesia,Apia,OC,4034894
+SMR,SM,674,39,150,San Marino,Europe,Southern Europe,San Marino,EU,3168068
+STP,ST,678,202,2,Sao Tome and Principe,Africa,Sub-Saharan Africa,Sao Tome,AF,2410758
+SAU,SA,682,145,142,Saudi Arabia,Asia,Western Asia,Riyadh,AS,102358
+SEN,SN,686,202,2,Senegal,Africa,Sub-Saharan Africa,Dakar,AF,2245662
+SRB,RS,688,39,150,Serbia,Europe,Southern Europe,Belgrade,EU,6290252
+SYC,SC,690,202,2,Seychelles,Africa,Sub-Saharan Africa,Victoria,AF,241170
+SLE,SL,694,202,2,Sierra Leone,Africa,Sub-Saharan Africa,Freetown,AF,2403846
+SGP,SG,702,35,142,Singapore,Asia,South-eastern Asia,Singapore,AS,1880251
+SXM,SX,534,419,19,Sint Maarten (Dutch part),Americas,Latin America and the Caribbean,Philipsburg,NA,7609695
+SVK,SK,703,151,150,Slovakia,Europe,Eastern Europe,Bratislava,EU,3057568
+SVN,SI,705,39,150,Slovenia,Europe,Southern Europe,Ljubljana,EU,3190538
+SLB,SB,90,54,9,Solomon Islands,Oceania,Melanesia,Honiara,OC,2103350
+SOM,SO,706,202,2,Somalia,Africa,Sub-Saharan Africa,Mogadishu,AF,51537
+ZAF,ZA,710,202,2,South Africa,Africa,Sub-Saharan Africa,Pretoria,AF,953987
+SGS,GS,239,419,19,South Georgia and the South Sandwich Islands,Americas,Latin America and the Caribbean,Grytviken,AN,3474415
+SSD,SS,728,202,2,South Sudan,Africa,Sub-Saharan Africa,Juba,AF,7909807
+ESP,ES,724,39,150,Spain,Europe,Southern Europe,Madrid,EU,2510769
+LKA,LK,144,34,142,Sri Lanka,Asia,Southern Asia,Colombo,AS,1227603
+PSE,PS,275,145,142,State of Palestine,Asia,Western Asia,East Jerusalem,AS,6254930
+SDN,SD,729,15,2,Sudan,Africa,Northern Africa,Khartoum,AF,366755
+SUR,SR,740,419,19,Suriname,Americas,Latin America and the Caribbean,Paramaribo,SA,3382998
+SJM,SJ,744,154,150,Svalbard and Jan Mayen Islands,Europe,Northern Europe,Longyearbyen,EU,607072
+SWE,SE,752,154,150,Sweden,Europe,Northern Europe,Stockholm,EU,2661886
+CHE,CH,756,155,150,Switzerland,Europe,Western Europe,Bern,EU,2658434
+SYR,SY,760,145,142,Syrian Arab Republic,Asia,Western Asia,Damascus,AS,163843
+TWN,TW,158,30,142,Taiwan,Asia,Eastern Asia,Taipei,AS,1668284
+TJK,TJ,762,143,142,Tajikistan,Asia,Central Asia,Dushanbe,AS,1220409
+THA,TH,764,35,142,Thailand,Asia,South-eastern Asia,Bangkok,AS,1605651
+TLS,TL,626,35,142,Timor-Leste,Asia,South-eastern Asia,Dili,OC,1966436
+TGO,TG,768,202,2,Togo,Africa,Sub-Saharan Africa,Lome,AF,2363686
+TKL,TK,772,61,9,Tokelau,Oceania,Polynesia,,OC,4031074
+TON,TO,776,61,9,Tonga,Oceania,Polynesia,Nuku'alofa,OC,4032283
+TTO,TT,780,419,19,Trinidad and Tobago,Americas,Latin America and the Caribbean,Port of Spain,NA,3573591
+TUN,TN,788,15,2,Tunisia,Africa,Northern Africa,Tunis,AF,2464461
+TUR,TR,792,145,142,Turkey,Asia,Western Asia,Ankara,AS,298795
+TKM,TM,795,143,142,Turkmenistan,Asia,Central Asia,Ashgabat,AS,1218197
+TCA,TC,796,419,19,Turks and Caicos Islands,Americas,Latin America and the Caribbean,Cockburn Town,NA,3576916
+TUV,TV,798,61,9,Tuvalu,Oceania,Polynesia,Funafuti,OC,2110297
+UGA,UG,800,202,2,Uganda,Africa,Sub-Saharan Africa,Kampala,AF,226074
+UKR,UA,804,151,150,Ukraine,Europe,Eastern Europe,Kyiv,EU,690791
+ARE,AE,784,145,142,United Arab Emirates,Asia,Western Asia,Abu Dhabi,AS,290557
+GBR,GB,826,154,150,United Kingdom of Great Britain and Northern Ireland,Europe,Northern Europe,London,EU,2635167
+TZA,TZ,834,202,2,United Republic of Tanzania,Africa,Sub-Saharan Africa,Dodoma,AF,149590
+UMI,UM,581,57,9,United States Minor Outlying Islands,Oceania,Micronesia,,OC,5854968
+USA,US,840,21,19,United States of America,Americas,Northern America,Washington,NA,6252001
+VIR,VI,850,419,19,United States Virgin Islands,Americas,Latin America and the Caribbean,Charlotte Amalie,NA,4796775
+URY,UY,858,419,19,Uruguay,Americas,Latin America and the Caribbean,Montevideo,SA,3439705
+UZB,UZ,860,143,142,Uzbekistan,Asia,Central Asia,Tashkent,AS,1512440
+VUT,VU,548,54,9,Vanuatu,Oceania,Melanesia,Port Vila,OC,2134431
+VEN,VE,862,419,19,Venezuela (Bolivarian Republic of),Americas,Latin America and the Caribbean,Caracas,SA,3625428
+VNM,VN,704,35,142,Viet Nam,Asia,South-eastern Asia,Hanoi,AS,1562822
+WLF,WF,876,61,9,Wallis and Futuna Islands,Oceania,Polynesia,Mata Utu,OC,4034749
+ESH,EH,732,15,2,Western Sahara,Africa,Northern Africa,El-Aaiun,AF,2461445
+YEM,YE,887,145,142,Yemen,Asia,Western Asia,Sanaa,AS,69543
+ZMB,ZM,894,202,2,Zambia,Africa,Sub-Saharan Africa,Lusaka,AF,895949
+ZWE,ZW,716,202,2,Zimbabwe,Africa,Sub-Saharan Africa,Harare,AF,878675
