@@ -1,0 +1,36 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE / editor configs
+.vscode/
+.dbeaver/
+.idea/
+*.iml
+
+# Raw datasets (Excel etc.)
+data/raw_data/*.xlsx
+data/raw_data/*.xls
+~$*.xlsx   # Excel/Power Query autosaves
+
+# Temporary / backup files
+*.tmp
+*.bak
+*.swp
+*.log
+
+# Large raw data dumps
+raw_data/
+*.zip
+
+# Tableau temp/backup
+*.twb~
+*.twbx.backup
+
+# Other large formats
+*.parquet
+*.sav
+*.dta
+
+# Keep cleaned data (SQL-ready CSVs) tracked
+!data/clean_data/*.csv
