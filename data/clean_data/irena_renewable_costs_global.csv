@@ -1,0 +1,883 @@
+﻿source,group_technology,technology,metric_type,year,value_category,value
+IRENA,Wind,Onshore Wind,Total installed cost (USD/kW),2010,5th percentile,1415.42743
+IRENA,Wind,Onshore Wind,Total installed cost (USD/kW),2011,5th percentile,1428.628513
+IRENA,Wind,Onshore Wind,Total installed cost (USD/kW),2012,5th percentile,1452.399516
+IRENA,Wind,Onshore Wind,Total installed cost (USD/kW),2013,5th percentile,1396.9198
+IRENA,Wind,Onshore Wind,Total installed cost (USD/kW),2014,5th percentile,1352.153607
+IRENA,Wind,Onshore Wind,Total installed cost (USD/kW),2015,5th percentile,1381.900756
+IRENA,Wind,Onshore Wind,Total installed cost (USD/kW),2016,5th percentile,1364.23833
+IRENA,Wind,Onshore Wind,Total installed cost (USD/kW),2017,5th percentile,1347.851386
+IRENA,Wind,Onshore Wind,Total installed cost (USD/kW),2018,5th percentile,1349.073046
+IRENA,Wind,Onshore Wind,Total installed cost (USD/kW),2019,5th percentile,1286.802068
+IRENA,Wind,Onshore Wind,Total installed cost (USD/kW),2020,5th percentile,1207.509185
+IRENA,Wind,Onshore Wind,Total installed cost (USD/kW),2021,5th percentile,990.919539
+IRENA,Wind,Onshore Wind,Total installed cost (USD/kW),2022,5th percentile,830.7815806
+IRENA,Wind,Onshore Wind,Total installed cost (USD/kW),2023,5th percentile,777.259125
+IRENA,Wind,Onshore Wind,Total installed cost (USD/kW),2010,Weighted average,2272.420087
+IRENA,Wind,Onshore Wind,Total installed cost (USD/kW),2011,Weighted average,2247.371918
+IRENA,Wind,Onshore Wind,Total installed cost (USD/kW),2012,Weighted average,2114.127079
+IRENA,Wind,Onshore Wind,Total installed cost (USD/kW),2013,Weighted average,2182.860085
+IRENA,Wind,Onshore Wind,Total installed cost (USD/kW),2014,Weighted average,2103.876721
+IRENA,Wind,Onshore Wind,Total installed cost (USD/kW),2015,Weighted average,1910.722766
+IRENA,Wind,Onshore Wind,Total installed cost (USD/kW),2016,Weighted average,1915.49304
+IRENA,Wind,Onshore Wind,Total installed cost (USD/kW),2017,Weighted average,1917.29911
+IRENA,Wind,Onshore Wind,Total installed cost (USD/kW),2018,Weighted average,1819.381465
+IRENA,Wind,Onshore Wind,Total installed cost (USD/kW),2019,Weighted average,1724.712717
+IRENA,Wind,Onshore Wind,Total installed cost (USD/kW),2020,Weighted average,1552.122752
+IRENA,Wind,Onshore Wind,Total installed cost (USD/kW),2021,Weighted average,1470.995087
+IRENA,Wind,Onshore Wind,Total installed cost (USD/kW),2022,Weighted average,1321.757585
+IRENA,Wind,Onshore Wind,Total installed cost (USD/kW),2023,Weighted average,1160.399339
+IRENA,Wind,Onshore Wind,Total installed cost (USD/kW),2010,95th percentile,3194.783321
+IRENA,Wind,Onshore Wind,Total installed cost (USD/kW),2011,95th percentile,3249.045704
+IRENA,Wind,Onshore Wind,Total installed cost (USD/kW),2012,95th percentile,3410.866065
+IRENA,Wind,Onshore Wind,Total installed cost (USD/kW),2013,95th percentile,3517.424659
+IRENA,Wind,Onshore Wind,Total installed cost (USD/kW),2014,95th percentile,3499.582283
+IRENA,Wind,Onshore Wind,Total installed cost (USD/kW),2015,95th percentile,3403.366624
+IRENA,Wind,Onshore Wind,Total installed cost (USD/kW),2016,95th percentile,3012.180746
+IRENA,Wind,Onshore Wind,Total installed cost (USD/kW),2017,95th percentile,3067.089386
+IRENA,Wind,Onshore Wind,Total installed cost (USD/kW),2018,95th percentile,2777.835883
+IRENA,Wind,Onshore Wind,Total installed cost (USD/kW),2019,95th percentile,2799.229856
+IRENA,Wind,Onshore Wind,Total installed cost (USD/kW),2020,95th percentile,2610.536987
+IRENA,Wind,Onshore Wind,Total installed cost (USD/kW),2021,95th percentile,2373.813587
+IRENA,Wind,Onshore Wind,Total installed cost (USD/kW),2022,95th percentile,2079.772224
+IRENA,Wind,Onshore Wind,Total installed cost (USD/kW),2023,95th percentile,2114.786827
+IRENA,Wind,Onshore Wind,Capacity factor (%),2010,5th percentile,20.165
+IRENA,Wind,Onshore Wind,Capacity factor (%),2011,5th percentile,20
+IRENA,Wind,Onshore Wind,Capacity factor (%),2012,5th percentile,19.8926
+IRENA,Wind,Onshore Wind,Capacity factor (%),2013,5th percentile,20.2535
+IRENA,Wind,Onshore Wind,Capacity factor (%),2014,5th percentile,19.86331
+IRENA,Wind,Onshore Wind,Capacity factor (%),2015,5th percentile,20.769955
+IRENA,Wind,Onshore Wind,Capacity factor (%),2016,5th percentile,21.6203
+IRENA,Wind,Onshore Wind,Capacity factor (%),2017,5th percentile,23.3018
+IRENA,Wind,Onshore Wind,Capacity factor (%),2018,5th percentile,25.38139
+IRENA,Wind,Onshore Wind,Capacity factor (%),2019,5th percentile,25
+IRENA,Wind,Onshore Wind,Capacity factor (%),2020,5th percentile,26.515
+IRENA,Wind,Onshore Wind,Capacity factor (%),2021,5th percentile,28.5
+IRENA,Wind,Onshore Wind,Capacity factor (%),2022,5th percentile,27.79783105
+IRENA,Wind,Onshore Wind,Capacity factor (%),2023,5th percentile,28.61361203
+IRENA,Wind,Onshore Wind,Capacity factor (%),2010,Weighted average,27.25197238
+IRENA,Wind,Onshore Wind,Capacity factor (%),2011,Weighted average,27.53803765
+IRENA,Wind,Onshore Wind,Capacity factor (%),2012,Weighted average,27.52181691
+IRENA,Wind,Onshore Wind,Capacity factor (%),2013,Weighted average,28.09830243
+IRENA,Wind,Onshore Wind,Capacity factor (%),2014,Weighted average,29.28921184
+IRENA,Wind,Onshore Wind,Capacity factor (%),2015,Weighted average,29.09908057
+IRENA,Wind,Onshore Wind,Capacity factor (%),2016,Weighted average,30.60289522
+IRENA,Wind,Onshore Wind,Capacity factor (%),2017,Weighted average,32.56332641
+IRENA,Wind,Onshore Wind,Capacity factor (%),2018,Weighted average,34.62449161
+IRENA,Wind,Onshore Wind,Capacity factor (%),2019,Weighted average,35.69306076
+IRENA,Wind,Onshore Wind,Capacity factor (%),2020,Weighted average,35.51957614
+IRENA,Wind,Onshore Wind,Capacity factor (%),2021,Weighted average,39.18148963
+IRENA,Wind,Onshore Wind,Capacity factor (%),2022,Weighted average,36.80570469
+IRENA,Wind,Onshore Wind,Capacity factor (%),2023,Weighted average,35.9235526
+IRENA,Wind,Onshore Wind,Capacity factor (%),2010,95th percentile,36.2968
+IRENA,Wind,Onshore Wind,Capacity factor (%),2011,95th percentile,37.59095
+IRENA,Wind,Onshore Wind,Capacity factor (%),2012,95th percentile,44.187225
+IRENA,Wind,Onshore Wind,Capacity factor (%),2013,95th percentile,47.883345
+IRENA,Wind,Onshore Wind,Capacity factor (%),2014,95th percentile,51.14376
+IRENA,Wind,Onshore Wind,Capacity factor (%),2015,95th percentile,49.2408
+IRENA,Wind,Onshore Wind,Capacity factor (%),2016,95th percentile,52.3333
+IRENA,Wind,Onshore Wind,Capacity factor (%),2017,95th percentile,52.16665
+IRENA,Wind,Onshore Wind,Capacity factor (%),2018,95th percentile,53.7037
+IRENA,Wind,Onshore Wind,Capacity factor (%),2019,95th percentile,51.46556448
+IRENA,Wind,Onshore Wind,Capacity factor (%),2020,95th percentile,52
+IRENA,Wind,Onshore Wind,Capacity factor (%),2021,95th percentile,56.16451402
+IRENA,Wind,Onshore Wind,Capacity factor (%),2022,95th percentile,52.2
+IRENA,Wind,Onshore Wind,Capacity factor (%),2023,95th percentile,57
+IRENA,Wind,Onshore Wind,LCOE (USD/kWh),2010,5th percentile,0.072705968
+IRENA,Wind,Onshore Wind,LCOE (USD/kWh),2011,5th percentile,0.073798368
+IRENA,Wind,Onshore Wind,LCOE (USD/kWh),2012,5th percentile,0.070874131
+IRENA,Wind,Onshore Wind,LCOE (USD/kWh),2013,5th percentile,0.067164773
+IRENA,Wind,Onshore Wind,LCOE (USD/kWh),2014,5th percentile,0.060774283
+IRENA,Wind,Onshore Wind,LCOE (USD/kWh),2015,5th percentile,0.049083908
+IRENA,Wind,Onshore Wind,LCOE (USD/kWh),2016,5th percentile,0.043922543
+IRENA,Wind,Onshore Wind,LCOE (USD/kWh),2017,5th percentile,0.039385511
+IRENA,Wind,Onshore Wind,LCOE (USD/kWh),2018,5th percentile,0.034200367
+IRENA,Wind,Onshore Wind,LCOE (USD/kWh),2019,5th percentile,0.032452007
+IRENA,Wind,Onshore Wind,LCOE (USD/kWh),2020,5th percentile,0.026445791
+IRENA,Wind,Onshore Wind,LCOE (USD/kWh),2021,5th percentile,0.021330023
+IRENA,Wind,Onshore Wind,LCOE (USD/kWh),2022,5th percentile,0.018637331
+IRENA,Wind,Onshore Wind,LCOE (USD/kWh),2023,5th percentile,0.019443802
+IRENA,Wind,Onshore Wind,LCOE (USD/kWh),2010,Weighted average,0.110676782
+IRENA,Wind,Onshore Wind,LCOE (USD/kWh),2011,Weighted average,0.105513482
+IRENA,Wind,Onshore Wind,LCOE (USD/kWh),2012,Weighted average,0.095888149
+IRENA,Wind,Onshore Wind,LCOE (USD/kWh),2013,Weighted average,0.096675735
+IRENA,Wind,Onshore Wind,LCOE (USD/kWh),2014,Weighted average,0.086487607
+IRENA,Wind,Onshore Wind,LCOE (USD/kWh),2015,Weighted average,0.074433822
+IRENA,Wind,Onshore Wind,LCOE (USD/kWh),2016,Weighted average,0.068878946
+IRENA,Wind,Onshore Wind,LCOE (USD/kWh),2017,Weighted average,0.064614683
+IRENA,Wind,Onshore Wind,LCOE (USD/kWh),2018,Weighted average,0.054763548
+IRENA,Wind,Onshore Wind,LCOE (USD/kWh),2019,Weighted average,0.047994845
+IRENA,Wind,Onshore Wind,LCOE (USD/kWh),2020,Weighted average,0.039881754
+IRENA,Wind,Onshore Wind,LCOE (USD/kWh),2021,Weighted average,0.035502347
+IRENA,Wind,Onshore Wind,LCOE (USD/kWh),2022,Weighted average,0.033651832
+IRENA,Wind,Onshore Wind,LCOE (USD/kWh),2023,Weighted average,0.032578353
+IRENA,Wind,Onshore Wind,LCOE (USD/kWh),2010,95th percentile,0.151814978
+IRENA,Wind,Onshore Wind,LCOE (USD/kWh),2011,95th percentile,0.15893964
+IRENA,Wind,Onshore Wind,LCOE (USD/kWh),2012,95th percentile,0.131492222
+IRENA,Wind,Onshore Wind,LCOE (USD/kWh),2013,95th percentile,0.14063185
+IRENA,Wind,Onshore Wind,LCOE (USD/kWh),2014,95th percentile,0.136187648
+IRENA,Wind,Onshore Wind,LCOE (USD/kWh),2015,95th percentile,0.140771311
+IRENA,Wind,Onshore Wind,LCOE (USD/kWh),2016,95th percentile,0.117667406
+IRENA,Wind,Onshore Wind,LCOE (USD/kWh),2017,95th percentile,0.117944113
+IRENA,Wind,Onshore Wind,LCOE (USD/kWh),2018,95th percentile,0.093919469
+IRENA,Wind,Onshore Wind,LCOE (USD/kWh),2019,95th percentile,0.100613653
+IRENA,Wind,Onshore Wind,LCOE (USD/kWh),2020,95th percentile,0.084737126
+IRENA,Wind,Onshore Wind,LCOE (USD/kWh),2021,95th percentile,0.068733304
+IRENA,Wind,Onshore Wind,LCOE (USD/kWh),2022,95th percentile,0.058223805
+IRENA,Wind,Onshore Wind,LCOE (USD/kWh),2023,95th percentile,0.07180743
+IRENA,Solar,Solar PV,Total installed cost (USD/kW),2010,5th percentile,3883.973019
+IRENA,Solar,Solar PV,Total installed cost (USD/kW),2011,5th percentile,2992.954355
+IRENA,Solar,Solar PV,Total installed cost (USD/kW),2012,5th percentile,2388.673144
+IRENA,Solar,Solar PV,Total installed cost (USD/kW),2013,5th percentile,1951.728311
+IRENA,Solar,Solar PV,Total installed cost (USD/kW),2014,5th percentile,1633.861232
+IRENA,Solar,Solar PV,Total installed cost (USD/kW),2015,5th percentile,1385.138553
+IRENA,Solar,Solar PV,Total installed cost (USD/kW),2016,5th percentile,1184.345883
+IRENA,Solar,Solar PV,Total installed cost (USD/kW),2017,5th percentile,961.9333824
+IRENA,Solar,Solar PV,Total installed cost (USD/kW),2018,5th percentile,926.2145069
+IRENA,Solar,Solar PV,Total installed cost (USD/kW),2019,5th percentile,826.6084664
+IRENA,Solar,Solar PV,Total installed cost (USD/kW),2020,5th percentile,658.5511246
+IRENA,Solar,Solar PV,Total installed cost (USD/kW),2021,5th percentile,640.5674295
+IRENA,Solar,Solar PV,Total installed cost (USD/kW),2022,5th percentile,585.4134537
+IRENA,Solar,Solar PV,Total installed cost (USD/kW),2023,5th percentile,526.4488347
+IRENA,Solar,Solar PV,Total installed cost (USD/kW),2010,Weighted average,5310.487522
+IRENA,Solar,Solar PV,Total installed cost (USD/kW),2011,Weighted average,4553.258248
+IRENA,Solar,Solar PV,Total installed cost (USD/kW),2012,Weighted average,3466.219757
+IRENA,Solar,Solar PV,Total installed cost (USD/kW),2013,Weighted average,3042.4049
+IRENA,Solar,Solar PV,Total installed cost (USD/kW),2014,Weighted average,2749.169672
+IRENA,Solar,Solar PV,Total installed cost (USD/kW),2015,Weighted average,2090.441879
+IRENA,Solar,Solar PV,Total installed cost (USD/kW),2016,Weighted average,1900.524125
+IRENA,Solar,Solar PV,Total installed cost (USD/kW),2017,Weighted average,1644.277598
+IRENA,Solar,Solar PV,Total installed cost (USD/kW),2018,Weighted average,1404.955262
+IRENA,Solar,Solar PV,Total installed cost (USD/kW),2019,Weighted average,1160.743274
+IRENA,Solar,Solar PV,Total installed cost (USD/kW),2020,Weighted average,1019.432119
+IRENA,Solar,Solar PV,Total installed cost (USD/kW),2021,Weighted average,950.0747137
+IRENA,Solar,Solar PV,Total installed cost (USD/kW),2022,Weighted average,908.020865
+IRENA,Solar,Solar PV,Total installed cost (USD/kW),2023,Weighted average,757.687831
+IRENA,Solar,Solar PV,Total installed cost (USD/kW),2010,95th percentile,8618.687725
+IRENA,Solar,Solar PV,Total installed cost (USD/kW),2011,95th percentile,8500.476409
+IRENA,Solar,Solar PV,Total installed cost (USD/kW),2012,95th percentile,7381.73766
+IRENA,Solar,Solar PV,Total installed cost (USD/kW),2013,95th percentile,6131.13292
+IRENA,Solar,Solar PV,Total installed cost (USD/kW),2014,95th percentile,5918.934403
+IRENA,Solar,Solar PV,Total installed cost (USD/kW),2015,95th percentile,4642.085464
+IRENA,Solar,Solar PV,Total installed cost (USD/kW),2016,95th percentile,3734.552601
+IRENA,Solar,Solar PV,Total installed cost (USD/kW),2017,95th percentile,3445.777114
+IRENA,Solar,Solar PV,Total installed cost (USD/kW),2018,95th percentile,3321.313496
+IRENA,Solar,Solar PV,Total installed cost (USD/kW),2019,95th percentile,2728.919617
+IRENA,Solar,Solar PV,Total installed cost (USD/kW),2020,95th percentile,2696.913147
+IRENA,Solar,Solar PV,Total installed cost (USD/kW),2021,95th percentile,2166.649511
+IRENA,Solar,Solar PV,Total installed cost (USD/kW),2022,95th percentile,1946.154119
+IRENA,Solar,Solar PV,Total installed cost (USD/kW),2023,95th percentile,1662.828215
+IRENA,Solar,Solar PV,Capacity factor (%),2010,5th percentile,11.003125
+IRENA,Solar,Solar PV,Capacity factor (%),2011,5th percentile,10.1012
+IRENA,Solar,Solar PV,Capacity factor (%),2012,5th percentile,10.4705
+IRENA,Solar,Solar PV,Capacity factor (%),2013,5th percentile,11.8938
+IRENA,Solar,Solar PV,Capacity factor (%),2014,5th percentile,10.8012
+IRENA,Solar,Solar PV,Capacity factor (%),2015,5th percentile,10.795205
+IRENA,Solar,Solar PV,Capacity factor (%),2016,5th percentile,10.6874
+IRENA,Solar,Solar PV,Capacity factor (%),2017,5th percentile,11.47831
+IRENA,Solar,Solar PV,Capacity factor (%),2018,5th percentile,12.35139
+IRENA,Solar,Solar PV,Capacity factor (%),2019,5th percentile,10.745
+IRENA,Solar,Solar PV,Capacity factor (%),2020,5th percentile,9.9
+IRENA,Solar,Solar PV,Capacity factor (%),2021,5th percentile,10.8
+IRENA,Solar,Solar PV,Capacity factor (%),2022,5th percentile,10.365
+IRENA,Solar,Solar PV,Capacity factor (%),2023,5th percentile,10
+IRENA,Solar,Solar PV,Capacity factor (%),2010,Weighted average,13.81530211
+IRENA,Solar,Solar PV,Capacity factor (%),2011,Weighted average,15.30462161
+IRENA,Solar,Solar PV,Capacity factor (%),2012,Weighted average,15.11148181
+IRENA,Solar,Solar PV,Capacity factor (%),2013,Weighted average,16.43707645
+IRENA,Solar,Solar PV,Capacity factor (%),2014,Weighted average,16.5600549
+IRENA,Solar,Solar PV,Capacity factor (%),2015,Weighted average,16.50408673
+IRENA,Solar,Solar PV,Capacity factor (%),2016,Weighted average,16.71169996
+IRENA,Solar,Solar PV,Capacity factor (%),2017,Weighted average,17.55073487
+IRENA,Solar,Solar PV,Capacity factor (%),2018,Weighted average,17.90325738
+IRENA,Solar,Solar PV,Capacity factor (%),2019,Weighted average,17.50705132
+IRENA,Solar,Solar PV,Capacity factor (%),2020,Weighted average,16.08005703
+IRENA,Solar,Solar PV,Capacity factor (%),2021,Weighted average,17.20901396
+IRENA,Solar,Solar PV,Capacity factor (%),2022,Weighted average,16.93608774
+IRENA,Solar,Solar PV,Capacity factor (%),2023,Weighted average,16.17092776
+IRENA,Solar,Solar PV,Capacity factor (%),2010,95th percentile,23
+IRENA,Solar,Solar PV,Capacity factor (%),2011,95th percentile,26
+IRENA,Solar,Solar PV,Capacity factor (%),2012,95th percentile,25.62105
+IRENA,Solar,Solar PV,Capacity factor (%),2013,95th percentile,23
+IRENA,Solar,Solar PV,Capacity factor (%),2014,95th percentile,24.36794
+IRENA,Solar,Solar PV,Capacity factor (%),2015,95th percentile,28.988495
+IRENA,Solar,Solar PV,Capacity factor (%),2016,95th percentile,25.89275
+IRENA,Solar,Solar PV,Capacity factor (%),2017,95th percentile,27
+IRENA,Solar,Solar PV,Capacity factor (%),2018,95th percentile,26.94423
+IRENA,Solar,Solar PV,Capacity factor (%),2019,95th percentile,23.86763351
+IRENA,Solar,Solar PV,Capacity factor (%),2020,95th percentile,20.795
+IRENA,Solar,Solar PV,Capacity factor (%),2021,95th percentile,21.3
+IRENA,Solar,Solar PV,Capacity factor (%),2022,95th percentile,20.5
+IRENA,Solar,Solar PV,Capacity factor (%),2023,95th percentile,21.69842466
+IRENA,Solar,Solar PV,LCOE (USD/kWh),2010,5th percentile,0.229743227
+IRENA,Solar,Solar PV,LCOE (USD/kWh),2011,5th percentile,0.19240469
+IRENA,Solar,Solar PV,LCOE (USD/kWh),2012,5th percentile,0.153854387
+IRENA,Solar,Solar PV,LCOE (USD/kWh),2013,5th percentile,0.133217591
+IRENA,Solar,Solar PV,LCOE (USD/kWh),2014,5th percentile,0.108797813
+IRENA,Solar,Solar PV,LCOE (USD/kWh),2015,5th percentile,0.086497538
+IRENA,Solar,Solar PV,LCOE (USD/kWh),2016,5th percentile,0.079925694
+IRENA,Solar,Solar PV,LCOE (USD/kWh),2017,5th percentile,0.057885199
+IRENA,Solar,Solar PV,LCOE (USD/kWh),2018,5th percentile,0.052502988
+IRENA,Solar,Solar PV,LCOE (USD/kWh),2019,5th percentile,0.05008728
+IRENA,Solar,Solar PV,LCOE (USD/kWh),2020,5th percentile,0.041288138
+IRENA,Solar,Solar PV,LCOE (USD/kWh),2021,5th percentile,0.031589457
+IRENA,Solar,Solar PV,LCOE (USD/kWh),2022,5th percentile,0.030574979
+IRENA,Solar,Solar PV,LCOE (USD/kWh),2023,5th percentile,0.030975069
+IRENA,Solar,Solar PV,LCOE (USD/kWh),2010,Weighted average,0.460012179
+IRENA,Solar,Solar PV,LCOE (USD/kWh),2011,Weighted average,0.34292529
+IRENA,Solar,Solar PV,LCOE (USD/kWh),2012,Weighted average,0.255652168
+IRENA,Solar,Solar PV,LCOE (USD/kWh),2013,Weighted average,0.196781667
+IRENA,Solar,Solar PV,LCOE (USD/kWh),2014,Weighted average,0.176991214
+IRENA,Solar,Solar PV,LCOE (USD/kWh),2015,Weighted average,0.132362054
+IRENA,Solar,Solar PV,LCOE (USD/kWh),2016,Weighted average,0.115932252
+IRENA,Solar,Solar PV,LCOE (USD/kWh),2017,Weighted average,0.091175791
+IRENA,Solar,Solar PV,LCOE (USD/kWh),2018,Weighted average,0.077331907
+IRENA,Solar,Solar PV,LCOE (USD/kWh),2019,Weighted average,0.067466522
+IRENA,Solar,Solar PV,LCOE (USD/kWh),2020,Weighted average,0.060086136
+IRENA,Solar,Solar PV,LCOE (USD/kWh),2021,Weighted average,0.052132524
+IRENA,Solar,Solar PV,LCOE (USD/kWh),2022,Weighted average,0.05049542
+IRENA,Solar,Solar PV,LCOE (USD/kWh),2023,Weighted average,0.044247408
+IRENA,Solar,Solar PV,LCOE (USD/kWh),2010,95th percentile,0.575742294
+IRENA,Solar,Solar PV,LCOE (USD/kWh),2011,95th percentile,0.572319693
+IRENA,Solar,Solar PV,LCOE (USD/kWh),2012,95th percentile,0.45833945
+IRENA,Solar,Solar PV,LCOE (USD/kWh),2013,95th percentile,0.41356913
+IRENA,Solar,Solar PV,LCOE (USD/kWh),2014,95th percentile,0.392197454
+IRENA,Solar,Solar PV,LCOE (USD/kWh),2015,95th percentile,0.31557182
+IRENA,Solar,Solar PV,LCOE (USD/kWh),2016,95th percentile,0.261289569
+IRENA,Solar,Solar PV,LCOE (USD/kWh),2017,95th percentile,0.230837666
+IRENA,Solar,Solar PV,LCOE (USD/kWh),2018,95th percentile,0.220416775
+IRENA,Solar,Solar PV,LCOE (USD/kWh),2019,95th percentile,0.180725189
+IRENA,Solar,Solar PV,LCOE (USD/kWh),2020,95th percentile,0.17566198
+IRENA,Solar,Solar PV,LCOE (USD/kWh),2021,95th percentile,0.130254102
+IRENA,Solar,Solar PV,LCOE (USD/kWh),2022,95th percentile,0.122086436
+IRENA,Solar,Solar PV,LCOE (USD/kWh),2023,95th percentile,0.109816544
+IRENA,Wind,Offshore Wind,Total installed cost (USD/kW),2010,5th percentile,3508.898187
+IRENA,Wind,Offshore Wind,Total installed cost (USD/kW),2011,5th percentile,3504.037158
+IRENA,Wind,Offshore Wind,Total installed cost (USD/kW),2012,5th percentile,3548.27132
+IRENA,Wind,Offshore Wind,Total installed cost (USD/kW),2013,5th percentile,2493.912353
+IRENA,Wind,Offshore Wind,Total installed cost (USD/kW),2014,5th percentile,2597.779146
+IRENA,Wind,Offshore Wind,Total installed cost (USD/kW),2015,5th percentile,3531.997881
+IRENA,Wind,Offshore Wind,Total installed cost (USD/kW),2016,5th percentile,3323.599369
+IRENA,Wind,Offshore Wind,Total installed cost (USD/kW),2017,5th percentile,3227.958863
+IRENA,Wind,Offshore Wind,Total installed cost (USD/kW),2018,5th percentile,2526.946691
+IRENA,Wind,Offshore Wind,Total installed cost (USD/kW),2019,5th percentile,3382.929393
+IRENA,Wind,Offshore Wind,Total installed cost (USD/kW),2020,5th percentile,2671.699257
+IRENA,Wind,Offshore Wind,Total installed cost (USD/kW),2021,5th percentile,2262.969594
+IRENA,Wind,Offshore Wind,Total installed cost (USD/kW),2022,5th percentile,2198.867241
+IRENA,Wind,Offshore Wind,Total installed cost (USD/kW),2023,5th percentile,1604.748995
+IRENA,Wind,Offshore Wind,Total installed cost (USD/kW),2010,Weighted average,5408.910168
+IRENA,Wind,Offshore Wind,Total installed cost (USD/kW),2011,Weighted average,6195.020841
+IRENA,Wind,Offshore Wind,Total installed cost (USD/kW),2012,Weighted average,5482.441388
+IRENA,Wind,Offshore Wind,Total installed cost (USD/kW),2013,Weighted average,5794.087865
+IRENA,Wind,Offshore Wind,Total installed cost (USD/kW),2014,Weighted average,6100.814869
+IRENA,Wind,Offshore Wind,Total installed cost (USD/kW),2015,Weighted average,6118.508245
+IRENA,Wind,Offshore Wind,Total installed cost (USD/kW),2016,Weighted average,4817.546867
+IRENA,Wind,Offshore Wind,Total installed cost (USD/kW),2017,Weighted average,5442.281993
+IRENA,Wind,Offshore Wind,Total installed cost (USD/kW),2018,Weighted average,5323.00677
+IRENA,Wind,Offshore Wind,Total installed cost (USD/kW),2019,Weighted average,4265.247475
+IRENA,Wind,Offshore Wind,Total installed cost (USD/kW),2020,Weighted average,3611.221911
+IRENA,Wind,Offshore Wind,Total installed cost (USD/kW),2021,Weighted average,3164.654985
+IRENA,Wind,Offshore Wind,Total installed cost (USD/kW),2022,Weighted average,3478.239989
+IRENA,Wind,Offshore Wind,Total installed cost (USD/kW),2023,Weighted average,2800.288878
+IRENA,Wind,Offshore Wind,Total installed cost (USD/kW),2010,95th percentile,7475.965097
+IRENA,Wind,Offshore Wind,Total installed cost (USD/kW),2011,95th percentile,7889.069905
+IRENA,Wind,Offshore Wind,Total installed cost (USD/kW),2012,95th percentile,6862.961727
+IRENA,Wind,Offshore Wind,Total installed cost (USD/kW),2013,95th percentile,6794.253458
+IRENA,Wind,Offshore Wind,Total installed cost (USD/kW),2014,95th percentile,7543.45781
+IRENA,Wind,Offshore Wind,Total installed cost (USD/kW),2015,95th percentile,7462.616143
+IRENA,Wind,Offshore Wind,Total installed cost (USD/kW),2016,95th percentile,13597.67621
+IRENA,Wind,Offshore Wind,Total installed cost (USD/kW),2017,95th percentile,6551.04581
+IRENA,Wind,Offshore Wind,Total installed cost (USD/kW),2018,95th percentile,6697.10487
+IRENA,Wind,Offshore Wind,Total installed cost (USD/kW),2019,95th percentile,6943.504109
+IRENA,Wind,Offshore Wind,Total installed cost (USD/kW),2020,95th percentile,8140.378439
+IRENA,Wind,Offshore Wind,Total installed cost (USD/kW),2021,95th percentile,6319.813564
+IRENA,Wind,Offshore Wind,Total installed cost (USD/kW),2022,95th percentile,7157.436053
+IRENA,Wind,Offshore Wind,Total installed cost (USD/kW),2023,95th percentile,5601.447069
+IRENA,Wind,Offshore Wind,Capacity factor (%),2010,5th percentile,22.994
+IRENA,Wind,Offshore Wind,Capacity factor (%),2011,5th percentile,26.74
+IRENA,Wind,Offshore Wind,Capacity factor (%),2012,5th percentile,29.085
+IRENA,Wind,Offshore Wind,Capacity factor (%),2013,5th percentile,26.2
+IRENA,Wind,Offshore Wind,Capacity factor (%),2014,5th percentile,20.4018
+IRENA,Wind,Offshore Wind,Capacity factor (%),2015,5th percentile,28
+IRENA,Wind,Offshore Wind,Capacity factor (%),2016,5th percentile,28.808
+IRENA,Wind,Offshore Wind,Capacity factor (%),2017,5th percentile,31.021
+IRENA,Wind,Offshore Wind,Capacity factor (%),2018,5th percentile,24.858
+IRENA,Wind,Offshore Wind,Capacity factor (%),2019,5th percentile,30.09236
+IRENA,Wind,Offshore Wind,Capacity factor (%),2020,5th percentile,29.53243473
+IRENA,Wind,Offshore Wind,Capacity factor (%),2021,5th percentile,30.9899337
+IRENA,Wind,Offshore Wind,Capacity factor (%),2022,5th percentile,27.92
+IRENA,Wind,Offshore Wind,Capacity factor (%),2023,5th percentile,30.30857967
+IRENA,Wind,Offshore Wind,Capacity factor (%),2010,Weighted average,37.91598122
+IRENA,Wind,Offshore Wind,Capacity factor (%),2011,Weighted average,38.13754636
+IRENA,Wind,Offshore Wind,Capacity factor (%),2012,Weighted average,39.86669535
+IRENA,Wind,Offshore Wind,Capacity factor (%),2013,Weighted average,45.0455519
+IRENA,Wind,Offshore Wind,Capacity factor (%),2014,Weighted average,35.05569369
+IRENA,Wind,Offshore Wind,Capacity factor (%),2015,Weighted average,41.87359998
+IRENA,Wind,Offshore Wind,Capacity factor (%),2016,Weighted average,39.70681156
+IRENA,Wind,Offshore Wind,Capacity factor (%),2017,Weighted average,44.73456512
+IRENA,Wind,Offshore Wind,Capacity factor (%),2018,Weighted average,43.14306162
+IRENA,Wind,Offshore Wind,Capacity factor (%),2019,Weighted average,42.52757638
+IRENA,Wind,Offshore Wind,Capacity factor (%),2020,Weighted average,38.55684684
+IRENA,Wind,Offshore Wind,Capacity factor (%),2021,Weighted average,38.83969646
+IRENA,Wind,Offshore Wind,Capacity factor (%),2022,Weighted average,41.54257873
+IRENA,Wind,Offshore Wind,Capacity factor (%),2023,Weighted average,41.04074502
+IRENA,Wind,Offshore Wind,Capacity factor (%),2010,95th percentile,49.36388
+IRENA,Wind,Offshore Wind,Capacity factor (%),2011,95th percentile,41.706
+IRENA,Wind,Offshore Wind,Capacity factor (%),2012,95th percentile,44.106
+IRENA,Wind,Offshore Wind,Capacity factor (%),2013,95th percentile,54
+IRENA,Wind,Offshore Wind,Capacity factor (%),2014,95th percentile,44.78303
+IRENA,Wind,Offshore Wind,Capacity factor (%),2015,95th percentile,48.4932
+IRENA,Wind,Offshore Wind,Capacity factor (%),2016,95th percentile,46.79742
+IRENA,Wind,Offshore Wind,Capacity factor (%),2017,95th percentile,51.091135
+IRENA,Wind,Offshore Wind,Capacity factor (%),2018,95th percentile,48.49
+IRENA,Wind,Offshore Wind,Capacity factor (%),2019,95th percentile,52.972793
+IRENA,Wind,Offshore Wind,Capacity factor (%),2020,95th percentile,46.69569204
+IRENA,Wind,Offshore Wind,Capacity factor (%),2021,95th percentile,45.9
+IRENA,Wind,Offshore Wind,Capacity factor (%),2022,95th percentile,50
+IRENA,Wind,Offshore Wind,Capacity factor (%),2023,95th percentile,51.9777501
+IRENA,Wind,Offshore Wind,LCOE (USD/kWh),2010,5th percentile,0.126577724
+IRENA,Wind,Offshore Wind,LCOE (USD/kWh),2011,5th percentile,0.124713489
+IRENA,Wind,Offshore Wind,LCOE (USD/kWh),2012,5th percentile,0.120125351
+IRENA,Wind,Offshore Wind,LCOE (USD/kWh),2013,5th percentile,0.102397671
+IRENA,Wind,Offshore Wind,LCOE (USD/kWh),2014,5th percentile,0.140163389
+IRENA,Wind,Offshore Wind,LCOE (USD/kWh),2015,5th percentile,0.116725799
+IRENA,Wind,Offshore Wind,LCOE (USD/kWh),2016,5th percentile,0.110277044
+IRENA,Wind,Offshore Wind,LCOE (USD/kWh),2017,5th percentile,0.107896735
+IRENA,Wind,Offshore Wind,LCOE (USD/kWh),2018,5th percentile,0.08726943
+IRENA,Wind,Offshore Wind,LCOE (USD/kWh),2019,5th percentile,0.084383641
+IRENA,Wind,Offshore Wind,LCOE (USD/kWh),2020,5th percentile,0.072760239
+IRENA,Wind,Offshore Wind,LCOE (USD/kWh),2021,5th percentile,0.065096334
+IRENA,Wind,Offshore Wind,LCOE (USD/kWh),2022,5th percentile,0.06331908
+IRENA,Wind,Offshore Wind,LCOE (USD/kWh),2023,5th percentile,0.052866251
+IRENA,Wind,Offshore Wind,LCOE (USD/kWh),2010,Weighted average,0.202550995
+IRENA,Wind,Offshore Wind,LCOE (USD/kWh),2011,Weighted average,0.211584858
+IRENA,Wind,Offshore Wind,LCOE (USD/kWh),2012,Weighted average,0.179077866
+IRENA,Wind,Offshore Wind,LCOE (USD/kWh),2013,Weighted average,0.152580027
+IRENA,Wind,Offshore Wind,LCOE (USD/kWh),2014,Weighted average,0.186408018
+IRENA,Wind,Offshore Wind,LCOE (USD/kWh),2015,Weighted average,0.152099042
+IRENA,Wind,Offshore Wind,LCOE (USD/kWh),2016,Weighted average,0.125937124
+IRENA,Wind,Offshore Wind,LCOE (USD/kWh),2017,Weighted average,0.114977699
+IRENA,Wind,Offshore Wind,LCOE (USD/kWh),2018,Weighted average,0.108176546
+IRENA,Wind,Offshore Wind,LCOE (USD/kWh),2019,Weighted average,0.093219941
+IRENA,Wind,Offshore Wind,LCOE (USD/kWh),2020,Weighted average,0.089997308
+IRENA,Wind,Offshore Wind,LCOE (USD/kWh),2021,Weighted average,0.08047198
+IRENA,Wind,Offshore Wind,LCOE (USD/kWh),2022,Weighted average,0.079807097
+IRENA,Wind,Offshore Wind,LCOE (USD/kWh),2023,Weighted average,0.074505623
+IRENA,Wind,Offshore Wind,LCOE (USD/kWh),2010,95th percentile,0.298202285
+IRENA,Wind,Offshore Wind,LCOE (USD/kWh),2011,95th percentile,0.245384647
+IRENA,Wind,Offshore Wind,LCOE (USD/kWh),2012,95th percentile,0.226103227
+IRENA,Wind,Offshore Wind,LCOE (USD/kWh),2013,95th percentile,0.233208925
+IRENA,Wind,Offshore Wind,LCOE (USD/kWh),2014,95th percentile,0.217773965
+IRENA,Wind,Offshore Wind,LCOE (USD/kWh),2015,95th percentile,0.224736194
+IRENA,Wind,Offshore Wind,LCOE (USD/kWh),2016,95th percentile,0.398173209
+IRENA,Wind,Offshore Wind,LCOE (USD/kWh),2017,95th percentile,0.175638731
+IRENA,Wind,Offshore Wind,LCOE (USD/kWh),2018,95th percentile,0.200405907
+IRENA,Wind,Offshore Wind,LCOE (USD/kWh),2019,95th percentile,0.166982343
+IRENA,Wind,Offshore Wind,LCOE (USD/kWh),2020,95th percentile,0.240291055
+IRENA,Wind,Offshore Wind,LCOE (USD/kWh),2021,95th percentile,0.142672997
+IRENA,Wind,Offshore Wind,LCOE (USD/kWh),2022,95th percentile,0.167285115
+IRENA,Wind,Offshore Wind,LCOE (USD/kWh),2023,95th percentile,0.171432076
+IRENA,Solar,CSP,Total installed cost (USD/kW),2010,5th percentile,8035.70291
+IRENA,Solar,CSP,Total installed cost (USD/kW),2011,5th percentile,9168.799954
+IRENA,Solar,CSP,Total installed cost (USD/kW),2012,5th percentile,7131.6987
+IRENA,Solar,CSP,Total installed cost (USD/kW),2013,5th percentile,4431.152738
+IRENA,Solar,CSP,Total installed cost (USD/kW),2014,5th percentile,3256.444577
+IRENA,Solar,CSP,Total installed cost (USD/kW),2015,5th percentile,4267.865944
+IRENA,Solar,CSP,Total installed cost (USD/kW),2016,5th percentile,3147.024775
+IRENA,Solar,CSP,Total installed cost (USD/kW),2017,5th percentile,4558.222729
+IRENA,Solar,CSP,Total installed cost (USD/kW),2018,5th percentile,4014.195593
+IRENA,Solar,CSP,Total installed cost (USD/kW),2019,5th percentile,4342.502627
+IRENA,Solar,CSP,Total installed cost (USD/kW),2020,5th percentile,4985.570987
+IRENA,Solar,CSP,Total installed cost (USD/kW),2021,5th percentile,10085.4459
+IRENA,Solar,CSP,Total installed cost (USD/kW),2022,5th percentile,4431.064301
+IRENA,Solar,CSP,Total installed cost (USD/kW),2023,5th percentile,5967.6
+IRENA,Solar,CSP,Total installed cost (USD/kW),2010,Weighted average,10642.47763
+IRENA,Solar,CSP,Total installed cost (USD/kW),2011,Weighted average,12315.83298
+IRENA,Solar,CSP,Total installed cost (USD/kW),2012,Weighted average,9517.978014
+IRENA,Solar,CSP,Total installed cost (USD/kW),2013,Weighted average,7502.744273
+IRENA,Solar,CSP,Total installed cost (USD/kW),2014,Weighted average,6409.25937
+IRENA,Solar,CSP,Total installed cost (USD/kW),2015,Weighted average,8562.234077
+IRENA,Solar,CSP,Total installed cost (USD/kW),2016,Weighted average,9042.200702
+IRENA,Solar,CSP,Total installed cost (USD/kW),2017,Weighted average,8519.297708
+IRENA,Solar,CSP,Total installed cost (USD/kW),2018,Weighted average,6110.475625
+IRENA,Solar,CSP,Total installed cost (USD/kW),2019,Weighted average,7637.539112
+IRENA,Solar,CSP,Total installed cost (USD/kW),2020,Weighted average,5265.289491
+IRENA,Solar,CSP,Total installed cost (USD/kW),2021,Weighted average,10085.4459
+IRENA,Solar,CSP,Total installed cost (USD/kW),2022,Weighted average,4431.064301
+IRENA,Solar,CSP,Total installed cost (USD/kW),2023,Weighted average,6588.666667
+IRENA,Solar,CSP,Total installed cost (USD/kW),2010,95th percentile,14477.26602
+IRENA,Solar,CSP,Total installed cost (USD/kW),2011,95th percentile,20488.02361
+IRENA,Solar,CSP,Total installed cost (USD/kW),2012,95th percentile,15057.57745
+IRENA,Solar,CSP,Total installed cost (USD/kW),2013,95th percentile,11016.91533
+IRENA,Solar,CSP,Total installed cost (USD/kW),2014,95th percentile,8319.190057
+IRENA,Solar,CSP,Total installed cost (USD/kW),2015,95th percentile,10398.92635
+IRENA,Solar,CSP,Total installed cost (USD/kW),2016,95th percentile,13454.18316
+IRENA,Solar,CSP,Total installed cost (USD/kW),2017,95th percentile,10339.25108
+IRENA,Solar,CSP,Total installed cost (USD/kW),2018,95th percentile,7984.977649
+IRENA,Solar,CSP,Total installed cost (USD/kW),2019,95th percentile,10008.65455
+IRENA,Solar,CSP,Total installed cost (USD/kW),2020,95th percentile,5874.088588
+IRENA,Solar,CSP,Total installed cost (USD/kW),2021,95th percentile,10085.4459
+IRENA,Solar,CSP,Total installed cost (USD/kW),2022,95th percentile,4431.064301
+IRENA,Solar,CSP,Total installed cost (USD/kW),2023,95th percentile,7940.4
+IRENA,Solar,CSP,Capacity factor (%),2010,5th percentile,23.658675
+IRENA,Solar,CSP,Capacity factor (%),2011,5th percentile,23.692945
+IRENA,Solar,CSP,Capacity factor (%),2012,5th percentile,21.537295
+IRENA,Solar,CSP,Capacity factor (%),2013,5th percentile,22.8311
+IRENA,Solar,CSP,Capacity factor (%),2014,5th percentile,25.5810046
+IRENA,Solar,CSP,Capacity factor (%),2015,5th percentile,22.34123
+IRENA,Solar,CSP,Capacity factor (%),2016,5th percentile,15.063425
+IRENA,Solar,CSP,Capacity factor (%),2017,5th percentile,29.71894977
+IRENA,Solar,CSP,Capacity factor (%),2018,5th percentile,32.0091324
+IRENA,Solar,CSP,Capacity factor (%),2019,5th percentile,23.18059648
+IRENA,Solar,CSP,Capacity factor (%),2020,5th percentile,40.25114156
+IRENA,Solar,CSP,Capacity factor (%),2021,5th percentile,80
+IRENA,Solar,CSP,Capacity factor (%),2022,5th percentile,35.79671069
+IRENA,Solar,CSP,Capacity factor (%),2023,5th percentile,54.5
+IRENA,Solar,CSP,Capacity factor (%),2010,Weighted average,30.38287506
+IRENA,Solar,CSP,Capacity factor (%),2011,Weighted average,35.4564052
+IRENA,Solar,CSP,Capacity factor (%),2012,Weighted average,27.3563922
+IRENA,Solar,CSP,Capacity factor (%),2013,Weighted average,31.01736971
+IRENA,Solar,CSP,Capacity factor (%),2014,Weighted average,28.53848125
+IRENA,Solar,CSP,Capacity factor (%),2015,Weighted average,40.41070385
+IRENA,Solar,CSP,Capacity factor (%),2016,Weighted average,36.23158553
+IRENA,Solar,CSP,Capacity factor (%),2017,Weighted average,38.58599693
+IRENA,Solar,CSP,Capacity factor (%),2018,Weighted average,45.09803921
+IRENA,Solar,CSP,Capacity factor (%),2019,Weighted average,37.05193434
+IRENA,Solar,CSP,Capacity factor (%),2020,Weighted average,41.93302893
+IRENA,Solar,CSP,Capacity factor (%),2021,Weighted average,80
+IRENA,Solar,CSP,Capacity factor (%),2022,Weighted average,35.79671069
+IRENA,Solar,CSP,Capacity factor (%),2023,Weighted average,54.5
+IRENA,Solar,CSP,Capacity factor (%),2010,95th percentile,38.98402843
+IRENA,Solar,CSP,Capacity factor (%),2011,95th percentile,53.095915
+IRENA,Solar,CSP,Capacity factor (%),2012,95th percentile,38.8128
+IRENA,Solar,CSP,Capacity factor (%),2013,95th percentile,44.20285
+IRENA,Solar,CSP,Capacity factor (%),2014,95th percentile,31.62949
+IRENA,Solar,CSP,Capacity factor (%),2015,95th percentile,50.46704
+IRENA,Solar,CSP,Capacity factor (%),2016,95th percentile,51.14154
+IRENA,Solar,CSP,Capacity factor (%),2017,95th percentile,42.66004563
+IRENA,Solar,CSP,Capacity factor (%),2018,95th percentile,61.28995431
+IRENA,Solar,CSP,Capacity factor (%),2019,95th percentile,54.36073062
+IRENA,Solar,CSP,Capacity factor (%),2020,95th percentile,45.59360735
+IRENA,Solar,CSP,Capacity factor (%),2021,95th percentile,80
+IRENA,Solar,CSP,Capacity factor (%),2022,95th percentile,35.79671069
+IRENA,Solar,CSP,Capacity factor (%),2023,95th percentile,54.5
+IRENA,Solar,CSP,LCOE (USD/kWh),2010,5th percentile,0.336074883
+IRENA,Solar,CSP,LCOE (USD/kWh),2011,5th percentile,0.27507406
+IRENA,Solar,CSP,LCOE (USD/kWh),2012,5th percentile,0.243007022
+IRENA,Solar,CSP,LCOE (USD/kWh),2013,5th percentile,0.216595019
+IRENA,Solar,CSP,LCOE (USD/kWh),2014,5th percentile,0.14148862
+IRENA,Solar,CSP,LCOE (USD/kWh),2015,5th percentile,0.18502958
+IRENA,Solar,CSP,LCOE (USD/kWh),2016,5th percentile,0.285909289
+IRENA,Solar,CSP,LCOE (USD/kWh),2017,5th percentile,0.278292784
+IRENA,Solar,CSP,LCOE (USD/kWh),2018,5th percentile,0.087846908
+IRENA,Solar,CSP,LCOE (USD/kWh),2019,5th percentile,0.117616291
+IRENA,Solar,CSP,LCOE (USD/kWh),2020,5th percentile,0.121824342
+IRENA,Solar,CSP,LCOE (USD/kWh),2021,5th percentile,0.124310929
+IRENA,Solar,CSP,LCOE (USD/kWh),2022,5th percentile,0.122017
+IRENA,Solar,CSP,LCOE (USD/kWh),2023,5th percentile,0.107440692
+IRENA,Solar,CSP,LCOE (USD/kWh),2010,Weighted average,0.396387144
+IRENA,Solar,CSP,LCOE (USD/kWh),2011,Weighted average,0.380647961
+IRENA,Solar,CSP,LCOE (USD/kWh),2012,Weighted average,0.368944835
+IRENA,Solar,CSP,LCOE (USD/kWh),2013,Weighted average,0.293327583
+IRENA,Solar,CSP,LCOE (USD/kWh),2014,Weighted average,0.255818347
+IRENA,Solar,CSP,LCOE (USD/kWh),2015,Weighted average,0.24600642
+IRENA,Solar,CSP,LCOE (USD/kWh),2016,Weighted average,0.290460161
+IRENA,Solar,CSP,LCOE (USD/kWh),2017,Weighted average,0.278292784
+IRENA,Solar,CSP,LCOE (USD/kWh),2018,Weighted average,0.163500345
+IRENA,Solar,CSP,LCOE (USD/kWh),2019,Weighted average,0.241609808
+IRENA,Solar,CSP,LCOE (USD/kWh),2020,Weighted average,0.121824342
+IRENA,Solar,CSP,LCOE (USD/kWh),2021,Weighted average,0.124310929
+IRENA,Solar,CSP,LCOE (USD/kWh),2022,Weighted average,0.122017
+IRENA,Solar,CSP,LCOE (USD/kWh),2023,Weighted average,0.117257854
+IRENA,Solar,CSP,LCOE (USD/kWh),2010,95th percentile,0.448298693
+IRENA,Solar,CSP,LCOE (USD/kWh),2011,95th percentile,0.520290057
+IRENA,Solar,CSP,LCOE (USD/kWh),2012,95th percentile,0.50041836
+IRENA,Solar,CSP,LCOE (USD/kWh),2013,95th percentile,0.37771775
+IRENA,Solar,CSP,LCOE (USD/kWh),2014,95th percentile,0.30449648
+IRENA,Solar,CSP,LCOE (USD/kWh),2015,95th percentile,0.31882203
+IRENA,Solar,CSP,LCOE (USD/kWh),2016,95th percentile,0.303684856
+IRENA,Solar,CSP,LCOE (USD/kWh),2017,95th percentile,0.278292784
+IRENA,Solar,CSP,LCOE (USD/kWh),2018,95th percentile,0.244828701
+IRENA,Solar,CSP,LCOE (USD/kWh),2019,95th percentile,0.383729159
+IRENA,Solar,CSP,LCOE (USD/kWh),2020,95th percentile,0.121824342
+IRENA,Solar,CSP,LCOE (USD/kWh),2021,95th percentile,0.124310929
+IRENA,Solar,CSP,LCOE (USD/kWh),2022,95th percentile,0.122017
+IRENA,Solar,CSP,LCOE (USD/kWh),2023,95th percentile,0.138624617
+IRENA,Hydropower,Hydropower,Total installed cost (USD/kW),2010,5th percentile,934.4566835
+IRENA,Hydropower,Hydropower,Total installed cost (USD/kW),2011,5th percentile,986.9590847
+IRENA,Hydropower,Hydropower,Total installed cost (USD/kW),2012,5th percentile,1016.906549
+IRENA,Hydropower,Hydropower,Total installed cost (USD/kW),2013,5th percentile,1020.227481
+IRENA,Hydropower,Hydropower,Total installed cost (USD/kW),2014,5th percentile,1068.712283
+IRENA,Hydropower,Hydropower,Total installed cost (USD/kW),2015,5th percentile,1097.274299
+IRENA,Hydropower,Hydropower,Total installed cost (USD/kW),2016,5th percentile,990.0036277
+IRENA,Hydropower,Hydropower,Total installed cost (USD/kW),2017,5th percentile,1099.287429
+IRENA,Hydropower,Hydropower,Total installed cost (USD/kW),2018,5th percentile,1053.007979
+IRENA,Hydropower,Hydropower,Total installed cost (USD/kW),2019,5th percentile,1213.600035
+IRENA,Hydropower,Hydropower,Total installed cost (USD/kW),2020,5th percentile,1302.838562
+IRENA,Hydropower,Hydropower,Total installed cost (USD/kW),2021,5th percentile,1368.32281
+IRENA,Hydropower,Hydropower,Total installed cost (USD/kW),2022,5th percentile,915.9136307
+IRENA,Hydropower,Hydropower,Total installed cost (USD/kW),2023,5th percentile,1245.283256
+IRENA,Hydropower,Hydropower,Total installed cost (USD/kW),2010,Weighted average,1459.038469
+IRENA,Hydropower,Hydropower,Total installed cost (USD/kW),2011,Weighted average,1437.678948
+IRENA,Hydropower,Hydropower,Total installed cost (USD/kW),2012,Weighted average,1536.926764
+IRENA,Hydropower,Hydropower,Total installed cost (USD/kW),2013,Weighted average,1737.693064
+IRENA,Hydropower,Hydropower,Total installed cost (USD/kW),2014,Weighted average,1592.825377
+IRENA,Hydropower,Hydropower,Total installed cost (USD/kW),2015,Weighted average,1751.215326
+IRENA,Hydropower,Hydropower,Total installed cost (USD/kW),2016,Weighted average,2075.341779
+IRENA,Hydropower,Hydropower,Total installed cost (USD/kW),2017,Weighted average,2129.650987
+IRENA,Hydropower,Hydropower,Total installed cost (USD/kW),2018,Weighted average,1669.434859
+IRENA,Hydropower,Hydropower,Total installed cost (USD/kW),2019,Weighted average,2052.760281
+IRENA,Hydropower,Hydropower,Total installed cost (USD/kW),2020,Weighted average,2151.640982
+IRENA,Hydropower,Hydropower,Total installed cost (USD/kW),2021,Weighted average,2365.202087
+IRENA,Hydropower,Hydropower,Total installed cost (USD/kW),2022,Weighted average,3053.489693
+IRENA,Hydropower,Hydropower,Total installed cost (USD/kW),2023,Weighted average,2805.96618
+IRENA,Hydropower,Hydropower,Total installed cost (USD/kW),2010,95th percentile,3398.723349
+IRENA,Hydropower,Hydropower,Total installed cost (USD/kW),2011,95th percentile,3158.403122
+IRENA,Hydropower,Hydropower,Total installed cost (USD/kW),2012,95th percentile,3914.272932
+IRENA,Hydropower,Hydropower,Total installed cost (USD/kW),2013,95th percentile,4023.206229
+IRENA,Hydropower,Hydropower,Total installed cost (USD/kW),2014,95th percentile,4804.801085
+IRENA,Hydropower,Hydropower,Total installed cost (USD/kW),2015,95th percentile,5118.177602
+IRENA,Hydropower,Hydropower,Total installed cost (USD/kW),2016,95th percentile,6379.88571
+IRENA,Hydropower,Hydropower,Total installed cost (USD/kW),2017,95th percentile,7778.157411
+IRENA,Hydropower,Hydropower,Total installed cost (USD/kW),2018,95th percentile,4560.857146
+IRENA,Hydropower,Hydropower,Total installed cost (USD/kW),2019,95th percentile,4574.800427
+IRENA,Hydropower,Hydropower,Total installed cost (USD/kW),2020,95th percentile,8214.027643
+IRENA,Hydropower,Hydropower,Total installed cost (USD/kW),2021,95th percentile,5660.893548
+IRENA,Hydropower,Hydropower,Total installed cost (USD/kW),2022,95th percentile,6697.327844
+IRENA,Hydropower,Hydropower,Total installed cost (USD/kW),2023,95th percentile,8503.648054
+IRENA,Hydropower,Hydropower,Capacity factor (%),2010,5th percentile,30.929735
+IRENA,Hydropower,Hydropower,Capacity factor (%),2011,5th percentile,31.41701
+IRENA,Hydropower,Hydropower,Capacity factor (%),2012,5th percentile,30.443175
+IRENA,Hydropower,Hydropower,Capacity factor (%),2013,5th percentile,32.647425
+IRENA,Hydropower,Hydropower,Capacity factor (%),2014,5th percentile,33.9216
+IRENA,Hydropower,Hydropower,Capacity factor (%),2015,5th percentile,32.71039
+IRENA,Hydropower,Hydropower,Capacity factor (%),2016,5th percentile,30.8464
+IRENA,Hydropower,Hydropower,Capacity factor (%),2017,5th percentile,23.29927
+IRENA,Hydropower,Hydropower,Capacity factor (%),2018,5th percentile,26.87707
+IRENA,Hydropower,Hydropower,Capacity factor (%),2019,5th percentile,34.61302142
+IRENA,Hydropower,Hydropower,Capacity factor (%),2020,5th percentile,29.09167626
+IRENA,Hydropower,Hydropower,Capacity factor (%),2021,5th percentile,31.4
+IRENA,Hydropower,Hydropower,Capacity factor (%),2022,5th percentile,39.23468783
+IRENA,Hydropower,Hydropower,Capacity factor (%),2023,5th percentile,34.03855911
+IRENA,Hydropower,Hydropower,Capacity factor (%),2010,Weighted average,43.91906131
+IRENA,Hydropower,Hydropower,Capacity factor (%),2011,Weighted average,44.14332692
+IRENA,Hydropower,Hydropower,Capacity factor (%),2012,Weighted average,45.83664332
+IRENA,Hydropower,Hydropower,Capacity factor (%),2013,Weighted average,50.03679266
+IRENA,Hydropower,Hydropower,Capacity factor (%),2014,Weighted average,50.22413161
+IRENA,Hydropower,Hydropower,Capacity factor (%),2015,Weighted average,50.68411022
+IRENA,Hydropower,Hydropower,Capacity factor (%),2016,Weighted average,50.27752755
+IRENA,Hydropower,Hydropower,Capacity factor (%),2017,Weighted average,46.96516292
+IRENA,Hydropower,Hydropower,Capacity factor (%),2018,Weighted average,45.51064854
+IRENA,Hydropower,Hydropower,Capacity factor (%),2019,Weighted average,48.40407864
+IRENA,Hydropower,Hydropower,Capacity factor (%),2020,Weighted average,45.40322488
+IRENA,Hydropower,Hydropower,Capacity factor (%),2021,Weighted average,44.72463588
+IRENA,Hydropower,Hydropower,Capacity factor (%),2022,Weighted average,47.29802178
+IRENA,Hydropower,Hydropower,Capacity factor (%),2023,Weighted average,53.30530915
+IRENA,Hydropower,Hydropower,Capacity factor (%),2010,95th percentile,65.928725
+IRENA,Hydropower,Hydropower,Capacity factor (%),2011,95th percentile,65.5295
+IRENA,Hydropower,Hydropower,Capacity factor (%),2012,95th percentile,68.05605
+IRENA,Hydropower,Hydropower,Capacity factor (%),2013,95th percentile,70.7629
+IRENA,Hydropower,Hydropower,Capacity factor (%),2014,95th percentile,75.24354
+IRENA,Hydropower,Hydropower,Capacity factor (%),2015,95th percentile,79.85473
+IRENA,Hydropower,Hydropower,Capacity factor (%),2016,95th percentile,69.3769
+IRENA,Hydropower,Hydropower,Capacity factor (%),2017,95th percentile,69.08516
+IRENA,Hydropower,Hydropower,Capacity factor (%),2018,95th percentile,70.46855542
+IRENA,Hydropower,Hydropower,Capacity factor (%),2019,95th percentile,70.19
+IRENA,Hydropower,Hydropower,Capacity factor (%),2020,95th percentile,74.31701432
+IRENA,Hydropower,Hydropower,Capacity factor (%),2021,95th percentile,74
+IRENA,Hydropower,Hydropower,Capacity factor (%),2022,95th percentile,68.35936081
+IRENA,Hydropower,Hydropower,Capacity factor (%),2023,95th percentile,72.16706944
+IRENA,Hydropower,Hydropower,LCOE (USD/kWh),2010,5th percentile,0.028216905
+IRENA,Hydropower,Hydropower,LCOE (USD/kWh),2011,5th percentile,0.029706709
+IRENA,Hydropower,Hydropower,LCOE (USD/kWh),2012,5th percentile,0.031709708
+IRENA,Hydropower,Hydropower,LCOE (USD/kWh),2013,5th percentile,0.03188112
+IRENA,Hydropower,Hydropower,LCOE (USD/kWh),2014,5th percentile,0.031650023
+IRENA,Hydropower,Hydropower,LCOE (USD/kWh),2015,5th percentile,0.031318937
+IRENA,Hydropower,Hydropower,LCOE (USD/kWh),2016,5th percentile,0.035007379
+IRENA,Hydropower,Hydropower,LCOE (USD/kWh),2017,5th percentile,0.036349284
+IRENA,Hydropower,Hydropower,LCOE (USD/kWh),2018,5th percentile,0.035952588
+IRENA,Hydropower,Hydropower,LCOE (USD/kWh),2019,5th percentile,0.032629151
+IRENA,Hydropower,Hydropower,LCOE (USD/kWh),2020,5th percentile,0.036816511
+IRENA,Hydropower,Hydropower,LCOE (USD/kWh),2021,5th percentile,0.041703225
+IRENA,Hydropower,Hydropower,LCOE (USD/kWh),2022,5th percentile,0.028666343
+IRENA,Hydropower,Hydropower,LCOE (USD/kWh),2023,5th percentile,0.026856984
+IRENA,Hydropower,Hydropower,LCOE (USD/kWh),2010,Weighted average,0.043136439
+IRENA,Hydropower,Hydropower,LCOE (USD/kWh),2011,Weighted average,0.040560361
+IRENA,Hydropower,Hydropower,LCOE (USD/kWh),2012,Weighted average,0.042198937
+IRENA,Hydropower,Hydropower,LCOE (USD/kWh),2013,Weighted average,0.047163295
+IRENA,Hydropower,Hydropower,LCOE (USD/kWh),2014,Weighted average,0.03674719
+IRENA,Hydropower,Hydropower,LCOE (USD/kWh),2015,Weighted average,0.040572962
+IRENA,Hydropower,Hydropower,LCOE (USD/kWh),2016,Weighted average,0.053682832
+IRENA,Hydropower,Hydropower,LCOE (USD/kWh),2017,Weighted average,0.056270615
+IRENA,Hydropower,Hydropower,LCOE (USD/kWh),2018,Weighted average,0.044194845
+IRENA,Hydropower,Hydropower,LCOE (USD/kWh),2019,Weighted average,0.045938633
+IRENA,Hydropower,Hydropower,LCOE (USD/kWh),2020,Weighted average,0.050994493
+IRENA,Hydropower,Hydropower,LCOE (USD/kWh),2021,Weighted average,0.053232112
+IRENA,Hydropower,Hydropower,LCOE (USD/kWh),2022,Weighted average,0.061183166
+IRENA,Hydropower,Hydropower,LCOE (USD/kWh),2023,Weighted average,0.057056987
+IRENA,Hydropower,Hydropower,LCOE (USD/kWh),2010,95th percentile,0.102139897
+IRENA,Hydropower,Hydropower,LCOE (USD/kWh),2011,95th percentile,0.089114314
+IRENA,Hydropower,Hydropower,LCOE (USD/kWh),2012,95th percentile,0.106113582
+IRENA,Hydropower,Hydropower,LCOE (USD/kWh),2013,95th percentile,0.114839654
+IRENA,Hydropower,Hydropower,LCOE (USD/kWh),2014,95th percentile,0.147043583
+IRENA,Hydropower,Hydropower,LCOE (USD/kWh),2015,95th percentile,0.139974579
+IRENA,Hydropower,Hydropower,LCOE (USD/kWh),2016,95th percentile,0.199943886
+IRENA,Hydropower,Hydropower,LCOE (USD/kWh),2017,95th percentile,0.28316058
+IRENA,Hydropower,Hydropower,LCOE (USD/kWh),2018,95th percentile,0.154052288
+IRENA,Hydropower,Hydropower,LCOE (USD/kWh),2019,95th percentile,0.148477828
+IRENA,Hydropower,Hydropower,LCOE (USD/kWh),2020,95th percentile,0.220723821
+IRENA,Hydropower,Hydropower,LCOE (USD/kWh),2021,95th percentile,0.163991931
+IRENA,Hydropower,Hydropower,LCOE (USD/kWh),2022,95th percentile,0.221959351
+IRENA,Hydropower,Hydropower,LCOE (USD/kWh),2023,95th percentile,0.31971299
+IRENA,Geothermal,Geothermal,Total installed cost (USD/kW),2010,5th percentile,1908.977276
+IRENA,Geothermal,Geothermal,Total installed cost (USD/kW),2011,5th percentile,
+IRENA,Geothermal,Geothermal,Total installed cost (USD/kW),2012,5th percentile,3475.444045
+IRENA,Geothermal,Geothermal,Total installed cost (USD/kW),2013,5th percentile,2496.895018
+IRENA,Geothermal,Geothermal,Total installed cost (USD/kW),2014,5th percentile,2277.722599
+IRENA,Geothermal,Geothermal,Total installed cost (USD/kW),2015,5th percentile,2757.688514
+IRENA,Geothermal,Geothermal,Total installed cost (USD/kW),2016,5th percentile,2729.03472
+IRENA,Geothermal,Geothermal,Total installed cost (USD/kW),2017,5th percentile,2090.121346
+IRENA,Geothermal,Geothermal,Total installed cost (USD/kW),2018,5th percentile,3708.891818
+IRENA,Geothermal,Geothermal,Total installed cost (USD/kW),2019,5th percentile,2351.989317
+IRENA,Geothermal,Geothermal,Total installed cost (USD/kW),2020,5th percentile,1979.87033
+IRENA,Geothermal,Geothermal,Total installed cost (USD/kW),2021,5th percentile,2487.6869
+IRENA,Geothermal,Geothermal,Total installed cost (USD/kW),2022,5th percentile,2494.55944
+IRENA,Geothermal,Geothermal,Total installed cost (USD/kW),2023,5th percentile,3413.001385
+IRENA,Geothermal,Geothermal,Total installed cost (USD/kW),2010,Weighted average,3010.899103
+IRENA,Geothermal,Geothermal,Total installed cost (USD/kW),2011,Weighted average,
+IRENA,Geothermal,Geothermal,Total installed cost (USD/kW),2012,Weighted average,6111.603286
+IRENA,Geothermal,Geothermal,Total installed cost (USD/kW),2013,Weighted average,4398.583213
+IRENA,Geothermal,Geothermal,Total installed cost (USD/kW),2014,Weighted average,4152.257866
+IRENA,Geothermal,Geothermal,Total installed cost (USD/kW),2015,Weighted average,4066.265296
+IRENA,Geothermal,Geothermal,Total installed cost (USD/kW),2016,Weighted average,4270.566983
+IRENA,Geothermal,Geothermal,Total installed cost (USD/kW),2017,Weighted average,4453.298276
+IRENA,Geothermal,Geothermal,Total installed cost (USD/kW),2018,Weighted average,4794.10484
+IRENA,Geothermal,Geothermal,Total installed cost (USD/kW),2019,Weighted average,4613.870672
+IRENA,Geothermal,Geothermal,Total installed cost (USD/kW),2020,Weighted average,4193.802555
+IRENA,Geothermal,Geothermal,Total installed cost (USD/kW),2021,Weighted average,4458.335745
+IRENA,Geothermal,Geothermal,Total installed cost (USD/kW),2022,Weighted average,3605.79054
+IRENA,Geothermal,Geothermal,Total installed cost (USD/kW),2023,Weighted average,4589.440882
+IRENA,Geothermal,Geothermal,Total installed cost (USD/kW),2010,95th percentile,5320.875593
+IRENA,Geothermal,Geothermal,Total installed cost (USD/kW),2011,95th percentile,
+IRENA,Geothermal,Geothermal,Total installed cost (USD/kW),2012,95th percentile,15336.6632
+IRENA,Geothermal,Geothermal,Total installed cost (USD/kW),2013,95th percentile,14281.55049
+IRENA,Geothermal,Geothermal,Total installed cost (USD/kW),2014,95th percentile,9800.872581
+IRENA,Geothermal,Geothermal,Total installed cost (USD/kW),2015,95th percentile,8331.97604
+IRENA,Geothermal,Geothermal,Total installed cost (USD/kW),2016,95th percentile,8162.814405
+IRENA,Geothermal,Geothermal,Total installed cost (USD/kW),2017,95th percentile,7836.526073
+IRENA,Geothermal,Geothermal,Total installed cost (USD/kW),2018,95th percentile,9879.879522
+IRENA,Geothermal,Geothermal,Total installed cost (USD/kW),2019,95th percentile,11939.70135
+IRENA,Geothermal,Geothermal,Total installed cost (USD/kW),2020,95th percentile,7308.480305
+IRENA,Geothermal,Geothermal,Total installed cost (USD/kW),2021,95th percentile,6760.510063
+IRENA,Geothermal,Geothermal,Total installed cost (USD/kW),2022,95th percentile,9087.683741
+IRENA,Geothermal,Geothermal,Total installed cost (USD/kW),2023,95th percentile,6595.061728
+IRENA,Geothermal,Geothermal,Capacity factor (%),2010,5th percentile,80
+IRENA,Geothermal,Geothermal,Capacity factor (%),2011,5th percentile,
+IRENA,Geothermal,Geothermal,Capacity factor (%),2012,5th percentile,76.25
+IRENA,Geothermal,Geothermal,Capacity factor (%),2013,5th percentile,73.08831261
+IRENA,Geothermal,Geothermal,Capacity factor (%),2014,5th percentile,49.602745
+IRENA,Geothermal,Geothermal,Capacity factor (%),2015,5th percentile,77.2
+IRENA,Geothermal,Geothermal,Capacity factor (%),2016,5th percentile,58.66254
+IRENA,Geothermal,Geothermal,Capacity factor (%),2017,5th percentile,58.83104
+IRENA,Geothermal,Geothermal,Capacity factor (%),2018,5th percentile,62.11223264
+IRENA,Geothermal,Geothermal,Capacity factor (%),2019,5th percentile,74
+IRENA,Geothermal,Geothermal,Capacity factor (%),2020,5th percentile,75.9
+IRENA,Geothermal,Geothermal,Capacity factor (%),2021,5th percentile,58.42846271
+IRENA,Geothermal,Geothermal,Capacity factor (%),2022,5th percentile,69.02739726
+IRENA,Geothermal,Geothermal,Capacity factor (%),2023,5th percentile,73.35
+IRENA,Geothermal,Geothermal,Capacity factor (%),2010,Weighted average,86.97217329
+IRENA,Geothermal,Geothermal,Capacity factor (%),2011,Weighted average,
+IRENA,Geothermal,Geothermal,Capacity factor (%),2012,Weighted average,83.31891351
+IRENA,Geothermal,Geothermal,Capacity factor (%),2013,Weighted average,82.41280492
+IRENA,Geothermal,Geothermal,Capacity factor (%),2014,Weighted average,84.13211134
+IRENA,Geothermal,Geothermal,Capacity factor (%),2015,Weighted average,88.9595254
+IRENA,Geothermal,Geothermal,Capacity factor (%),2016,Weighted average,84.85566438
+IRENA,Geothermal,Geothermal,Capacity factor (%),2017,Weighted average,80.98388846
+IRENA,Geothermal,Geothermal,Capacity factor (%),2018,Weighted average,84.30490686
+IRENA,Geothermal,Geothermal,Capacity factor (%),2019,Weighted average,79.4168373
+IRENA,Geothermal,Geothermal,Capacity factor (%),2020,Weighted average,80.80619313
+IRENA,Geothermal,Geothermal,Capacity factor (%),2021,Weighted average,76.97441285
+IRENA,Geothermal,Geothermal,Capacity factor (%),2022,Weighted average,85.25628165
+IRENA,Geothermal,Geothermal,Capacity factor (%),2023,Weighted average,82.11231527
+IRENA,Geothermal,Geothermal,Capacity factor (%),2010,95th percentile,92.242075
+IRENA,Geothermal,Geothermal,Capacity factor (%),2011,95th percentile,
+IRENA,Geothermal,Geothermal,Capacity factor (%),2012,95th percentile,94.10647572
+IRENA,Geothermal,Geothermal,Capacity factor (%),2013,95th percentile,91.231
+IRENA,Geothermal,Geothermal,Capacity factor (%),2014,95th percentile,91.1
+IRENA,Geothermal,Geothermal,Capacity factor (%),2015,95th percentile,92.7
+IRENA,Geothermal,Geothermal,Capacity factor (%),2016,95th percentile,90.10958904
+IRENA,Geothermal,Geothermal,Capacity factor (%),2017,95th percentile,90
+IRENA,Geothermal,Geothermal,Capacity factor (%),2018,95th percentile,96.25117641
+IRENA,Geothermal,Geothermal,Capacity factor (%),2019,95th percentile,86.34288086
+IRENA,Geothermal,Geothermal,Capacity factor (%),2020,95th percentile,91.1783105
+IRENA,Geothermal,Geothermal,Capacity factor (%),2021,95th percentile,91.32420091
+IRENA,Geothermal,Geothermal,Capacity factor (%),2022,95th percentile,89.55205479
+IRENA,Geothermal,Geothermal,Capacity factor (%),2023,95th percentile,86.81
+IRENA,Geothermal,Geothermal,LCOE (USD/kWh),2010,5th percentile,0.040287523
+IRENA,Geothermal,Geothermal,LCOE (USD/kWh),2011,5th percentile,
+IRENA,Geothermal,Geothermal,LCOE (USD/kWh),2012,5th percentile,0.06057557
+IRENA,Geothermal,Geothermal,LCOE (USD/kWh),2013,5th percentile,0.042432109
+IRENA,Geothermal,Geothermal,LCOE (USD/kWh),2014,5th percentile,0.047773621
+IRENA,Geothermal,Geothermal,LCOE (USD/kWh),2015,5th percentile,0.050083374
+IRENA,Geothermal,Geothermal,LCOE (USD/kWh),2016,5th percentile,0.056657718
+IRENA,Geothermal,Geothermal,LCOE (USD/kWh),2017,5th percentile,0.041508958
+IRENA,Geothermal,Geothermal,LCOE (USD/kWh),2018,5th percentile,0.060112791
+IRENA,Geothermal,Geothermal,LCOE (USD/kWh),2019,5th percentile,0.048823814
+IRENA,Geothermal,Geothermal,LCOE (USD/kWh),2020,5th percentile,0.04033038
+IRENA,Geothermal,Geothermal,LCOE (USD/kWh),2021,5th percentile,0.039607063
+IRENA,Geothermal,Geothermal,LCOE (USD/kWh),2022,5th percentile,0.046970061
+IRENA,Geothermal,Geothermal,LCOE (USD/kWh),2023,5th percentile,0.052943011
+IRENA,Geothermal,Geothermal,LCOE (USD/kWh),2010,Weighted average,0.054377617
+IRENA,Geothermal,Geothermal,LCOE (USD/kWh),2011,Weighted average,
+IRENA,Geothermal,Geothermal,LCOE (USD/kWh),2012,Weighted average,0.093415844
+IRENA,Geothermal,Geothermal,LCOE (USD/kWh),2013,Weighted average,0.069449232
+IRENA,Geothermal,Geothermal,LCOE (USD/kWh),2014,Weighted average,0.070825803
+IRENA,Geothermal,Geothermal,LCOE (USD/kWh),2015,Weighted average,0.063738329
+IRENA,Geothermal,Geothermal,LCOE (USD/kWh),2016,Weighted average,0.073563637
+IRENA,Geothermal,Geothermal,LCOE (USD/kWh),2017,Weighted average,0.07696041
+IRENA,Geothermal,Geothermal,LCOE (USD/kWh),2018,Weighted average,0.074274536
+IRENA,Geothermal,Geothermal,LCOE (USD/kWh),2019,Weighted average,0.073327112
+IRENA,Geothermal,Geothermal,LCOE (USD/kWh),2020,Weighted average,0.061646783
+IRENA,Geothermal,Geothermal,LCOE (USD/kWh),2021,Weighted average,0.07372308
+IRENA,Geothermal,Geothermal,LCOE (USD/kWh),2022,Weighted average,0.057813244
+IRENA,Geothermal,Geothermal,LCOE (USD/kWh),2023,Weighted average,0.071111673
+IRENA,Geothermal,Geothermal,LCOE (USD/kWh),2010,95th percentile,0.083809835
+IRENA,Geothermal,Geothermal,LCOE (USD/kWh),2011,95th percentile,
+IRENA,Geothermal,Geothermal,LCOE (USD/kWh),2012,95th percentile,0.178232393
+IRENA,Geothermal,Geothermal,LCOE (USD/kWh),2013,95th percentile,0.186652739
+IRENA,Geothermal,Geothermal,LCOE (USD/kWh),2014,95th percentile,0.241221822
+IRENA,Geothermal,Geothermal,LCOE (USD/kWh),2015,95th percentile,0.114664356
+IRENA,Geothermal,Geothermal,LCOE (USD/kWh),2016,95th percentile,0.125045507
+IRENA,Geothermal,Geothermal,LCOE (USD/kWh),2017,95th percentile,0.139585893
+IRENA,Geothermal,Geothermal,LCOE (USD/kWh),2018,95th percentile,0.162560081
+IRENA,Geothermal,Geothermal,LCOE (USD/kWh),2019,95th percentile,0.138862696
+IRENA,Geothermal,Geothermal,LCOE (USD/kWh),2020,95th percentile,0.094334796
+IRENA,Geothermal,Geothermal,LCOE (USD/kWh),2021,95th percentile,0.107954396
+IRENA,Geothermal,Geothermal,LCOE (USD/kWh),2022,95th percentile,0.126089317
+IRENA,Geothermal,Geothermal,LCOE (USD/kWh),2023,95th percentile,0.093574557
+IRENA,Bioenergy,Bioenergy,Total installed cost (USD/kW),2010,5th percentile,818.1485373
+IRENA,Bioenergy,Bioenergy,Total installed cost (USD/kW),2011,5th percentile,586.2649575
+IRENA,Bioenergy,Bioenergy,Total installed cost (USD/kW),2012,5th percentile,890.0188785
+IRENA,Bioenergy,Bioenergy,Total installed cost (USD/kW),2013,5th percentile,1096.199845
+IRENA,Bioenergy,Bioenergy,Total installed cost (USD/kW),2014,5th percentile,314.8798183
+IRENA,Bioenergy,Bioenergy,Total installed cost (USD/kW),2015,5th percentile,1062.221979
+IRENA,Bioenergy,Bioenergy,Total installed cost (USD/kW),2016,5th percentile,1308.760617
+IRENA,Bioenergy,Bioenergy,Total installed cost (USD/kW),2017,5th percentile,1506.119354
+IRENA,Bioenergy,Bioenergy,Total installed cost (USD/kW),2018,5th percentile,1193.215429
+IRENA,Bioenergy,Bioenergy,Total installed cost (USD/kW),2019,5th percentile,1430.510857
+IRENA,Bioenergy,Bioenergy,Total installed cost (USD/kW),2020,5th percentile,1239.751247
+IRENA,Bioenergy,Bioenergy,Total installed cost (USD/kW),2021,5th percentile,1858.409817
+IRENA,Bioenergy,Bioenergy,Total installed cost (USD/kW),2022,5th percentile,1071.465624
+IRENA,Bioenergy,Bioenergy,Total installed cost (USD/kW),2023,5th percentile,877.1869891
+IRENA,Bioenergy,Bioenergy,Total installed cost (USD/kW),2010,Weighted average,3010.285508
+IRENA,Bioenergy,Bioenergy,Total installed cost (USD/kW),2011,Weighted average,2894.054906
+IRENA,Bioenergy,Bioenergy,Total installed cost (USD/kW),2012,Weighted average,2024.125775
+IRENA,Bioenergy,Bioenergy,Total installed cost (USD/kW),2013,Weighted average,3521.625021
+IRENA,Bioenergy,Bioenergy,Total installed cost (USD/kW),2014,Weighted average,3464.124476
+IRENA,Bioenergy,Bioenergy,Total installed cost (USD/kW),2015,Weighted average,3011.178461
+IRENA,Bioenergy,Bioenergy,Total installed cost (USD/kW),2016,Weighted average,2530.02005
+IRENA,Bioenergy,Bioenergy,Total installed cost (USD/kW),2017,Weighted average,3370.097599
+IRENA,Bioenergy,Bioenergy,Total installed cost (USD/kW),2018,Weighted average,1969.698733
+IRENA,Bioenergy,Bioenergy,Total installed cost (USD/kW),2019,Weighted average,2572.424882
+IRENA,Bioenergy,Bioenergy,Total installed cost (USD/kW),2020,Weighted average,2922.551916
+IRENA,Bioenergy,Bioenergy,Total installed cost (USD/kW),2021,Weighted average,2610.531257
+IRENA,Bioenergy,Bioenergy,Total installed cost (USD/kW),2022,Weighted average,2241.804909
+IRENA,Bioenergy,Bioenergy,Total installed cost (USD/kW),2023,Weighted average,2729.788242
+IRENA,Bioenergy,Bioenergy,Total installed cost (USD/kW),2010,95th percentile,5617.06916
+IRENA,Bioenergy,Bioenergy,Total installed cost (USD/kW),2011,95th percentile,5964.926166
+IRENA,Bioenergy,Bioenergy,Total installed cost (USD/kW),2012,95th percentile,5267.609754
+IRENA,Bioenergy,Bioenergy,Total installed cost (USD/kW),2013,95th percentile,9277.562268
+IRENA,Bioenergy,Bioenergy,Total installed cost (USD/kW),2014,95th percentile,13505.77919
+IRENA,Bioenergy,Bioenergy,Total installed cost (USD/kW),2015,95th percentile,18626.57332
+IRENA,Bioenergy,Bioenergy,Total installed cost (USD/kW),2016,95th percentile,14981.98715
+IRENA,Bioenergy,Bioenergy,Total installed cost (USD/kW),2017,95th percentile,11481.96339
+IRENA,Bioenergy,Bioenergy,Total installed cost (USD/kW),2018,95th percentile,10350.03569
+IRENA,Bioenergy,Bioenergy,Total installed cost (USD/kW),2019,95th percentile,12703.99614
+IRENA,Bioenergy,Bioenergy,Total installed cost (USD/kW),2020,95th percentile,6878.099821
+IRENA,Bioenergy,Bioenergy,Total installed cost (USD/kW),2021,95th percentile,12136.4582
+IRENA,Bioenergy,Bioenergy,Total installed cost (USD/kW),2022,95th percentile,6163.014068
+IRENA,Bioenergy,Bioenergy,Total installed cost (USD/kW),2023,95th percentile,4596.423277
+IRENA,Bioenergy,Bioenergy,Capacity factor (%),2010,5th percentile,30.55096
+IRENA,Bioenergy,Bioenergy,Capacity factor (%),2011,5th percentile,37.312825
+IRENA,Bioenergy,Bioenergy,Capacity factor (%),2012,5th percentile,42.38336
+IRENA,Bioenergy,Bioenergy,Capacity factor (%),2013,5th percentile,41.39366
+IRENA,Bioenergy,Bioenergy,Capacity factor (%),2014,5th percentile,46.79962
+IRENA,Bioenergy,Bioenergy,Capacity factor (%),2015,5th percentile,63
+IRENA,Bioenergy,Bioenergy,Capacity factor (%),2016,5th percentile,60.45
+IRENA,Bioenergy,Bioenergy,Capacity factor (%),2017,5th percentile,65
+IRENA,Bioenergy,Bioenergy,Capacity factor (%),2018,5th percentile,44.23515982
+IRENA,Bioenergy,Bioenergy,Capacity factor (%),2019,5th percentile,61.7829198
+IRENA,Bioenergy,Bioenergy,Capacity factor (%),2020,5th percentile,51.13592085
+IRENA,Bioenergy,Bioenergy,Capacity factor (%),2021,5th percentile,60.1525
+IRENA,Bioenergy,Bioenergy,Capacity factor (%),2022,5th percentile,45.35370479
+IRENA,Bioenergy,Bioenergy,Capacity factor (%),2023,5th percentile,59.2470627
+IRENA,Bioenergy,Bioenergy,Capacity factor (%),2010,Weighted average,71.74146577
+IRENA,Bioenergy,Bioenergy,Capacity factor (%),2011,Weighted average,72.09977047
+IRENA,Bioenergy,Bioenergy,Capacity factor (%),2012,Weighted average,66.95428273
+IRENA,Bioenergy,Bioenergy,Capacity factor (%),2013,Weighted average,74.30416306
+IRENA,Bioenergy,Bioenergy,Capacity factor (%),2014,Weighted average,74.70310332
+IRENA,Bioenergy,Bioenergy,Capacity factor (%),2015,Weighted average,75.46514604
+IRENA,Bioenergy,Bioenergy,Capacity factor (%),2016,Weighted average,67.17145324
+IRENA,Bioenergy,Bioenergy,Capacity factor (%),2017,Weighted average,85.75332031
+IRENA,Bioenergy,Bioenergy,Capacity factor (%),2018,Weighted average,76.38333709
+IRENA,Bioenergy,Bioenergy,Capacity factor (%),2019,Weighted average,69.9714246
+IRENA,Bioenergy,Bioenergy,Capacity factor (%),2020,Weighted average,70.27610834
+IRENA,Bioenergy,Bioenergy,Capacity factor (%),2021,Weighted average,67.82875074
+IRENA,Bioenergy,Bioenergy,Capacity factor (%),2022,Weighted average,72.42704089
+IRENA,Bioenergy,Bioenergy,Capacity factor (%),2023,Weighted average,71.9182139
+IRENA,Bioenergy,Bioenergy,Capacity factor (%),2010,95th percentile,91.72968
+IRENA,Bioenergy,Bioenergy,Capacity factor (%),2011,95th percentile,93
+IRENA,Bioenergy,Bioenergy,Capacity factor (%),2012,95th percentile,89.13211
+IRENA,Bioenergy,Bioenergy,Capacity factor (%),2013,95th percentile,93
+IRENA,Bioenergy,Bioenergy,Capacity factor (%),2014,95th percentile,93
+IRENA,Bioenergy,Bioenergy,Capacity factor (%),2015,95th percentile,93
+IRENA,Bioenergy,Bioenergy,Capacity factor (%),2016,95th percentile,88.81034
+IRENA,Bioenergy,Bioenergy,Capacity factor (%),2017,95th percentile,94.1
+IRENA,Bioenergy,Bioenergy,Capacity factor (%),2018,95th percentile,92.73081476
+IRENA,Bioenergy,Bioenergy,Capacity factor (%),2019,95th percentile,93.569878
+IRENA,Bioenergy,Bioenergy,Capacity factor (%),2020,95th percentile,87.64764079
+IRENA,Bioenergy,Bioenergy,Capacity factor (%),2021,95th percentile,82
+IRENA,Bioenergy,Bioenergy,Capacity factor (%),2022,95th percentile,89.73292097
+IRENA,Bioenergy,Bioenergy,Capacity factor (%),2023,95th percentile,82.97866726
+IRENA,Bioenergy,Bioenergy,LCOE (USD/kWh),2010,5th percentile,0.042491664
+IRENA,Bioenergy,Bioenergy,LCOE (USD/kWh),2011,5th percentile,0.039378431
+IRENA,Bioenergy,Bioenergy,LCOE (USD/kWh),2012,5th percentile,0.039974099
+IRENA,Bioenergy,Bioenergy,LCOE (USD/kWh),2013,5th percentile,0.049820473
+IRENA,Bioenergy,Bioenergy,LCOE (USD/kWh),2014,5th percentile,0.033517041
+IRENA,Bioenergy,Bioenergy,LCOE (USD/kWh),2015,5th percentile,0.041782534
+IRENA,Bioenergy,Bioenergy,LCOE (USD/kWh),2016,5th percentile,0.061420298
+IRENA,Bioenergy,Bioenergy,LCOE (USD/kWh),2017,5th percentile,0.06101521
+IRENA,Bioenergy,Bioenergy,LCOE (USD/kWh),2018,5th percentile,0.022
+IRENA,Bioenergy,Bioenergy,LCOE (USD/kWh),2019,5th percentile,0.060327825
+IRENA,Bioenergy,Bioenergy,LCOE (USD/kWh),2020,5th percentile,0.046828953
+IRENA,Bioenergy,Bioenergy,LCOE (USD/kWh),2021,5th percentile,0.070609695
+IRENA,Bioenergy,Bioenergy,LCOE (USD/kWh),2022,5th percentile,0.052206223
+IRENA,Bioenergy,Bioenergy,LCOE (USD/kWh),2023,5th percentile,0.056160842
+IRENA,Bioenergy,Bioenergy,LCOE (USD/kWh),2010,Weighted average,0.084325656
+IRENA,Bioenergy,Bioenergy,LCOE (USD/kWh),2011,Weighted average,0.080839445
+IRENA,Bioenergy,Bioenergy,LCOE (USD/kWh),2012,Weighted average,0.069339762
+IRENA,Bioenergy,Bioenergy,LCOE (USD/kWh),2013,Weighted average,0.088780019
+IRENA,Bioenergy,Bioenergy,LCOE (USD/kWh),2014,Weighted average,0.088803712
+IRENA,Bioenergy,Bioenergy,LCOE (USD/kWh),2015,Weighted average,0.078205972
+IRENA,Bioenergy,Bioenergy,LCOE (USD/kWh),2016,Weighted average,0.076558251
+IRENA,Bioenergy,Bioenergy,LCOE (USD/kWh),2017,Weighted average,0.076438244
+IRENA,Bioenergy,Bioenergy,LCOE (USD/kWh),2018,Weighted average,0.059009919
+IRENA,Bioenergy,Bioenergy,LCOE (USD/kWh),2019,Weighted average,0.06915627
+IRENA,Bioenergy,Bioenergy,LCOE (USD/kWh),2020,Weighted average,0.077994789
+IRENA,Bioenergy,Bioenergy,LCOE (USD/kWh),2021,Weighted average,0.072302963
+IRENA,Bioenergy,Bioenergy,LCOE (USD/kWh),2022,Weighted average,0.062920621
+IRENA,Bioenergy,Bioenergy,LCOE (USD/kWh),2023,Weighted average,0.071543777
+IRENA,Bioenergy,Bioenergy,LCOE (USD/kWh),2010,95th percentile,0.157793598
+IRENA,Bioenergy,Bioenergy,LCOE (USD/kWh),2011,95th percentile,0.173250438
+IRENA,Bioenergy,Bioenergy,LCOE (USD/kWh),2012,95th percentile,0.146806625
+IRENA,Bioenergy,Bioenergy,LCOE (USD/kWh),2013,95th percentile,0.190173297
+IRENA,Bioenergy,Bioenergy,LCOE (USD/kWh),2014,95th percentile,0.30194667
+IRENA,Bioenergy,Bioenergy,LCOE (USD/kWh),2015,95th percentile,0.340409924
+IRENA,Bioenergy,Bioenergy,LCOE (USD/kWh),2016,95th percentile,0.27702809
+IRENA,Bioenergy,Bioenergy,LCOE (USD/kWh),2017,95th percentile,0.231280546
+IRENA,Bioenergy,Bioenergy,LCOE (USD/kWh),2018,95th percentile,0.284155728
+IRENA,Bioenergy,Bioenergy,LCOE (USD/kWh),2019,95th percentile,0.282162015
+IRENA,Bioenergy,Bioenergy,LCOE (USD/kWh),2020,95th percentile,0.173576158
+IRENA,Bioenergy,Bioenergy,LCOE (USD/kWh),2021,95th percentile,0.18889997
+IRENA,Bioenergy,Bioenergy,LCOE (USD/kWh),2022,95th percentile,0.142787142
+IRENA,Bioenergy,Bioenergy,LCOE (USD/kWh),2023,95th percentile,0.135381426

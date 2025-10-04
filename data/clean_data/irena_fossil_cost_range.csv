@@ -1,0 +1,3 @@
+source,group_technology,cost_band,value,unit,reference_year
+IRENA,Fossil fuel,Low band,0.070,USD/kWh,2023
+IRENA,Fossil fuel,High band,0.176,USD/kWh,2023
