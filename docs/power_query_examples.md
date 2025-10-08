@@ -7,7 +7,7 @@ Each example demonstrates summary of transformation logic, Query (M) code, and v
 
 ## Example 1: Building a Unified Country-Level Technology Costs Dataset (IRENA)  
 
-**Objective**  
+### Objective  
 Create a single, long-format dataset of **country-level renewable technology costs** by normalizing figure-style sheets (per technology and metric) and appending them into one table.  
 The **Onshore Wind – Installed Cost** sheet is shown as a representative example; the final dataset combines **19 technology tables** prepared using the same pattern.
 
@@ -59,9 +59,10 @@ let
     #"Reordered Columns3" = Table.ReorderColumns(#"Renamed Columns4",{"group_technology", "technology", "project_type", "region", "country", "year", "metric_type", "value_category", "value"}),
     #"Changed Type" = Table.TransformColumnTypes(#"Reordered Columns3",{{"group_technology", type text}, {"technology", type text}, {"project_type", type text}, {"region", type text}, {"country", type text}, {"year", Int64.Type}, {"value", type number}}),
     #"Changed Type1" = Table.TransformColumnTypes(#"Changed Type",{{"metric_type", type text}, {"value_category", type text}}),
-    #"Added Custom" = Table.AddColumn(#"Changed Type1", "period", each if [year] <= 2009 then "1984-2009"
-else if [year] >=2010 and [year] <=2015 then "2010-2015"
-else "2016-2023"),
+    #"Added Custom" = Table.AddColumn(#"Changed Type1", "period", each
+         if [year] <= 2009 then "1984-2009"
+         else if [year] >=2010 and [year] <=2015 then "2010-2015"
+         else "2016-2023"),
     #"Changed Type2" = Table.TransformColumnTypes(#"Added Custom",{{"period", type text}}),
     #"Reordered Columns4" = Table.ReorderColumns(#"Changed Type2",{"group_technology", "technology", "project_type", "region", "country", "period", "year", "metric_type", "value_category", "value"}),
     #"Trimmed Text" = Table.TransformColumns(#"Reordered Columns4",{{"group_technology", Text.Trim, type text}, {"technology", Text.Trim, type text}, {"project_type", Text.Trim, type text}, {"region", Text.Trim, type text}, {"country", Text.Trim, type text}, {"period", Text.Trim, type text}, {"metric_type", Text.Trim, type text}, {"value_category", Text.Trim, type text}}),
@@ -80,6 +81,82 @@ in
 ![Onshore Wind - Before and After](./images/onshore_wind_before_and_after.gif)
 
 **Transformation Steps Overview**  
-![Onshore Wind – Steps](./images/onshore_wind_steps.gif)
+![Onshore Wind – Steps](./images/onshore_wind_steps.gif)  
+
+---
+
+## Example 2: IRENA – Renewable Energy Investments
+
+*Example 2 focuses on text-cleaning and normalization techniques applied to the IRENA Public Investment in Renewable Energy dataset.  
+This example demonstrates how Power Query was used to fix inconsistent text, remove diacritics, and prepare structured, analysis-ready data for SQL import.*
+
+### Objective
+To clean and standardize IRENA’s **Public Investment in Renewable Energy** dataset by fixing inconsistent text formatting, removing diacritics from project names, and harmonizing key fields for SQL import.  
+
+---
+
+### Key Steps
+
+1. **Renaming & Typing**  
+   - Renamed columns to standardized `snake_case` names (`country_or_area`, `finance_type`, `amount_usd_million`, etc.).  
+   - Converted data types for key fields (`year`, `reference_date`, `amount_usd_million`).
+
+2. **Text Cleaning & Formatting**  
+   - Applied *Trim* and *Clean* functions to all text columns to remove invisible Unicode characters and trailing spaces.  
+   - Replaced empty project names with nulls.
+
+3. **Deduplication**  
+   - Removed fully duplicated rows to ensure project uniqueness.
+
+4. **Diacritics Normalization (key transformation)**  
+   - Used a custom Power Query expression to convert all diacritics and non-ASCII characters in the `project` column (e.g., *é, ü, ç*) into plain Latin equivalents.  
+   - Cleaned up question marks and excessive spaces introduced during the conversion to produce a normalized `project` field.  
+   - Example:  
+     `"Énergie solaire à Bamako" → "Energie solaire a Bamako"`
+
+5. **Final Structuring**  
+   - Replaced original `project` column with the normalized version.  
+   - Added `dataset_source = "IRENA"` for traceability.  
+   - Reordered columns for SQL import consistency.
+
+---
+
+### Power Query (M) Code
+
+```powerquery
+let
+    Source = Excel.CurrentWorkbook(){[Name="renewable_investment"]}[Content],
+    #"Renamed Columns" = Table.RenameColumns(Source,{{"ISO-code", "iso3"}, {"Country/Area", "country/area"}, {"Region", "region"}, {"Project", "project"}, {"Donor", "donor"}, {"Agency", "agency"}, {"Year", "year"}, {"Category", "category"}, {"Technology", "technology"}, {"Sub-technology", "sub_technology"}, {"Finance Group", "finance_group"}, {"Finance Type", "finance_type"}, {"Source", "source"}, {"Reference Date", "reference_date"}, {"Amount (2020 USD million)", "amount_2020_usd_million"}}),
+    #"Changed Type" = Table.TransformColumnTypes(#"Renamed Columns",{{"iso3", type text}, {"country/area", type text}, {"region", type text}, {"project", type text}, {"donor", type text}, {"agency", type text}, {"category", type text}, {"technology", type text}, {"sub_technology", type text}, {"finance_group", type text}, {"finance_type", type text}, {"source", type text}}),
+    #"Trimmed Text" = Table.TransformColumns(#"Changed Type",{{"iso3", Text.Trim, type text}, {"country/area", Text.Trim, type text}, {"region", Text.Trim, type text}, {"project", Text.Trim, type text}, {"donor", Text.Trim, type text}, {"agency", Text.Trim, type text}, {"category", Text.Trim, type text}, {"technology", Text.Trim, type text}, {"sub_technology", Text.Trim, type text}, {"finance_group", Text.Trim, type text}, {"finance_type", Text.Trim, type text}, {"source", Text.Trim, type text}}),
+    #"Cleaned Text" = Table.TransformColumns(#"Trimmed Text",{{"iso3", Text.Clean, type text}, {"country/area", Text.Clean, type text}, {"region", Text.Clean, type text}, {"project", Text.Clean, type text}, {"donor", Text.Clean, type text}, {"agency", Text.Clean, type text}, {"category", Text.Clean, type text}, {"technology", Text.Clean, type text}, {"sub_technology", Text.Clean, type text}, {"finance_group", Text.Clean, type text}, {"finance_type", Text.Clean, type text}, {"source", Text.Clean, type text}}),
+    #"Changed Type1" = Table.TransformColumnTypes(#"Cleaned Text",{{"year", Int64.Type}, {"reference_date", type date}, {"amount_2020_usd_million", type number}}),
+    #"Renamed Columns1" = Table.RenameColumns(#"Changed Type1",{{"country/area", "country_or_area"}, {"amount_2020_usd_million", "amount_usd_million"}}),
+    #"Replaced Value" = Table.ReplaceValue(#"Renamed Columns1","",null,Replacer.ReplaceValue,{"project"}),
+    #"Removed Duplicates" = Table.Distinct(#"Replaced Value"),
+    #"Added Custom" = Table.AddColumn(#"Removed Duplicates", "dataset_source", each "IRENA"),
+    #"Reordered Columns" = Table.ReorderColumns(#"Added Custom",{"dataset_source", "iso3", "country_or_area", "region", "project", "donor", "agency", "year", "category", "technology", "sub_technology", "finance_group", "finance_type", "source", "reference_date", "amount_usd_million"}),
+    #"Changed Type2" = Table.TransformColumnTypes(#"Reordered Columns",{{"dataset_source", type text}}),
+    #"Added Custom3" = Table.AddColumn(#"Changed Type2", "normalized_project", each
+         if [project] = null then null
+         else let
+             ReplaceDiacritics = Text.FromBinary(Text.ToBinary([project], 28597), TextEncoding.Ascii), 
+             RemoveQuestionMarks = Text.Replace(ReplaceDiacritics, "?", " "), 
+             RemoveExcessSpaces = Text.Combine(
+               List.RemoveItems(Text.Split(Text.Trim(RemoveQuestionMarks), " "), {""}),  " " )
+           in RemoveExcessSpaces),
+    #"Reordered Columns1" = Table.ReorderColumns(#"Added Custom3",{"dataset_source", "iso3", "country_or_area", "region", "project", "normalized_project", "donor", "agency", "year", "category", "technology", "sub_technology", "finance_group", "finance_type", "source", "reference_date", "amount_usd_million"}),
+    #"Changed Type3" = Table.TransformColumnTypes(#"Reordered Columns1",{{"normalized_project", type text}}),
+    #"Removed Columns" = Table.RemoveColumns(#"Changed Type3",{"project"}),
+    #"Renamed Columns2" = Table.RenameColumns(#"Removed Columns",{{"normalized_project", "project"}})
+in
+    #"Renamed Columns2"
+```
+## Visual Results
+
+**Transformation Steps Overview**  
+![Onshore Wind – Steps](./images/investments_steps.gif)  
+
+---
 
 
