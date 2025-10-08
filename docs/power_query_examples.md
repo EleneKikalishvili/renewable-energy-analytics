@@ -1,7 +1,7 @@
 # Power Query Transformation Examples
 
-This section highlights selected examples of Power Query transformations applied during the **data preparation phase** of the Renewable Energy Analytics project.  
-Each example demonstrates a key part of the data cleaning and structuring workflow used before importing the datasets into PostgreSQL.
+This section highlights selected examples of Power Query transformations applied during the **data preparation phase** of the Renewable Energy Analytics project before importing datasets into PostgreSQL.
+Each example demonstrates summary of transformation logic, Query (M) code, and visuals showing the transformation steps.
 
 ---
 
@@ -16,7 +16,7 @@ The **Onshore Wind – Installed Cost** sheet is shown as a representative examp
    - Pick the relevant sheet (e.g., `Fig 2.6`).
    - Remove title rows, footers, and blank rows and columns; promote headers; set types.
 2. **Standardize column names & text**
-   - Rename to snake_case (`geo_name`, `year`, `value`, `technology`, `metric_type`).
+   - Rename to snake_case (`year`, `value_category`, `technology`, `metric_type`, etc.).
    - Trim/Clean; fix odd encodings/diacritics if present.
 3. **Unpivot years → long format**
    - Temporarily replace all null values with 0 in order to not lose nulls when unpivoting.
@@ -74,3 +74,12 @@ else "2016-2023"),
 in
     #"Changed Type3"
 ```
+## Visual Results
+
+**Before → After Comparison**  
+![Onshore Wind - Before and After](./images/onshore_wind_before_and_after.gif)
+
+**Transformation Steps Overview**  
+![Onshore Wind – Steps](./images/onshore_wind_steps.gif)
+
+
