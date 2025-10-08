@@ -75,7 +75,7 @@ let
 in
     #"Changed Type3"
 ```
-## Visual Results
+### Visual Results
 
 **Before → After Comparison**  
 ![Onshore Wind - Before and After](./images/onshore_wind_before_and_after.gif)
@@ -152,11 +152,100 @@ let
 in
     #"Renamed Columns2"
 ```
-## Visual Results
+### Visual Results
 
 **Transformation Steps Overview**  
-![Onshore Wind – Steps](./images/investments_steps.gif)  
+![Investments – Steps](./images/investments_steps.gif)  
 
 ---
 
+## Example 3: Eurostat – Household Electricity Prices
 
+*Example 3 focuses on reshaping Eurostat’s household electricity price data from a wide, code-heavy table into a tidy, analysis-ready format.  
+It demonstrates filtering (EUR, including taxes), unpivoting period columns, parsing Eurostat quality flags, and final type conversion for SQL import.  
+The same transformation workflow was applied to the non-household electricity prices dataset, and both were later appended to form the final eurostat_electricity_prices dataset.*  
+
+### Objective
+Transform the Eurostat **household electricity prices** into a long, consistent structure with clear fields for
+country (`iso2`), consumption band, period, and price value (EUR/kWh), keeping Eurostat’s quality flags where present.
+
+---
+
+### Key Steps
+
+1. **Column Selection & Renaming**
+   - Dropped unused metadata (e.g., `freq`, `product`).
+   - Renamed `geo\TIME_PERIOD` → `iso2` for country mapping later.
+
+2. **Filtering to a Single, Comparable Measure**
+   - Kept **EUR currency** and **prices including taxes** (`tax = I_TAX`) only.
+
+3. **Unpivoting Period Columns**
+   - Converted all period columns (e.g., `2007-S1`, `2007-S2`, …) to a long format: `period` / `electricity_price`.
+   - Renamed `nrg_cons` → `consumption_band`.
+
+4. **Standard Fields & Ordering**
+   - Added `consumer_type = "Household"`, `source = "Eurostat"`, and `metric_type = "Electricity price (EUR per KWH)"`.
+   - Removed `unit` and `currency` (now implicit in `metric_type`).
+5. **Text cleaning**
+   - Applied *Trim* and *Clean* functions to all text columns to remove invisible Unicode characters and trailing spaces.  
+6. **Flag Extraction & Cleaning**
+   - Eurostat sometimes appends **quality flags** to values (e.g., `e`, `d`, `p`).  
+     Parsed these into `is_flagged` while cleaning the numeric price:
+     - If value had a colon `:`, treated as **missing** (`null`).
+     - Removed trailing flag letters (`e`, `d`, `p`, `u`, `n`, `c`, `f`, `0n`, `b`, `|`).
+     - Cast the cleaned text to **number**.
+
+7. **Type Conversion**
+   - Cast `value` to `number` and `is_flagged` to `text`.
+
+---
+
+### Power Query (M) Code
+
+```powerquery
+let
+    Source = Excel.CurrentWorkbook(){[Name="eu_household_elec_prices"]}[Content],
+    #"Removed Columns" = Table.RemoveColumns(Source,{"freq", "product"}),
+    #"Renamed Columns" = Table.RenameColumns(#"Removed Columns",{{"geo\TIME_PERIOD", "iso2"}}),
+    #"Filtered Rows" = Table.SelectRows(#"Renamed Columns", each ([tax] = "I_TAX") and ([currency] = "EUR")),
+    #"Unpivoted Other Columns" = Table.UnpivotOtherColumns(#"Filtered Rows", {"nrg_cons", "unit", "tax", "currency", "iso2"}, "Attribute", "Value"),
+    #"Renamed Columns1" = Table.RenameColumns(#"Unpivoted Other Columns",{{"Attribute", "period"}, {"Value", "electricity_price"}, {"nrg_cons", "consumption_band"}}),
+    #"Added Custom" = Table.AddColumn(#"Renamed Columns1", "consumer_type", each "Household"),
+    #"Reordered Columns" = Table.ReorderColumns(#"Added Custom",{"consumer_type", "consumption_band", "unit", "tax", "currency", "iso2", "period", "electricity_price"}),
+    #"Added Custom1" = Table.AddColumn(#"Reordered Columns", "source", each "Eurostat"),
+    #"Reordered Columns1" = Table.ReorderColumns(#"Added Custom1",{"source", "consumer_type", "consumption_band", "unit", "tax", "currency", "iso2", "period", "electricity_price"}),
+    #"Added Custom2" = Table.AddColumn(#"Reordered Columns1", "metric_type", each "Electricity price (EUR per KWH)"),
+    #"Reordered Columns2" = Table.ReorderColumns(#"Added Custom2",{"source", "consumer_type", "consumption_band", "unit", "tax", "currency", "iso2", "period", "metric_type", "electricity_price"}),
+    #"Removed Columns1" = Table.RemoveColumns(#"Reordered Columns2",{"unit", "currency"}),
+    #"Trimmed Text" = Table.TransformColumns(Table.TransformColumnTypes(#"Removed Columns1", {{"electricity_price", type text}}, "en-US"),{{"source", Text.Trim, type text}, {"consumer_type", Text.Trim, type text}, {"consumption_band", Text.Trim, type text}, {"tax", Text.Trim, type text}, {"iso2", Text.Trim, type text}, {"period", Text.Trim, type text}, {"metric_type", Text.Trim, type text}, {"electricity_price", Text.Trim, type text}}),
+    #"Cleaned Text" = Table.TransformColumns(#"Trimmed Text",{{"source", Text.Clean, type text}, {"consumer_type", Text.Clean, type text}, {"consumption_band", Text.Clean, type text}, {"tax", Text.Clean, type text}, {"iso2", Text.Clean, type text}, {"period", Text.Clean, type text}, {"metric_type", Text.Clean, type text}, {"electricity_price", Text.Clean, type text}}),
+    #"Renamed Columns2" = Table.RenameColumns(#"Cleaned Text",{{"electricity_price", "value"}}),
+    #"Added Custom3" = Table.AddColumn(#"Renamed Columns2", "is_flagged", each
+         if Text.Contains([value], ":") then null
+         else if Text.EndsWith([value], "e") then "e"
+         else if Text.EndsWith([value], "d") then "d"
+         else if Text.EndsWith([value], "p") then "p"
+         else if Text.EndsWith([value], "u") then "u"
+         else if Text.EndsWith([value], "n") then "n"
+         else if Text.EndsWith([value], "c") then "c"
+         else if Text.EndsWith([value], "f") then "f"
+         else if Text.EndsWith([value], "0n") then "0n"
+         else if Text.EndsWith([value], "b") then "b"
+         else if Text.EndsWith([value], "|") then "|"
+         else null),
+    #"Replaced Value1" = Table.ReplaceValue(#"Added Custom3"," e","",Replacer.ReplaceText,{"value"}),
+    #"Replaced Value2" = Table.ReplaceValue(#"Replaced Value1"," d","",Replacer.ReplaceText,{"value"}),
+    #"Replaced Value3" = Table.ReplaceValue(#"Replaced Value2"," p","",Replacer.ReplaceText,{"value"}),
+    #"Replaced Value" = Table.ReplaceValue(#"Replaced Value3"," u","",Replacer.ReplaceText,{"value"}),
+    #"Replaced Value4" = Table.ReplaceValue(#"Replaced Value",":",null,Replacer.ReplaceValue,{"value"}),
+    #"Changed Type" = Table.TransformColumnTypes(#"Replaced Value4",{{"value", type number}, {"is_flagged", type text}})
+in
+    #"Changed Type"
+```
+### Visual Results
+
+**Transformation Steps Overview**  
+![Electricity prices – Steps](./images/electricity_prices_steps.gif)   
+
+---
