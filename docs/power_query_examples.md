@@ -78,9 +78,13 @@ in
 ### Visual Results
 
 **Before → After Comparison**  
+*If the GIF takes time to load, [click here to view it directly](./images/onshore_wind_before_and_after.gif)*
+
 ![Onshore Wind - Before and After](./images/onshore_wind_before_and_after.gif)
 
 **Transformation Steps Overview**  
+*If the GIF takes time to load, [click here to view it directly](./images/onshore_wind_steps.gif)*
+
 ![Onshore Wind – Steps](./images/onshore_wind_steps.gif)  
 
 ---
@@ -155,6 +159,8 @@ in
 ### Visual Results
 
 **Transformation Steps Overview**  
+*If the GIF takes time to load, [click here to view it directly](./images/investments_steps.gif)*
+
 ![Investments – Steps](./images/investments_steps.gif)  
 
 ---
@@ -246,6 +252,8 @@ in
 ### Visual Results
 
 **Transformation Steps Overview**  
+*If the GIF takes time to load, [click here to view it directly](./images/electricity_prices_steps.gif)*
+
 ![Electricity prices – Steps](./images/electricity_prices_steps.gif)   
 
 ---
