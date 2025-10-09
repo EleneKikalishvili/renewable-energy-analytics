@@ -3,6 +3,8 @@
 This section summarizes how raw datasets were cleaned, transformed, and standardized before loading into the PostgreSQL database.  
 All transformations were performed in **Microsoft Excel Power Query**, focusing on consistent column naming, data type alignment, and long-format structuring for SQL import.  
 
+Final cleaned outputs were exported as UTF-8 CSV files and stored in [clean_data](/data/clean_data/) folder for SQL import.
+
 ---
 
 ## Overview of the Cleaning Workflow
