@@ -3,6 +3,7 @@
 This project integrates multiple public datasets from leading international organizations.  
 All datasets were transformed and cleaned before import into PostgreSQL.  
 Transformation and cleaning details are provided in [data_preparation.md](data_preparation.md).  
+All cleaned, SQL-ready CSV files derived from these sources are stored in [clean_data](/data/clean_data/) folder.  
 
 **Note:** Data used in this project was accessed in **March and April 2025**. Some sources may have since released updates, but this analysis is based on the 2024 editions to maintain consistency across datasets.
 
