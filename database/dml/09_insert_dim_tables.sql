@@ -643,7 +643,7 @@ INSERT INTO renewables_project.dim_geo (
 
 SELECT DISTINCT
 	ric.region AS geo_name,
-	'Residual/unallocated'::renewables_project.geo AS geo_type,
+	'Region'::renewables_project.geo AS geo_type,
 	'Asia' AS region_name
 FROM renewables_project.ren_indicators_country_staging ric
 LEFT JOIN renewables_project.dim_geo dg
