@@ -18,13 +18,13 @@
 \echo '=== Starting full build ==='
 
 /* ------------------------------------------------------------------ */
-/* Clean slate                                                         */
+/* Clean slate                                                        */
 /* ------------------------------------------------------------------ */
 \echo '--- Dropping existing schema (if any)…'
 DROP SCHEMA IF EXISTS renewables_project CASCADE;
 
 /* ------------------------------------------------------------------ */
-/* DDL: schema, enums, tables, indexes, staging                        */
+/* DDL: schema, enums, tables, indexes, staging                       */
 /* ------------------------------------------------------------------ */
 \echo '--- Creating schema and objects…'
 BEGIN;
@@ -38,7 +38,7 @@ BEGIN;
 COMMIT;
 
 /* ------------------------------------------------------------------ */
-/* DML: load data into staging, then into dims/lookups/facts           */
+/* DML: load data into staging, then into dims/lookups/facts          */
 /* ------------------------------------------------------------------ */
 \echo '--- Loading raw data into staging…'
 BEGIN;
@@ -61,11 +61,23 @@ BEGIN;
 COMMIT;
 
 /* ------------------------------------------------------------------ */
-/* Optional cleanup                                                    */
+/* Optional cleanup                                                   */
 /* ------------------------------------------------------------------ */
 \echo '--- Dropping staging tables…'
 BEGIN;
 \i ./dml/12_drop_staging.sql
+COMMIT;
+
+/* ------------------------------------------------------------------ */
+/* Create views                                                       */
+/* ------------------------------------------------------------------ */
+\echo '--- Creating SQL views for Tableau…'
+BEGIN;
+\i ./views/01_vw_ren_share.sql
+\i ./views/02_vw_tech_performance.sql
+\i ./views/03_vw_tech_costs.sql
+\i ./views/04_vw_investments.sql
+\i ./views/05_vw_emissions.sql
 COMMIT;
 
 \echo '=== Build finished successfully! ==='
