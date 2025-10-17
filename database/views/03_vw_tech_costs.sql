@@ -39,57 +39,64 @@
 ----------------------------------------------------------------------------------------------------------------- */
 
 CREATE OR REPLACE VIEW renewables_project.vw_technology_cost_trends AS
-WITH cost_base AS (
-    -- 1. Pulls LCOE and installed cost per tech/year in a single row
-    SELECT
-        rig.tech_id,
-        dt.technology,
-        rig.year,
-        MAX(CASE WHEN rig.indicator = 'LCOE (USD/kWh)' THEN rig.value END) AS lcoe_usd_per_kwh,
-        MAX(CASE WHEN rig.indicator = 'Total installed cost (USD/kW)' THEN rig.value END) AS installed_cost_usd_per_kw
-    FROM
-        renewables_project.ren_indicators_global rig
-        JOIN renewables_project.dim_technology dt ON rig.tech_id = dt.tech_id
-    WHERE
-        rig.value_category = 'Weighted average'
-        AND (rig.indicator = 'LCOE (USD/kWh)' OR rig.indicator = 'Total installed cost (USD/kW)')
-    GROUP BY rig.tech_id, dt.technology, rig.year
+WITH rig_costs AS (
+  -- Pull LCOE and installed cost per tech/year in a single row
+  SELECT
+      rig.tech_id,
+      dt.group_technology,
+      dt.technology,
+      rig.year,
+      MAX(CASE WHEN rig.indicator = 'LCOE (USD/kWh)'                THEN rig.value::numeric END) AS lcoe_usd_per_kwh,
+      MAX(CASE WHEN rig.indicator = 'Total installed cost (USD/kW)' THEN rig.value::numeric END) AS installed_cost_usd_per_kw
+  FROM renewables_project.ren_indicators_global rig
+  JOIN renewables_project.dim_technology dt
+    ON rig.tech_id = dt.tech_id
+  WHERE rig.value_category = 'Weighted average'
+    AND dt.category = 'Renewable'
+    AND rig.indicator IN ('LCOE (USD/kWh)','Total installed cost (USD/kW)')
+  GROUP BY rig.tech_id, dt.group_technology, dt.technology, rig.year
 ),
-cost_with_changes AS (
-    -- 2. Adds cumulative % change since 2010
-    SELECT
-        cb.*,
-        -- Cumulative change since 2010
-        ROUND(
-            (cb.lcoe_usd_per_kwh - FIRST_VALUE(cb.lcoe_usd_per_kwh) OVER (PARTITION BY cb.tech_id ORDER BY cb.year)) /
-            NULLIF(FIRST_VALUE(cb.lcoe_usd_per_kwh) OVER (PARTITION BY cb.tech_id ORDER BY cb.year), 0) * 100, 1
-        ) AS rel_change_since_2010_lcoe_pct,
-        ROUND(
-            (cb.installed_cost_usd_per_kw - FIRST_VALUE(cb.installed_cost_usd_per_kw) OVER (PARTITION BY cb.tech_id ORDER BY cb.year)) /
-            NULLIF(FIRST_VALUE(cb.installed_cost_usd_per_kw) OVER (PARTITION BY cb.tech_id ORDER BY cb.year), 0) * 100, 1
-        ) AS rel_change_since_2010_installed_cost_pct
-    FROM cost_base cb
+base_2010 AS (
+  -- One 2010 baseline row per tech (for deltas)
+  SELECT tech_id,
+         MAX(lcoe_usd_per_kwh)        AS base_lcoe_2010,
+         MAX(installed_cost_usd_per_kw) AS base_inst_cost_2010
+  FROM rig_costs
+  WHERE year = 2010
+  GROUP BY tech_id
 ),
-fossil_costs AS (
-    -- 3. Get 2023 fossil cost band values, to CROSS JOIN
-    SELECT
-        MAX(CASE WHEN cost_band = 'Low band' THEN value END) AS fossil_cost_low_usd_per_kwh_2023,
-        MAX(CASE WHEN cost_band = 'High band' THEN value END) AS fossil_cost_high_usd_per_kwh_2023
-    FROM renewables_project.fossil_cost_range
+fossil_2023 AS (
+  -- Pin 2023 fossil LCOE cost band (low/high)
+  SELECT
+    MAX(CASE WHEN cost_band = 'Low band'  THEN value::numeric END) AS fossil_cost_low_usd_per_kwh_2023,
+    MAX(CASE WHEN cost_band = 'High band' THEN value::numeric END) AS fossil_cost_high_usd_per_kwh_2023
+  FROM renewables_project.fossil_cost_range
 )
 SELECT
-    c.tech_id,
-    c.technology,
-    c.year,
-    fc.fossil_cost_low_usd_per_kwh_2023,
-    fc.fossil_cost_high_usd_per_kwh_2023,
-    c.lcoe_usd_per_kwh,
-    c.rel_change_since_2010_lcoe_pct,
-    c.installed_cost_usd_per_kw,
-    c.rel_change_since_2010_installed_cost_pct
-FROM cost_with_changes c
-CROSS JOIN fossil_costs fc
-ORDER BY c.technology, c.year;
+  c.tech_id,
+  c.group_technology,
+  c.technology,
+  c.year,
+  f.fossil_cost_low_usd_per_kwh_2023,
+  f.fossil_cost_high_usd_per_kwh_2023,
+  c.lcoe_usd_per_kwh,
+  -- LCOE cumulative change since 2010
+  CASE
+    WHEN b.base_lcoe_2010 IS NULL OR b.base_lcoe_2010 = 0 THEN NULL
+    ELSE ROUND( (c.lcoe_usd_per_kwh - b.base_lcoe_2010) / b.base_lcoe_2010 * 100, 1)
+  END AS rel_change_since_2010_lcoe_pct,
+  c.installed_cost_usd_per_kw,
+  -- Installed costs cumulative change since 2010
+  CASE
+    WHEN b.base_inst_cost_2010 IS NULL OR b.base_inst_cost_2010 = 0 THEN NULL
+    ELSE ROUND( (c.installed_cost_usd_per_kw - b.base_inst_cost_2010) / b.base_inst_cost_2010 * 100, 1)
+  END AS rel_change_since_2010_installed_cost_pct
+FROM rig_costs c
+LEFT JOIN base_2010 b
+  ON c.tech_id = b.tech_id
+CROSS JOIN fossil_2023 f;
+
+
 
 
 
@@ -122,71 +129,79 @@ ORDER BY c.technology, c.year;
    ----------------------------------------------------------------------------------------------------------------- */
 
 CREATE OR REPLACE VIEW renewables_project.vw_country_subregion_renewable_costs AS
-WITH subregional_tech_avg AS (
+WITH base AS (
     SELECT
-    	dg.region_name AS region,
-        dg.sub_region_name AS subregion,
+        dg.region_name       AS region,
+        dg.sub_region_name   AS subregion,
+        dg.geo_id,
+        dg.geo_name          AS country,
         ric.year,
         dt.technology,
-        AVG(CASE WHEN ric.indicator = 'LCOE (USD/kWh)' THEN ric.country_value END) AS avg_lcoe_subregion,
-        COUNT(DISTINCT CASE WHEN ric.indicator = 'LCOE (USD/kWh)' AND ric.country_value IS NOT NULL THEN dg.geo_name END) AS lcoe_country_count,
-        AVG(CASE WHEN ric.indicator = 'Total installed cost (USD/kW)' THEN ric.country_value END) AS avg_installed_cost_subregion,
-        COUNT(DISTINCT CASE WHEN ric.indicator = 'Total installed cost (USD/kW)' AND ric.country_value IS NOT NULL THEN dg.geo_name END) AS installed_cost_country_count
+        ric.indicator,
+        ric.country_value::numeric AS value
     FROM renewables_project.ren_indicators_country ric
-    JOIN renewables_project.dim_geo dg ON ric.geo_id = dg.geo_id
+    JOIN renewables_project.dim_geo dg        ON ric.geo_id = dg.geo_id
     JOIN renewables_project.dim_technology dt ON ric.tech_id = dt.tech_id
-    WHERE
-        ric.value_category = 'Weighted average'
-        AND dt.technology IN ('Solar photovoltaic', 'Onshore wind energy', 'Offshore wind energy')
-        AND ric.year >= 2010
-    GROUP BY dg.region_name, dg.sub_region_name, ric.year, dt.technology
+    WHERE ric.value_category = 'Weighted average'
+      AND dt.technology IN ('Solar photovoltaic', 'Onshore wind energy', 'Offshore wind energy')
+      AND ric.year >= 2010
 ),
-country_tech_costs AS ( 
+country_pivot AS (
     SELECT
-        dg.sub_region_name AS subregion,
-        dg.geo_name AS country,
-        ric.year,
-        dt.technology,
-        MAX(CASE WHEN ric.indicator = 'LCOE (USD/kWh)' THEN ric.country_value END) AS lcoe_usd_per_kwh,
-        MAX(CASE WHEN ric.indicator = 'Total installed cost (USD/kW)' THEN ric.country_value END) AS installed_cost_usd_per_kw
-    FROM renewables_project.ren_indicators_country ric
-    JOIN renewables_project.dim_geo dg ON ric.geo_id = dg.geo_id
-    JOIN renewables_project.dim_technology dt ON ric.tech_id = dt.tech_id
-	WHERE
-        ric.value_category = 'Weighted average'
-        AND dt.technology IN ('Solar photovoltaic', 'Onshore wind energy', 'Offshore wind energy')
-        AND ric.year >= 2010
-    GROUP BY dg.sub_region_name, dg.geo_name, ric.year, dt.technology
+        region,
+        subregion,
+        geo_id,
+        country,
+        year,
+        technology,
+        MAX(value) FILTER (WHERE indicator = 'LCOE (USD/kWh)')               AS lcoe_usd_per_kwh,
+        MAX(value) FILTER (WHERE indicator = 'Total installed cost (USD/kW)') AS installed_cost_usd_per_kw
+    FROM base
+    GROUP BY region, subregion, geo_id, country, year, technology
+),
+subregion_stats AS (
+    SELECT
+        region,
+        subregion,
+        year,
+        technology,
+        AVG(lcoe_usd_per_kwh)               AS avg_lcoe_subregion,
+        COUNT(DISTINCT CASE WHEN lcoe_usd_per_kwh IS NOT NULL THEN geo_id END) AS lcoe_country_count,
+        AVG(installed_cost_usd_per_kw)      AS avg_installed_cost_subregion,
+        COUNT(DISTINCT CASE WHEN installed_cost_usd_per_kw IS NOT NULL THEN geo_id END) AS installed_cost_country_count
+    FROM country_pivot
+    GROUP BY region, subregion, year, technology
 )
-SELECT 
-	sra.region,
-    sra.subregion,
-    cc.country,
-    sra.year,
-    sra.technology,
-    cc.lcoe_usd_per_kwh,
-    sra.avg_lcoe_subregion,
-    sra.lcoe_country_count,
+SELECT
+    ss.region,
+    ss.subregion,
+    cp.country,
+    ss.year,
+    ss.technology,
+    -- country-level values (nullable if missing)
+    cp.lcoe_usd_per_kwh,
+    cp.installed_cost_usd_per_kw,
+    -- subregion-level aggregates
+    ss.avg_lcoe_subregion,
+    ss.lcoe_country_count,
+    ss.avg_installed_cost_subregion,
+    ss.installed_cost_country_count,
     -- Cumulative % change since 2010 for subregion LCOE
     ROUND(
-        (sra.avg_lcoe_subregion - FIRST_VALUE(sra.avg_lcoe_subregion) OVER (PARTITION BY sra.subregion, sra.technology ORDER BY sra.year)) /
-        NULLIF(FIRST_VALUE(sra.avg_lcoe_subregion) OVER (PARTITION BY sra.subregion, sra.technology ORDER BY sra.year), 0) * 100, 2
+        (ss.avg_lcoe_subregion - FIRST_VALUE(ss.avg_lcoe_subregion) OVER (PARTITION BY ss.subregion, ss.technology ORDER BY ss.year)) /
+        NULLIF(FIRST_VALUE(ss.avg_lcoe_subregion) OVER (PARTITION BY ss.subregion, ss.technology ORDER BY ss.year), 0) * 100, 2
     ) AS pct_change_since_2010_lcoe_subregion,
-    cc.installed_cost_usd_per_kw,
-    sra.avg_installed_cost_subregion,
-    sra.installed_cost_country_count,
-    -- Cumulative % change since 2010 for subregion installed cost
+     -- Cumulative % change since 2010 for subregion installed cost
     ROUND(
-        (sra.avg_installed_cost_subregion - FIRST_VALUE(sra.avg_installed_cost_subregion) OVER (PARTITION BY sra.subregion, sra.technology ORDER BY sra.year)) /
-        NULLIF(FIRST_VALUE(sra.avg_installed_cost_subregion) OVER (PARTITION BY sra.subregion, sra.technology ORDER BY sra.year), 0) * 100, 2
+        (ss.avg_installed_cost_subregion - FIRST_VALUE(ss.avg_installed_cost_subregion) OVER (PARTITION BY ss.subregion, ss.technology ORDER BY ss.year)) /
+        NULLIF(FIRST_VALUE(ss.avg_installed_cost_subregion) OVER (PARTITION BY ss.subregion, ss.technology ORDER BY ss.year), 0) * 100, 2
     ) AS pct_change_since_2010_installed_cost_subregion
-FROM subregional_tech_avg sra
-LEFT JOIN country_tech_costs cc
-    ON sra.subregion = cc.subregion
-    AND sra.year = cc.year
-    AND sra.technology = cc.technology
-ORDER BY sra.technology, sra.subregion, sra.year, cc.country;
-
+FROM subregion_stats ss
+LEFT JOIN country_pivot cp
+       ON ss.region    = cp.region
+      AND ss.subregion = cp.subregion
+      AND ss.year      = cp.year
+      AND ss.technology= cp.technology;
 
 
 

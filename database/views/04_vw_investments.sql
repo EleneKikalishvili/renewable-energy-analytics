@@ -27,7 +27,7 @@
 
    Key columns:
       - year: Calendar year of investment
-      - geo_type, region, subregion, country: Geographic breakdowns for mapping and summary
+      - geo_id, geo_type, region, subregion, country: Geographic breakdowns for mapping and summary
       - tech_category: Custom category ("Fossil fuels", "nuclear_and_other", "Renewable") for top-level splits
       - custom_technology_group: Flexible grouping logic for hybrid tech analysis (hydro, wind, solar, etc.)
       - technology: Final technology used for joining with costs/LCOE data and fine-grained analysis
@@ -47,9 +47,10 @@
 
 
 
-CREATE OR REPLACE VIEW vw_investments_core AS
+CREATE OR REPLACE VIEW renewables_project.vw_investments_core AS
 SELECT
     i.year,
+    dg.geo_id,
     dg.geo_type,
     dg.region_name AS region,
     dg.sub_region_name AS subregion,
@@ -57,9 +58,9 @@ SELECT
 
     --Custom technology category
     CASE 
-    	WHEN category = 'Non-renewable' AND group_technology = 'Fossil fuels' THEN 'Fossil fuels'
-    	WHEN category = 'Non-renewable' AND group_technology <> 'Fossil fuels' THEN 'nuclear_and_other'
-    	ELSE category::text
+    	WHEN dt.category = 'Non-renewable' AND dt.group_technology = 'Fossil fuels' THEN 'Fossil fuels'
+    	WHEN dt.category = 'Non-renewable' AND dt.group_technology <> 'Fossil fuels' THEN 'nuclear_and_other'
+    	ELSE dt.category::text
     END AS tech_category,
 
     -- Custom grouped technology logic
@@ -80,8 +81,7 @@ SELECT
 FROM renewables_project.investments i
 JOIN renewables_project.dim_geo dg ON i.geo_id = dg.geo_id
 JOIN renewables_project.project_lookup pl ON pl.project_id = i.project_id
-JOIN renewables_project.dim_technology dt ON i.tech_id = dt.tech_id
-ORDER BY year, region, country, technology;
+JOIN renewables_project.dim_technology dt ON i.tech_id = dt.tech_id;
 
 
 

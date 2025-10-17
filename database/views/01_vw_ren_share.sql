@@ -7,7 +7,7 @@
 
 
 /* ============================================================================================================================  
-   Research Question 1: How has the share of renewables in global electricity generation and capacity changed over time?
+   Research Question 1: How has the share of renewables in global electricity generation, installed capacity and primary energy consumption changed over time?
    ============================================================================================================================ */
 
 
@@ -26,6 +26,7 @@
 
    Key columns:
      - year
+     - geo_id
      - geo_type, region, subregion, country_or_area
      - re_generation_pct
      - re_capacity_pct
@@ -36,31 +37,32 @@
      
    Visualization ideas:
       - Time-series line or area charts for penetration trends (global, regional, or country).
-      - Bar/column charts for effectiveness ratio, highlighting under- or over-performing regions.
+      - Bar/column charts highlighting under- or over-performing regions.
       - Small-multiple charts for regional/country comparisons.
 ----------------------------------------------------------------------------------------------------------------- */
 
 CREATE OR REPLACE VIEW renewables_project.vw_ren_share_trends AS
 WITH filtered AS (
   SELECT
-  	rs.geo_id,
+    rs.geo_id,
     dg.geo_type,
     dg.region_name     AS region,
     dg.sub_region_name AS subregion,
     dg.geo_name        AS country_or_area,
     rs.year,
     rs.indicator,
-    rs.value::numeric  AS value_pct
+    rs.value::numeric AS value_pct
   FROM renewables_project.ren_share rs
   JOIN renewables_project.dim_geo dg
     ON rs.geo_id = dg.geo_id
   WHERE rs.year >= 2000
-    AND dg.geo_type IN ('Global','Country')               -- exclude source Region aggregates and non-standard groups
+    AND dg.geo_type IN ('Global','Country')         -- exclude source Region aggregates and non-standard groups
     AND rs.indicator IN ('RE Generation (%)','RE Capacity (%)')
+    AND rs.value IS NOT NULL
 ),
 pivoted AS (
   SELECT
-  	geo_id,
+    geo_id,
     geo_type,
     region,
     subregion,
@@ -80,7 +82,10 @@ SELECT
   country_or_area,
   re_generation_pct,
   re_capacity_pct,
-  (re_capacity_pct - re_generation_pct) AS shortfall_pp   -- positive => gen share behind cap share
+  CASE
+    WHEN re_generation_pct IS NULL OR re_capacity_pct IS NULL THEN NULL
+    ELSE (re_capacity_pct - re_generation_pct) -- positive => gen share behind cap share
+  END AS shortfall_pp
 FROM pivoted;
 
 
@@ -101,6 +106,7 @@ FROM pivoted;
 
    Key columns:
       - region, subregion, country
+      - geo_id, tech_id
       - technology, year
       - ren_cap_country_mw: Installed renewable capacity (MW)
       - cap_base_year / cap_base_mw: First non-null year/value for capacity (per country/tech)
@@ -119,73 +125,72 @@ FROM pivoted;
 
 CREATE OR REPLACE VIEW renewables_project.vw_country_ren_capacity_generation_trends AS
 WITH base AS (
-    SELECT
-        dg.region_name AS region,
-        dg.sub_region_name AS subregion,
-        dg.geo_name AS country,
-        dt.technology,
-        cg.year,
-        SUM(cg.installed_capacity_mw) AS ren_cap_country_mw,
-        SUM(cg.generation_gwh) AS ren_gen_country_gwh
-    FROM renewables_project.capacity_generation cg
-    JOIN renewables_project.dim_geo dg ON cg.geo_id = dg.geo_id
-    JOIN renewables_project.dim_technology dt 
-      ON cg.tech_id = dt.tech_id AND dt.category = 'Renewable'
-    GROUP BY dg.region_name, dg.sub_region_name, dg.geo_name, dt.technology, cg.year
+  SELECT
+    dg.region_name      AS region,
+    dg.sub_region_name  AS subregion,
+    dg.geo_name         AS country,
+    cg.geo_id,
+    dt.tech_id,
+    dt.technology,
+    cg.year,
+    SUM(cg.installed_capacity_mw) AS ren_cap_country_mw,
+    SUM(cg.generation_gwh)        AS ren_gen_country_gwh
+  FROM renewables_project.capacity_generation cg
+  JOIN renewables_project.dim_geo dg
+    ON cg.geo_id = dg.geo_id
+  JOIN renewables_project.dim_technology dt
+    ON cg.tech_id = dt.tech_id
+   AND dt.category = 'Renewable'
+  WHERE cg.year >= 2000
+    AND dg.geo_type = 'Country'
+  GROUP BY dg.region_name, dg.sub_region_name, dg.geo_name, cg.geo_id, dt.tech_id, dt.technology, cg.year
 ),
--- Find base year for each country/tech with non-null cap/generation
-cap_base_year AS (
-    SELECT country, technology, MIN(year) AS cap_base_year
-    FROM base WHERE ren_cap_country_mw IS NOT NULL
-    GROUP BY country, technology
+
+-- First non-null capacity year/value per country/tech
+cap_base AS (
+  SELECT DISTINCT ON (country, technology)
+         country, technology, geo_id, tech_id,
+         year AS cap_base_year,
+         ren_cap_country_mw AS cap_base_mw
+  FROM base
+  WHERE ren_cap_country_mw IS NOT NULL
+  ORDER BY country, technology, year
 ),
-gen_base_year AS (
-    SELECT country, technology, MIN(year) AS gen_base_year
-    FROM base WHERE ren_gen_country_gwh IS NOT NULL
-    GROUP BY country, technology
-),
-cap_base_value AS (
-    SELECT b.country, b.technology, cby.cap_base_year, b.ren_cap_country_mw AS cap_base_mw
-    FROM base b
-    JOIN cap_base_year cby
-      ON b.country = cby.country AND b.technology = cby.technology AND b.year = cby.cap_base_year
-),
-gen_base_value AS (
-    SELECT b.country, b.technology, gby.gen_base_year, b.ren_gen_country_gwh AS gen_base_gwh
-    FROM base b
-    JOIN gen_base_year gby
-      ON b.country = gby.country AND b.technology = gby.technology AND b.year = gby.gen_base_year
+
+-- First non-null generation year/value per country/tech
+gen_base AS (
+  SELECT DISTINCT ON (country, technology)
+         country, technology, geo_id, tech_id,
+         year AS gen_base_year,
+         ren_gen_country_gwh AS gen_base_gwh
+  FROM base
+  WHERE ren_gen_country_gwh IS NOT NULL
+  ORDER BY country, technology, year
 )
 SELECT
-    b.region,
-    b.subregion,
-    b.country,
-    b.technology,
-    b.year,
-    b.ren_cap_country_mw,
-    cby.cap_base_year,
-    cbv.cap_base_mw,
-    ROUND(
-      (b.ren_cap_country_mw - cbv.cap_base_mw) /
-      NULLIF(cbv.cap_base_mw, 0) * 100, 2
-    ) AS pct_change_since_cap_base_year,
-    b.ren_gen_country_gwh,
-    gby.gen_base_year,
-    gbv.gen_base_gwh,
-    ROUND(
-      (b.ren_gen_country_gwh - gbv.gen_base_gwh) /
-      NULLIF(gbv.gen_base_gwh, 0) * 100, 2
-    ) AS pct_change_since_gen_base_year
+  b.region,
+  b.subregion,
+  b.country,
+  b.geo_id,
+  b.tech_id,
+  b.technology,
+  b.year,
+  b.ren_cap_country_mw,
+  cb.cap_base_year,
+  cb.cap_base_mw,
+  ROUND( (b.ren_cap_country_mw - cb.cap_base_mw) / NULLIF(cb.cap_base_mw, 0) * 100, 2 ) AS pct_change_since_cap_base_year,
+  b.ren_gen_country_gwh,
+  gb.gen_base_year,
+  gb.gen_base_gwh,
+  ROUND( (b.ren_gen_country_gwh - gb.gen_base_gwh) / NULLIF(gb.gen_base_gwh, 0) * 100, 2 ) AS pct_change_since_gen_base_year
 FROM base b
-LEFT JOIN cap_base_year cby
-    ON b.country = cby.country AND b.technology = cby.technology
-LEFT JOIN cap_base_value cbv
-    ON b.country = cbv.country AND b.technology = cbv.technology
-LEFT JOIN gen_base_year gby
-    ON b.country = gby.country AND b.technology = gby.technology
-LEFT JOIN gen_base_value gbv
-    ON b.country = gbv.country AND b.technology = gbv.technology
-ORDER BY b.region, b.subregion, b.country, b.technology, b.year;
+LEFT JOIN cap_base cb
+  ON b.country = cb.country
+ AND b.technology = cb.technology
+LEFT JOIN gen_base gb
+  ON b.country = gb.country
+ AND b.technology = gb.technology;  
+
 
 
 
@@ -209,6 +214,7 @@ ORDER BY b.region, b.subregion, b.country, b.technology, b.year;
 
    Key columns:
    	  - year
+   	  - geo_id, tech_id, row_type
       - region, subregion, country_or_area 
       - country_primary_consumption_ej: country/year total primary energy (EJ)
       - total_ren_ej: country/year total renewables (EJ, excl. Nuclear)
@@ -226,7 +232,7 @@ ORDER BY b.region, b.subregion, b.country, b.technology, b.year;
 
 CREATE OR REPLACE VIEW renewables_project.vw_primary_consumption_core AS
 WITH country_total AS (
-  SELECT dg.region_name, dg.sub_region_name, dg.geo_name, dg.geo_type,
+  SELECT dg.region_name, dg.sub_region_name, dg.geo_name, dg.geo_type, pc.geo_id,
          pc.year, pc.value AS country_primary_consumption_ej
   FROM renewables_project.primary_consumption pc
   JOIN renewables_project.dim_geo dg ON pc.geo_id = dg.geo_id
@@ -235,8 +241,8 @@ WITH country_total AS (
     AND pc.value IS NOT NULL
 ),
 country_ren_tech AS (
-  SELECT dg.region_name, dg.sub_region_name, dg.geo_name, dg.geo_type,
-         rp.year, dt.technology, rp.value AS ren_tech_ej
+  SELECT dg.region_name, dg.sub_region_name, dg.geo_name, dg.geo_type, rp.geo_id,
+         rp.year, dt.technology, dt.tech_id, rp.value AS ren_tech_ej
   FROM renewables_project.ren_primary_consumption rp
   JOIN renewables_project.dim_geo dg ON rp.geo_id = dg.geo_id
   JOIN renewables_project.dim_technology dt ON rp.tech_id = dt.tech_id
@@ -259,9 +265,12 @@ SELECT
   ct.sub_region_name AS subregion,
   ct.geo_name        AS country_or_area,
   ct.geo_type,
+  ct.geo_id,
+  'TOTAL'::text      AS row_type,
   ct.country_primary_consumption_ej,
   rt.total_ren_ej,
   NULL::text         AS technology,
+  NULL::integer       AS tech_id,
   NULL::numeric      AS ren_tech_ej
 FROM country_total ct
 LEFT JOIN ren_totals rt
@@ -279,13 +288,14 @@ SELECT
   r.sub_region_name  AS subregion,
   r.geo_name         AS country_or_area,
   r.geo_type,
+  r.geo_id,
+  'TECH'::text       AS row_type,
   NULL::numeric      AS country_primary_consumption_ej,
   NULL::numeric      AS total_ren_ej,
   r.technology,
+  r.tech_id,
   r.ren_tech_ej
-FROM country_ren_tech r
-
-ORDER BY year, region, subregion, country_or_area, technology;
+FROM country_ren_tech r;
 
 
 

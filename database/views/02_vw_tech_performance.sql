@@ -43,6 +43,12 @@
       - Slope or area charts to highlight pace and relative growth of technologies.
    ----------------------------------------------------------------------------------------------------------------- */
 
+
+/* Indicators table unlike capacity_generation table has data only for high level Bioenergy and Hydropower technologies, 
+   for that reason detailed technology data that exists in both tables will be extracted separately from capacity_generation table
+   and will be unioned with grouped Bionergy and hydropower capacity/generation data calculated separately.
+*/
+
 CREATE OR REPLACE VIEW renewables_project.vw_technology_performance_global AS
 WITH tech_level AS (
     -- For detailed technologies (onshore wind, offshore wind, solar PV, solar thermal)
@@ -55,12 +61,11 @@ WITH tech_level AS (
         renewables_project.capacity_generation cg
         JOIN renewables_project.dim_technology dt ON cg.tech_id = dt.tech_id
     WHERE
-    	-- Pumped storage is excluded from Hydropower calculation
         dt.technology IN ('Onshore wind energy', 'Offshore wind energy', 'Solar photovoltaic', 'Solar thermal energy', 'Geothermal energy') 
     GROUP BY cg.year, dt.technology
 ),
 group_level AS (
-    -- For group technologies (Bioenergy)
+    -- For grouped technologies (Bioenergy, and Hydropower)
     SELECT
         cg.year,
         dt.group_technology AS technology, -- Label as technology for union
@@ -70,7 +75,7 @@ group_level AS (
         renewables_project.capacity_generation cg
         JOIN renewables_project.dim_technology dt ON cg.tech_id = dt.tech_id
     WHERE
-        dt.group_technology IN ('Hydropower','Bioenergy')
+        dt.group_technology IN ('Hydropower','Bioenergy')  -- Pumped storage is excluded from Hydropower calculation
     GROUP BY cg.year, dt.group_technology
 ),
 
@@ -86,7 +91,7 @@ SELECT
     c.technology,
     c.installed_capacity_mw,
     c.generation_gwh,
-    ROUND(rig.value, 0) AS capacity_factor_pct, -- Weighted Average
+    ROUND(rig.value, 2)  AS capacity_factor_pct, -- Weighted Average
     ROUND(
     (c.installed_capacity_mw - FIRST_VALUE(c.installed_capacity_mw) OVER (PARTITION BY c.technology ORDER BY c.year))
     / NULLIF(FIRST_VALUE(c.installed_capacity_mw) OVER (PARTITION BY c.technology ORDER BY c.year), 0) * 100
