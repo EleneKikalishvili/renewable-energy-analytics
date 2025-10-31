@@ -14,252 +14,289 @@
 
 
 
--- Exploring cost data
--- Global
-SELECT *
+/* ================================================================================================
+   SECTION 1: Global Analysis - LCOE and Installed Costs from ren_indicators_global
+   ================================================================================================ */
+
+/* ============================================================================
+   SECTION 1A: QA & Data Exploration 
+   ============================================================================ */
+
+-- DE: Preview sample global cost data
+SELECT * 
 FROM renewables_project.ren_indicators_global
-LIMIT 5; 
+LIMIT 5;
 
+-- DE: Check available indicators
 SELECT DISTINCT indicator
-FROM renewables_project.ren_indicators_global; 
+FROM renewables_project.ren_indicators_global;
 
--- Fossil Fuel
-SELECT *
+-- DE: Preview fossil fuel benchmark dataset
+SELECT * 
 FROM renewables_project.fossil_cost_range;
 
 
-SELECT
-	tech_id,
-	year,
-	MAX(CASE WHEN indicator = 'LCOE (USD/kWh)' THEN value END) AS lcoe_usd_per_kwh,
-	MAX(CASE WHEN indicator = 'Total installed cost (USD/kW)' THEN value END) AS tot_installed_cost_usd_per_kw
-FROM renewables_project.ren_indicators_global 
+-- QA: Check missing or zero LCOE/Cost values by technology-year
+SELECT 
+    dt.technology,
+    COUNT(*) FILTER (WHERE rig.value IS NULL) AS null_count,
+    COUNT(*) FILTER (WHERE rig.value = 0) AS zero_count
+FROM renewables_project.ren_indicators_global rig
+JOIN renewables_project.dim_technology dt ON rig.tech_id = dt.tech_id
 WHERE 
-	value_category = 'Weighted average' AND 
-	(indicator::text ILIKE '%cost%' OR indicator::text ILIKE 'LCOE%')
+	rig.indicator IN ('LCOE (USD/kWh)', 'Total installed cost (USD/kW)')
+	AND rig.value_category = 'Weighted average'
+GROUP BY dt.technology
+ORDER BY null_count DESC; -- Geothermal data has 2 NULLS
+
+-- DE: Review technology data
+SELECT DISTINCT
+	dt.technology,
+	dt.sub_technology
+FROM renewables_project.ren_indicators_global rig
+JOIN renewables_project.dim_technology dt  ON rig.tech_id = dt.tech_id;
+--NOTE: Only has CSP data not general Solar thermal energy data
+
+
+-- DE: Review renewable cost structure by technology and year
+SELECT
+	dt.technology,
+	rig.year,
+	MAX(CASE WHEN rig.indicator = 'LCOE (USD/kWh)' THEN rig.value END) AS lcoe_usd_per_kwh,
+	MAX(CASE WHEN rig.indicator = 'Total installed cost (USD/kW)' THEN rig.value END) AS tot_installed_cost_usd_per_kw
+FROM renewables_project.ren_indicators_global rig
+JOIN renewables_project.dim_technology dt  ON rig.tech_id = dt.tech_id
+WHERE 
+	rig.value_category = 'Weighted average'
+	AND (rig.indicator::text ILIKE '%cost%' OR rig.indicator::text ILIKE 'LCOE%')
+--	AND dt.technology = 'Geothermal energy' -- 2011 data is missing
 GROUP BY 
-	tech_id, year
-ORDER BY year;
+	dt.technology, rig.year
+ORDER BY rig.year;
+
+
+-- QA: Verify consistent year coverage
+SELECT 
+    dt.technology,
+    MIN(rig.year) AS first_year,
+    MAX(rig.year) AS last_year,
+    COUNT(DISTINCT rig.year) AS year_count
+FROM renewables_project.ren_indicators_global rig
+JOIN renewables_project.dim_technology dt ON rig.tech_id = dt.tech_id
+WHERE rig.indicator = 'LCOE (USD/kWh)'
+GROUP BY dt.technology
+ORDER BY first_year;
 
 
 
+/* ============================================================================
+   Query 1: Analyze Global LCOE and Installed Cost Trends (2010–2023)
+   ============================================================================ */
 
--- Exploring how renewable technologies' costs have changed since 2010 till 2023
-WITH ren_base AS (
-	SELECT
-	    rig.tech_id,
-	    dt.technology,
-	    rig.year,
-	    MAX(CASE WHEN rig.indicator = 'LCOE (USD/kWh)' THEN rig.value END) AS lcoe,
-	    MAX(CASE WHEN rig.indicator = 'Total installed cost (USD/kW)' THEN rig.value END) AS installed_cost
-	FROM
-	    renewables_project.ren_indicators_global rig
-	    JOIN renewables_project.dim_technology dt ON rig.tech_id = dt.tech_id
-	WHERE
-	    rig.value_category = 'Weighted average'
-	    AND (rig.indicator = 'LCOE (USD/kWh)' OR rig.indicator = 'Total installed cost (USD/kW)')
-	GROUP BY rig.tech_id, dt.technology, rig.year
+WITH global_costs_base AS (
+    -- Aggregate global weighted-average LCOE and installed cost by technology and year
+    SELECT
+        g.tech_id,
+        CASE 
+        	WHEN dt.technology = 'Solar thermal energy' THEN 'CSP'
+        	ELSE dt.technology
+        END AS technology,
+        g.year,
+        MAX(CASE WHEN g.indicator = 'LCOE (USD/kWh)' THEN g.value END) AS lcoe_usd_per_kwh,
+        MAX(CASE WHEN g.indicator = 'Total installed cost (USD/kW)' THEN g.value END) AS installed_cost_usd_per_kw
+    FROM renewables_project.ren_indicators_global g
+    JOIN renewables_project.dim_technology dt 
+        ON g.tech_id = dt.tech_id
+    WHERE
+        g.value_category = 'Weighted average'
+        AND g.indicator IN ('LCOE (USD/kWh)', 'Total installed cost (USD/kW)')
+    GROUP BY g.tech_id, technology, g.year
 ),
+
 fossil_costs AS ( 
-	SELECT 
-		MAX(CASE WHEN cost_band = 'Low band' THEN value END) AS lowest_fossil_cost_usd_per_kwh_2023,
-    	MAX(CASE WHEN cost_band = 'High band' THEN value END) AS highest_fossil_cost_usd_per_kwh_2023
-    FROM 
-    	renewables_project.fossil_cost_range 
+    -- Extract 2023 fossil fuel benchmark ranges
+    SELECT 
+        MAX(CASE WHEN cost_band = 'Low band'  THEN value END) AS lowest_fossil_cost_usd_per_kwh_2023,
+        MAX(CASE WHEN cost_band = 'High band' THEN value END) AS highest_fossil_cost_usd_per_kwh_2023
+    FROM renewables_project.fossil_cost_range
 ),
-ren_costs_2010_2023 AS (
-	SELECT DISTINCT
-	    tech_id,
-	    technology,
-	    -- 2010 values
-	    FIRST_VALUE(lcoe) OVER (PARTITION BY tech_id ORDER BY year) AS lcoe_usd_per_kwh_2010,
-	    FIRST_VALUE(installed_cost) OVER (PARTITION BY tech_id ORDER BY year) AS installed_cost_usd_per_kw_2010,
-	    -- 2023 values
-	    LAST_VALUE(lcoe) OVER (PARTITION BY tech_id ORDER BY year ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING) AS lcoe_usd_per_kwh_2023,
-	    LAST_VALUE(installed_cost) OVER (PARTITION BY tech_id ORDER BY year ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING) AS installed_cost_usd_per_kw_2023
-	FROM ren_base
-	WHERE year IN (2010, 2023) --window functions produce same row for 2010 and 2023. So I'd get duplicate rows without DISTINCT
+
+cost_trends AS (
+    -- Compute 2010 and 2023 values using window functions
+    SELECT DISTINCT
+        tech_id,
+        technology,
+        -- Baseline (2010)
+        FIRST_VALUE(lcoe_usd_per_kwh) 
+            OVER (PARTITION BY tech_id ORDER BY year) AS lcoe_usd_per_kwh_2010,
+        FIRST_VALUE(installed_cost_usd_per_kw) 
+            OVER (PARTITION BY tech_id ORDER BY year) AS installed_cost_usd_per_kw_2010,
+        -- Latest (2023 or last available)
+        LAST_VALUE(lcoe_usd_per_kwh) 
+            OVER (PARTITION BY tech_id ORDER BY year ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING) AS lcoe_usd_per_kwh_2023,
+        LAST_VALUE(installed_cost_usd_per_kw) 
+            OVER (PARTITION BY tech_id ORDER BY year ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING) AS installed_cost_usd_per_kw_2023
+    FROM global_costs_base
 )
 
 SELECT
-  c.technology,
-  fc.lowest_fossil_cost_usd_per_kwh_2023,
-  fc.highest_fossil_cost_usd_per_kwh_2023,
-  c.lcoe_usd_per_kwh_2010,
-  c.lcoe_usd_per_kwh_2023,
-  ROUND((c.lcoe_usd_per_kwh_2023 - c.lcoe_usd_per_kwh_2010) / NULLIF(c.lcoe_usd_per_kwh_2010, 0) * 100, 1) AS rel_change_lcoe_pct,
-  c.installed_cost_usd_per_kw_2010,
-  c.installed_cost_usd_per_kw_2023,
-  ROUND((c.installed_cost_usd_per_kw_2023 - c.installed_cost_usd_per_kw_2010) / NULLIF(c.installed_cost_usd_per_kw_2010, 0) * 100, 1) AS rel_change_installed_cost_pct
-FROM ren_costs_2010_2023 c
+    c.technology,
+    fc.lowest_fossil_cost_usd_per_kwh_2023,
+    fc.highest_fossil_cost_usd_per_kwh_2023,
+    c.lcoe_usd_per_kwh_2010,
+    c.lcoe_usd_per_kwh_2023,
+    ROUND(
+        (c.lcoe_usd_per_kwh_2023 - c.lcoe_usd_per_kwh_2010)
+        / NULLIF(c.lcoe_usd_per_kwh_2010, 0) * 100, 1
+    ) AS rel_change_lcoe_pct,
+    c.installed_cost_usd_per_kw_2010,
+    c.installed_cost_usd_per_kw_2023,
+    ROUND(
+        (c.installed_cost_usd_per_kw_2023 - c.installed_cost_usd_per_kw_2010)
+        / NULLIF(c.installed_cost_usd_per_kw_2010, 0) * 100, 1
+    ) AS rel_change_installed_cost_pct,
+    ROUND(
+        (POWER(c.lcoe_usd_per_kwh_2023 / NULLIF(c.lcoe_usd_per_kwh_2010, 0), 1.0 / (2023 - 2010)) - 1) * 100,
+        2
+    ) AS lcoe_cagr_pct,
+    ROUND(
+        (POWER(c.installed_cost_usd_per_kw_2023 / NULLIF(c.installed_cost_usd_per_kw_2010, 0), 1.0 / (2023 - 2010)) - 1) * 100,
+        2
+    ) AS installed_cost_cagr_pct
+FROM cost_trends c
 CROSS JOIN fossil_costs fc
-ORDER BY lcoe_usd_per_kwh_2023;
---ORDER BY lcoe_2010;
+ORDER BY c.lcoe_usd_per_kwh_2023;
+--ORDER BY lcoe_usd_per_kwh_2010;
 --ORDER BY rel_change_lcoe_pct ASC;
 
-/*
-Insights:
-    - Solar PV leads the cost decline: From 2010 to 2023, the global Levelized Cost of Electricity (LCOE) for Solar PV fell by 90.4%, 
-      and installed costs dropped by 85.7%—the largest declines among all renewable technologies.
-    - Wind and solar thermal also show major cost reductions:
-       - Onshore wind: LCOE down 70.6%, installed cost down 48.9%
-       - Solar thermal: LCOE down 70.4%, installed cost down 38.1%
-       - Offshore wind: LCOE down 63.2%, installed cost down 48.2%
-    - Bioenergy saw minimal cost change: LCOE dropped only 15.2%, and installed cost declined by 9.3%.
-    - Hydropower and geothermal costs increased:
-       - Geothermal: LCOE up 30.8%, installed cost up 52.4%
-       - Hydropower: LCOE up 32.3%, installed cost up 92.3%
-       
-   Ranking and competitiveness in 2023:
-    - In 2010, hydropower was the cheapest renewable (LCOE), with solar PV the most expensive (0.46 USD/kWh).
-    - By 2023, onshore wind (0.033 USD/kWh) and solar PV (0.044 USD/kWh) became the cheapest renewables, both beating the lowest fossil fuel cost band (0.07 USD/kWh).
-    - Hydropower (0.057) remained competitive, also below the lowest fossil cost.
-    - Solar thermal (0.12) and offshore wind (0.075) are the most expensive renewables, yet all are still below the highest fossil fuel cost (0.176 USD/kWh), 
-      and most are competitive with the low band.
-      
-   Key takeaway:
-    - Rapid cost declines in solar and wind have transformed them from the most expensive to the most affordable renewable options, 
-      making them cost-competitive—even cheaper—than fossil fuels in most markets.
-    - Hydropower and geothermal now face rising costs, but remain important in the global mix.
-    - The cost gap between renewables and fossil fuels has dramatically closed, with renewables now setting the global benchmark for cheap electricity.
-*/
+/* ------------------------------------------------------------------  
+ Insights Summary:
+
+   - Largest declines:
+	     - Solar PV: LCOE ~−90%, Installed cost ~−86% (biggest overall)
+	     - Onshore wind: LCOE ~−71%, Cost ~−49%
+	     - CSP: LCOE ~−70%, Cost ~−38% ; Offshore wind: LCOE ~−63%, Cost ~−48%
+     
+   - Modest: Bioenergy (LCOE ~−15%, Cost ~−9%)
+   
+   - Cost Risers: Hydropower & Geothermal (LCOE and costs)
+   
+   - 2023 competitiveness (USD/kWh):
+	     - Below fossil low (0.07): Onshore (0.033), Solar PV (0.044), Hydro (0.057)
+	     - Within fossil band: Offshore (~0.075), CSP (~0.12), Geothermal (~0.071), Bioenergy (~0.072)
+
+   ------------------------------------------------------------------ */
 
 
 
+/* ================================================================================================
+   SECTION 2: Country-Level Analysis - LCOE and Installed Cost Trends from ren_indicators_country
+   ================================================================================================ */
 
+/* ============================================================================
+   SECTION 2A: QA & Data Exploration 
+   ============================================================================ */
 
--- Extracting all the necessary information and calculations for creating view for Tableau to visualize those insights
-WITH cost_base AS (
-    -- 1. Pulls LCOE and installed cost per tech/year in a single row
-    SELECT
-        rig.tech_id,
-        dt.technology,
-        rig.year,
-        MAX(CASE WHEN rig.indicator = 'LCOE (USD/kWh)' THEN rig.value END) AS lcoe_usd_per_kwh,
-        MAX(CASE WHEN rig.indicator = 'Total installed cost (USD/kW)' THEN rig.value END) AS installed_cost_usd_per_kw
-    FROM
-        renewables_project.ren_indicators_global rig
-        JOIN renewables_project.dim_technology dt ON rig.tech_id = dt.tech_id
-    WHERE
-        rig.value_category = 'Weighted average'
-        AND (rig.indicator = 'LCOE (USD/kWh)' OR rig.indicator = 'Total installed cost (USD/kW)')
-    GROUP BY rig.tech_id, dt.technology, rig.year
-),
-cost_with_changes AS (
-    -- 2. Adds YoY and cumulative % change since 2010
-    SELECT
-        cb.*,
-        -- YoY changes
-        LAG(cb.lcoe_usd_per_kwh) OVER (PARTITION BY cb.tech_id ORDER BY cb.year) AS lcoe_prev,
-        LAG(cb.installed_cost_usd_per_kw) OVER (PARTITION BY cb.tech_id ORDER BY cb.year) AS installed_cost_prev,
-        ROUND(
-            (cb.lcoe_usd_per_kwh - LAG(cb.lcoe_usd_per_kwh) OVER (PARTITION BY cb.tech_id ORDER BY cb.year)) /
-            NULLIF(LAG(cb.lcoe_usd_per_kwh) OVER (PARTITION BY cb.tech_id ORDER BY cb.year), 0) * 100, 2
-        ) AS rel_yoy_change_lcoe_pct,
-        ROUND(
-            (cb.installed_cost_usd_per_kw - LAG(cb.installed_cost_usd_per_kw) OVER (PARTITION BY cb.tech_id ORDER BY cb.year)) /
-            NULLIF(LAG(cb.installed_cost_usd_per_kw) OVER (PARTITION BY cb.tech_id ORDER BY cb.year), 0) * 100, 2
-        ) AS rel_yoy_change_installed_cost_pct,
-        -- Cumulative change since 2010
-        ROUND(
-            (cb.lcoe_usd_per_kwh - FIRST_VALUE(cb.lcoe_usd_per_kwh) OVER (PARTITION BY cb.tech_id ORDER BY cb.year)) /
-            NULLIF(FIRST_VALUE(cb.lcoe_usd_per_kwh) OVER (PARTITION BY cb.tech_id ORDER BY cb.year), 0) * 100, 1
-        ) AS rel_change_since_2010_lcoe_pct,
-        ROUND(
-            (cb.installed_cost_usd_per_kw - FIRST_VALUE(cb.installed_cost_usd_per_kw) OVER (PARTITION BY cb.tech_id ORDER BY cb.year)) /
-            NULLIF(FIRST_VALUE(cb.installed_cost_usd_per_kw) OVER (PARTITION BY cb.tech_id ORDER BY cb.year), 0) * 100, 1
-        ) AS rel_change_since_2010_installed_cost_pct
-    FROM cost_base cb
-),
-fossil_costs AS (
-    -- 3. Get 2023 fossil cost band values, to CROSS JOIN
-    SELECT
-        MAX(CASE WHEN cost_band = 'Low band' THEN value END) AS fossil_cost_low_usd_per_kwh_2023,
-        MAX(CASE WHEN cost_band = 'High band' THEN value END) AS fossil_cost_high_usd_per_kwh_2023
-    FROM renewables_project.fossil_cost_range
-)
-SELECT
-    c.tech_id,
-    c.technology,
-    c.year,
-    fc.fossil_cost_low_usd_per_kwh_2023,
-    fc.fossil_cost_high_usd_per_kwh_2023,
-    c.lcoe_usd_per_kwh,
-    c.lcoe_prev,
-    c.rel_yoy_change_lcoe_pct,
-    c.rel_change_since_2010_lcoe_pct,
-    c.installed_cost_usd_per_kw,
-    c.installed_cost_prev,
-    c.rel_yoy_change_installed_cost_pct,
-    c.rel_change_since_2010_installed_cost_pct
-FROM cost_with_changes c
-CROSS JOIN fossil_costs fc
-ORDER BY c.technology, c.year;
-
-
-
--- Preparing data for Tableau to analyze and visualize cost trends on regional and country level
--- NOTE: Due to data limitation I will be analyzing only 3 leading technologies Solar PV, Onshore wind, and Offshroe wind
-
--- Country data 
-SELECT dg.geo_name, dt.technology, ric.*
-FROM renewables_project.ren_indicators_country ric
-JOIN renewables_project.dim_geo dg ON ric.geo_id = dg.geo_id
-JOIN renewables_project.dim_technology dt ON ric.tech_id = dt.tech_id
---WHERE dt.technology <> 'Hydropower' AND ric."year" = 2010 AND indicator IS NULL -- Checking if there are countries that have no data in 2010.
---WHERE dg.geo_name = 'Australia' AND dt.technology LIKE 'Solar%' AND "indicator" = 'LCOE (USD/kWh)'
-WHERE dt.technology <> 'Hydropower' AND ric."year" >= 2010 
-ORDER BY dg.geo_name, ric."year", dt.technology
-
-
-SELECT COUNT(DISTINCT geo_id)
-FROM renewables_project.ren_indicators_country; --58
-
-SELECT COUNT(DISTINCT geo_id)
+-- DE: Preview sample records
+SELECT *
 FROM renewables_project.ren_indicators_country
-WHERE "year" = 2010; --25
+LIMIT 5;
 
--- NOTE: 33 countries don't have 2010 records. In general some countries are missing 
 
-SELECT COUNT(DISTINCT geo_id)
+-- DE: Check available indicators
+SELECT DISTINCT indicator
+FROM renewables_project.ren_indicators_country;
+
+
+-- DE: Count unique countries overall and by technology
+SELECT COUNT(DISTINCT geo_id) AS total_countries
+FROM renewables_project.ren_indicators_country;  -- Expect 58
+
+SELECT dt.technology, COUNT(DISTINCT geo_id) AS country_count
 FROM renewables_project.ren_indicators_country ric
 JOIN renewables_project.dim_technology dt ON ric.tech_id = dt.tech_id
-WHERE dt.technology LIKE 'Offshore%'; --Offshroe wind data is available for 8 countries
+WHERE dt.technology IN ('Solar photovoltaic', 'Onshore wind energy', 'Offshore wind energy')
+GROUP BY dt.technology
+ORDER BY country_count DESC;
 
-SELECT dt.technology, geo_id, year
+
+-- DE: Count countries reporting in baseline year (2010)
+SELECT COUNT(DISTINCT geo_id) AS countries_2010
+FROM renewables_project.ren_indicators_country
+WHERE "year" = 2010;  -- Around 25 (~33 missing in 2010)
+
+
+-- QA: Verify available year range per technology
+SELECT dt.technology, MIN(year) AS first_year, MAX(year) AS last_year
 FROM renewables_project.ren_indicators_country ric
 JOIN renewables_project.dim_technology dt ON ric.tech_id = dt.tech_id
-WHERE dt.technology LIKE 'Offshore%'; -- limited yearly data
+--WHERE dt.technology IN ('Solar photovoltaic', 'Onshore wind energy', 'Offshore wind energy')
+GROUP BY dt.technology
+ORDER BY first_year;
 
-SELECT COUNT(DISTINCT geo_id)
+
+-- QA: Check for missing or zero values
+SELECT
+    dt.technology,
+    COUNT(*) FILTER (WHERE ric.country_value IS NULL) AS null_count,
+    COUNT(*) FILTER (WHERE ric.country_value = 0) AS zero_count
 FROM renewables_project.ren_indicators_country ric
 JOIN renewables_project.dim_technology dt ON ric.tech_id = dt.tech_id
-WHERE dt.technology LIKE 'Solar%'; --21
+WHERE 
+    ric.indicator IN ('LCOE (USD/kWh)', 'Total installed cost (USD/kW)')
+    AND ric.value_category = 'Weighted average'
+GROUP BY dt.technology
+ORDER BY null_count DESC; -- Hydropower data is incomplete
 
-SELECT COUNT(DISTINCT geo_id)
+-- QA: Country vs regional fields (spot-check a tech)
+SELECT
+    ric.indicator,
+    COUNT(*) FILTER (WHERE ric.country_value IS NULL ) AS country_null_count, -- 28
+    COUNT(DISTINCT dg.geo_id) FILTER (WHERE ric.country_value IS NOT NULL) AS country_value_c,
+    COUNT(*) FILTER (WHERE ric.regional_value IS NULL) reg_null_count,
+    COUNT(DISTINCT dg.geo_id) FILTER (WHERE ric.regional_value IS NOT NULL) reg_value_c
 FROM renewables_project.ren_indicators_country ric
 JOIN renewables_project.dim_technology dt ON ric.tech_id = dt.tech_id
-WHERE dt.technology LIKE 'Onshore%'; --45
+JOIN renewables_project.dim_geo dg ON  ric.geo_id = dg.geo_id
+WHERE 
+	--dt.technology = 'Hydropower'
+	dt.technology = 'Offshore wind energy'
+    AND ric.indicator IN ('LCOE (USD/kWh)', 'Total installed cost (USD/kW)')
+    AND ric.value_category = 'Weighted average'
+GROUP BY ric.indicator; -- Hydropower data is incomplete
 
 
-SELECT DISTINCT technology, sub_technology
-FROM renewables_project.dim_technology
+/* ------------------------------------------------------------------ 
+ * === Notes on Data Limitation ===
+   - Hydropower LCOE and Installed cost data is only available in 3 countries and 10 regions.
+   - Hydropower data does not have yearly data only period.
+   - Offshore wind data is limited to 8 countries and 7 regions.
+   - Due to data limitation only 3 leading technologies - Solar PV, Onshore wind, and Offshroe wind - will be analyzed.
+   - Regional average calcualtions represent average of countries' reporting data in that year/technology,
+     not true average of all countries in the region.
+   - Results of the analysis should be interpreted as "spotlights" rather than a comprehensive world view.
+   - This analysis is best used as a supplement to global trends.
+   ------------------------------------------------------------------ */
 
 
 
--- NOTE: Regional average calcualtions represent average of countries' reporting data in that year/technology, not true average of all countries in the region.
+/* ============================================================================
+   Query 1: Analyze Country and Subregional LCOE & Installed Cost Trends (2010–2023)
+   
+   Goal: Highlight where costs have dropped fastest, and which regions/countries 
+         are global “cost leaders” in renewables.
+   ============================================================================ */
 
 WITH subregional_tech_avg AS (
+    -- Calculate average LCOE and installed cost by subregion, year, and technology
     SELECT
         dg.sub_region_name AS subregion,
-        ric.year,
         dt.technology,
-        AVG(CASE WHEN ric.indicator = 'LCOE (USD/kWh)' THEN ric.country_value END) AS avg_lcoe_subregion,
-        -- Calculating number of countries that have lcoe data reported
-        COUNT(DISTINCT CASE WHEN ric.indicator = 'LCOE (USD/kWh)' AND ric.country_value IS NOT NULL THEN dg.geo_name END) AS lcoe_country_count,
-        AVG(CASE WHEN ric.indicator = 'Total installed cost (USD/kW)' THEN ric.country_value END) AS avg_installed_cost_subregion,
-        -- Calculating number of countries that have installed cost data reported
-        COUNT(DISTINCT CASE WHEN ric.indicator = 'Total installed cost (USD/kW)' AND ric.country_value IS NOT NULL THEN dg.geo_name END) AS installed_cost_country_count
+        ric.year,
+        AVG(ric.country_value) FILTER (WHERE ric.indicator = 'LCOE (USD/kWh)') AS avg_lcoe_subregion,
+        COUNT(DISTINCT dg.geo_name) FILTER (WHERE ric.indicator = 'LCOE (USD/kWh)' AND ric.country_value IS NOT NULL) AS n_countries_lcoe,
+        AVG(ric.country_value) FILTER (WHERE ric.indicator = 'Total installed cost (USD/kW)') AS avg_installed_cost_subregion,
+        COUNT(DISTINCT dg.geo_name) FILTER (WHERE ric.indicator = 'Total installed cost (USD/kW)' AND ric.country_value IS NOT NULL) AS n_countries_cost
     FROM renewables_project.ren_indicators_country ric
     JOIN renewables_project.dim_geo dg ON ric.geo_id = dg.geo_id
     JOIN renewables_project.dim_technology dt ON ric.tech_id = dt.tech_id
@@ -267,16 +304,18 @@ WITH subregional_tech_avg AS (
         ric.value_category = 'Weighted average'
         AND dt.technology IN ('Solar photovoltaic', 'Onshore wind energy', 'Offshore wind energy')
         AND ric.year >= 2010
-    GROUP BY dg.sub_region_name, ric.year, dt.technology
+    GROUP BY dg.sub_region_name, dt.technology, ric.year
 ),
+
 country_tech_costs AS ( 
+    -- Retrieve individual country-level costs for reference
     SELECT
         dg.sub_region_name AS subregion,
         dg.geo_name AS country,
-        ric.year,
         dt.technology,
-        MAX(CASE WHEN ric.indicator = 'LCOE (USD/kWh)' THEN ric.country_value END) AS lcoe_usd_per_kwh,
-        MAX(CASE WHEN ric.indicator = 'Total installed cost (USD/kW)' THEN ric.country_value END) AS installed_cost_usd_per_kw
+        ric.year,
+        MAX(ric.country_value) FILTER (WHERE ric.indicator = 'LCOE (USD/kWh)') AS lcoe_usd_per_kwh,
+        MAX(ric.country_value) FILTER (WHERE ric.indicator = 'Total installed cost (USD/kW)') AS installed_cost_usd_per_kw
     FROM renewables_project.ren_indicators_country ric
     JOIN renewables_project.dim_geo dg ON ric.geo_id = dg.geo_id
     JOIN renewables_project.dim_technology dt ON ric.tech_id = dt.tech_id
@@ -284,82 +323,83 @@ country_tech_costs AS (
         ric.value_category = 'Weighted average'
         AND dt.technology IN ('Solar photovoltaic', 'Onshore wind energy', 'Offshore wind energy')
         AND ric.year >= 2010
-    GROUP BY dg.sub_region_name, dg.geo_name, ric.year, dt.technology
+    GROUP BY dg.sub_region_name, dg.geo_name, dt.technology, ric.year
 )
+
 SELECT 
+    sra.technology,
     sra.subregion,
     cc.country,
     sra.year,
-    sra.technology,
     cc.lcoe_usd_per_kwh,
     sra.avg_lcoe_subregion,
-    sra.lcoe_country_count,
-    -- LCOE cumulative since 2010 for regions
+    sra.n_countries_lcoe,
     ROUND(
-        (sra.avg_lcoe_subregion - FIRST_VALUE(sra.avg_lcoe_subregion) OVER (PARTITION BY sra.subregion, sra.technology ORDER BY sra.year)) /
-        NULLIF(FIRST_VALUE(sra.avg_lcoe_subregion) OVER (PARTITION BY sra.subregion, sra.technology ORDER BY sra.year), 0) * 100, 2
+        (sra.avg_lcoe_subregion - FIRST_VALUE(sra.avg_lcoe_subregion) OVER (PARTITION BY sra.subregion, sra.technology ORDER BY sra.year ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING))
+        / NULLIF(FIRST_VALUE(sra.avg_lcoe_subregion) OVER (PARTITION BY sra.subregion, sra.technology ORDER BY sra.year ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING), 0) * 100,
+        2
     ) AS pct_change_since_2010_lcoe_subregion,
     cc.installed_cost_usd_per_kw,
     sra.avg_installed_cost_subregion,
-    sra.installed_cost_country_count,
-    -- Installed cost cumulative since 2010 for regions
+    sra.n_countries_cost,
     ROUND(
-        (sra.avg_installed_cost_subregion - FIRST_VALUE(sra.avg_installed_cost_subregion) OVER (PARTITION BY sra.subregion, sra.technology ORDER BY sra.year)) /
-        NULLIF(FIRST_VALUE(sra.avg_installed_cost_subregion) OVER (PARTITION BY sra.subregion, sra.technology ORDER BY sra.year), 0) * 100, 2
+        (sra.avg_installed_cost_subregion - FIRST_VALUE(sra.avg_installed_cost_subregion) OVER (PARTITION BY sra.subregion, sra.technology ORDER BY sra.year ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING))
+        / NULLIF(FIRST_VALUE(sra.avg_installed_cost_subregion) OVER (PARTITION BY sra.subregion, sra.technology ORDER BY sra.year ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING), 0) * 100,
+        2
     ) AS pct_change_since_2010_installed_cost_subregion
 FROM subregional_tech_avg sra
 LEFT JOIN country_tech_costs cc
     ON sra.subregion = cc.subregion
-    AND sra.year = cc.year
     AND sra.technology = cc.technology
---WHERE sra.year = 2023
-ORDER BY sra.technology, sra.year DESC, pct_change_since_2010_lcoe_subregion
---ORDER BY sra.technology, sra.avg_lcoe_subregion;
---ORDER BY sra.technology, cc.lcoe_usd_per_kwh;
---ORDER BY sra.technology, cc.lcoe_usd_per_kwh DESC;
+    AND sra.year = cc.year
+--ORDER BY sra.technology, sra.year DESC, cc.installed_cost_usd_per_kw;
+ORDER BY sra.technology, sra.year DESC, pct_change_since_2010_installed_cost_subregion, cc.installed_cost_usd_per_kw;
+--ORDER BY sra.technology, sra.year DESC, sra.avg_installed_cost_subregion ASC, cc.installed_cost_usd_per_kw;
+--ORDER BY sra.technology, sra.year DESC, sra.avg_lcoe_subregion;
 
 
-/*
-Insights from Country-Level LCOE Data (IRENA, 2010–2023)
+/* ------------------------------------------------------------------  
+ Insights Summary:
 
-Note: These insights are based on data from up to 58 countries, across three technologies—solar PV, onshore wind, and offshore wind. Offshore wind data is especially limited (8 countries), and regional averages are calculated only from countries reporting data in each year, not from the full region.
+   Data coverage: Up to 58 countries, focused on Solar PV, Onshore wind, and Offshore wind. 
+   Offshore wind has limited sample size (8 countries).
+   
+   LCOE Trends (USD/kWh):
+	   Regional Overview:
+	      - Offshore wind: Largest decline in Western Europe (~−72%), limited country data.
+	      - Onshore wind: Biggest drops in Northern Europe (~−71%), Australia & NZ (~−70%), and North America (~−68%).
+	      - Solar PV: Steepest declines in Australia (~−92%), India (~−88%), and Southern Europe (~−87%).
+	
+	   2023 Regional LCOE Leaders:
+	      - Offshore wind: Northern Europe (~$0.054/kWh)
+	      - Onshore wind: North America (~$0.037), Northern Europe (~$0.038), Australia & NZ (~$0.042)
+	      - Solar PV: Australia & NZ (~$0.038), Southern Asia (~$0.048), Southern Europe (~$0.052)
+	
+	   Country-Level Highlights:
+	      - Offshore wind: Cheapest in Denmark ($0.048), UK ($0.059), Netherlands ($0.061)
+	      - Onshore wind: Cheapest in Brazil ($0.025), China ($0.026), UK ($0.031)
+	      - Solar PV: Cheapest in China ($0.036), Australia ($0.038), Chile ($0.041)
+	      - Japan remains among the highest-cost markets for all three technologies.
+      
+      
+   Installed Cost Trends (USD/kW):
+      Regional Overview:
+         - Offshore wind: Western Europe recorded the largest installed cost decline (~−62%), 
+           with an average subregional cost of ~$2,730/kW; the Netherlands reports the lowest cost ($2,564/kW).
+         - Onshore wind: Australia & NZ saw the largest drop (~−60%, avg ~$1,624/kW), 
+           followed by Latin America & the Caribbean (~−54%, avg ~$1,434/kW) 
+           and Northern Europe (~−51%, avg ~$1,505/kW). 
+           Country standouts include Brazil ($1,079/kW) and the UK ($1,273/kW).
+         - Solar PV: Exceptional declines of ~−88% in India (South Asia’s only reporting country, ~$711/kW) 
+           and ~−88% in Australia (~$989/kW). Southern Europe also showed ~−88% decline 
+           with an average of ~$710/kW and the lowest national cost in Greece ($626/kW).
 
-Regional Trends (2023 and Cumulative Change since 2010)
-		Offshore Wind:
-			- Largest decline in LCOE since 2010 is observed in Western Europe (-71.8%), but this is based on very limited country data.
-		Onshore Wind - Largest declines in LCOE:
-			- Northern Europe (-70.6%)
-			- Australia & New Zealand (-70.4%)
-			- Northern America (-67.8%)
-			- Southern and Western Europe (-65%)
-			- Many regions—including Latin America, South Africa, India, and SE Asia - saw declines above 50%.
-		Solar PV - Largest declines in:
-			- Australia (-91.9%)
-			- Southern Asia (India) (-87.7%)
-			- Southern Europe (-87.3%)
-			- Northern Europe (UK) (-86.7%)
-			- Most regions saw LCOE declines above 50%, except Sub-Saharan Africa (-21.8% in South Africa).
-			
-		Current (2023) leaders:
-			- Cheapest offshore wind: Northern Europe (avg. LCOE $0.054)
-			- Cheapest onshore wind: Northern America ($0.037), Northern Europe ($0.038), Australia & NZ ($0.042)
-			- Cheapest solar PV: Australia & NZ ($0.038; Australia only), Southern Asia ($0.048; India only), Southern Europe ($0.052)
+      Country-Level Installed Cost Highlights:
+         - Offshore wind: Lowest costs in China ($2,370/kW), Netherlands ($2,564/kW), and Germany ($2,895/kW). 
+           Eastern Asia’s regional average remains higher (~$3,950/kW).
+         - Onshore wind: Cheapest in China ($986/kW), Brazil ($1,079/kW), and Spain ($1,158/kW).
+         - Solar PV: Lowest costs in Greece ($626/kW), Spain ($671/kW), and China ($671/kW)
+  
+   ------------------------------------------------------------------ */
 
-Country-Level Trends
-		Offshore Wind:
-			- Cheapest: Denmark ($0.048/kWh), UK ($0.059), Netherlands ($0.061), Germany ($0.063), China ($0.07)
-			- Most expensive: Japan ($0.211/kWh)
-		Onshore Wind:
-			- Cheapest: Brazil ($0.025), China ($0.026), UK ($0.031), Peru ($0.032)
-			- Most expensive: Japan ($0.125), Russia ($0.106)
-		Solar PV:
-			- Cheapest: China ($0.036), Australia ($0.038), Chile ($0.041)
-			- Most expensive: Japan ($0.110), Canada ($0.101), Turkey ($0.09), UK ($0.079), South Africa ($0.075)
-
-
-Analyst Notes
-		- These figures highlight where costs have dropped fastest, and which regions/countries are global “cost leaders” in renewables.
-		- However, coverage limitations (especially for offshore wind) mean results should be interpreted as “spotlights” rather than a comprehensive world view.
-		- This analysis is best used as a supplement to global trends.
- */
 
