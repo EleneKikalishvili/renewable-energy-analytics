@@ -44,7 +44,10 @@ WITH rig_costs AS (
   SELECT
       rig.tech_id,
       dt.group_technology,
-      dt.technology,
+      CASE
+  	  	WHEN dt.technology = 'Solar thermal energy' THEN 'Concentrated solar power'::VARCHAR(50)
+  	  	ELSE dt.technology
+      END AS technology,
       rig.year,
       MAX(CASE WHEN rig.indicator = 'LCOE (USD/kWh)'                THEN rig.value::numeric END) AS lcoe_usd_per_kwh,
       MAX(CASE WHEN rig.indicator = 'Total installed cost (USD/kW)' THEN rig.value::numeric END) AS installed_cost_usd_per_kw
