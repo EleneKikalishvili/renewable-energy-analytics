@@ -202,6 +202,30 @@ SELECT *
 FROM renewables_project.ren_indicators_country
 LIMIT 5;
 
+-- DE: check available geo_type
+SELECT DISTINCT dg.geo_type
+FROM renewables_project.ren_indicators_country ric
+JOIN renewables_project.dim_geo dg ON ric.geo_id = dg.geo_id;
+
+/*
+ Region
+ Residual/unallocated
+ Country
+ */
+
+-- DE: explore Region and Residual records
+SELECT DISTINCT dt.technology, dg.geo_type, dg.geo_name, dg.sub_region_name
+FROM renewables_project.ren_indicators_country ric
+JOIN renewables_project.dim_geo dg ON ric.geo_id = dg.geo_id
+JOIN renewables_project.dim_technology dt ON ric.tech_id = dt.tech_id
+WHERE dg.geo_type = 'Residual/unallocated';
+-- WHERE dg.geo_type = 'Region';
+
+/*
+ * NOTES:
+ * 	- Only Hydropower has 'Region' type records which are standalone area-level records.
+ *  - Only Hydropower has 'Residual/unallocated' record - 'Middle East'
+ */
 
 -- DE: Check available indicators
 SELECT DISTINCT indicator
