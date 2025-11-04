@@ -120,7 +120,7 @@ JOIN renewables_project.dim_geo dg ON ee.geo_id = dg.geo_id;
    - Economic_group rows (e.g., EU, OECD) are aggregates of country data and excluded.
    - Global rows are valid for global trend analysis (they are pre-aggregated).
    - Region rows are standalone records (not country aggregates) and valid for regional analysis.
-   - Analysis coverage: 2000-2023
+   - Analysis coverage: 2000-2022
    ------------------------------------------------------------------ */
 
 
