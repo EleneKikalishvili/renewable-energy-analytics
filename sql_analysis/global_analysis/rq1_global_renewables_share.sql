@@ -637,24 +637,25 @@ LEFT JOIN source_global sg   ON sg.metric = s.metric AND sg.year = s.year
 ORDER BY standard_vs_source_diff DESC;
 
 /* ----------------------------------------------------------------------------------------------------------
-   GEOGRAPHY MODELING - Implementation Notes (applies to primary_consumption and ren_primary_consumption)
+   GEOGRAPHY MODELING - Implementation Notes 
+   (applies to: primary_consumption, ren_primary_consumption)
 
-    What’s Included in Regional Analysis:
-     - Countries and standard regions (geo_type = 'Country' or 'Region')
-     - Region-type rows represent reported area-level totals (not country aggregates).
+   Included in Regional Analysis:
+     - Countries and standard regions (geo_type IN ('Country', 'Region'))
+     - Region-type rows represent reported area-level totals (e.g., "Western Europe", "Eastern Africa") 
+       and are NOT aggregates of country-level data.
 
-    What’s Excluded:
-     - Economic groups (e.g., OECD, EU) - cross-region aggregates.
-     - Residual/unallocated areas (e.g., "Other CIS", "Other Asia Pacific") - unmapped to standard regions.
+   Excluded from Regional Analysis:
+     - Economic groups (e.g., OECD, EU) — cross-regional aggregates not used in trend comparisons.
+     - Residual/unallocated areas (e.g., "Other CIS", "Other Asia Pacific") — unmapped or partial records 
+       excluded from standardized regional totals.
 
-    Global Totals Strategy:
-     - Visualizations use standardized total (sum of included countries + area rows).
-     - 'Global' geo_type used only for QA/reconciliation.
-     - Residual add-back (e.g., "Other CIS") aligns standardized and source-provided global values (~1–2% difference).
+   Global Totals Strategy:
+     - Global analysis includes rows with geo_type = 'Global' (pre-aggregated totals).
+     - Regional and subregional analyses use geo_type IN ('Country', 'Region').
+     - Excluding residual/unallocated rows may create a minor difference (~1-2%) between 
+       standardized and source-provided global totals, which is acceptable for analytical consistency.
 
-    Best Practices:
-     - Filter all analytical queries to geo_type IN ('Country', 'Region')
-     - Do not zero-fill missing tech/country values; SUM ignores NULLs by default.
   ---------------------------------------------------------------------------------------------------------- */
 
 
