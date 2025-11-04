@@ -38,12 +38,10 @@ ORDER BY table_name, ordinal_position;
 
 
 <br>
-<br>
 
 
 ## **Fact Tables**
 
-<br>
 
 ### **Table:** primary_consumption
 
@@ -61,6 +59,19 @@ Stores yearly primary energy consumption by country and economic groups, measure
 | year           | integer         | No       | Reporting year (YYYY)                               	|                                       |
 | unit           | enum            | No       | Unit of measurement ("Exajoules")                   	| ENUM: `energy_unit`                   |
 | value          | numeric         | Yes      | Energy consumption (EJ)                             	| Nullable                              |
+
+#### **Geo Type Behavior - `primary_consumption`**
+
+- **Country** - Represents individual country records.  
+- **Region** - Represents reported area-level totals (e.g., *Other Northern Africa*, *Other Caribbean*); these are not aggregates of countries.  
+- **Global** - Pre-aggregated global totals used in global-level analysis and validation.  
+- **Economic_group** - Aggregates that span multiple regions (e.g., *OECD*, *EU*); excluded from analysis.  
+- **Residual/unallocated** - Covers unmapped areas (e.g., *Other CIS*, *Other Asia Pacific*); excluded from analysis.  
+
+**Global Totals Strategy:**  
+Global analysis includes all records with `geo_type = 'Global'`.  
+Regional and subregional analyses include `geo_type IN ('Country', 'Region')`.  
+Residual/unallocated rows are excluded from standardized totals, but the difference between standardized and source-provided global values is minimal (~1-2%).
 
 
 <br>
@@ -83,6 +94,20 @@ Stores yearly primary energy consumption by country and economic groups, nuclear
 | year               | integer          | No       | Reporting year (YYYY)                                   |                                      |
 | unit               | enum             | No       | Unit of measurement ("Exajoules")                       | ENUM: `energy_unit`                  |
 | value              | numeric          | Yes      | Energy consumption (EJ)                                 | Nullable                             |
+
+#### **Geo Type Behavior - `ren_primary_consumption`**
+
+- **Country** - Represents individual country records by technology.  
+- **Region** - Represents area-level totals (e.g., *Eastern Africa*, *Other Europe*); these are standalone regional entries, not country aggregates.  
+- **Global** - Represents total global consumption for each technology; used in global analysis.  
+- **Economic_group** - Aggregated data across multiple regions (e.g., *EU*, *OECD*); excluded from analysis.  
+- **Residual/unallocated** - Represents unmapped or non-standard areas (e.g., *Other Middle East*, *Other Asia Pacific*); excluded from analysis.  
+
+**Global Totals Strategy:**  
+Global analysis uses `geo_type = 'Global'`.  
+Regional and subregional analyses include `geo_type IN ('Country', 'Region')`.  
+Residual/unallocated and economic group records are excluded from trend comparisons.  
+Minor differences (~1-2%) between standardized and source-provided global totals are due to residual exclusions.
 
 
 <br>
@@ -107,6 +132,14 @@ Stores electricity generation and installed capacity by country, renewable techn
 | generation_gwh        | numeric      | Yes      | Electricity generated, in gigawatt-hours (GWh)     			           	| Nullable                           |
 | installed_capacity_mw | numeric      | Yes      | Installed capacity, in megawatts (MW)               			         	| Nullable                           |
 
+#### **Geo Type Behavior - `capacity_generation`**
+
+ **Country** - Contains only individual country-level records; no pre-aggregated regional or global totals are included.  
+
+**Usage Notes:**  
+This table represents country-level electricity generation and capacity data for renewable and non-renewable technologies.  
+For regional or global analyses, aggregate country data as needed using joins with `dim_geo`.
+
 
 <br>
 
@@ -127,6 +160,21 @@ Stores percentage-based indicators (e.g., share of generation or capacity) for r
 | indicator      | enum        | No       | Type of share metric (e.g., "RE Capacity (%)", 'RE Generation (%)')    | ENUM: `energy_metric`                |
 | year           | integer     | No       | Reporting year (YYYY)                                                  |                                      |
 | value          | numeric     | Yes      | Measured percentage value (e.g., 42.3 for 42.3%)                       | Nullable                             |
+
+#### **Geo Type Behavior - `ren_share`**
+
+- **Country** - Individual country-level records used for all regional and subregional aggregations.  
+- **Region** - Represents pre-aggregated regional totals included in the source dataset but *not* used for analysis.  
+  Regional insights are derived by aggregating country-level data based on standardized region and subregion mappings.  
+- **Global** - Represents source-provided global totals; used directly for global analysis (not recalculated).  
+- **Residual/unallocated** - Includes non-standard or mixed geographic areas such as "Middle East".  
+  These were excluded from analysis after remapping affected countries to standard UN regions.  
+- **Economic_group** - Contains cross-regional aggregates (e.g., OECD, EU); excluded from analysis.
+
+**Usage Notes:**  
+The dataset covers renewable energy share of electricity generation and capacity at multiple geographic levels.  
+For consistency, all regional analyses are computed from *country-level data only*, excluding residual and economic groups.  
+Global analyses use the pre-aggregated `Global` records.
 
 
 <br>
@@ -175,6 +223,23 @@ Stores detailed public investment data in energy projects, linked to source, geo
 | reference_date       | date      | No       | Exact date of the investment record                                 |                                                 |
 | amount_usd_million   | numeric   | No       | Investment amount in millions of USD                                |                                                 |
 
+#### **Geo Type Behavior - `investments`**
+
+- **Country** - Standard country-level records; used in all subregional analyses.  
+- **Region** - Not included; regional totals are computed by aggregating relevant country and residual records.  
+- **Residual/unallocated** - Represents investments assigned to a region but not attributable to a specific country  
+  (e.g., "Other Africa," "Other Asia Pacific").  
+  These are included in *regional* analysis but excluded from subregional and country-level comparisons.  
+- **Economic_group** - Includes entries such as "European Union."  
+  These are not country aggregates and can be safely included in *global* analyses since project IDs are unique.  
+- **Multilateral / Unspecified** - Represent global or cross-regional investments (e.g., from international organizations).  
+  Included in *global* totals only.  
+
+**Usage Notes:**  
+Regional analyses include both `Country` and `Residual/unallocated` records.  
+Subregional analyses rely solely on `Country` data for consistency,  
+while global analyses incorporate *all* records (`Country`, `Residual/unallocated`, `Multilateral`, `Economic_group`, `Unspecified`).
+
 
 <br>
 
@@ -195,6 +260,21 @@ Stores carbon dioxide emissions (million tonnes) from energy use by country and 
 | year              | integer    | No       | Reporting year (YYYY)                                   |                                      |
 | unit              | enum       | No       | Unit of measurement ("MtCO2")         			            | ENUM: `emission_unit`                |
 | value             | numeric    | Yes      | CO2 emissions for (million tonnes)                      | Nullable                             |
+
+#### **Geo Type Behavior - `energy_emissions`**
+
+- **Country** - Individual country-level records; used for subregional, regional, and global aggregations.  
+- **Region** - Represents standalone area-level records (e.g., *Other Southern Africa*, *Middle Africa*).  
+  These are not country aggregates and are valid for regional-level analysis.  
+- **Global** - Source-provided global totals; used directly for global analysis (not recalculated).  
+- **Residual/unallocated** - Includes non-standard or legacy areas (e.g., *Other Middle East,* *USSR,* *Other CIS,* *Other Asia Pacific*).  
+  Excluded from regional and subregional analysis.  
+- **Economic_group** - Aggregates such as "EU" or "OECD"; excluded from analysis to avoid double counting.
+
+**Usage Notes:**  
+Regional analyses use both `Country` and `Region` records,  
+while subregional and country-level analyses rely solely on `Country` rows.  
+Global trends are derived from pre-aggregated `Global` records.
 
 
 <br>
@@ -244,9 +324,37 @@ Stores country-level renewable energy indicators (e.g., LCOE, capacity factor, t
 | country_value     | numeric        | Yes      | Indicator value for the country                                                                   | Nullable                               |
 | regional_value    | numeric        | Yes      | Indicator value aggregated at the regional level                                                  | Nullable                               |
 
+#### **Geo Type Behavior - `ren_indicators_country`**
+
+- **Country** - Standard country-level records; used for all technology analyses (Solar PV, Onshore Wind, Offshore Wind).  
+- **Region** - Present only for *Hydropower*; represents standalone area-level records (not country aggregates); excluded from analysis..  
+- **Residual/unallocated** - Includes a single "Middle East" record for *Hydropower*; excluded from analysis.  
+- **Global / Economic_group** - Not included in this dataset.  
+
+**Usage Notes:**  
+Only *Hydropower* includes regional and residual entries.  
+Due to limited hydropower country coverage (3 countries and 10 regional records),  
+the main comparative analyses focus on *Solar PV*, *Onshore Wind*, and *Offshore Wind* technologies.
+
 
 <br>
 
+
+## **Eurostat Fact Tables**
+
+#### **Geo Type Behavior** - *(applies to `eu_consumption`, `eu_elec_prices`, and `eu_price_breakdown`)*
+
+- **Country** - Represents individual European countries; used for country-level and regional EU analyses.  
+- **Economic_group** - Includes a single record identified as `EU27_2020`, representing the aggregate of 27 EU member states.  
+  These values are significantly larger and should be interpreted as *regional aggregates*, not individual entities.  
+- **Region / Global / Residual/unallocated** - Not present in these datasets.
+
+**Usage Notes:**  
+Analyses at the EU level use `EU27_2020` as the aggregated benchmark,  
+while comparisons across European countries rely on `Country` rows only.  
+The datasets cover European nations broadly - not limited to EU members.
+
+<br>
 
 ### **Table:** eu_consumption
 
@@ -323,7 +431,6 @@ Stores detailed breakdowns of EU electricity prices by component, consumer type,
 
 ## **Dimension Tables**
 
-<br>
 
 ### **Table:** dim_technology
 
@@ -397,7 +504,6 @@ Stores metadata about each data source, ensuring traceability and reproducibilit
 
 ## **Lookup Tables**
 
-<br>
 
 ### **Table:** finance_lookup
 
