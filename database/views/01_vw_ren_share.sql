@@ -275,7 +275,6 @@ SELECT
 FROM country_total ct
 LEFT JOIN ren_totals rt
   ON ct.region_name=rt.region_name
- AND ct.sub_region_name=rt.sub_region_name
  AND ct.geo_name=rt.geo_name
  AND ct.year=rt.year
 
