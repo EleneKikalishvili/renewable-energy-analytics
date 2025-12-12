@@ -707,7 +707,7 @@ ORDER BY year;
 /* ---------------------------------------------------------------
    Insights Summary:
 
-   - Renewables’ share in global primary energy grew from ~7.5% (2000) 
+   - Renewables’ share in global primary energy grew from ~7.8% (2000) 
      to 14.6% (2023) - a near doubling in two decades.
    - Growth was slow until 2011, then accelerated steadily; the largest
      yearly increase occurred in 2020 (+1.17 pp).
@@ -742,10 +742,10 @@ ORDER BY rpc.year, pct_share_of_year DESC;
 /* ----------------------------------------------------------------------
    Insights Summary:
 
-   - Hydropower’s dominance declined from 90.7% (2000) to 44.0% (2023).
+   - Hydropower’s dominance declined from 90.7% (2000) to 43.9% (2023).
    - Wind and solar surged: Wind grew from 1.1% -> 24.1%, Solar from 0.04% -> 17.0%.
    - Together, wind + solar now make up over 41% of global renewable primary use.
-   - Biofuels (5.2%) and Geothermal/Biomass/Other (9.7%) grew moderately.
+   - Biofuels (5.3%) and Geothermal/Biomass/Other (9.7%) grew moderately.
    - The mix reflects global shift toward modern renewables, driven by falling 
      costs and supportive policy, especially in the power sector.
 ---------------------------------------------------------------------- */
