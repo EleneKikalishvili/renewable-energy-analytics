@@ -94,12 +94,12 @@ FROM pivoted;
 
 
 /*-----------------------------------------------------------------------------------------------------------------
-   View: vw_country_ren_capacity_generation_trends
-   Purpose: Create a Tableau-ready view of country-level renewable electricity capacity and generation,
+   View: vw_country_capacity_generation_trends
+   Purpose: Create a Tableau-ready view of country-level electricity capacity and generation,
             with cumulative % change since each country’s base (first non-null) year for each metric.
 
    Summary:
-      - Provides year-by-year breakdown of installed renewable capacity (MW) and generation (GWh) by country and technology.
+      - Provides year-by-year breakdown of installed capacity (MW) and generation (GWh) by country and technology.
       - Calculates each country’s “base year” (first year with non-null data) for both capacity and generation, and measures cumulative % change since then.
       - Enables Tableau analysis of “superstar” countries, technology adoption trajectories, country comparisons across regions, and regional comparisons globally.
       - Supports sorting, highlighting, or filtering by region, subregion, country, and technology.
@@ -107,7 +107,7 @@ FROM pivoted;
    Key columns:
       - region, subregion, country
       - geo_id, tech_id
-      - technology, year
+      - technology, fuel_category, year
       - ren_cap_country_mw: Installed renewable capacity (MW)
       - cap_base_year / cap_base_mw: First non-null year/value for capacity (per country/tech)
       - pct_change_since_cap_base_year: % change in capacity since base year
@@ -116,6 +116,7 @@ FROM pivoted;
       - pct_change_since_gen_base_year: % change in generation since base year
 
    Visualization ideas:
+      - Capacity vs Generation % change since 2000 combo chart
       - Country-level leaderboards and growth curves (“Which countries have grown the fastest in renewables?”)
       - Time-series line or area charts by country or region, coloring by technology.
       - Small-multiple or facet charts to compare countries within a region or subregion.
@@ -123,73 +124,124 @@ FROM pivoted;
 
 ----------------------------------------------------------------------------------------------------------------- */
 
-CREATE OR REPLACE VIEW renewables_project.vw_country_ren_capacity_generation_trends AS
+CREATE OR REPLACE VIEW renewables_project.vw_country_capacity_generation_trends AS
 WITH base AS (
   SELECT
-    dg.region_name      AS region,
-    dg.sub_region_name  AS subregion,
-    dg.geo_name         AS country,
+    dg.region_name AS region,
+    dg.sub_region_name AS subregion,
+    COALESCE(dg.country_name, dg.geo_name) AS country,
     cg.geo_id,
+
+    -- Simplified technology label for analysis
+    CASE
+      WHEN dt.group_technology = 'Bioenergy'
+        THEN 'Bioenergy'
+      WHEN dt.group_technology = 'Hydropower'
+        THEN 'Hydropower'
+      WHEN dt.sub_technology = 'Concentrated solar power'
+        THEN 'Concentrated solar power'
+      ELSE
+        dt.technology
+    END AS technology_simplified,
+
     dt.tech_id,
-    dt.technology,
+
+    -- Fuel category: Renewable / Fossil fuels / Nuclear and other
+    CASE
+      WHEN dt.category = 'Renewable' THEN 'Renewable'
+      WHEN dt.category = 'Non-renewable'
+           AND dt.group_technology = 'Fossil fuels'
+        THEN 'Fossil fuels'
+      ELSE
+        'Nuclear and other'
+    END AS fuel_category,
+
     cg.year,
-    SUM(cg.installed_capacity_mw) AS ren_cap_country_mw,
-    SUM(cg.generation_gwh)        AS ren_gen_country_gwh
+    SUM(cg.installed_capacity_mw) AS cap_country_mw,
+    SUM(cg.generation_gwh)        AS gen_country_gwh
   FROM renewables_project.capacity_generation cg
   JOIN renewables_project.dim_geo dg
     ON cg.geo_id = dg.geo_id
   JOIN renewables_project.dim_technology dt
     ON cg.tech_id = dt.tech_id
-   AND dt.category = 'Renewable'
   WHERE cg.year >= 2000
     AND dg.geo_type = 'Country'
-  GROUP BY dg.region_name, dg.sub_region_name, dg.geo_name, cg.geo_id, dt.tech_id, dt.technology, cg.year
+  GROUP BY
+    dg.region_name,
+    dg.sub_region_name,
+    dg.geo_name,
+    dg.country_name,
+    cg.geo_id,
+    dt.tech_id,
+    dt.technology,
+    dt.group_technology,
+    fuel_category,
+    technology_simplified,
+    cg.year
 ),
 
--- First non-null capacity year/value per country/tech
+-- First non-null capacity year/value per country + simplified tech
 cap_base AS (
-  SELECT DISTINCT ON (country, technology)
-         country, technology, geo_id, tech_id,
+  SELECT DISTINCT ON (geo_id, technology_simplified)
+         geo_id,
+         technology_simplified,
+         fuel_category,
+         country,
          year AS cap_base_year,
-         ren_cap_country_mw AS cap_base_mw
+         cap_country_mw AS cap_base_mw
   FROM base
-  WHERE ren_cap_country_mw IS NOT NULL
-  ORDER BY country, technology, year
+  WHERE cap_country_mw IS NOT NULL
+  ORDER BY geo_id, technology_simplified, year
 ),
 
--- First non-null generation year/value per country/tech
+-- First non-null generation year/value per country + simplified tech
 gen_base AS (
-  SELECT DISTINCT ON (country, technology)
-         country, technology, geo_id, tech_id,
+  SELECT DISTINCT ON (geo_id, technology_simplified)
+         geo_id,
+         technology_simplified,
+         fuel_category,
+         country,
          year AS gen_base_year,
-         ren_gen_country_gwh AS gen_base_gwh
+         gen_country_gwh AS gen_base_gwh
   FROM base
-  WHERE ren_gen_country_gwh IS NOT NULL
-  ORDER BY country, technology, year
+  WHERE gen_country_gwh IS NOT NULL
+  ORDER BY geo_id, technology_simplified, year
 )
+
 SELECT
   b.region,
   b.subregion,
   b.country,
   b.geo_id,
-  b.tech_id,
-  b.technology,
+  b.technology_simplified AS technology,
+  b.fuel_category,
   b.year,
-  b.ren_cap_country_mw,
+
+  b.cap_country_mw,
   cb.cap_base_year,
   cb.cap_base_mw,
-  ROUND( (b.ren_cap_country_mw - cb.cap_base_mw) / NULLIF(cb.cap_base_mw, 0) * 100, 2 ) AS pct_change_since_cap_base_year,
-  b.ren_gen_country_gwh,
+  ROUND(
+    (b.cap_country_mw - cb.cap_base_mw)
+    / NULLIF(cb.cap_base_mw, 0) * 100,
+    2
+  ) AS pct_change_since_cap_base_year,
+
+  b.gen_country_gwh,
   gb.gen_base_year,
   gb.gen_base_gwh,
-  ROUND( (b.ren_gen_country_gwh - gb.gen_base_gwh) / NULLIF(gb.gen_base_gwh, 0) * 100, 2 ) AS pct_change_since_gen_base_year
+  ROUND(
+    (b.gen_country_gwh - gb.gen_base_gwh)
+    / NULLIF(gb.gen_base_gwh, 0) * 100,
+    2
+  ) AS pct_change_since_gen_base_year
+
 FROM base b
 LEFT JOIN cap_base cb
-  ON b.country = cb.country
- AND b.technology = cb.technology
+  ON b.geo_id = cb.geo_id
+ AND b.technology_simplified = cb.technology_simplified
 LEFT JOIN gen_base gb
-  ON b.country = gb.country
- AND b.technology = gb.technology;  
+  ON b.geo_id = gb.geo_id
+ AND b.technology_simplified = gb.technology_simplified;
 
 
 
