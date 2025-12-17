@@ -48,7 +48,7 @@ WITH filtered AS (
     dg.geo_type,
     dg.region_name     AS region,
     dg.sub_region_name AS subregion,
-    dg.geo_name        AS country_or_area,
+    COALESCE(dg.country_name, dg.geo_name) AS country_or_area,
     rs.year,
     rs.indicator,
     rs.value::numeric AS value_pct
@@ -107,7 +107,7 @@ FROM pivoted;
    Key columns:
       - region, subregion, country
       - geo_id, tech_id
-      - technology, fuel_category, year
+      - group_technology, technology, fuel_category, year
       - ren_cap_country_mw: Installed renewable capacity (MW)
       - cap_base_year / cap_base_mw: First non-null year/value for capacity (per country/tech)
       - pct_change_since_cap_base_year: % change in capacity since base year
@@ -127,11 +127,11 @@ FROM pivoted;
 CREATE OR REPLACE VIEW renewables_project.vw_country_capacity_generation_trends AS
 WITH base AS (
   SELECT
-    dg.region_name AS region,
+    dg.region_name     AS region,
     dg.sub_region_name AS subregion,
     COALESCE(dg.country_name, dg.geo_name) AS country,
     cg.geo_id,
-
+    dt.group_technology,
     -- Simplified technology label for analysis
     CASE
       WHEN dt.group_technology = 'Bioenergy'
@@ -213,6 +213,7 @@ SELECT
   b.subregion,
   b.country,
   b.geo_id,
+  b.group_technology,
   b.technology_simplified AS technology,
   b.fuel_category,
   b.year,
@@ -237,10 +238,10 @@ SELECT
 
 FROM base b
 LEFT JOIN cap_base cb
-  ON b.geo_id = cb.geo_id
+  ON b.geo_id              = cb.geo_id
  AND b.technology_simplified = cb.technology_simplified
 LEFT JOIN gen_base gb
-  ON b.geo_id = gb.geo_id
+  ON b.geo_id              = gb.geo_id
  AND b.technology_simplified = gb.technology_simplified;
 
 
@@ -268,10 +269,10 @@ LEFT JOIN gen_base gb
    	  - year
    	  - geo_id, tech_id, row_type
       - region, subregion, country_or_area 
-      - country_primary_consumption_ej: country/year total primary energy (EJ)
+      - country_consumption_ej: country/year total primary energy (EJ)
       - total_ren_ej: country/year total renewables (EJ, excl. Nuclear)
       - technology: renewable technology label (e.g., Hydro, Wind, Solar, Biofuels, GBO)
-      - ren_tech_ej: country/year **per-technology** renewables (EJ)
+      - tech_ej: country/year **per-technology** renewables + Nuclear (EJ)
 
    Visualization ideas:
       - Stacked area or bars: Renewable **tech mix** by region/subregion/year (sum ren_tech_ej).
@@ -284,30 +285,44 @@ LEFT JOIN gen_base gb
 
 CREATE OR REPLACE VIEW renewables_project.vw_primary_consumption_core AS
 WITH country_total AS (
-  SELECT dg.region_name, dg.sub_region_name, dg.geo_name, dg.geo_type, pc.geo_id,
-         pc.year, pc.value AS country_primary_consumption_ej
+  SELECT 
+  		dg.region_name, 
+  		dg.sub_region_name, 
+  		COALESCE(dg.country_name, dg.geo_name) AS country_or_area, 
+  		dg.geo_type, 
+  		pc.geo_id,
+        pc.year, 
+        pc.value AS country_consumption_ej
   FROM renewables_project.primary_consumption pc
   JOIN renewables_project.dim_geo dg ON pc.geo_id = dg.geo_id
   WHERE pc.year >= 2000
     AND dg.geo_type IN ('Country','Region')
     AND pc.value IS NOT NULL
 ),
-country_ren_tech AS (
-  SELECT dg.region_name, dg.sub_region_name, dg.geo_name, dg.geo_type, rp.geo_id,
-         rp.year, dt.technology, dt.tech_id, rp.value AS ren_tech_ej
+country_tech AS (
+  SELECT 
+  		dg.region_name, 
+  		dg.sub_region_name, 
+  		COALESCE(dg.country_name, dg.geo_name) AS country_or_area, 
+  		dg.geo_type, 
+  		rp.geo_id,
+        rp.year, 
+        dt.technology, 
+        dt.tech_id, 
+        rp.value AS tech_ej
   FROM renewables_project.ren_primary_consumption rp
   JOIN renewables_project.dim_geo dg ON rp.geo_id = dg.geo_id
   JOIN renewables_project.dim_technology dt ON rp.tech_id = dt.tech_id
   WHERE rp.year >= 2000
     AND dg.geo_type IN ('Country','Region')
     AND rp.value IS NOT NULL
-    AND dt.technology <> 'Nuclear'
 ),
 ren_totals AS (
-  SELECT region_name, sub_region_name, geo_name, year,
-         SUM(ren_tech_ej) AS total_ren_ej
-  FROM country_ren_tech
-  GROUP BY region_name, sub_region_name, geo_name, year
+  SELECT region_name, sub_region_name, country_or_area, year,
+         SUM(tech_ej) AS total_ren_ej
+  FROM country_tech
+  WHERE technology <> 'Nuclear'
+  GROUP BY region_name, sub_region_name, country_or_area, YEAR
 )
 
 -- 1) TOTAL row per country-year (no technology)
@@ -315,38 +330,38 @@ SELECT
   ct.year,
   ct.region_name     AS region,
   ct.sub_region_name AS subregion,
-  ct.geo_name        AS country_or_area,
+  ct.country_or_area,
   ct.geo_type,
   ct.geo_id,
   'TOTAL'::text      AS row_type,
-  ct.country_primary_consumption_ej,
+  ct.country_consumption_ej,
   rt.total_ren_ej,
   NULL::text         AS technology,
-  NULL::integer       AS tech_id,
-  NULL::numeric      AS ren_tech_ej
+  NULL::integer      AS tech_id,
+  NULL::numeric      AS tech_ej
 FROM country_total ct
 LEFT JOIN ren_totals rt
-  ON ct.region_name=rt.region_name
- AND ct.geo_name=rt.geo_name
- AND ct.year=rt.year
+  ON ct.region_name = rt.region_name
+ AND ct.country_or_area = rt.country_or_area
+ AND ct.year = rt.year
 
 UNION ALL
 
 -- 2) TECHNOLOGY rows per country-year-tech (totals are NULL here)
 SELECT
-  r.year,
-  r.region_name      AS region,
-  r.sub_region_name  AS subregion,
-  r.geo_name         AS country_or_area,
-  r.geo_type,
-  r.geo_id,
+  t.year,
+  t.region_name      AS region,
+  t.sub_region_name  AS subregion,
+  t.country_or_area,
+  t.geo_type,
+  t.geo_id,
   'TECH'::text       AS row_type,
   NULL::numeric      AS country_primary_consumption_ej,
   NULL::numeric      AS total_ren_ej,
-  r.technology,
-  r.tech_id,
-  r.ren_tech_ej
-FROM country_ren_tech r;
+  t.technology,
+  t.tech_id,
+  t.tech_ej
+FROM country_tech t;
 
 
 
