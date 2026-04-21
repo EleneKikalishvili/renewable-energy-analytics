@@ -3,7 +3,7 @@
    Purpose : To bulk load cleaned and pre-structured datasets into temporary staging tables, 
              allowing controlled population of dimension, lookup, and fact tables in later steps.
    Author  : Elene Kikalishvili
-   Date    : 2025-05-20
+   Date    : 2026-02-23
    Depends : 01_create_schema.sql
    ====================================================================== */
  
@@ -106,7 +106,7 @@ SELECT *
 FROM renewables_project.capacity_generation_staging
 LIMIT 5;
 
--- Expected row count: 39,958 rows
+-- Expected row count: 40,208 rows
 SELECT COUNT(*)
 FROM renewables_project.capacity_generation_staging; */
 
@@ -130,7 +130,7 @@ SELECT *
 FROM renewables_project.ren_share_staging
 LIMIT 5;
 
--- Expected row count: 11,184 rows
+-- Expected row count: 11,650 rows
 SELECT COUNT(*)
 FROM renewables_project.ren_share_staging; */
 

@@ -2,7 +2,7 @@
    File    : 09_insert_dim_tables.sql
    Purpose : Inserts standardized data into dimension tables: dim_technology, dim_geo, dim_source.
    Author  : Elene Kikalishvili
-   Date    : 2025-05-20
+   Date    : 2026-02-23
    Depends : 01_create_schema.sql
    ====================================================================== */
 
@@ -476,10 +476,17 @@ SET geo =
 	CASE
 		WHEN geo = 'Chinese Taipei' THEN 'Taiwan'
 		WHEN geo = 'Kosovo*' THEN 'Kosovo'
+		WHEN geo = 'Netherlands (Kingdom of the)' THEN 'Netherlands'
 		ELSE geo
 	END
-WHERE geo IN ('Chinese Taipei', 'Kosovo*');
-	
+WHERE geo IN ('Chinese Taipei', 'Kosovo*', 'Netherlands (Kingdom of the)');
+
+-- Standardizing country names that have "(the)" in the end
+-- Result was previewed in the SELECT before updating
+
+UPDATE renewables_project.ren_share_staging
+SET geo = REGEXP_REPLACE(geo, '\s*\(the\)$', '', 'i')
+WHERE geo ~* '\s*\(the\)$';
 
 
 -- Updating geo_name null values for the records that have standard country_name values in dim_geo
