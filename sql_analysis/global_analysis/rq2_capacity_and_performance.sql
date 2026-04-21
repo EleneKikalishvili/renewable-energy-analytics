@@ -283,8 +283,8 @@ ORDER BY c.technology, c.year;
 	     onshore wind (+32%), hydropower (+21%), and Solar PV (+17%).
 	   
      Electricity Generation:
-	   - Solar PV generated almost 40x more electricity in 2022 than in 2010, leading all renewables.
-	   - Offshore wind output increased 21x, solar thermal nearly 8x, and onshore wind about 6x.
+	   - Solar PV generated almost 50x more electricity in 2023 than in 2010, leading all renewables.
+	   - Offshore wind output increased 25x, solar thermal nearly 8x, and onshore wind about 6x.
 	   
      Overall:
 	   - Solar energy is the top performer among renewables in growth of capacity, output, and capacity factor.

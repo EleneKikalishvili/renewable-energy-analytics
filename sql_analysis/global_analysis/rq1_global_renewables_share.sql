@@ -136,11 +136,10 @@ ORDER BY year;
 /* ------------------------------------------------------------------ 
  * Insights Summary:
  
-   - Renewables’ share of electricity generation rose from 18.3% (2000) to 29.1% (2022): +10.8 pp (~+59% relative).
-   - Renewables’ share of installed capacity doubled from 21.4% (2000) to 43.0% (2023): +21.6 pp (+101% relative).
-   - Installed capacity is outpacing generation: the gap widened from -3.1 pp (2000) to -11.2 pp (2022),
+   - Renewables’ share of electricity generation rose from 18.3% (2000) to 29.9% (2023): +11.6 pp (~+63% relative).
+   - Renewables’ share of installed capacity doubled from 22% (2000) to 43% (2023): +21 pp (+95.6% relative).
+   - Installed capacity is outpacing generation: the gap widened from 3.7 pp (2000) to 13.2 pp (2023),
      reflecting the rapid build-out of solar/wind (lower average capacity factors) and integration needs (grid/storage).
-   - Note: 2023 value for generation share is missing; 2022 is used as the latest.
    ------------------------------------------------------------------ */
 
 
@@ -201,15 +200,15 @@ FROM (
 /* ------------------------------------------------------------------  
  * Insights Summary:
  
-   - Among the top 50, RE generation share ranges from 63% to 100%.
-   - 6 countries/territories report 100% RE: South Georgia & the South Sandwich Islands, Nepal, Paraguay, Bhutan, Ethiopia, Albania.
+   - Among the top 50, RE generation share ranges from 65% to 100%.
+   - 6 countries/territories report 100% RE: Nepal, Bhutan, Iceland, Albania, Ethiopia, Paraguay.
    - Distribution:
         - 100%: 6
-        - 90–99.9%: 15
-        - 80–89.9%: 9
-        - 70–79.9%: 15
-        - 60–69.9%: 5
-   - Median RE share within top 50: ~86%
+        - 90–99.9%: 13
+        - 80–89.9%: 10
+        - 70–79.9%: 18
+        - 60–69.9%: 3
+   - Median RE share within top 50: 87.6%
    ------------------------------------------------------------------ */
 
 
@@ -334,11 +333,11 @@ ORDER BY total_renewable_generation_gwh DESC;
    Insights Summary:
    
    Top 5 renewable technologies used by top 50 countries by highest share of renewable electricity generation:
-     - Hydropower: 80.05%
-     - Onshore wind: 10.19%
-     - Solid biofuels: 4.76%
-     - Solar PV: 2.77%
-     - Geothermal: 1.24%
+     - Hydropower: 80.25%
+     - Onshore wind: 10.16%
+     - Solid biofuels: 4.74%
+     - Solar PV: 2.63%
+     - Geothermal: 1.22%
    ------------------------------------------------------------------ */
 
 
@@ -370,10 +369,10 @@ ORDER BY total_generation_gwh DESC;
 /* ------------------------------------------------------------------ 
    Insights Summary:
    
-	- Top 50 countries by RE share still rely heavily on hydro (~80% of renewable generation).
+	- Top 50 countries by RE share still rely heavily on hydro - ~1558.3 TWh (~80% of renewable generation).
    	- Next largest sources: 
-   			onshore wind (~197 TWh), natural gas (~190 TWh), nuclear (~154 TWh),
-	        solid biofuels (~92 TWh), coal/peat (~71 TWh), solar PV (~54 TWh), and oil (~41 TWh).
+   			onshore wind (~197.3 TWh), natural gas (~192.7 TWh), nuclear (~153.7 TWh),
+	        solid biofuels (~92 TWh), coal/peat (~74 TWh), solar PV (~51 TWh), and oil (~39.6 TWh).
 	- Fossil + nuclear output still exceeds all non-hydro renewables combined.
    ------------------------------------------------------------------ */
 
@@ -437,17 +436,17 @@ ORDER BY countries_2023 DESC, technology;
    Insights Summary:
    
 	   - Hydropower is nearly saturated globally: present in all 17 subregions since 2000; country count rose slightly (158 -> 163).
-	   - Onshore wind (60 -> 156) and solar PV (62 -> 220) achieved full subregional spread by 2012-2013.
+	   - Onshore wind (60 -> 156) and solar PV (52 -> 220) achieved full subregional spread by 2012-2013.
 	   - Niche/resource-limited techs remain geographically sparse by 2023:
-	      - Offshore wind: 3 -> 18 countries, 6/17 subregions
-	      - Geothermal: 22 -> 32 countries, 12/17 subregions
-	      - CSP: 1 -> 21 countries, 12/17 subregions
-	      - Marine: 6 -> 15 countries, 9/17 subregions
+	      - Offshore wind: 3 -> 19 countries, 6/17 subregions
+	      - Geothermal: 22 -> 30 countries, 12/17 subregions
+	      - CSP: 1 -> 19 countries, 11/17 subregions
+	      - Marine: 6 -> 14 countries, 9/17 subregions
 	   - Bioenergy is broad but uneven:
-	      - Solid biofuels: 87 -> 118 countries, 15/17 subregions
-	      - Biogas: 31 -> 106 countries, 15/17 subregions
-	      - Waste: 24 -> 47 countries, 11/17 subregions
-	      - Liquid biofuels: 2 -> 23 countries, 10/17 subregions
+	      - Solid biofuels: 86 -> 119 countries, 15/17 subregions
+	      - Biogas: 33 -> 107 countries, 15/17 subregions
+	      - Waste: 24 -> 48 countries, 11/17 subregions
+	      - Liquid biofuels: 2 -> 24 countries, 10/17 subregions
    ------------------------------------------------------------------ */
 
 
@@ -496,6 +495,7 @@ SELECT
 FROM
     regional_tech
 WHERE year = 2023  
+-- year = 2000
 ORDER BY
    -- "year", pct_of_global_cap_this_region DESC, aubregion, ren_capacity_mw DESC;
     "year" DESC, pct_of_global_cap_this_region DESC, subregion, ren_capacity_mw DESC;
@@ -503,10 +503,10 @@ ORDER BY
 /* ------------------------------------------------------------------ 
    Insights Summary:
    
-	-  In 2000, Northern America (21.2%), Latin America and the Caribbean (17.3%), and Eastern Asia (14.4%) led global renewables - each >80% hydro-based.
-	-  By 2023, Eastern Asia surged to 42.3% of global capacity (Solar PV 44.9%, Wind 25.3%, Hydro 24.6%).
-	-  Northern America dropped to 12.8%, with a more balanced mix: Wind 33.4%, Hydro 31.3%, Solar 29.1%.
-	-  Latin America and the Caribbean held 8.8%, still hydro-dominated (59%) but with growing Solar (19%) and Wind (14.5%).
+	-  In 2000, Northern America (21.6%), Latin America and the Caribbean (17.9%), and Eastern Asia (14.1%) led global renewables - each >80% hydro-based.
+	-  By 2023, Eastern Asia surged to 42.3% of global capacity (Solar PV 44.8%, Wind 25.3%, Hydro 24.6%).
+	-  Northern America dropped to 12.8%, with a more balanced mix: Wind 33.2%, Hydro 31.5%, Solar 29.2%.
+	-  Latin America and the Caribbean held 8.9%, still hydro-dominated (58.8%) but with growing Solar (19.2%) and Wind (14.5%).
 	-  Key shift: Asia replaced the Americas as the dominant region for renewable deployment.
    ------------------------------------------------------------------ */
 

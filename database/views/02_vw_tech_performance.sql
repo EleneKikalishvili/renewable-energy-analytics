@@ -54,10 +54,7 @@ WITH tech_level AS (
     -- For detailed technologies (onshore wind, offshore wind, solar PV, solar thermal)
     SELECT
         cg.year,
-        CASE
-  	  		WHEN dt.technology = 'Solar thermal energy' THEN 'Concentrated solar power'::VARCHAR(50)
-  	  		ELSE dt.technology
-        END AS technology,
+		dt.technology,
         SUM(cg.installed_capacity_mw) AS installed_capacity_mw,
         SUM (cg.generation_gwh) AS generation_gwh
     FROM
@@ -91,7 +88,10 @@ SELECT
 	dt.tech_id,
     c.year,
     dt.group_technology,
-    c.technology,
+    CASE
+  		WHEN dt.technology = 'Solar thermal energy' THEN 'Concentrated solar power'::VARCHAR(50)
+  	    ELSE dt.technology
+    END AS technology,
     c.installed_capacity_mw,
     c.generation_gwh,
     ROUND(rig.value, 2)  AS capacity_factor_pct, -- Weighted Average
