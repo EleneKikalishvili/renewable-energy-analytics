@@ -1,5 +1,5 @@
 /* ======================================================================
-   File    : Q1_renewables_vs_emissions.sql
+   File    : rq5_renewables_vs_emissions.sql
    Purpose : Analyze relationship between renewable energy growth and CO2 emissions trends
    Author  : Elene Kikalishvili
    Date    : 2026-04-28
