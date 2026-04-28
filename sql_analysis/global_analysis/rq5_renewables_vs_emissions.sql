@@ -2,7 +2,7 @@
    File    : Q1_renewables_vs_emissions.sql
    Purpose : Analyze relationship between renewable energy growth and CO2 emissions trends
    Author  : Elene Kikalishvili
-   Date    : 2025-09-18
+   Date    : 2026-04-28
    ====================================================================== */
 
 /* ============================================================================================================================  
@@ -120,13 +120,13 @@ JOIN renewables_project.dim_geo dg ON ee.geo_id = dg.geo_id;
    - Economic_group rows (e.g., EU, OECD) are aggregates of country data and excluded.
    - Global rows are valid for global trend analysis (they are pre-aggregated).
    - Region rows are standalone records (not country aggregates) and valid for regional analysis.
-   - Analysis coverage: 2000-2022
+   - Analysis coverage: 2000-2023
    ------------------------------------------------------------------ */
 
 
 
 /* ================================================================================================
-   SECTION 2: Analyze Global CO2 Emissions vs Renewable and Fossil Generation (2000-2022)
+   SECTION 2: Analyze Global CO2 Emissions vs Renewable and Fossil Generation (2000-2023)
    ================================================================================================ */
 
 WITH emissions_global AS (
@@ -137,7 +137,7 @@ WITH emissions_global AS (
     FROM renewables_project.energy_emissions ee
     JOIN renewables_project.dim_geo dg ON ee.geo_id = dg.geo_id
     WHERE dg.geo_type = 'Global'
-      AND ee.year >= 2000 AND ee.year < 2023
+      AND ee.year >= 2000 AND ee.year <= 2023
     GROUP BY ee.year
 ),
 
@@ -153,7 +153,7 @@ renewables_generation AS (
     FROM renewables_project.capacity_generation cg
     JOIN renewables_project.dim_technology dt ON cg.tech_id = dt.tech_id
     JOIN renewables_project.dim_geo dg ON cg.geo_id = dg.geo_id
-    WHERE cg.year >= 2000 AND cg.year < 2023
+    WHERE cg.year >= 2000 AND cg.year <= 2023
     GROUP BY cg.year
 ),
 
@@ -229,26 +229,27 @@ SELECT
     
     renewables_gen_yoy_change_pct,
     fossil_gen_yoy_change_pct,
-    emissions_yoy_change_pct,
+    emissions_yoy_change_pct
     
-   -- renewables_share_yoy_change_pct,
-   -- fossil_share_yoy_change_pct 
+    --renewables_share_yoy_change_pct,
+    --fossil_share_yoy_change_pct 
     
 FROM merged
 ORDER BY year;
 
 /* ------------------------------------------------------------------
-	 Insights Summary (2000-2022):
+	 Insights Summary (2000-2023):
 	
-	 Global CO2 emissions rose ~46% since 2000, while renewables' share in electricity generation
-	 grew ~59% (18.3% -> 29.1%) and fossil fuels' share declined ~5%. 
-	 Between 2000-2010 emissions climbed +31%, but only +11% since 2010-signaling early decoupling.
+	 Global CO2 emissions rose by ~48% since 2000, while renewables' share in electricity generation
+	 grew by ~63% (18.3% -> 29.9%) and fossil fuels' share declined by ~6.6%. 
+	 Between 2000-2010 emissions climbed +31%, but only +13% since 2010-signaling early decoupling.
 	
 	 From 2008 onward, renewables generation share expanded every year, while fossil fuels mostly 
-	 declined except minor rebounds in 2010-2011. During 2010-2018 renewables grew +5-8% YoY as fossil 
-	 growth slowed, flattening emissions. 
-	 By 2019 fossil generation plateaued; in 2020 emissions dropped (-5%) while renewables rose (+6.6%). 
-	 In 2022 renewables grew +7% versus fossil +1%, keeping emissions growth to just +2%.
+	 declined except minor rebounds in 2010-2011. 
+	 During 2010-2018 renewables grew +5-8% YoY as fossil growth slowed, flattening emissions. 
+	 By 2019 fossil generation plateaued; in 2020 emissions dropped (-5%) while renewables rose (+6.7%). 
+	 In 2022 renewables grew +7.3% versus fossil +1.5%, keeping emissions growth to just +1.7%.
+	 In 2023 renewables grow +6% whole fossils only just 1%, emissions - 1.6%
 	
 	 Overall, renewables now offset most new electricity demand, stabilizing emissions but not yet
 	 achieving sustained global declines.
@@ -258,7 +259,7 @@ ORDER BY year;
 
 
 /* ================================================================================================
-   SECTION 3: Analyze Emissions Intensity vs. Renewables Share by Country (2010-2022)
+   SECTION 3: Analyze Emissions Intensity vs. Renewables Share by Country (2010-2023)
    ================================================================================================ */
 
 -- QA: Count available country records in each dataset
@@ -266,16 +267,16 @@ SELECT
   (SELECT COUNT(DISTINCT ee.geo_id) 
    FROM renewables_project.energy_emissions ee
    JOIN renewables_project.dim_geo dg ON ee.geo_id = dg.geo_id
-   WHERE dg.geo_type = 'Country' AND ee.year BETWEEN 2010 AND 2022) AS emissions_countries,
+   WHERE dg.geo_type = 'Country' AND ee.year BETWEEN 2010 AND 2023) AS emissions_countries,
   (SELECT COUNT(DISTINCT pc.geo_id)
    FROM renewables_project.primary_consumption pc
    JOIN renewables_project.dim_geo dg ON pc.geo_id = dg.geo_id
-   WHERE dg.geo_type = 'Country' AND pc.year BETWEEN 2010 AND 2022) AS consumption_countries,
+   WHERE dg.geo_type = 'Country' AND pc.year BETWEEN 2010 AND 2023) AS consumption_countries,
   (SELECT COUNT(DISTINCT rs.geo_id)
    FROM renewables_project.ren_share rs
    JOIN renewables_project.dim_geo dg ON rs.geo_id = dg.geo_id
    WHERE dg.geo_type = 'Country' AND rs.indicator = 'RE Generation (%)'
-     AND rs.value IS NOT NULL AND rs.year BETWEEN 2010 AND 2022) AS renewables_share_countries;
+     AND rs.value IS NOT NULL AND rs.year BETWEEN 2010 AND 2023) AS renewables_share_countries;
 
 /* -----------------------------------------------------------
    NOTES:
@@ -302,7 +303,7 @@ WITH emissions AS (
   FROM renewables_project.energy_emissions ee
   JOIN renewables_project.dim_geo dg ON ee.geo_id = dg.geo_id
   WHERE dg.geo_type = 'Country'
-    AND ee.year BETWEEN 2010 AND 2022
+    AND ee.year BETWEEN 2010 AND 2023
   GROUP BY ee.geo_id
 ),
 energy_use AS (
@@ -310,7 +311,7 @@ energy_use AS (
   FROM renewables_project.primary_consumption pc
   JOIN renewables_project.dim_geo dg ON pc.geo_id = dg.geo_id
   WHERE dg.geo_type = 'Country'
-    AND pc.year BETWEEN 2010 AND 2022
+    AND pc.year BETWEEN 2010 AND 2023
   GROUP BY pc.geo_id
 ),
 renewables AS (
@@ -320,7 +321,7 @@ renewables AS (
   WHERE dg.geo_type = 'Country'
     AND rs.indicator = 'RE Generation (%)'
     AND rs.value IS NOT NULL
-    AND rs.year BETWEEN 2010 AND 2022
+    AND rs.year BETWEEN 2010 AND 2023
   GROUP BY rs.geo_id
 ),
 nuclear AS (
@@ -334,7 +335,7 @@ nuclear AS (
   JOIN renewables_project.dim_technology dt ON cg.tech_id = dt.tech_id
   JOIN renewables_project.dim_geo dg ON cg.geo_id = dg.geo_id
   WHERE dg.geo_type = 'Country'
-    AND cg.year BETWEEN 2010 AND 2022
+    AND cg.year BETWEEN 2010 AND 2023
   GROUP BY cg.geo_id
 )
 SELECT 
@@ -353,12 +354,12 @@ WHERE r.avg_renewables_share_pct IS NOT NULL
   AND e.avg_emissions_mtco2 IS NOT NULL
   AND en.avg_consumption_ej IS NOT NULL
 --ORDER BY emissions_intensity_mtco2_per_ej DESC
-ORDER BY emissions_intensity_mtco2_per_ej ASC
---ORDER BY avg_emissions_mtco2 DESC
+--ORDER BY emissions_intensity_mtco2_per_ej ASC
+ORDER BY avg_emissions_mtco2 DESC
 LIMIT 10;
 
 /* ------------------------------------------------------------------
-	Insights Summary: CO2 Intensity vs Renewables & Nuclear (2010-2022 averages)
+	Insights Summary: CO2 Intensity vs Renewables & Nuclear (2010-2023 averages)
 	
 	Normalizing CO2 emissions by total energy use (MtCO2/EJ) reveals clear differences in 
 	carbon intensity across countries. Higher renewable shares correspond to lower intensity:
@@ -369,18 +370,19 @@ LIMIT 10;
 	like nuclear - significantly reduces CO2 intensity per unit of energy.
 	
 	- Low-intensity leaders pair high RE and/or nuclear:
-	    - Iceland 12.1, Norway 18.8 (near-100% hydro/geo);
-	    - Sweden 20.0, France 31.4, Switzerland 32.5 (large nuclear + RE);
-	    - Brazil 36.4 (~80% RE), Canada 38.4 (65% RE + 15% nuclear) ...
+	    - Iceland 12, Norway 18.7 (near-100% hydro/geo);
+	    - Sweden 19.7, France 31.3, Switzerland 32.3 (large nuclear + RE);
+	    - Brazil 36 (~81% RE), Finland 38 (~44% RE, 33.7% Nuclear)
+	    - Canada 38.3 (65% RE + 15% nuclear), New Zealand 39 (~80% RE)
 	
 	- High-intensity cluster maps to fossil systems w/ little to 0 nuclear:
-	    - South Africa 89.1, Estonia 84.7 (oil shale), Kazakhstan 77.5,
-	      India 72.7, China 71.4, Poland 73.0 ...
+	    - South Africa 89, Estonia 84.2 (oil shale), Kazakhstan 77.2,
+	      China Hong Kong 76.2, India 72.6, Poland 72.4 ...
 	
 	- Largest economies - China, US, India, Russia, Japan, Germany - dominate
       global CO2 totals, but their carbon intensity diverges.
-		- Coal-heavy systems (China, India) ~70 MtCO2/EJ.
-		- Balanced mixes (US, Germany, Russia) ~55-60 MtCO2/EJ.
+		- Coal-heavy systems (China, India) ~70-80 MtCO2/EJ.
+		- Balanced mixes (US, Germany, Russia) ~50-55 MtCO2/EJ.
 		- Hydro + nuclear balance (Canada) ~38 MtCO2/EJ.
 		- Large economies emit most overall, but those with strong
 		  renewable + nuclear shares are far less carbon-intensive.
