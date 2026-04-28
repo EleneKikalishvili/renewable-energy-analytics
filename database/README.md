@@ -27,7 +27,7 @@ It supports SQL-based analysis, data validation, and Tableau visualization.
 - **Design:** Star schema with light normalization  
   - Core dimensions: `dim_geo`, `dim_technology`, `dim_source`.
   - Fact tables: `investments`, `capacity_generation`, `primary_consumption`, `ren_primary_consumption`, etc.
-  - Lookup tables: `project_lookup`, `finance lookup`, `inv_source_lookup`, `indicator_lookup`, `price_component_lookup`.
+  - Lookup tables: `project_lookup`, `finance_lookup`, `inv_source_lookup`, `indicator_lookup`, `price_component_lookup`.
 - **Relationship logic:** All tables connect through standardized country/region codes and technology keys.
 
 ---  
@@ -70,7 +70,7 @@ It was initially populated using the **DataHub Country Codes Mapping** dataset, 
 From there, additional custom logic was applied to support non-standard geographic groupings and improve compatibility across all sources.
 
 **Key Table Design:**
-- **`geo_name`** - Stores the geographic entity name and is used to mapp non-standard records with standard country names stored in country_name column. Initially populated using ISO-standard country names, but later added non-standard country names ("Czech Republic") and non-standard records such as regional aggregates (e.g., *"Other North Africa"*) or economic groups (e.g., *"European Union"*).  
+- **`geo_name`** - Stores the geographic entity name and is used to map non-standard records with standard country names stored in country_name column. Initially populated using ISO-standard country names, but later added non-standard country names ("Czech Republic") and non-standard records such as regional aggregates (e.g., *"Other North Africa"*) or economic groups (e.g., *"European Union"*).  
 - **`geo_type`** - Categorizes each record as *Country*, *Region*, *Global*, *Economic group*, *Residual/unallocated*, *Unspecified*, etc. This enables flexible filtering during analysis.  
 - **`is_standard`** - Boolean flag identifying whether the record is an ISO/UN standard location (`TRUE`) or a non-standard, derived record (`FALSE`).  
 
@@ -121,6 +121,7 @@ It unifies different naming conventions and levels of granularity, allowing cons
 - Cleaned CSVs located in [clean_data](/data/clean_data/) folder.
 
 ### 2. Run the Build Script
+Update path to the file directory inside the `08_copy_to_staging.sql` file.
 
 **Note:** Before running this command, navigate to the `/database` folder in your local repository.
 
