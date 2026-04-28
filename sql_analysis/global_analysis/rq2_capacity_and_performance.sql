@@ -3,7 +3,7 @@
    Purpose : Analyze global annual trends for each major renewable technology-
              tracking installed capacity (MW), generation (GWh), and weighted average capacity factor (%).
    Author  : Elene Kikalishvili
-   Date    : 2025-06-18
+   Date    : 2026-04-28
    ====================================================================== */
 
 /* ============================================================================================================================  
@@ -199,7 +199,7 @@ tech_trends AS (
         MAX(CASE WHEN year = 2010 THEN installed_capacity_mw END) AS start_capacity,
         MAX(CASE WHEN year = 2023 THEN installed_capacity_mw END) AS end_capacity,
         MAX(CASE WHEN year = 2010 THEN generation_gwh END) AS start_generation,
-        MAX(CASE WHEN year = 2022 THEN generation_gwh END) AS end_generation
+        MAX(CASE WHEN year = 2023 THEN generation_gwh END) AS end_generation
     FROM combined
     GROUP BY technology
 )
@@ -245,7 +245,7 @@ SELECT
     ) AS capacity_cagr_pct,
 
     ROUND(
-        (POWER(tt.end_generation / NULLIF(tt.start_generation, 0), 1.0 / (2022 - 2010)) - 1) * 100, 2
+        (POWER(tt.end_generation / NULLIF(tt.start_generation, 0), 1.0 / (2023 - 2010)) - 1) * 100, 2
     ) AS generation_cagr_pct
 
 FROM renewables_project.ren_indicators_global rig
@@ -271,7 +271,7 @@ ORDER BY c.technology, c.year;
    Insights Summary:
    
      Installed Capacity Growth:
-	   - Solar PV is the clear global leader, expanding installed capacity by 3,404% (35x) since 2010.
+	   - Solar PV is the clear global leader, expanding installed capacity by 3,407% (35x) since 2010.
 	   - Offshore wind increased 24x, while hydropower grew just by 37% (1.37x).
 	   - Hydropower remained the largest installed renewable source until 2022, but by 2023, Solar PV 
 	     overtook hydropower to become #1 worldwide.
@@ -291,4 +291,3 @@ ORDER BY c.technology, c.year;
 	   - Hydropower still provides the largest global base, but solar and wind are driving the fastest change.
    ------------------------------------------------------------------ */
 
- 
