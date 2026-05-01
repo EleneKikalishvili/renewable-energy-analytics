@@ -173,7 +173,7 @@ LIMIT 50;
 
 
 /* ============================================================================
-   Query 3: Threshold breakdown: RE generation % among top 50 countries (2022) 
+   Query 3: Threshold breakdown: RE generation % among top 50 countries (2023) 
    ============================================================================ */ 
 SELECT
   COUNT(*) FILTER (WHERE value >= 60 AND value < 70)   AS ge_60_70_pct,
@@ -192,7 +192,7 @@ FROM (
 		rs.value IS NOT NULL
 		AND dg.geo_type = 'Country'
 		AND rs."indicator" = 'RE Generation (%)'
-		AND rs.year = 2022
+		AND rs.year = 2023
 	ORDER BY value DESC
 	LIMIT 50
 ) AS top_50;
@@ -204,10 +204,10 @@ FROM (
    - 6 countries/territories report 100% RE: Nepal, Bhutan, Iceland, Albania, Ethiopia, Paraguay.
    - Distribution:
         - 100%: 6
-        - 90–99.9%: 13
+        - 90–99.9%: 15
         - 80–89.9%: 10
-        - 70–79.9%: 18
-        - 60–69.9%: 3
+        - 70–79.9%: 12
+        - 60–69.9%: 7
    - Median RE share within top 50: 87.6%
    ------------------------------------------------------------------ */
 
