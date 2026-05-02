@@ -48,6 +48,17 @@ Findings are visualized in a four-dashboard interactive Tableau story covering g
 
 The published story is available at **[Tableau Public](https://public.tableau.com/shared/KKMTFSN3Q?:display_count=n&:origin=viz_share_link)**
 
+### Key Documents
+
+| Document | Description |
+|---|---|
+| [docs/INSIGHTS.md](./docs/INSIGHTS.md) | Full analytical findings across all 5 research questions and 4 dashboards |
+| [database/README.md](./database/README.md) | Database architecture, schema design, and rebuild instructions |
+| [database/data_dictionary.md](./database/data_dictionary.md) | Column-level definitions for all tables |
+| [database/00_run_all.sql](./database/00_run_all.sql) | Master build script - runs the full ETL pipeline in sequence |
+| [sql_analysis/global_analysis/](./sql_analysis/global_analysis/) | SQL analysis files for all 5 research questions |
+| [data/clean_data/](./data/clean_data/) | Cleaned source CSVs from Power Query |
+
 ---
 
 ## Research Questions
@@ -396,13 +407,13 @@ renewable-energy-analytics/
 │       └── 05_vw_emissions.sql
 │
 ├── docs/
-│   ├── images/                        ← Recorded cleaning Steps, ERD, and dashboard preview
-│       ├── renewables_project_ERD.png
-│       └── dashboard_preview.gif   
 │   ├── INSIGHTS.md                    ← Full analytical findings across all sections
-│   ├── data_preparation.md  
-│   ├── data_sources.md  
-│   └── power_query_examples.md 
+│   ├── data_preparation.md
+│   ├── data_sources.md
+│   ├── power_query_examples.md
+│   └── images/                        ← ERD and dashboard preview
+│       ├── renewables_project_ERD.png
+│       └── dashboard_preview.gif
 │
 ├── sql_analysis/
 │   └── global_analysis/               ← 5 SQL files, one per research question
@@ -470,7 +481,7 @@ Views were exported as CSVs and imported into Tableau Desktop. The published sto
 ## Contact
 
 **Elene Kikalishvili**  
-**[LinkedIn](https://www.linkedin.com/in/elene-kikalishvili/)**  
+[LinkedIn](https://www.linkedin.com/in/elene-kikalishvili/) &nbsp;|&nbsp; [GitHub](https://github.com/EleneKikalishvili)
 
 ---
 
