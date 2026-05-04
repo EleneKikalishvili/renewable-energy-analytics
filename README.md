@@ -33,7 +33,7 @@
 
 This project is a full-stack data analytics pipeline - from raw public data through database engineering, multi-dataset SQL analysis, and interactive Tableau dashboards - investigating the global renewable energy transition between 2000 and 2023.
 
-Four public datasets from IRENA, the Energy Institute, Eurostat, and DataHub were cleaned and transformed in Power Query, then integrated into a purpose-built PostgreSQL star-schema database. The database required substantial engineering work: custom geographic and technology standardization dimensions to harmonize inconsistent naming and classification across sources, a staging-based ETL pipeline with inline QA validation, and analytical views designed for Tableau consumption.
+Four public datasets from IRENA, the Energy Institute, Eurostat, and DataHub were cleaned and transformed in Power Query, then integrated into a purpose-built PostgreSQL fact constellation schema database. The database required substantial engineering work: custom geographic and technology standardization dimensions to harmonize inconsistent naming and classification across sources, a staging-based ETL pipeline with inline QA validation, and analytical views designed for Tableau consumption.
 
 SQL analysis spans five research questions - covering renewable share growth, technology capacity and performance, LCOE and installed cost trends, public investment alignment, and the relationship between renewables and CO₂ emissions. Queries make extensive use of window functions, CTEs, CAGR calculations, and cross-dataset joins. Exploratory and QA queries are retained in each file to document the analytical process and support reproducibility.
 
@@ -175,7 +175,7 @@ Raw Data (IRENA / Energy Institute / Eurostat / DataHub)
 │   Schema: renewables_project│
 │                             │
 │ DDL                         │
-│ · Star schema design        │
+│ · Galaxy schema design      │
 │ · Enums, dimensions,        │
 │   fact tables, lookups,     │
 │   indexes, staging tables   │
@@ -222,7 +222,7 @@ The database is the analytical backbone of this project - designed from scratch 
 
 ### Schema Architecture
 
-The database follows a **lightly normalized star schema** in PostgreSQL (`renewables_project` schema), with core shared dimensions connecting all fact tables. This design enables cross-dataset analysis - for example, joining IRENA capacity data with Energy Institute consumption data through a shared geographic dimension - without redundancy or data integrity issues.
+The database follows a **fact constellation schema** (also known as a galaxy schema) in PostgreSQL (`renewables_project` schema), with core shared dimensions connecting all fact tables. This design enables cross-dataset analysis - for example, joining IRENA capacity data with Energy Institute consumption data through a shared geographic dimension - without redundancy or data integrity issues.
 
 **Dimension tables** provide standardized reference data used across all fact tables:
 - `dim_geo` - geographic entities with standardized identifiers, UN region/subregion classifications, and geo_type flags

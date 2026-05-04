@@ -24,7 +24,7 @@ It supports SQL-based analysis, data validation, and Tableau visualization.
 ## Schema Overview
 - **Schema name:** `renewables_project`
 - **Database:** PostgreSQL
-- **Design:** Star schema with light normalization  
+- **Design:** fact constellation schema (galaxy schema)  
   - Core dimensions: `dim_geo`, `dim_technology`, `dim_source`.
   - Fact tables: `investments`, `capacity_generation`, `primary_consumption`, `ren_primary_consumption`, etc.
   - Lookup tables: `project_lookup`, `finance_lookup`, `inv_source_lookup`, `indicator_lookup`, `price_component_lookup`.
@@ -42,7 +42,7 @@ It supports SQL-based analysis, data validation, and Tableau visualization.
 
 ## Schema Design and Table Roles
 
-The database follows a **lightly normalized star schema**, combining multiple renewable energy datasets into a unified analytical model.  
+The database follows a **fact constellation schema** (also known as a galaxy schema), combining multiple renewable energy datasets into a unified analytical model.  
 
 **Dimension Tables** - provide standardized references and contextual metadata:  
 - **`dim_geo`** - Contains standardized geographic identifiers (countries, regions, economic groups, residuals).  
