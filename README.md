@@ -42,9 +42,9 @@ Findings are visualized in a four-dashboard interactive Tableau story covering g
 
 
 <!-- Dashboard preview GIF -->
-> **Dashboard Preview**
->
-> ![Dashboard Preview](./docs/images/dashboard_preview.gif)  
+**Tableau Dashboards Preview**
+
+![Dashboard Preview](./docs/images/Dashboard_Preview.gif)  
 
 The published story is available at **[Tableau Public](https://public.tableau.com/shared/KKMTFSN3Q?:display_count=n&:origin=viz_share_link)**
 
