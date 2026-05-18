@@ -1,12 +1,6 @@
 # Renewable Energy Analytics: End-to-End Data Pipeline & Global Transition Analysis
 
-**Author:** Elene Kikalishvili &nbsp;|&nbsp; **Database:** PostgreSQL &nbsp;|&nbsp; **Prep:** Power Query &nbsp;|&nbsp; **Analysis:** SQL &nbsp;|&nbsp; **Visualization:** Tableau
-
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-336791?logo=postgresql&logoColor=white)
-![Power Query](https://img.shields.io/badge/Power%20Query-Excel-217346?logo=microsoftexcel&logoColor=white)
-![Tableau](https://img.shields.io/badge/Tableau-Dashboard-E97627?logo=tableau&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-Advanced-4479A1?logo=postgresql&logoColor=white)
-
+**Author:** Elene Kikalishvili &nbsp;|&nbsp; **Database:** PostgreSQL &nbsp;|&nbsp; **Prep:** Power Query &nbsp;|&nbsp; **Analysis:** SQL &nbsp;|&nbsp; **Visualization:** Tableau  
 **Last updated:** May 2026
 
 
