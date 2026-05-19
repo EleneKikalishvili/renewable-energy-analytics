@@ -38,10 +38,9 @@ Findings are visualized in a four-dashboard interactive Tableau story covering g
 <!-- Dashboard preview GIF -->
 **Tableau Dashboards Preview**
 
-![Dashboard Preview](./docs/images/dashboard_preview.gif)  
+![Dashboard Preview](./docs/images/renewables_dashboard_walkthrough.gif)    
 
-The published story is available at **[Tableau Public](https://public.tableau.com/views/FromMarginstoMainstreamExploringtheGlobalRenewableEnergyTransition20002023/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**  
-See walkthrough GIF here **[Dashboard Walkthrough](./docs/images/renewables_dashboard_walkthrough.gif)**  
+The published story is available at **[Tableau Public](https://public.tableau.com/views/FromMarginstoMainstreamExploringtheGlobalRenewableEnergyTransition20002023/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**   
 
 ### Key Documents
 
