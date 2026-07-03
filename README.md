@@ -3,6 +3,16 @@
 **Author:** Elene Kikalishvili &nbsp;|&nbsp; **Database:** PostgreSQL &nbsp;|&nbsp; **Prep:** Power Query &nbsp;|&nbsp; **Analysis:** SQL &nbsp;|&nbsp; **Visualization:** Tableau  
 **Last updated:** May 2026
 
+---
+
+<!-- Dashboard preview GIF -->
+**Tableau Dashboards Preview**
+
+![Dashboard Preview](./docs/images/renewables_dashboard_walkthrough.gif)    
+
+The published story is available at **[Tableau Public](https://public.tableau.com/views/FromMarginstoMainstreamExploringtheGlobalRenewableEnergyTransition20002023/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
+
+---
 
 ## Table of Contents
 
@@ -31,16 +41,7 @@ Four public datasets from IRENA, the Energy Institute, Eurostat, and DataHub wer
 
 SQL analysis spans five research questions - covering renewable share growth, technology capacity and performance, LCOE and installed cost trends, public investment alignment, and the relationship between renewables and CO₂ emissions. Queries make extensive use of window functions, CTEs, CAGR calculations, and cross-dataset joins. Exploratory and QA queries are retained in each file to document the analytical process and support reproducibility.
 
-Findings are visualized in a four-dashboard interactive Tableau story covering global trends, regional profiles, growth dynamics, and cost economics. A planned follow-up analysis of EU electricity consumer prices - for which data and schema infrastructure are already in place - is documented as the next phase of this project.  
-
-
-
-<!-- Dashboard preview GIF -->
-**Tableau Dashboards Preview**
-
-![Dashboard Preview](./docs/images/renewables_dashboard_walkthrough.gif)    
-
-The published story is available at **[Tableau Public](https://public.tableau.com/views/FromMarginstoMainstreamExploringtheGlobalRenewableEnergyTransition20002023/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**   
+Findings are visualized in a four-dashboard interactive Tableau story covering global trends, regional profiles, growth dynamics, and cost economics. A planned follow-up analysis of EU electricity consumer prices - for which data and schema infrastructure are already in place - is documented as the next phase of this project.     
 
 ### Key Documents
 
