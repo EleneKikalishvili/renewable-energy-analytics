@@ -118,7 +118,7 @@ the world's #1 renewable technology by installed capacity.
 **Public investment:**
 - Over 2000-2020, public finance for renewables ($263B, 49.6%) narrowly led fossil fuel investment ($245B, 46.1%).
 - By 2020, renewables captured ~75% of public energy finance - a decisive shift from near-parity in the early 2000s.
-- China alone accounted for ~44% of all global public energy investment, heavily weighted toward fossil fuels (~$161B fossil vs. ~$55B renewables).
+- China alone accounted for 44% of all global public energy investment, heavily weighted toward fossil fuels (~$161B fossil vs. ~$55B renewables).
 
 **Emissions:**
 - Global CO₂ emissions grew ~48% since 2000 despite renewables growing 63% in generation share - fossil absolute output continues rising.
